@@ -95,9 +95,28 @@ try:
                      "Model prioritas": "Bobot eksploratif", "Perbandingan model": None,
                      "Statistik spasial": "Interpretasi.", "Robustness / sensitivitas": "Ambang",
                      "Metode dan keterbatasan": None}
+        def fresh_browser():
+            global browser, page
+            browser.close()
+            browser = pw.chromium.launch(channel="msedge", headless=True)
+            page = browser.new_page(viewport={"width": 1440, "height": 1100})
+            page.on("pageerror", lambda error: errors.append(str(error)))
+            page.goto("http://127.0.0.1:8543", wait_until="domcontentloaded")
+            page.locator("h1").first.wait_for(timeout=60000)
+
         page.goto("http://127.0.0.1:8543", wait_until="domcontentloaded")
         page.locator("h1").first.wait_for(timeout=60000)
+        # Verify continuous navigation at an ordinary viewport before large captures.
+        navigation = []
+        for name, sentinel in sentinels.items():
+            page.get_by_role("link", name=name, exact=False).first.click()
+            page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
+            settle(sentinel)
+            navigation.append({"page": name, "exceptions": errors_now(), "canonical_count_visible": expected_valid in page.locator("body").inner_text()})
+        result["continuous_navigation"] = navigation
+        result["capture_policy"] = "Fresh browser per route for large desktop/narrow screenshots; ordinary continuous navigation tested separately"
         for i, (name, sentinel) in enumerate(sentinels.items()):
+            fresh_browser()
             page.get_by_role("link", name=name, exact=False).first.click()
             page.locator("h1").first.wait_for(timeout=60000)
             page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
@@ -120,6 +139,7 @@ try:
             result["pages"].append(record)
 
         if args.integrated:
+            fresh_browser()
             page.get_by_role("link", name="Model prioritas", exact=False).first.click()
             settle("Bobot eksploratif")
             with page.expect_download() as pending_download:
@@ -143,6 +163,7 @@ try:
         def interact(label, action, expect=None, page_name=None):
             try:
                 if page_name:
+                    fresh_browser()
                     page.get_by_role("link", name=page_name, exact=False).first.click()
                     settle(sentinels.get(page_name))
                 action()
@@ -188,5 +209,6 @@ print(json.dumps(result, indent=2))
 bad_interaction = any(r.get("error") or r.get("exceptions") or r.get("expected_visible") is False
                       for r in result.get("interactions", []))
 if "verification_error" in result or result.get("page_errors") or bad_interaction or \
-        len(result["pages"]) != 8 or any(p["exceptions"] or not p["corrected_n_visible"] or not p["mixed_period_visible"] for p in result["pages"]):
+        len(result["pages"]) != 8 or any(p["exceptions"] or not p["corrected_n_visible"] or not p["mixed_period_visible"] for p in result["pages"]) or \
+        len(result.get("continuous_navigation", [])) != 8 or any(p["exceptions"] or not p["canonical_count_visible"] for p in result.get("continuous_navigation", [])):
     sys.exit(1)
