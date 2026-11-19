@@ -115,7 +115,7 @@ def check():
     write_json(ROOT / "outputs/qa/rc1/verification.json", report)
     write_json(ROOT / "docs/integration_manifest.json", {
         "schema_version": "rc1-1", "branch": "integration/rc1",
-        "candidate_source_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+        "candidate_source_commit": json.loads(paths.manifest.read_text(encoding="utf-8"))["git_commit"],
         "source_refs": refs, "canonical_inputs": inputs_identity(paths),
         "canonical_outputs": {"features": str(paths.merged.relative_to(ROOT)),
                               "priority": str(paths.priority.relative_to(ROOT)),

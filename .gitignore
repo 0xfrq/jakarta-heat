@@ -38,3 +38,6 @@ Thumbs.db
 Desktop.ini
 # Temporary two-run replay copy (regenerable; result kept in replay_verification.json)
 /outputs/remediation/qa/replay_snapshot/
+
+# Original independent audit is supplied separately and preserved read-only.
+/audit/
