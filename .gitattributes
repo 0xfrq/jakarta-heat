@@ -1,3 +1,11 @@
 # Preserve artifact bytes used by frozen-input and output SHA256 manifests.
 data/** -text
 outputs/** -text
+# Implementation identity hashes the exact bytes of these files too.
+jhim/** -text
+scripts/** -text
+dashboard/** -text
+docs/model_specification.json -text
+docs/scenario_registry.csv -text
+docs/spatial_inference_spec.md -text
+requirements*.lock -text
