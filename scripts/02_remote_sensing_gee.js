@@ -2,10 +2,23 @@
  * JAKARTA HEAT INEQUALITY MAPPER - PERSON 1
  * Landsat 9 Level-2 (2024) + optional Dynamic World (2024)
  * Prepared for Google Earth Engine Code Editor, JavaScript.
- * AOI uses temporary bounding rectangle until Person 2 sends finalized boundary.
+ * AOI: USE_BOUNDARY_ASSET = true -> five-city boundary asset (the rectangle below is only
+ * a fallback prototype and was NOT used for the committed rasters).
  * Source: USGS Landsat 9 C2 L2 and Google Dynamic World V1.
- * Outputs: 2 GeoTIFF files: thermal QA (4 bands), land-cover probabilities (2 bands).
+ * Outputs: 2 GeoTIFF files: thermal QA (5 bands: lst_c, ndvi, lst_unc_k, lst_obs,
+ * lst_valid), land-cover probabilities (2 bands: trees_prob, built_prob).
  * Each export is a server-side Google Drive task; run in Tasks panel.
+ *
+ * AUDIT NOTE (Agent 1, 2026-11-19): this file is the version that produced
+ * data/processed/remote_sensing/jakarta_2024_lst_ndvi_qa.tif and
+ * jakarta_2024_trees_built_probability.tif. Scale factors were checked against the USGS
+ * Collection 2 Level-2 product guide (ST_B10*0.00341802+149.0 K; SR*2.75e-05-0.2;
+ * ST_QA*0.01 K). The exported GeoTIFFs encode "outside AOI" as NaN and
+ * "inside AOI but no clear LST observation" as -9999 (78 pixels). Each band of the
+ * median composite is reduced independently, so LST and NDVI medians may come from
+ * different dates. Dynamic World class FRACTIONS are produced by
+ * scripts/02c_dynamic_world_fractions_gee.js; grid aggregation is done locally by
+ * scripts/02b_aggregate_remote_sensing.py.
  */
 
 // ============== CONFIGURATION ==============

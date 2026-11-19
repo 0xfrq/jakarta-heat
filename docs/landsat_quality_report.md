@@ -191,15 +191,35 @@ ground-based validation of satellite temperature.
 
 ## 6. Pending Validation
 
-The following activities remain:
+Status updated 2026-11-19 by Agent 1 using the full-resolution exported GeoTIFF
+(not 100 m sampling). Details: `handoff/AGENT1_HANDOFF.md`,
+`outputs/qa/remote_sensing_qa.json`.
 
-- [ ] Inspect spatial locations of extreme LST values.
-- [ ] Evaluate pixels with high ST_QA uncertainty.
-- [ ] Evaluate areas with low valid observation counts.
-- [ ] Check exported GeoTIFF bands and NoData handling.
-- [ ] Verify raster coverage against the final AOI.
-- [ ] Perform sensitivity analysis if needed.
-- [ ] Document total Landsat scene count.
+- [x] Inspect spatial locations of extreme LST values. Pixel maximum 57.08 °C lies in
+      grids JKT_R054_C056/C057 (Cilincing–Marunda industrial/port area, Jakarta Utara);
+      56.56 °C in JKT_R044_C054 (Pulogadung industrial estate). Plausible for large
+      industrial roofs and paved yards; values were kept, not clipped. Grid-level means
+      (500 m) range 31.12–47.92 °C.
+- [x] Evaluate pixels with high ST_QA uncertainty. 12 of 2,765 grids have mean
+      (median-composite) ST_QA > 5 K, concentrated on the northern coast/industrial zone;
+      flagged `high_unc` in `remote_sensing_grid.csv`.
+- [x] Evaluate areas with low valid observation counts. Full-resolution per-pixel
+      clear-observation count ranges 3–28; grid means 5.96–27.4. The southern strip
+      has ~20–27 clear observations versus ~8–12 elsewhere (WRS-2 scene overlap), so
+      temporal support of the median is not spatially uniform. No grid has mean < 5.
+- [x] Check exported GeoTIFF bands and NoData handling. 5 bands, Float32, EPSG:32748,
+      30 m. Outside the AOI is NaN (384,002 px); inside the AOI, -9999 marks the 78 px
+      with no clear LST observation (`lst_valid == 0`), where NDVI is still valid.
+      No scaled ST fill value (≈ -124 °C) is present. Pixel NDVI range -0.330 to 0.865.
+- [x] Verify raster coverage against the final AOI. Every master-grid cell has
+      Landsat footprint ≥ 98.9 % of its (clipped) area; valid-LST area fraction ≥ 0.278
+      (minimum in edge cell JKT_R037_C062, the 78 px gap at the eastern boundary).
+- [ ] Perform sensitivity analysis if needed (e.g. dry-season composite) — requires
+      Earth Engine access; not done.
+- [ ] Document total Landsat scene count — requires Earth Engine access
+      (`landsatRaw.size()` is printed by the script but was not recorded).
+      Observed per-pixel maximum of 28 clear observations is a lower bound for scenes
+      used in the overlap zone.
 
 ---
 

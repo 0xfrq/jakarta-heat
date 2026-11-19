@@ -1,4 +1,3 @@
-
 {
   "project": "Jakarta Heat Inequality Mapper",
   "data_source": "USGS Landsat 9 Collection 2 Level-2",
@@ -26,5 +25,10 @@
   "lst_uncertainty_unit": "Kelvin",
   "no_data_value": -9999,
   "export_filename": "jakarta_2024_lst_ndvi_qa.tif",
-  "validation_status": "preliminary"
+  "validation_status": "validated_locally_2026-11-19 (raster contents, nodata, ranges); scene_count still unknown",
+  "nodata_semantics": {
+    "NaN": "outside AOI",
+    "-9999": "inside AOI, no clear LST observation in 2024 (78 px; lst_valid=0)"
+  },
+  "grid_aggregate": "data/processed/remote_sensing_grid.csv"
 }

@@ -1,4 +1,3 @@
-
 {
   "project": "Jakarta Heat Inequality Mapper",
   "job": "Job 3 - Dynamic World Land Cover Analysis",
@@ -25,10 +24,12 @@
   "output_resolution_m": 10,
   "no_data_value": -9999,
   "output_filename": "jakarta_2024_trees_built_probability.tif",
-  "validation_status": "pending_raster_inspection",
+  "validation_status": "raster inspected 2026-11-19: probabilities in [0.015, 0.78]; NaN outside AOI; aggregated to grid as tree_prob_mean / built_prob_mean",
   "limitations": [
     "Class probabilities are not equal to land cover fractions",
     "Image count does not guarantee complete spatial coverage",
     "Median probabilities may not sum to one across classes"
-  ]
+  ],
+  "class_fraction_status": "BLOCKED: class fractions need scripts/02c_dynamic_world_fractions_gee.js (annual modal label) to be run in Earth Engine",
+  "grid_aggregate": "data/processed/remote_sensing_grid.csv"
 }
