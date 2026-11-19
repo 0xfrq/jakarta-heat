@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "n_rows": 2765,
+  "n_columns_csv": 42,
+  "csv_numeric_and_nulls_exact": true,
+  "gpkg_attributes_exact": true,
+  "geometries_equal": true,
+  "metadata_equal_except_build_timestamp": true
+}

@@ -1,0 +1,14 @@
+# Person 1 / Agent 1 remote-sensing workstream (Python 3.12, tested on Windows 11).
+# Local grid aggregation + validation. Earth Engine itself is run in the Code Editor (JS).
+numpy==2.5.5
+pandas==3.1.1
+geopandas==1.2.0
+pyogrio==0.13.0
+shapely==2.2.0
+pyproj==3.8.0
+rasterio==1.5.2
+exactextract==0.3.0
+matplotlib==3.11.2
+pytest==9.2.0
+# optional: only needed if the Earth Engine steps are ported to the Python API
+earthengine-api==1.7.53

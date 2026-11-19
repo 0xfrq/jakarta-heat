@@ -1,0 +1,48 @@
+{
+  "n_grids": 2765,
+  "independent_values_checked": 140,
+  "all_independent_values_pass": true,
+  "changed_legacy_columns": [
+    {
+      "column": "qa_area_km2",
+      "changed_rows": 383
+    }
+  ],
+  "new_columns": [
+    "bare_fraction_valid",
+    "built_fraction_valid",
+    "crops_fraction_valid",
+    "dw_label_missing_fraction",
+    "flooded_vegetation_fraction_valid",
+    "grass_fraction_valid",
+    "qa_area_m2",
+    "shrub_fraction_valid",
+    "snow_ice_fraction",
+    "snow_ice_fraction_valid",
+    "tree_fraction_valid",
+    "water_fraction_valid"
+  ],
+  "policy_counts": {
+    "baseline_valid_ge_0_5": {
+      "all_grids": 2764,
+      "legacy_route_present": 2538
+    },
+    "exploratory_valid_ge_0_25": {
+      "all_grids": 2765,
+      "legacy_route_present": 2539
+    },
+    "exploratory_include_flagged": {
+      "all_grids": 2765,
+      "legacy_route_present": 2539
+    },
+    "exploratory_strict_rs_qa": {
+      "all_grids": 2752,
+      "legacy_route_present": 2527
+    }
+  },
+  "scene_provenance": {
+    "state": "BLOCKED",
+    "n_scenes": 0,
+    "reason": "No recovered scene records; zero rows is not zero acquisitions"
+  }
+}
