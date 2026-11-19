@@ -12,8 +12,8 @@ import numpy as np
 import pandas as pd
 from playwright.sync_api import sync_playwright
 
-# Deterministic CPU WebGL for this local test process; avoids host GPU/driver variance.
-BROWSER_ARGS = ["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"]
+# Use the browser revision pinned by Playwright, not an independently updated system browser.
+BROWSER_ARGS = []
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs/remediation/qa/dashboard"
@@ -53,10 +53,9 @@ try:
         except Exception:
             time.sleep(.5)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
+        browser = pw.chromium.launch(headless=True, args=BROWSER_ARGS)
         result["browser_version"] = browser.version
-        gpu = browser.new_browser_cdp_session().send("SystemInfo.getInfo").get("gpu", {})
-        result["graphics"] = {"devices": gpu.get("devices"), "glRenderer": gpu.get("auxAttributes", {}).get("glRenderer")}
+        result["browser_distribution"] = "Playwright-pinned Chromium; install with python -m playwright install chromium"
         page = browser.new_page(viewport={"width": 1440, "height": 1100})
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
@@ -107,7 +106,7 @@ try:
         def fresh_browser():
             global browser, page
             browser.close()
-            browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
+            browser = pw.chromium.launch(headless=True, args=BROWSER_ARGS)
             page = browser.new_page(viewport={"width": 1440, "height": 1100})
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.on("console", lambda msg: result["console"].append({"type": msg.type, "text": msg.text[:1000]}))
@@ -208,11 +207,6 @@ try:
         browser.close()
 except Exception as exc:
     result["verification_error"] = repr(exc)
-    try:
-        result["failure_body"] = page.locator("body").inner_text(timeout=5000)
-        page.screenshot(path=str(OUT / "failure.png"), timeout=5000)
-    except Exception as diagnostic_error:
-        result["failure_diagnostic_error"] = repr(diagnostic_error)
 finally:
     proc.terminate()
     try:
