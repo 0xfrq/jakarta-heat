@@ -8,6 +8,8 @@ import time
 from pathlib import Path
 from urllib.request import urlopen
 
+import numpy as np
+import pandas as pd
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,7 +26,7 @@ if args.integrated:
     for key in list(env):
         if key.startswith("JHIM_"):
             del env[key]
-expected = __import__("pandas").read_csv(ROOT / ("data/processed/modeling/merged_grid.csv" if args.integrated else "data/processed/modeling_remediation/merged_grid.csv"))
+expected = pd.read_csv(ROOT / ("data/processed/modeling/merged_grid.csv" if args.integrated else "data/processed/modeling_remediation/merged_grid.csv"))
 expected_age = int(expected.qa_age_source_no_support.sum())
 expected_valid = f"{int(expected.valid.sum()):,}"
 support_text = f"Dukungan sumber usia tidak tersedia pada {expected_age} grid"
@@ -117,6 +119,24 @@ try:
                 page.wait_for_timeout(900)
             result["pages"].append(record)
 
+        if args.integrated:
+            page.get_by_role("link", name="Model prioritas", exact=False).first.click()
+            settle("Bobot eksploratif")
+            with page.expect_download() as pending_download:
+                page.get_by_role("button", name="Unduh CSV", exact=True).first.click()
+            download = pending_download.value
+            target = OUT / "baseline_m4_download.csv"
+            download.save_as(target)
+            downloaded = pd.read_csv(target).set_index("grid_id")
+            saved = pd.read_csv(ROOT / "data/processed/modeling/priority_models.csv").set_index("grid_id")
+            saved = saved.loc[saved.m4_top]
+            assert set(downloaded.index) == set(saved.index)
+            np.testing.assert_allclose(downloaded.loc[saved.index, "skor"], saved.m4_score, atol=1e-12, rtol=0)
+            np.testing.assert_array_equal(downloaded.loc[saved.index, "peringkat"], saved.m4_rank)
+            assert downloaded.scientific_policy.eq("provisional_unsigned").all()
+            assert downloaded.reference_scope.eq("thermal_demography_2024_OSM_2026-11-19_candidate_proxy").all()
+            result["baseline_download"] = {"result": "PASS", "rows": len(downloaded), "suggested_filename": download.suggested_filename,
+                                           "checks": ["canonical top IDs", "scores", "ranks", "period/policy metadata"]}
         # Real interactions on the corrected candidate (sampled, not exhaustive).
         interactions = []
 
