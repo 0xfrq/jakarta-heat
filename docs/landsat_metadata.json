@@ -1,0 +1,30 @@
+
+{
+  "project": "Jakarta Heat Inequality Mapper",
+  "data_source": "USGS Landsat 9 Collection 2 Level-2",
+  "dataset_id": "LANDSAT/LC09/C02/T1_L2",
+  "year": 2024,
+  "start_date": "2024-01-01",
+  "end_date_exclusive": "2025-01-01",
+  "processing_level": "L2SP",
+  "aoi_asset": "projects/nodemailer-mailer/assets/jakarta_5kota",
+  "composite": "median",
+  "export_crs": "EPSG:32748",
+  "export_scale_m": 30,
+  "qa_summary_scale_m": 100,
+  "cloud_mask": "QA_PIXEL bits 0-5 and QA_RADSAT == 0",
+  "scene_count": null,
+  "processing_date": null,
+  "bands": [
+    "lst_c",
+    "ndvi",
+    "lst_unc_k",
+    "lst_obs",
+    "lst_valid"
+  ],
+  "lst_unit": "Celsius",
+  "lst_uncertainty_unit": "Kelvin",
+  "no_data_value": -9999,
+  "export_filename": "jakarta_2024_lst_ndvi_qa.tif",
+  "validation_status": "preliminary"
+}
