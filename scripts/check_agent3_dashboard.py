@@ -104,18 +104,17 @@ try:
             record = {"page": name, "heading": page.locator("h1").first.inner_text(), "exceptions": errors_now(),
                       "mixed_period_visible": "2026" in body and "2024" in body,
                       "corrected_n_visible": expected_valid in body, "canvas_count": page.locator("canvas").count()}
-            if i in (0, 1, 3, 5, 6, 7):
-                shot(OUT / f"page_{i}_desktop.png")
-                page.set_viewport_size({"width": 390, "height": 844})
+            shot(OUT / f"page_{i}_desktop.png")
+            page.set_viewport_size({"width": 390, "height": 844})
+            page.wait_for_timeout(900)
+            collapse_sidebar()
+            shot(OUT / f"page_{i}_narrow.png")
+            record["narrow_sidebar_collapsed"] = not page.locator('[data-testid="stSidebar"][aria-expanded="true"]').count()
+            page.set_viewport_size({"width": 1440, "height": 1100})
+            page.wait_for_timeout(500)
+            if page.locator('[data-testid="stSidebar"][aria-expanded="false"]').count():
+                page.locator('[data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"] button').first.click(force=True)
                 page.wait_for_timeout(900)
-                collapse_sidebar()
-                shot(OUT / f"page_{i}_narrow.png")
-                record["narrow_sidebar_collapsed"] = not page.locator('[data-testid="stSidebar"][aria-expanded="true"]').count()
-                page.set_viewport_size({"width": 1440, "height": 1100})
-                page.wait_for_timeout(500)
-                if page.locator('[data-testid="stSidebar"][aria-expanded="false"]').count():
-                    page.locator('[data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"] button').first.click(force=True)
-                    page.wait_for_timeout(900)
             result["pages"].append(record)
 
         # Real interactions on the corrected candidate (sampled, not exhaustive).
@@ -169,5 +168,5 @@ print(json.dumps(result, indent=2))
 bad_interaction = any(r.get("error") or r.get("exceptions") or r.get("expected_visible") is False
                       for r in result.get("interactions", []))
 if "verification_error" in result or result.get("page_errors") or bad_interaction or \
-        any(p["exceptions"] for p in result["pages"]):
+        len(result["pages"]) != 8 or any(p["exceptions"] or not p["corrected_n_visible"] or not p["mixed_period_visible"] for p in result["pages"]):
     sys.exit(1)
