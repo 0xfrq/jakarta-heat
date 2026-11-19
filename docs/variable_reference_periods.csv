@@ -1,0 +1,4 @@
+variable,reference_period,extraction_date,release_date,evidence
+LST/NDVI,2024,unknown; audited export lineage pending RS-01,unknown,audited merged values + intended 2024 GEE predicate; acquisition dates not independently reverified
+WorldPop total and age,2024,not established in Agent3; source owner DM-01,not established,auditor raster-mask evidence; modeled estimates
+OSM candidate parks and walking network,snapshot/extraction 2026-11-19,2026-11-19T11:02:20Z park cache; graph created 2026-11-19,continuous edits; not a common release,independent audit frozen cache/graph inspection; does not establish physical opening dates

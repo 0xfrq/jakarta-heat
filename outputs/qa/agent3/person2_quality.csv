@@ -1,0 +1,21 @@
+item,jumlah,persen
+lst_c kosong,2765,100.0
+ndvi kosong,2765,100.0
+population kosong,0,0.0
+pop_child kosong,0,0.0
+pop_elderly kosong,0,0.0
+park_distance_m kosong,226,8.2
+rute taman tidak dihitung (park_distance_m kosong),226,8.2
+jarak taman diimputasi (skenario worst/median),0,0.0
+park_reachable tidak konsisten dengan jarak,0,0.0
+QA: snap grid ke jaringan > 250 m,66,2.4
+QA: coverage sel < 10% (pantai/batas),65,2.4
+populasi = 0,6,0.2
+anak + lansia melebihi populasi (>5%),0,0.0
+park_access_500m tidak konsisten dengan jarak,0,0.0
+park_access_1000m tidak konsisten dengan jarak,0,0.0
+LST porsi piksel valid < 50%,0,0.0
+grid valid data Person 2,2539,91.8
+grid valid remote sensing,0,0.0
+GRID DIKELUARKAN dari perbandingan,2765,100.0
+GRID VALID (himpunan pembanding bersama),0,0.0

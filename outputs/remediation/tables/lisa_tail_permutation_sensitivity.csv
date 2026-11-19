@@ -1,0 +1,13 @@
+alternative,permutations,correction,n,n_significant,changed_vs_directed999_BH,minimum_attainable_p
+directed,999,klaster_p05,2526,1141,423,0.001
+directed,999,klaster_fdr,2526,718,0,0.001
+directed,999,klaster_by,2526,0,718,0.001
+two-sided,999,klaster_p05,2526,911,193,0.001
+two-sided,999,klaster_fdr,2526,560,158,0.001
+two-sided,999,klaster_by,2526,0,718,0.001
+directed,9999,klaster_p05,2526,1079,361,0.0001
+directed,9999,klaster_fdr,2526,703,41,0.0001
+directed,9999,klaster_by,2526,274,444,0.0001
+two-sided,9999,klaster_p05,2526,875,157,0.0001
+two-sided,9999,klaster_fdr,2526,527,191,0.0001
+two-sided,9999,klaster_by,2526,180,538,0.0001

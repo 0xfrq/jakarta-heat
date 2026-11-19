@@ -14,6 +14,34 @@ class DataError(Exception):
     """Kesalahan struktur data: pemrosesan dihentikan dengan pesan yang jelas."""
 
 
+class PendingInputs(DataError):
+    """Masukan hulu (mis. remote sensing Agent 1) belum tersedia; bukan kesalahan kode."""
+
+
+def sha256(path, chunk: int = 1 << 20) -> str | None:
+    import hashlib
+
+    p = Path(path)
+    if not p.exists():
+        return None
+    h = hashlib.sha256()
+    with p.open("rb") as f:
+        for b in iter(lambda: f.read(chunk), b""):
+            h.update(b)
+    return h.hexdigest()
+
+
+def git_commit(root) -> str | None:
+    import subprocess
+
+    try:
+        r = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"], capture_output=True, text=True, timeout=10)
+        dirty = subprocess.run(["git", "-C", str(root), "status", "--porcelain"], capture_output=True, text=True, timeout=10)
+        return r.stdout.strip() + ("-dirty" if dirty.stdout.strip() else "") if r.returncode == 0 else None
+    except Exception:
+        return None
+
+
 def utf8_stdout() -> None:
     """Hindari UnicodeEncodeError di konsol/pengalihan Windows."""
     for s in (sys.stdout, sys.stderr):
@@ -28,7 +56,13 @@ def utc_stamp() -> str:
 
 
 def versions() -> dict:
-    return {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__}
+    out = {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__}
+    for mod in ("geopandas", "libpysal", "esda", "scipy"):
+        try:
+            out[mod] = __import__(mod).__version__
+        except Exception:
+            pass
+    return out
 
 
 def _py(o):

@@ -1,0 +1,25 @@
+{
+  "weights_baseline": "Queen contiguity (poligon), row-standardized",
+  "weights_sensitivity": [
+    "rook",
+    "knn8"
+  ],
+  "permutations": 999,
+  "seed": 42,
+  "alpha": 0.05,
+  "islands_dropped": {
+    "M1": [
+      "JKT_R013_C019"
+    ],
+    "M2": [
+      "JKT_R013_C019"
+    ],
+    "M3": [
+      "JKT_R013_C019"
+    ],
+    "M4": [
+      "JKT_R013_C019"
+    ]
+  },
+  "catatan": "LISA diuji per grid (uji berganda); klaim memakai kolom klaster_fdr (Benjamini-Hochberg). Klaster adalah deskriptif, bukan penjelasan kausal."
+}

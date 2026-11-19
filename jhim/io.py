@@ -40,9 +40,14 @@ def load_priority(paths: C.Paths):
 
 def run_cli(main) -> None:
     """Jalankan main(); DataError menjadi pesan singkat dan kode keluar 1 (bukan traceback panjang)."""
+    from .util import PendingInputs
+
     utf8_stdout()
     try:
         main()
+    except PendingInputs as exc:
+        print(f"\nTERTUNDA: {exc}", file=sys.stderr)
+        sys.exit(2)
     except DataError as exc:
         print(f"\nGAGAL: {exc}", file=sys.stderr)
         sys.exit(1)

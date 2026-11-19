@@ -1,0 +1,20 @@
+{
+  "model": "M4",
+  "weights": {
+    "lst": 0.3,
+    "ndvi_low": 0.2,
+    "vuln": 0.25,
+    "park_deficit": 0.25
+  },
+  "n_valid": 2538,
+  "n_top": 254,
+  "top_frac": 0.1,
+  "n_scenarios": 24,
+  "n_baseline_top_stable": 201,
+  "share_baseline_top_stable": 0.7913385826771654,
+  "n_baseline_top_in_all": 85,
+  "min_jaccard": 0.35106382978723405,
+  "median_jaccard": 0.9026217228464419,
+  "stable_threshold": 0.8,
+  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak."
+}

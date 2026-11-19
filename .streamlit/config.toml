@@ -1,0 +1,11 @@
+# Dipakai bila dashboard dijalankan dari akar repositori:
+#   python -m streamlit run dashboard/app.py
+[server]
+address = "localhost"   # hanya dapat diakses dari komputer ini
+port = 8501
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
