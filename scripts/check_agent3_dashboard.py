@@ -12,6 +12,9 @@ import numpy as np
 import pandas as pd
 from playwright.sync_api import sync_playwright
 
+# Deterministic CPU WebGL for this local test process; avoids host GPU/driver variance.
+BROWSER_ARGS = ["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"]
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs/remediation/qa/dashboard"
 OUT.mkdir(parents=True, exist_ok=True)
@@ -33,6 +36,7 @@ support_text = f"Dukungan sumber usia tidak tersedia pada {expected_age} grid"
 command = [sys.executable, "-m", "streamlit", "run", str(ROOT / "dashboard/app.py"),
            "--server.headless=true", "--server.address=127.0.0.1", "--server.port=8543", "--browser.gatherUsageStats=false"]
 result = {"scope": "Agent3 corrected local workstream only; final integrated candidate NOT YET TESTED", "command": command, "pages": []}
+result["browser_args"] = BROWSER_ARGS
 if args.integrated:
     OUT = ROOT / "outputs/qa/rc1/dashboard"
     OUT.mkdir(parents=True, exist_ok=True)
@@ -48,7 +52,9 @@ try:
         except Exception:
             time.sleep(.5)
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(channel="msedge", headless=True)
+        browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
+        gpu = browser.new_browser_cdp_session().send("SystemInfo.getInfo").get("gpu", {})
+        result["graphics"] = {"devices": gpu.get("devices"), "glRenderer": gpu.get("auxAttributes", {}).get("glRenderer")}
         page = browser.new_page(viewport={"width": 1440, "height": 1100})
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
@@ -98,7 +104,7 @@ try:
         def fresh_browser():
             global browser, page
             browser.close()
-            browser = pw.chromium.launch(channel="msedge", headless=True)
+            browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
             page = browser.new_page(viewport={"width": 1440, "height": 1100})
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.goto("http://127.0.0.1:8543", wait_until="domcontentloaded")
@@ -108,6 +114,7 @@ try:
         page.locator("h1").first.wait_for(timeout=60000)
         # Verify continuous navigation at an ordinary viewport before large captures.
         navigation = []
+        result["continuous_navigation"] = navigation
         for name, sentinel in sentinels.items():
             page.get_by_role("link", name=name, exact=False).first.click()
             page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
