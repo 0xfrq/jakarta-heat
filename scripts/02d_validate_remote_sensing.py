@@ -16,6 +16,7 @@ Exit code 1 if any CRITICAL check fails.
 from __future__ import annotations
 
 import json
+import argparse
 import sys
 from pathlib import Path
 
@@ -41,6 +42,7 @@ FRACTION_COLS = ["tree_fraction", "grass_fraction", "built_fraction", "lst_valid
                  "ndvi_valid_fraction", "landsat_footprint_fraction", "dw_valid_fraction",
                  "water_fraction", "flooded_vegetation_fraction", "crops_fraction", "shrub_fraction",
                  "bare_fraction", "dw_label_valid_fraction", "tree_prob_mean", "built_prob_mean"]
+FRACTION_COLS += ["snow_ice_fraction", "dw_label_missing_fraction"]
 
 results: list[dict] = []
 
@@ -67,8 +69,20 @@ def window_mean(src, band: int, bounds) -> float:
     return float((a * w)[ok].sum() / w[ok].sum())
 
 
-def main() -> int:
-    rs = pd.read_csv(RS_CSV, dtype={KEY: "string"})
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--rs-dir", type=Path, default=PROC)
+    ap.add_argument("--output-dir", type=Path, help="isolate all QA outputs in this directory")
+    args = ap.parse_args(argv)
+    rs_csv = args.rs_dir / RS_CSV.name
+    problems, qa_json, preview = PROBLEMS, QA_JSON, PREVIEW
+    if args.output_dir is not None:
+        args.output_dir.mkdir(parents=True, exist_ok=True)
+        problems = args.output_dir / PROBLEMS.name
+        qa_json = args.output_dir / QA_JSON.name
+        preview = args.output_dir / PREVIEW.name
+    results.clear()
+    rs = pd.read_csv(rs_csv, dtype={KEY: "string"})
     master = pd.read_csv(GRID_CSV, dtype={KEY: "string"})
 
     # ---------------- contract
@@ -110,14 +124,25 @@ def main() -> int:
     zero_lst = int((lst == 0).sum())
     check("no zero-filled LST", zero_lst == 0, zero_lst)
     dw_frac_all_missing = rs[["tree_fraction", "grass_fraction", "built_fraction"]].isna().all().all()
-    check("DW class fractions are either computed or fully empty (never 0-filled placeholders)",
-          dw_frac_all_missing or rs["tree_fraction"].notna().mean() > 0.99,
+    has_labels = rs["dw_label_valid_fraction"].notna().any()
+    class_support_matches = rs["tree_fraction"].notna().equals(rs["dw_label_valid_fraction"] > 0)
+    check("DW class fractions match measured label support (never 0-filled placeholders)",
+          (dw_frac_all_missing and not has_labels) or class_support_matches,
           "BLOCKED (all empty)" if dw_frac_all_missing else "computed", critical=True)
     if not dw_frac_all_missing:
         s = rs[["water_fraction", "tree_fraction", "grass_fraction", "flooded_vegetation_fraction",
-                "crops_fraction", "shrub_fraction", "built_fraction", "bare_fraction"]].sum(axis=1)
-        check("DW class fractions sum to ~1", ((s - 1).abs() < 0.02)[rs["tree_fraction"].notna()].all(),
+                "crops_fraction", "shrub_fraction", "built_fraction", "bare_fraction", "snow_ice_fraction"]].sum(axis=1, min_count=1)
+        supported = rs["dw_label_valid_fraction"] > 0
+        check("DW whole-cell class fractions sum to valid label support",
+              np.allclose(s[supported], rs.loc[supported, "dw_label_valid_fraction"], atol=2e-5),
               f"min={s.min():.3f}, max={s.max():.3f}")
+        check("DW supported plus missing area equals whole cell",
+              np.allclose(rs["dw_label_valid_fraction"] + rs["dw_label_missing_fraction"], 1, atol=2e-5))
+        valid_cols = [c + "_valid" for c in ["water_fraction", "tree_fraction", "grass_fraction",
+                      "flooded_vegetation_fraction", "crops_fraction", "shrub_fraction", "built_fraction",
+                      "bare_fraction", "snow_ice_fraction"]]
+        check("DW conditional fractions sum to one on valid support",
+              np.allclose(rs.loc[supported, valid_cols].sum(axis=1), 1, atol=2e-5))
 
     # ---------------- raster semantics
     with rasterio.open(LANDSAT_TIF) as src:
@@ -136,6 +161,12 @@ def main() -> int:
 
         # independent recomputation on 25 full interior cells
         grid = gpd.read_file(GRID_GPKG)
+        if "qa_area_m2" in rs:
+            actual_area = grid.set_index(KEY).geometry.area.reindex(rs[KEY]).to_numpy()
+            check("all reported positive geometry areas retain precision",
+                  (rs["qa_area_m2"] > 0).all() and (rs["qa_area_km2"] > 0).all()
+                  and np.allclose(rs["qa_area_m2"], actual_area, rtol=1e-12, atol=1e-8)
+                  and np.allclose(rs["qa_area_km2"] * 1e6, actual_area, rtol=1e-12, atol=1e-8))
         full = grid[grid.geometry.area > 249_999].sample(25, random_state=42)
         r = rs.set_index(KEY)
         diffs_l, diffs_n = [], []
@@ -161,8 +192,8 @@ def main() -> int:
     prob = rs[rs["rs_qa_flags"].notna() & (rs["rs_qa_flags"] != "")]
     prob = prob.merge(master[[KEY, "kota", "longitude", "latitude"]], on=KEY, how="left")
     prob[[KEY, "kota", "longitude", "latitude", "qa_area_km2", "rs_qa_flags", "lst_mean_c", "ndvi_mean",
-          "lst_valid_fraction", "lst_observation_count", "lst_unc_mean_k", "tree_prob_mean"]].to_csv(PROBLEMS, index=False)
-    print(f"wrote {PROBLEMS.relative_to(ROOT)} ({len(prob)} flagged grids)")
+          "lst_valid_fraction", "lst_observation_count", "lst_unc_mean_k", "tree_prob_mean"]].to_csv(problems, index=False)
+    print(f"wrote {problems} ({len(prob)} flagged grids)")
 
     try:
         import matplotlib
@@ -180,15 +211,16 @@ def main() -> int:
             g.plot(column=c, ax=a, cmap=cm, legend=True, missing_kwds={"color": "lightgrey", "label": "missing"})
             a.set_title(t, fontsize=10); a.set_axis_off()
         fig.suptitle("Jakarta 500 m grid — remote sensing features, 2024 (QA preview; LST is land surface, not air temperature)")
-        PREVIEW.parent.mkdir(parents=True, exist_ok=True)
-        fig.savefig(PREVIEW, dpi=110, bbox_inches="tight")
-        print(f"wrote {PREVIEW.relative_to(ROOT)}")
+        preview.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(preview, dpi=110, bbox_inches="tight")
+        plt.close(fig)
+        print(f"wrote {preview}")
     except Exception as exc:  # preview is optional
         check("preview map", False, exc, critical=False)
 
     failed = [r for r in results if not r["ok"] and r["critical"]]
-    QA_JSON.parent.mkdir(parents=True, exist_ok=True)
-    QA_JSON.write_text(json.dumps({"n_checks": len(results), "n_critical_failed": len(failed),
+    qa_json.parent.mkdir(parents=True, exist_ok=True)
+    qa_json.write_text(json.dumps({"n_checks": len(results), "n_critical_failed": len(failed),
                                    "checks": results}, indent=2), encoding="utf-8")
     print(f"\n{len(results)} checks, {len(failed)} critical failures")
     return 1 if failed else 0

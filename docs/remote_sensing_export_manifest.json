@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "issue_ids": [
+    "RS-01",
+    "DW-01"
+  ],
+  "acquisition_status": "BLOCKED_ORIGINAL_SCENE_TASK_AOI_RECORDS_UNRECOVERED",
+  "local_reproduction_status": "PASS_FROZEN_RASTERS_TO_GRID",
+  "declared_period": {
+    "start": "2024-01-01",
+    "end_exclusive": "2025-01-01"
+  },
+  "scene_manifest_validation": {
+    "state": "BLOCKED",
+    "n_scenes": 0,
+    "reason": "No recovered scene records; zero rows is not zero acquisitions"
+  },
+  "estimand": "clipped-cell area-weighted mean over valid pixels of per-pixel clear-sky morning temporal-median land surface temperature",
+  "claims_excluded": [
+    "annual air temperature",
+    "continuous or annual-mean heat exposure",
+    "individual heat dose",
+    "seasonally representative climate",
+    "independently verified 2024 acquisition origins"
+  ],
+  "original_exports": [
+    {
+      "path": "data/processed/remote_sensing/jakarta_2024_lst_ndvi_qa.tif",
+      "sha256": "f46d0db14f2f667a533eff7960bb870b4b2676709af43e70d08e670a075958dd",
+      "task_id": null,
+      "processing_date_utc": null,
+      "scene_ids_verified": false,
+      "intended_collection": "LANDSAT/LC09/C02/T1_L2",
+      "recipe_file": "scripts/02_remote_sensing_gee.js",
+      "recipe_relation": "intended recipe; historical execution identity unverified",
+      "export_parameters_from_recipe": {
+        "crs": "EPSG:32748",
+        "scale_m": 30,
+        "nodata": -9999,
+        "folder": "Jakarta_Heat_Project",
+        "region": "GEE AOI asset geometry",
+        "file_format": "GeoTIFF",
+        "max_pixels": 10000000000
+      }
+    },
+    {
+      "path": "data/processed/remote_sensing/jakarta_2024_trees_built_probability.tif",
+      "sha256": "c36b618e81c61568cc037c171f2bba44f542420a3ee46e446d38ff2af7de7037",
+      "task_id": null,
+      "processing_date_utc": null,
+      "scene_ids_verified": false,
+      "intended_collection": "GOOGLE/DYNAMICWORLD/V1",
+      "recipe_file": "scripts/02_remote_sensing_gee.js",
+      "recipe_relation": "intended recipe; historical execution identity unverified",
+      "export_parameters_from_recipe": {
+        "crs": "EPSG:32748",
+        "scale_m": 10,
+        "nodata": -9999,
+        "folder": "Jakarta_Heat_Project",
+        "region": "GEE AOI asset geometry",
+        "file_format": "GeoTIFF",
+        "max_pixels": 10000000000
+      }
+    }
+  ],
+  "aoi": {
+    "asset_id": "projects/nodemailer-mailer/assets/jakarta_5kota",
+    "gee_geometry_sha256": null,
+    "asset_version": null,
+    "local_boundary_path": "data/processed/jakarta_5kota.gpkg",
+    "local_boundary_sha256": "658d75b5e94991f4c633c97a012b552a117d2f7ffacaa8a875845a23d735a905",
+    "equivalence_to_gee_asset": "UNVERIFIED; local hash is not a historical GEE AOI hash"
+  },
+  "credentials": {
+    "earthengine_file_present": false,
+    "gcloud_adc_file_present": false,
+    "scope": "presence only; no credential contents read; initialization probe recorded in handoff"
+  },
+  "git_head": "cdda42484c6bfc5bceb49093cb4a28be6c59d659",
+  "source_state": "uncommitted remediation identified by per-file hashes; not an integrated release",
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "numpy": "2.5.5",
+      "pandas": "3.1.1",
+      "geopandas": "1.2.0",
+      "pyogrio": "0.13.0",
+      "shapely": "2.2.0",
+      "pyproj": "3.8.0",
+      "rasterio": "1.5.2",
+      "exactextract": "0.3.0",
+      "matplotlib": "3.11.2",
+      "pytest": "9.2.0",
+      "earthengine-api": "1.7.53"
+    }
+  },
+  "files": [
+    {
+      "path": "data/processed/grid_500m_jakarta.gpkg",
+      "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7"
+    },
+    {
+      "path": "data/processed/grid_master.csv",
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
+    },
+    {
+      "path": "data/processed/jakarta_5kota.gpkg",
+      "sha256": "658d75b5e94991f4c633c97a012b552a117d2f7ffacaa8a875845a23d735a905"
+    },
+    {
+      "path": "data/processed/remote_sensing/jakarta_2024_lst_ndvi_qa.tif",
+      "sha256": "f46d0db14f2f667a533eff7960bb870b4b2676709af43e70d08e670a075958dd"
+    },
+    {
+      "path": "data/processed/remote_sensing/jakarta_2024_trees_built_probability.tif",
+      "sha256": "c36b618e81c61568cc037c171f2bba44f542420a3ee46e446d38ff2af7de7037"
+    },
+    {
+      "path": "data/processed/remote_sensing_grid.csv",
+      "sha256": "49297937f9510c13beceee986b2067dba05df7939800d9b7307852db9bec135a"
+    },
+    {
+      "path": "data/processed/remote_sensing_grid.gpkg",
+      "sha256": "26547bbe5486fafeec765ec5ca99394be70abb3d0d2f187dcf41490007663944"
+    },
+    {
+      "path": "data/processed/remote_sensing_grid.meta.json",
+      "sha256": "a98974bbcc45251402006716a45aa429158abb650668937f0c0b03f466994267"
+    },
+    {
+      "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.csv",
+      "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
+    },
+    {
+      "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.gpkg",
+      "sha256": "8ac828a773b5c55cbea57eaa80e9ff1a4216eb7524a612dc6268b0ee59c261ae"
+    },
+    {
+      "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.meta.json",
+      "sha256": "f80fdf43c17d116617292ec3fc61584e8b26a8f64d63bb1b3170741ab026e5db"
+    },
+    {
+      "path": "data/processed/spatial_features.csv",
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    {
+      "path": "docs/dynamic_world_metadata.json",
+      "sha256": "a527ac49a983e45b2b29bd00395ccd1ad1209f57f02a050a3f54a20de309fd50"
+    },
+    {
+      "path": "docs/landsat_metadata.json",
+      "sha256": "f48a8bee4d9553dec693b7c5677f856147a9dba7af80932999b1b9084ceb0424"
+    },
+    {
+      "path": "docs/landsat_quality_report.md",
+      "sha256": "e344f5aae26bd2c66b1be7d291c7f9ae6f74ab9852b42c7a08cf83663c45d14e"
+    },
+    {
+      "path": "docs/remote_sensing_deliverable_status.md",
+      "sha256": "d0cc2621c0c2fdc8a486c2fcb74f0a5bea34aadf19ccc350a4d10fc846bbfb5e"
+    },
+    {
+      "path": "docs/remote_sensing_reproduction.md",
+      "sha256": "d8a7167e0f370ef30f66868b59764531ae3393c0a6aeaf8845312e33d6d2a791"
+    },
+    {
+      "path": "docs/remote_sensing_scene_manifest.csv",
+      "sha256": "08e19f93d77d307539ffbc35f953b839db848aebad4255ab12219420b93f218f"
+    },
+    {
+      "path": "handoff/AGENT1_HANDOFF.md",
+      "sha256": "e4f59eed8f7a645bfa43674d886a7d62a5e801a88a81e3079ee665d0bbf22def"
+    },
+    {
+      "path": "handoff/REMEDIATION_AGENT1.md",
+      "sha256": "c2949a7ad138ac6f62fc6306ec8f3199ab4a0b0f62e6735efbf11975db5b4b14"
+    },
+    {
+      "path": "jhim/config.py",
+      "sha256": "4a9463b5886b6c90f7af2a71f2ce1759db815e5420fc6d1e1c62dbdf98a2f32d"
+    },
+    {
+      "path": "jhim/models.py",
+      "sha256": "514ea76ebf23a26b0efd3ac1998ce2e7003bc9bf47588a9708a4d0f2e939ce00"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/baseline_revised_comparison.csv",
+      "sha256": "719b68e0019fa9b08fff8831cb71c38bbd2200c4defde1d6c87f9e3db0f9dfcb"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/comparator_identity_check.json",
+      "sha256": "3b48c0d0a0783122e2f94efe24cd67a0f563cfb95dbd1c159398c929311e6665"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/environment.json",
+      "sha256": "d67a8d119758df739a970d5389521bb7a89cbeb4af9104f0f314f43011a909d9"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/independent_pixel_checks.csv",
+      "sha256": "a9d86a030801f19772ff3579f7ac560be8db0e62e3533b789e21a3edba848eae"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/pytest.log",
+      "sha256": "895b1ddb3f080eca71d3c1cf1fd12fb513577dddaf31fe65b5739201f475415e"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/reproduction2/remote_sensing_grid.csv",
+      "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/reproduction2/remote_sensing_grid.gpkg",
+      "sha256": "56bb69792f477ee37afcf17be70abe412cd8d85b25c74f351cece6d4c87a84d8"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/reproduction2/remote_sensing_grid.meta.json",
+      "sha256": "c84e080c907235c5bda22d7a97010d601d167af19eea43c0eb59246d1ec3f7bb"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/reproduction_equivalence.json",
+      "sha256": "89ab5a3d70c331e7286451ca74902cb5673653267e0962702e7a2cac7afbdb3a"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/rs_input_revision_model_effect.csv",
+      "sha256": "36a5907fea4d706d82ed989b7422475c4598a32880295e3df1f56a9ee8e8214f"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/rs_monthly_temporal_support.csv",
+      "sha256": "10c69f484516f4c7abe96c5388ace6f1195688c6f3e4c23603863c865d91989e"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/rs_qa_policy_support.csv",
+      "sha256": "929461239033aec2450333ce56bc8710bb0778e0d8cdcee0fa2100e8a5a07d4e"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/rs_temporal_support_by_city.csv",
+      "sha256": "f990321deb7247ea0f005a09b11f73a52cd0b0ae52b6e17a1fcc263afb941f18"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/validation/remote_sensing_grid_preview.png",
+      "sha256": "cdd981c8a0f9468482a0ecbda56ca65c8574289bd70cd76192bb44f40185a8e1"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/validation/remote_sensing_qa.json",
+      "sha256": "93a7b4d0e20d98f4899831861bf3c234d890ebb30a4f2be50d9fd44db617ef74"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/validation/remote_sensing_qa_problem_grids.csv",
+      "sha256": "a8f14b25577fbdeb08895893234d14c165201c4b035376fc990db13a3ecf9729"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation/validator.log",
+      "sha256": "579e4e49a4ed638e9d5bb2e4a3835e1440d1c32a47b4e34bfb15827b51a50ab1"
+    },
+    {
+      "path": "outputs/qa/agent1_remediation_summary.json",
+      "sha256": "b5a5a62ce639491e746d339dce3f3e048a05393b5dba09358b9699ad5262a42e"
+    },
+    {
+      "path": "outputs/qa/rs_temporal_support.csv",
+      "sha256": "6947d8b2617ac763cf52dccad5c879f68d0ff30fc2dc0010c858738b516b0edf"
+    },
+    {
+      "path": "requirements-remote-sensing.txt",
+      "sha256": "dc5911b4d4784a8b61ee18a358109e352905cf29d680ca3becfd3799a2f8dc97"
+    },
+    {
+      "path": "scripts/02_download_age_jakarta.py",
+      "sha256": "4ae963c2bf7ad7aad32e62a814435500641fb67068f964db6f557d5fa8e57233"
+    },
+    {
+      "path": "scripts/02_remote_sensing_gee.js",
+      "sha256": "d40cd3b20abc12dcf2e3e102756a5159931449e2b916a44aa96e237448606256"
+    },
+    {
+      "path": "scripts/02b_aggregate_remote_sensing.py",
+      "sha256": "a004263e2f89c19b5b89771541c80c79622ecf9917083bb5bfe359b1137d0044"
+    },
+    {
+      "path": "scripts/02c_dynamic_world_fractions_gee.js",
+      "sha256": "77608dd6fc19b38859663b01e0ad1596e3d88d153f892e2366c23bc58f694472"
+    },
+    {
+      "path": "scripts/02d_validate_remote_sensing.py",
+      "sha256": "d556ccd4f121a8b614b1527021abceb5612ac638dc6b78cb1a6d26dd35cb316d"
+    },
+    {
+      "path": "scripts/02e_remote_sensing_remediation.py",
+      "sha256": "09ddd73628e6bf1ef773668f50a0c61a13b0df84c6278c3180b02bfd780f4c9d"
+    },
+    {
+      "path": "scripts/02f_export_remote_sensing_provenance_gee.js",
+      "sha256": "2d4dc4dfdbc31d39bebe3ad02887484103e94a30d6407e3c53b22f9c0fade64d"
+    },
+    {
+      "path": "tests/test_remote_sensing_grid.py",
+      "sha256": "beac02ac256553d2d0d303f4fc399252881aa9179fc8a7277c212ef008ddd1c6"
+    },
+    {
+      "path": "tests/test_remote_sensing_remediation.py",
+      "sha256": "9eb060e9d31331cc3ea414d54cd646012f482132b16864fc2b7d230877037bfd"
+    }
+  ],
+  "outstanding": [
+    "authorized GEE execution or original task archive",
+    "scene IDs/dates and monthly clear support",
+    "actual task IDs, processing date and exported/versioned AOI",
+    "coordinator TM-01/thermal-estimand and R3 scope decisions",
+    "Agent 3 fixed-model reranking for QA policies (RS-02)"
+  ]
+}

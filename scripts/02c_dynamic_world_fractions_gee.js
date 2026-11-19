@@ -12,7 +12,7 @@
  *   0 water, 1 trees, 2 grass, 3 flooded_vegetation, 4 crops,
  *   5 shrub_and_scrub, 6 built, 7 bare, 8 snow_and_ice.
  * Pixels with no Dynamic World observation in 2024 are written as 255 (nodata).
- * ee.Reducer.mode() resolves ties deterministically (lowest value); document if used.
+ * Ties explicitly select the lowest class code, using per-class counts below.
  *
  * OUTPUT (Google Drive, folder Jakarta_Heat_Project):
  *   jakarta_2024_dw_label_mode.tif  -- 1 band `label_mode`, UInt8, 10 m, EPSG:32748, nodata 255
@@ -23,8 +23,8 @@
  * which then fills tree_fraction, grass_fraction, built_fraction, ... in
  * data/processed/remote_sensing_grid.csv. Do not commit the GeoTIFFs if they are large.
  *
- * Grid alignment: the export uses the same CRS/scale/AOI as the existing DW probability
- * export, so pixels align with jakarta_2024_trees_built_probability.tif.
+ * Grid alignment: explicit affine transform from the frozen probability raster.
+ * Same CRS/scale alone does not guarantee pixel alignment.
  */
 
 var YEAR = 2024;
@@ -32,6 +32,7 @@ var START = YEAR + '-01-01';
 var END = (YEAR + 1) + '-01-01';
 var BOUNDARY_ASSET = 'projects/nodemailer-mailer/assets/jakarta_5kota';
 var EXPORT_FOLDER = 'Jakarta_Heat_Project';
+var DW_TRANSFORM = [10, 0, 686580, 0, -10, 9326650];
 
 var roi = ee.FeatureCollection(BOUNDARY_ASSET).geometry();
 Map.centerObject(roi, 10);
@@ -41,11 +42,18 @@ var dwCol = ee.ImageCollection('GOOGLE/DYNAMICWORLD/V1')
   .filterDate(START, END);
 print('Dynamic World images intersecting AOI, 2024:', dwCol.size());
 
-var labelMode = dwCol.select('label')
-  .reduce(ee.Reducer.mode())
-  .rename('label_mode')
-  .clip(roi);
 var dwObs = dwCol.select('label').count().rename('dw_obs').clip(roi);
+var classCounts = ee.ImageCollection.fromImages(ee.List.sequence(0, 8).map(function(code) {
+  return dwCol.select('label').map(function(img) {
+    return img.eq(ee.Number(code));
+  }).sum().unmask(0);
+})).toBands();
+var maxCount = classCounts.reduce(ee.Reducer.max());
+var labelMode = ee.Image.constant(255);
+for (var code = 8; code >= 0; code--) {
+  labelMode = labelMode.where(classCounts.select(code).eq(maxCount), code);
+}
+labelMode = labelMode.updateMask(dwObs.gt(0)).rename('label_mode').clip(roi);
 
 var dwVis = {min: 0, max: 8, palette: [
   '419bdf', '397d49', '88b053', '7a87c6', 'e49635',
@@ -67,7 +75,7 @@ Export.image.toDrive({
   folder: EXPORT_FOLDER,
   fileNamePrefix: 'jakarta_2024_dw_label_mode',
   region: roi,
-  scale: 10,
+  crsTransform: DW_TRANSFORM,
   crs: 'EPSG:32748',
   maxPixels: 1e10,
   fileFormat: 'GeoTIFF',
@@ -80,7 +88,7 @@ Export.image.toDrive({
   folder: EXPORT_FOLDER,
   fileNamePrefix: 'jakarta_2024_dw_obs_count',
   region: roi,
-  scale: 10,
+  crsTransform: DW_TRANSFORM,
   crs: 'EPSG:32748',
   maxPixels: 1e10,
   fileFormat: 'GeoTIFF'

@@ -9,6 +9,14 @@
 **Processing Platform:** Google Earth Engine  
 **Status:** Preliminary Quality Assessment
 
+**Remediation 2026-11-20 (RS-01):** 2024 is the intended recipe period, not an
+independently recovered acquisition inventory. Local raster values and aggregation
+are verified, but original scene IDs/dates, task IDs, processing date, and GEE AOI
+version remain unavailable. See `remote_sensing_export_manifest.json` and
+`remote_sensing_deliverable_status.md`. Annual observation counts cannot establish
+monthly/seasonal representativeness. No annual-air-temperature, continuous-exposure,
+individual-dose or health-validation claim is supported.
+
 ---
 
 ## 1. Data Source
@@ -205,7 +213,8 @@ Status updated 2026-11-19 by Agent 1 using the full-resolution exported GeoTIFF
       flagged `high_unc` in `remote_sensing_grid.csv`.
 - [x] Evaluate areas with low valid observation counts. Full-resolution per-pixel
       clear-observation count ranges 3–28; grid means 5.96–27.4. The southern strip
-      has ~20–27 clear observations versus ~8–12 elsewhere (WRS-2 scene overlap), so
+      has ~20–27 clear observations versus ~8–12 elsewhere (compatible with scene
+      overlap; WRS inventory has not been recovered), so
       temporal support of the median is not spatially uniform. No grid has mean < 5.
 - [x] Check exported GeoTIFF bands and NoData handling. 5 bands, Float32, EPSG:32748,
       30 m. Outside the AOI is NaN (384,002 px); inside the AOI, -9999 marks the 78 px
@@ -214,6 +223,9 @@ Status updated 2026-11-19 by Agent 1 using the full-resolution exported GeoTIFF
 - [x] Verify raster coverage against the final AOI. Every master-grid cell has
       Landsat footprint ≥ 98.9 % of its (clipped) area; valid-LST area fraction ≥ 0.278
       (minimum in edge cell JKT_R037_C062, the 78 px gap at the eastern boundary).
+      This verifies local-grid support; it does not establish equality to the
+      historical GEE asset geometry/version. The target cell has delivered values,
+      and its exclusion under a 50% support rule is a model-QA decision (RS-02).
 - [ ] Perform sensitivity analysis if needed (e.g. dry-season composite) — requires
       Earth Engine access; not done.
 - [ ] Document total Landsat scene count — requires Earth Engine access

@@ -10,6 +10,7 @@
   "aoi_asset": "projects/nodemailer-mailer/assets/jakarta_5kota",
   "processing_platform": "Google Earth Engine",
   "image_count": 94,
+  "image_count_evidence": "previously reported GEE summary; individual image IDs/dates not recovered or independently verified",
   "composite_method": "median",
   "selected_bands": [
     "trees",
@@ -30,6 +31,9 @@
     "Image count does not guarantee complete spatial coverage",
     "Median probabilities may not sum to one across classes"
   ],
-  "class_fraction_status": "BLOCKED: class fractions need scripts/02c_dynamic_world_fractions_gee.js (annual modal label) to be run in Earth Engine",
+  "class_fraction_status": "R3 PARTIAL; supplementary to M1-M4. Label export absent; scope deferral requires coordinator sign-off (DW-01)",
+  "class_fraction_denominator": "class-labelled area / whole clipped polygon area; *_fraction_valid separately uses valid-labelled area",
+  "class_fraction_missing_area": "dw_label_missing_fraction; unknown when entire label raster absent",
+  "export_manifest": "docs/remote_sensing_export_manifest.json",
   "grid_aggregate": "data/processed/remote_sensing_grid.csv"
 }

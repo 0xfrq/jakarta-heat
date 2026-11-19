@@ -25,7 +25,12 @@
   "lst_uncertainty_unit": "Kelvin",
   "no_data_value": -9999,
   "export_filename": "jakarta_2024_lst_ndvi_qa.tif",
-  "validation_status": "validated_locally_2026-11-19 (raster contents, nodata, ranges); scene_count still unknown",
+  "validation_status": "local arrays and aggregation verified; historical scene/task/AOI acquisition provenance BLOCKED (RS-01)",
+  "period_evidence": "declared by intended GEE recipe; individual acquisition dates not independently recovered",
+  "export_manifest": "docs/remote_sensing_export_manifest.json",
+  "estimand": "clipped-cell area-weighted mean over valid pixels of per-pixel clear-sky morning temporal-median land surface temperature",
+  "temporal_support": "annual clear-observation counts available; monthly/seasonal sampling not recoverable from median raster alone",
+  "claim_limits": "not annual air temperature, continuous exposure, individual dose, or a seasonally representative climate measurement",
   "nodata_semantics": {
     "NaN": "outside AOI",
     "-9999": "inside AOI, no clear LST observation in 2024 (78 px; lst_valid=0)"

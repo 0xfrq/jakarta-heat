@@ -2,12 +2,31 @@
 
 Project: Jakarta Heat Inequality Mapper · Study area: five mainland cities of DKI Jakarta
 (Kepulauan Seribu excluded) · Year: 2024 · Unit: 500 m master grid (2,765 cells)
-Branch: `agent/person1` (worktree `D:\jakarta-heat-agent1`) · Date: 2026-11-19
+Branch: `agent/person1` (worktree `D:\jakarta-heat-agent1`) · Updated: 2026-11-20
 
-**Lane status: DONE WITH DOCUMENTED LIMITATIONS** — R2 (LST + NDVI) is complete and verified
-on real 2024 data. R3 is partial: Dynamic World *probability* features are complete; Dynamic
+**Current status: numerical R2 delivery COMPLETE; RS-01 provenance BLOCKED; R3 PARTIAL.**
+R2 (LST + NDVI) arrays and aggregation are verified locally. 2024 is the intended
+recipe period; historical scene dates/task identity/AOI version have not been recovered.
+R3 is partial: Dynamic World *probability* features are complete; Dynamic
 World *class fractions* (`tree_fraction`, `grass_fraction`, `built_fraction`) are **BLOCKED** by
 Earth Engine access (script ready, columns present but empty, never zero-filled).
+
+**Remediation supersedes the historical details below:** see
+`handoff/REMEDIATION_AGENT1.md`, `docs/remote_sensing_deliverable_status.md`, and
+`docs/remote_sensing_reproduction.md`. The authoritative issue IDs are RS-01 and
+DW-01; legacy RS-03/RS-04 notes in the audit's RS evidence are consolidated in DW-01.
+The original canonical 30-column outputs remain the audited baseline. Proposed
+42-column revised outputs are in `data/processed/remote_sensing_remediated/`.
+They fix area precision and the future categorical denominator, without changing
+any LST/NDVI/probability/flag value. Categorical `*_fraction` now means whole clipped
+polygon area; `*_fraction_valid` separately means valid-labelled area. Actual
+categorical export is still absent; coordinator deferral/retention approval is pending.
+Forty tests, 49 validator checks and 140 independent pixel intersections pass;
+two isolated builds agree in numeric values and geometry. Actual local M1–M4
+scores/ranks on the fixed legacy 2,538 IDs are unchanged by the RS input revision.
+RS-02 threshold/reranking ownership remains Agent 3. No consolidated release or
+scientific gate is certified by this handoff. Sections 1–15 describe the 2026-11-19
+baseline unless explicitly updated above.
 
 ---
 

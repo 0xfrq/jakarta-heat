@@ -1,0 +1,13 @@
+model,n_fixed_legacy_ids,top_fraction,budget,retained,entered,left,jaccard,max_abs_score_change,changed_ranks,scope
+M1,2538,0.05,127,127,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M1,2538,0.1,254,254,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M1,2538,0.2,508,508,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M2,2538,0.05,127,127,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M2,2538,0.1,254,254,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M2,2538,0.2,508,508,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M3,2538,0.05,127,127,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M3,2538,0.1,254,254,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M3,2538,0.2,508,508,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M4,2538,0.05,127,127,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M4,2538,0.1,254,254,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results
+M4,2538,0.2,508,508,0,0,1.0,0.0,0,RS-input-only comparison; legacy demographics; not final corrected scientific results

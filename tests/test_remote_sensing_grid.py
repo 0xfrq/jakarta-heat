@@ -97,8 +97,14 @@ def test_dw_fractions_never_zero_filled_placeholders(rs, ):
     else:
         ok = rs["tree_fraction"].notna()
         s = rs.loc[ok, ["water_fraction", "tree_fraction", "grass_fraction", "flooded_vegetation_fraction",
-                        "crops_fraction", "shrub_fraction", "built_fraction", "bare_fraction"]].sum(axis=1)
-        assert np.allclose(s, 1, atol=0.02)
+                        "crops_fraction", "shrub_fraction", "built_fraction", "bare_fraction",
+                        "snow_ice_fraction"]].sum(axis=1)
+        assert np.allclose(s, rs.loc[ok, "dw_label_valid_fraction"], atol=2e-5)
+        assert np.allclose(rs["dw_label_valid_fraction"] + rs["dw_label_missing_fraction"], 1, atol=2e-5)
+        conditional = [c + "_valid" for c in ["water_fraction", "tree_fraction", "grass_fraction",
+                       "flooded_vegetation_fraction", "crops_fraction", "shrub_fraction", "built_fraction",
+                       "bare_fraction", "snow_ice_fraction"]]
+        assert np.allclose(rs.loc[ok, conditional].sum(axis=1), 1, atol=2e-5)
 
 
 def test_physical_consistency(rs):

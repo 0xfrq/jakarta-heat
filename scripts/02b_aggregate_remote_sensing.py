@@ -69,6 +69,7 @@ DW_FRACTION_COLS = {  # output column -> DW class name
     "tree_fraction": "trees", "grass_fraction": "grass", "built_fraction": "built",
     "water_fraction": "water", "flooded_vegetation_fraction": "flooded_vegetation",
     "crops_fraction": "crops", "shrub_fraction": "shrub_and_scrub", "bare_fraction": "bare",
+    "snow_ice_fraction": "snow_and_ice",
 }
 
 # QA thresholds (diagnostic flags only; no value is altered or clipped because of them).
@@ -138,6 +139,51 @@ def zonal(raster: Path, grid: gpd.GeoDataFrame, ops: list[str]) -> pd.DataFrame:
     return df
 
 
+def aggregate_dw_labels(path: Path, grid: gpd.GeoDataFrame) -> pd.DataFrame:
+    """Class area / clipped polygon area, including an explicit unknown-area share.
+
+    exactextract's ``frac`` is conditional on valid labels. Multiply it by the
+    valid-label area fraction before reporting whole-cell fractions. Conditional
+    fractions are separately named ``*_valid``. With no supported labels, class
+    fractions remain unknown, while missing-area fraction is 1.
+    """
+    with rasterio.open(path) as src:
+        if src.crs is None or src.crs.to_string() != EXPECTED_CRS:
+            raise ValueError("DW labels must use EPSG:32748")
+        if src.count != 1 or src.nodata != 255 or src.dtypes != ("uint8",):
+            raise ValueError("DW labels require one uint8 band and nodata=255")
+        if src.res != (10.0, 10.0) or src.transform.b or src.transform.d:
+            raise ValueError("DW labels require an unrotated 10 m grid")
+        pixel_area = abs(src.res[0] * src.res[1])
+    area = grid.set_index(KEY).geometry.area
+    if not (area > 0).all():
+        raise ValueError("DW fractions require positive polygon areas")
+    lab = exact_extract(str(path), grid[[KEY, "geometry"]], ["unique", "frac", "count"],
+                        include_cols=[KEY], output="pandas").set_index(KEY)
+    ucol = next(c for c in lab if c.endswith("unique"))
+    fcol = next(c for c in lab if c.endswith("frac"))
+    ccol = next(c for c in lab if c.endswith("count"))
+    support = lab[ccol] * pixel_area / area
+    if (support > 1 + FRACTION_TOL).any():
+        raise ValueError("DW label support exceeds polygon area")
+    support = support.clip(0, 1)
+    result = pd.DataFrame(index=lab.index)
+    for col in DW_FRACTION_COLS:
+        result[col + "_valid"] = 0.0
+    by_class = {cls: col for col, cls in DW_FRACTION_COLS.items()}
+    for gid, uniq, frac in zip(lab.index, lab[ucol], lab[fcol]):
+        for value, fraction in zip(np.atleast_1d(uniq), np.atleast_1d(frac)):
+            if value not in DW_CLASSES:
+                raise ValueError(f"Unexpected DW label {value} in {gid}")
+            result.loc[gid, by_class[DW_CLASSES[int(value)]] + "_valid"] += float(fraction)
+    result.loc[support == 0, :] = np.nan
+    for col in DW_FRACTION_COLS:
+        result[col] = result[col + "_valid"] * support
+    result["dw_label_valid_fraction"] = support
+    result["dw_label_missing_fraction"] = 1 - support
+    return result
+
+
 def aggregate(grid: gpd.GeoDataFrame, pixel_area_l8: float, pixel_area_dw: float) -> tuple[pd.DataFrame, dict]:
     notes: dict = {}
     area = grid.set_index(KEY)["geom_area_m2"]
@@ -167,30 +213,15 @@ def aggregate(grid: gpd.GeoDataFrame, pixel_area_l8: float, pixel_area_dw: float
 
     # ---------------- Dynamic World: class fractions from the annual modal label (optional)
     if DW_LABEL_TIF.exists():
-        with rasterio.open(DW_LABEL_TIF) as src:
-            if src.crs.to_string() != EXPECTED_CRS:
-                raise SystemExit(f"{DW_LABEL_TIF.name}: CRS {src.crs} != {EXPECTED_CRS}")
-            lab_px = abs(src.res[0] * src.res[1])
-        lab = exact_extract(str(DW_LABEL_TIF), grid[[KEY, "geometry"]], ["unique", "frac", "count"],
-                            include_cols=[KEY], output="pandas")
-        lab = lab.set_index(KEY)
-        ucol = [c for c in lab.columns if c.endswith("unique")][0]
-        fcol = [c for c in lab.columns if c.endswith("frac")][0]
-        ccol = [c for c in lab.columns if c.endswith("_count") or c == "count"][0]
-        fr = pd.DataFrame(0.0, index=lab.index, columns=list(DW_CLASSES.values()))
-        for gid, uniq, frac in zip(lab.index, lab[ucol], lab[fcol]):
-            for u, f in zip(np.atleast_1d(uniq), np.atleast_1d(frac)):
-                fr.loc[gid, DW_CLASSES[int(u)]] += float(f)
-        has = lab[ccol] > 0
-        fr[~has] = np.nan  # no labelled pixel at all -> unknown, never 0
-        for col, cls in DW_FRACTION_COLS.items():
-            out[col] = fr[cls]
-        out["dw_label_valid_fraction"] = lab[ccol] * lab_px / area
+        labels = aggregate_dw_labels(DW_LABEL_TIF, grid)
+        out = out.join(labels)
         notes["dw_fraction_status"] = "computed from annual modal Dynamic World label"
     else:
         for col in DW_FRACTION_COLS:
             out[col] = np.nan
+            out[col + "_valid"] = np.nan
         out["dw_label_valid_fraction"] = np.nan
+        out["dw_label_missing_fraction"] = np.nan
         notes["dw_fraction_status"] = (
             "BLOCKED: jakarta_2024_dw_label_mode.tif not available; run "
             "scripts/02c_dynamic_world_fractions_gee.js in Earth Engine and re-run this script"
@@ -211,6 +242,7 @@ def aggregate(grid: gpd.GeoDataFrame, pixel_area_l8: float, pixel_area_dw: float
 
     # ---------------- QA flags (diagnostics only)
     out["qa_area_km2"] = area / 1e6
+    out["qa_area_m2"] = area
     flags = pd.DataFrame(index=out.index)
     flags["no_lst"] = out["lst_mean_c"].isna()
     flags["partial_lst"] = out["lst_valid_fraction"] < MIN_VALID_FRACTION
@@ -233,13 +265,23 @@ COLUMN_ORDER = [
     "water_fraction", "flooded_vegetation_fraction", "crops_fraction", "shrub_fraction",
     "bare_fraction", "dw_label_valid_fraction",
     "qa_area_km2", "rs_qa_flags", "rs_qa_ok", "lst_c", "ndvi",
+    "qa_area_m2", "snow_ice_fraction", "dw_label_missing_fraction",
+    *[col + "_valid" for col in DW_FRACTION_COLS],
 ]
 
 ROUND = {
     "lst_mean_c": 3, "lst_std_c": 3, "lst_min_c": 3, "lst_max_c": 3, "lst_c": 3,
     "ndvi_mean": 4, "ndvi_std": 4, "ndvi": 4, "lst_unc_mean_k": 3,
-    "lst_observation_count": 2, "lst_observation_min": 0, "qa_area_km2": 6,
+    "lst_observation_count": 2, "lst_observation_min": 0,
 }
+
+
+def write_grid_csv(out: pd.DataFrame, path: Path) -> None:
+    """Keep legacy measurement precision, but do not round positive sliver areas to 0."""
+    serial = out.copy()
+    for col in ("qa_area_km2", "qa_area_m2"):
+        serial[col] = serial[col].map(lambda x: format(x, ".15g"))
+    serial.to_csv(path, index=False, float_format="%.6g", na_rep="")
 
 
 def summary(df: pd.DataFrame) -> dict:
@@ -264,6 +306,7 @@ def summary(df: pd.DataFrame) -> dict:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--no-gpkg", action="store_true", help="skip the GeoPackage QA layer")
+    ap.add_argument("--output-dir", type=Path, default=PROC, help="isolated output directory (default: canonical processed folder)")
     args = ap.parse_args(argv)
 
     landsat_info = check_raster(LANDSAT_TIF, LANDSAT_BANDS)
@@ -280,10 +323,14 @@ def main(argv=None) -> int:
     if len(out) != len(grid) or out[KEY].tolist() != grid[KEY].tolist():
         raise SystemExit("output rows do not match the master grid one-to-one")
 
-    out.to_csv(OUT_CSV, index=False, float_format="%.6g", na_rep="")
+    args.output_dir.mkdir(parents=True, exist_ok=True)
+    out_csv = args.output_dir / OUT_CSV.name
+    out_gpkg = args.output_dir / OUT_GPKG.name
+    out_meta = args.output_dir / OUT_META.name
+    write_grid_csv(out, out_csv)
     if not args.no_gpkg:
         g = grid[[KEY, "kota", "geometry"]].merge(out, on=KEY, how="left", validate="one_to_one")
-        g.to_file(OUT_GPKG, layer="remote_sensing_grid", driver="GPKG")
+        g.to_file(out_gpkg, layer="remote_sensing_grid", driver="GPKG")
 
     meta = {
         "dataset": "remote_sensing_grid",
@@ -297,18 +344,27 @@ def main(argv=None) -> int:
             "dynamic_world_label": "per-pixel mode of per-image Dynamic World label (only if label raster present)",
         },
         "spatial_reducer": "exact pixel-coverage-weighted statistics per clipped 500 m grid polygon (exactextract); nodata ignored",
-        "grid": {"path": "data/processed/grid_500m_jakarta.gpkg", "crs": EXPECTED_CRS, "n_cells": int(len(grid))},
+        "grid": {"path": "data/processed/grid_500m_jakarta.gpkg", "crs": EXPECTED_CRS, "n_cells": int(len(grid)),
+                 "sha256": sha256(GRID_GPKG), "master_csv_sha256": sha256(GRID_CSV)},
         "inputs": {"landsat": landsat_info, "dynamic_world_probabilities": dw_info,
-                   "dynamic_world_label": str(DW_LABEL_TIF.relative_to(ROOT)).replace("\\", "/") if DW_LABEL_TIF.exists() else None},
+                   "dynamic_world_label": check_raster(DW_LABEL_TIF, ("label_mode",)) if DW_LABEL_TIF.exists() else None},
+        "implementation_sha256": sha256(Path(__file__)),
+        "dw_fraction_denominators": {
+            "*_fraction": "class-labelled area / whole clipped polygon area; NaN with no valid label",
+            "*_fraction_valid": "class-labelled area / valid-labelled area; NaN with no valid label",
+            "dw_label_valid_fraction": "valid-labelled area / whole clipped polygon area",
+            "dw_label_missing_fraction": "1 - dw_label_valid_fraction; NaN if entire label export absent",
+            "sum_classes": "all nine classes, including snow_ice_fraction, sum to dw_label_valid_fraction",
+        },
         "qa_thresholds": {"min_valid_fraction": MIN_VALID_FRACTION, "low_obs": LOW_OBS,
                           "high_unc_k": HIGH_UNC_K, "edge_area_km2": EDGE_AREA_KM2},
         "missing_value_semantics": "empty cell = not computable from valid pixels; never imputed, never zero-filled",
         "notes": notes,
         "summary": summary(out),
     }
-    OUT_META.write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_meta.write_text(json.dumps(meta, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(meta["summary"], indent=1)[:4000])
-    print(f"wrote {OUT_CSV.relative_to(ROOT)} ({len(out)} rows)")
+    print(f"wrote {out_csv} ({len(out)} rows)")
     return 0
 
 

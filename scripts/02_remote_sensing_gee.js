@@ -9,9 +9,11 @@
  * lst_valid), land-cover probabilities (2 bands: trees_prob, built_prob).
  * Each export is a server-side Google Drive task; run in Tasks panel.
  *
- * AUDIT NOTE (Agent 1, 2026-11-19): this file is the version that produced
+ * PROVENANCE NOTE (Agent 1 remediation, 2026-11-20): this is the intended recipe for
  * data/processed/remote_sensing/jakarta_2024_lst_ndvi_qa.tif and
- * jakarta_2024_trees_built_probability.tif. Scale factors were checked against the USGS
+ * jakarta_2024_trees_built_probability.tif. Historical scene/task/AOI records have not
+ * been recovered; this code is NOT proof of actual acquisition dates or task identity.
+ * Scale factors were checked against the USGS
  * Collection 2 Level-2 product guide (ST_B10*0.00341802+149.0 K; SR*2.75e-05-0.2;
  * ST_QA*0.01 K). The exported GeoTIFFs encode "outside AOI" as NaN and
  * "inside AOI but no clear LST observation" as -9999 (78 pixels). Each band of the

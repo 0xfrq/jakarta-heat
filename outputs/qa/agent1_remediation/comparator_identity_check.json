@@ -1,0 +1,46 @@
+{
+  "baseline_sha256": "f46d0db14f2f667a533eff7960bb870b4b2676709af43e70d08e670a075958dd",
+  "bands": [
+    {
+      "band": "lst_c",
+      "valid_mask_changed_pixels": 0,
+      "outside_nan_changed_pixels": 0,
+      "shared_valid_pixels": 718356,
+      "max_abs_difference": 0.0,
+      "mean_difference": 0.0
+    },
+    {
+      "band": "ndvi",
+      "valid_mask_changed_pixels": 0,
+      "outside_nan_changed_pixels": 0,
+      "shared_valid_pixels": 718434,
+      "max_abs_difference": 0.0,
+      "mean_difference": 0.0
+    },
+    {
+      "band": "lst_unc_k",
+      "valid_mask_changed_pixels": 0,
+      "outside_nan_changed_pixels": 0,
+      "shared_valid_pixels": 718356,
+      "max_abs_difference": 0.0,
+      "mean_difference": 0.0
+    },
+    {
+      "band": "lst_obs",
+      "valid_mask_changed_pixels": 0,
+      "outside_nan_changed_pixels": 0,
+      "shared_valid_pixels": 718356,
+      "max_abs_difference": 0.0,
+      "mean_difference": 0.0
+    },
+    {
+      "band": "lst_valid",
+      "valid_mask_changed_pixels": 0,
+      "outside_nan_changed_pixels": 0,
+      "shared_valid_pixels": 718434,
+      "max_abs_difference": 0.0,
+      "mean_difference": 0.0
+    }
+  ],
+  "scope": "comparator identity check on frozen real raster; NOT a new GEE replay"
+}
