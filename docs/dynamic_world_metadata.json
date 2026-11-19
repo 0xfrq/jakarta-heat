@@ -1,0 +1,34 @@
+
+{
+  "project": "Jakarta Heat Inequality Mapper",
+  "job": "Job 3 - Dynamic World Land Cover Analysis",
+  "data_source": "Google Dynamic World V1",
+  "dataset_id": "GOOGLE/DYNAMICWORLD/V1",
+  "analysis_year": 2024,
+  "start_date": "2024-01-01",
+  "end_date_exclusive": "2025-01-01",
+  "study_area": "Five Administrative Cities of Jakarta",
+  "aoi_asset": "projects/nodemailer-mailer/assets/jakarta_5kota",
+  "processing_platform": "Google Earth Engine",
+  "image_count": 94,
+  "composite_method": "median",
+  "selected_bands": [
+    "trees",
+    "built"
+  ],
+  "output_bands": [
+    "trees_prob",
+    "built_prob"
+  ],
+  "values": "Median per-observation class probabilities",
+  "output_crs": "EPSG:32748",
+  "output_resolution_m": 10,
+  "no_data_value": -9999,
+  "output_filename": "jakarta_2024_trees_built_probability.tif",
+  "validation_status": "pending_raster_inspection",
+  "limitations": [
+    "Class probabilities are not equal to land cover fractions",
+    "Image count does not guarantee complete spatial coverage",
+    "Median probabilities may not sum to one across classes"
+  ]
+}
