@@ -1,0 +1,14 @@
+{
+  "source": "dummy",
+  "built_at": "2026-11-19T11:07:35Z",
+  "n_grid": 2765,
+  "n_valid": 2653,
+  "valid_share": 0.959493670886076,
+  "unreachable_policy": "exclude",
+  "notes": [
+    "population_accessibility: 18 grid master tidak punya baris di berkas ini (jadi kosong)."
+  ],
+  "python": "3.11.9",
+  "pandas": "3.0.5",
+  "numpy": "2.4.6"
+}

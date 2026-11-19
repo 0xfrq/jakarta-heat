@@ -1,0 +1,35 @@
+{
+  "source": "dummy",
+  "built_at": "2026-11-19T11:07:36Z",
+  "n_grid": 2765,
+  "n_valid": 2653,
+  "top_frac": 0.1,
+  "n_top": 266,
+  "models": {
+    "M1": {
+      "lst": 1.0
+    },
+    "M2": {
+      "lst": 0.6,
+      "ndvi_low": 0.4
+    },
+    "M3": {
+      "lst": 0.4,
+      "ndvi_low": 0.3,
+      "pop": 0.3
+    },
+    "M4": {
+      "lst": 0.3,
+      "ndvi_low": 0.2,
+      "vuln": 0.25,
+      "park_deficit": 0.25
+    }
+  },
+  "norm_clip": [
+    0.05,
+    0.95
+  ],
+  "park_cap_m": 1000.0,
+  "unreachable_policy": "exclude",
+  "rank_rule": "rank 1 = prioritas tertinggi; seri dipecah oleh skor tanpa pemotongan lalu grid_id"
+}
