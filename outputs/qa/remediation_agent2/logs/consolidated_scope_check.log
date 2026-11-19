@@ -1,0 +1,1 @@
+FAILED AS EXPECTED: IN-01 candidate incomplete: tests/test_remote_sensing_grid.py absent. Consolidated verification NOT TESTED. (2026-11-20, run_reproduction.ps1 -Scope Consolidated, exit before any stage)

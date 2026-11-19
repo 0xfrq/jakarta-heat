@@ -77,3 +77,26 @@ python -m unittest discover -s tests -v
 Pengujian menggunakan data sintetis dan respons jaringan tiruan; tidak mengunduh
 OSM atau menimpa hasil analisis proyek. Referensi API:
 [dokumentasi OSMnx](https://osmnx.readthedocs.io/en/latest/user-reference.html).
+
+## Handover Agent 2 dan QA integrasi
+
+Mulai dari [ringkasan Indonesia](handoff/AGENT2_README_ID.md),
+[handoff lengkap](handoff/AGENT2_HANDOFF.md), dan
+[register keputusan ilmiah](handoff/AGENT2_DECISION_REGISTER.md).
+Tabel `data/processed/final_model_features.csv` mempertahankan seluruh 2.765 grid;
+kelayakan baseline Agent 3 dicatat terpisah (2.538 grid).
+
+Status remediasi Agent 2 (audit independen 20 November 2026) ada di
+[ledger remediasi](handoff/REMEDIATION_AGENT2.md); status lama "DONE WITH
+DOCUMENTED LIMITATIONS" hanya berlaku untuk handover engineering sebelum audit.
+Jalur reproduksi offline Agent 2 dari input beku terdokumentasi di
+[docs/REPRODUCE.md](docs/REPRODUCE.md) (`scripts/run_reproduction.ps1 -Scope Agent2`).
+Ini bukan reproduksi gabungan A1/A2/A3: verifikasi integrasi konsolidasi
+**belum diuji** (IN-01). Output terkoreksi ditulis sebagai file `*_corrected*`
+terpisah; file lama tetap dipertahankan.
+
+OSM yang tersedia bertanggal 2026, sedangkan suhu dan demografi merujuk 2024
+(proksi periode campuran). Akses publik/pintu masuk taman belum diverifikasi;
+pembatasan node/konektor diuji sebagai skenario konservatif terpisah. Rute
+kosong tetap tidak diketahui, bukan jarak nol. Grid tanpa dukungan piksel sumber
+bernilai null, bukan nol. Hasil ilmiah dan bobot model tetap provisional.

@@ -1,0 +1,53 @@
+{
+  "utc": "2026-11-19T17:17:30.348639+00:00",
+  "pytest": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "stage_checks": [
+    {
+      "stage": "checks_geography",
+      "checks": 22,
+      "failures": 0
+    },
+    {
+      "stage": "checks_integration",
+      "checks": 40,
+      "failures": 0
+    },
+    {
+      "stage": "checks_network",
+      "checks": 29,
+      "failures": 0
+    },
+    {
+      "stage": "checks_parks",
+      "checks": 8,
+      "failures": 0
+    },
+    {
+      "stage": "checks_population",
+      "checks": 19,
+      "failures": 0
+    },
+    {
+      "stage": "checks_raster",
+      "checks": 20,
+      "failures": 0
+    },
+    {
+      "stage": "checks_visual",
+      "checks": 6,
+      "failures": 0
+    }
+  ],
+  "pytest_terminal_summary": "38 passed, 7 subtests passed; JUnit contains 45 result records",
+  "all_snapshot_hashes_preserved": true,
+  "original_person2_csvs_unchanged": true,
+  "git_diff_check": "PASS",
+  "visual_review": "Actual PNGs inspected via image viewer; standalone QGIS project verified; no interactive QGIS session",
+  "downstream": "Frozen Agent3 loader,cleaning,M1-M4 scores/ranks,city summaries and GIS geometries reproduced; official baseline unchanged",
+  "status": "DONE WITH DOCUMENTED LIMITATIONS"
+}

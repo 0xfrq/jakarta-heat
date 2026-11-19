@@ -1,0 +1,13 @@
+scenario,original_common_n,known,within_500,within_1000,saturated_at_1000,unknown
+original_masks_nulls,2538,2538,537,1390,1148,0
+buffered_hybrid_corrected,2538,2538,537,1390,1148,0
+buffered_fractional_corrected,2538,2538,537,1390,1148,0
+coverage_ge_0,2538,2538,537,1390,1148,0
+coverage_ge_0.1,2538,2538,537,1390,1148,0
+coverage_ge_0.25,2538,2538,537,1390,1148,0
+coverage_ge_0.5,2538,2538,537,1390,1148,0
+density_objective_exploratory,2538,2538,537,1390,1148,0
+positive_tags_destination_coverage_stress,2538,2523,8,41,2482,15
+explicit_nodes_conservative,2538,2357,449,1202,1155,181
+full_jakarta_extent,2538,2538,537,1390,1148,0
+explicit_nodes_and_connectors_conservative,2538,2357,449,1202,1155,181

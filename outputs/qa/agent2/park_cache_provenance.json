@@ -1,0 +1,18 @@
+{
+  "cache": "D:\\jakarta-heat\\cache\\6e077f2b7acf776f3021034c57eb512f76e96175.json",
+  "cache_sha256": "16c5f21ef00812f6bd44c2d42d25c81c650f67f172c60379f517e9ea874e8d5a",
+  "snapshot": {
+    "timestamp_osm_base": "2026-11-19T11:02:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "raw_polygon_count": 1017,
+  "baseline": 1015,
+  "excluded": 2,
+  "excluded_access_tags": {
+    "private": 1,
+    "permit": 1
+  },
+  "parks_crossing_city_borders": 3,
+  "parks_extend_outside_study": 13,
+  "maximum_geometry_difference_m2": 1.5359439635800366e-07
+}

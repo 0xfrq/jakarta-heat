@@ -1,0 +1,153 @@
+[
+  {
+    "check": "geometry: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "geometry: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "full graph CRS",
+    "pass": true,
+    "detail": {
+      "created_date": "2026-11-19 19:54:27",
+      "created_with": "OSMnx 2.2.0",
+      "crs": "EPSG:32748",
+      "simplified": "True",
+      "walking_pipeline_version": "2"
+    }
+  },
+  {
+    "check": "full graph filter version2",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_barat: route reproduces missing set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_barat: route reproduces known lengths",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "jakarta_barat: snap reproduces lengths",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_barat: every edge from common full graph",
+    "pass": true,
+    "detail": 0
+  },
+  {
+    "check": "jakarta_pusat: route reproduces missing set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_pusat: route reproduces known lengths",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "jakarta_pusat: snap reproduces lengths",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_pusat: every edge from common full graph",
+    "pass": true,
+    "detail": 0
+  },
+  {
+    "check": "jakarta_selatan: route reproduces missing set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_selatan: route reproduces known lengths",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "jakarta_selatan: snap reproduces lengths",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_selatan: every edge from common full graph",
+    "pass": true,
+    "detail": 0
+  },
+  {
+    "check": "jakarta_timur: route reproduces missing set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_timur: route reproduces known lengths",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "jakarta_timur: snap reproduces lengths",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_timur: every edge from common full graph",
+    "pass": true,
+    "detail": 0
+  },
+  {
+    "check": "jakarta_utara: route reproduces missing set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_utara: route reproduces known lengths",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "jakarta_utara: snap reproduces lengths",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_utara: every edge from common full graph",
+    "pass": true,
+    "detail": 0
+  },
+  {
+    "check": "route no shorter than Euclidean rep",
+    "pass": true,
+    "detail": null
+  }
+]

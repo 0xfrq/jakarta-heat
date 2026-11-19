@@ -1,0 +1,248 @@
+element,tag,value,count
+node,access,permissive,14819
+node,barrier,lift_gate,9641
+node,access:conditional,no @ (22:00-06:00),26
+node,access:conditional,no @ (23:00-05:00),45
+node,barrier,swing_gate,6241
+node,access,destination,4298
+node,access,no,4039
+node,access,private,8683
+node,access:conditional,no @ (22:00-05:00),90
+node,foot,yes,588
+node,access,yes,690
+node,barrier,gate,21398
+node,access:conditional,no @ 22:00-10:00,1
+node,access:conditional,no @ (Mo-Fr 06:00-10:00),1
+node,access:conditional,no @ (06:00-22:00),2
+node,access:conditional,no @ (00:00-05:00),50
+node,barrier,block,213
+node,foot,no,88
+node,access:conditional,no @ (22:30-05:30),8
+node,barrier,jersey_barrier,182
+node,access:conditional,no @ (00:00 - 05:30),2
+node,access:conditional,no @ (22:30-05:00),3
+node,barrier,sliding_gate,447
+node,access,customers,117
+node,access:conditional,no @ (19:30-05:00),2
+node,barrier,bollard,285
+node,access:conditional,no @ (23:00-05:30),7
+node,access:conditional,no @ (00:00-04:30),6
+node,access:conditional,no @ (22:00-05:30),12
+node,barrier,chain,340
+node,barrier,height_restrictor,537
+node,barrier,yes,14
+node,access:conditional,no @ 00:00-05:00,3
+node,barrier,fence,8
+node,barrier,entrance,3
+node,access:conditional,no @ (18:00-05:00),2
+node,barrier,gate;lift_gate,5
+node,access:conditional,no @ (21:00-06:00),21
+node,access:conditional,no @ (00:00-05:30),12
+node,access:conditional,no @ (24:00-04:30),1
+node,access:conditional,no @ (24:00-05:30),5
+node,access:conditional,yes @ (05:00-22:00),3
+node,access:conditional,private @ (23:00-6:00),2
+node,access:conditional,no @ (21:00-05:00),8
+node,access:conditional,no @ (00:00-04:00),6
+node,access,permit,10
+node,barrier,slide_gate,5
+node,access:conditional,no @ (22:00-05:10),1
+node,barrier,slide gate,6
+node,barrier,border_control,3
+node,access:conditional,no @ (06:00-19:00),1
+node,foot,permissive,5
+node,access:conditional,no @ 23:00-05:00,8
+node,access:conditional,no @ (05:00-00:00),1
+node,access:conditional,no @ (19:00-9:00),1
+node,access:conditional,no @ (21:00-04:00),1
+node,access:conditional,"no @ 22:00-24:00,00:00-05:30",1
+node,access:conditional,no @ (18:00-06:00),9
+node,access:conditional,no @ (22:30-06:30),1
+node,access:conditional,yes @ (Mo-Fr 05:30-23:00; Sa 05:30-17:00; Su 00:00-24:00),2
+node,access:conditional,no @ (18:00-05:30),1
+node,access:conditional,no @ (23:00-06:00),6
+node,access:conditional,yes @ (06:00-22:00),10
+node,access:conditional,no @ (Mo-Fr 22:00-05:00; Sa 19:00-10:00; Su 22:00-05:00),1
+node,access:conditional,"no @ (22:00-05:00, 09:00-16:00)",2
+node,access:conditional,no @ (20:30-05:00),5
+node,access:conditional,no @ (06:30-09:00),2
+node,access:conditional,no @ (22.00-06.00),4
+node,access:conditional,no @ (20:00-06:00),4
+node,access:conditional,no @ (22:00-04:30),5
+node,access:conditional,no @ (16:00-20:00),1
+node,access:conditional,no @ (Sa-Su 07:00-19:00),1
+node,access:conditional,no @ (24:00-05:00),19
+node,access:conditional,no @ (23:00 - 05:00),1
+node,access:conditional,no @ (23:00-04:00),3
+node,access:conditional,yes @ (05:30-22:00),1
+node,access:conditional,yes @ (Mo-Sa 06:00-20:00;Su),1
+node,access:conditional,no @ (23:30-05:00),10
+node,access:conditional,no @ (00:00-06:00),7
+node,access:conditional,no @ (00.00-05.00),2
+node,foot:conditional,yes @ (05:30-16:00),1
+node,access:conditional,no @ (21.00-05.00),2
+node,access:conditional,no @ 22:00-5:00,1
+node,barrier,bar,1
+node,access:conditional,yes @ (06:00-22:30),1
+node,barrier,wall,4
+node,access:conditional,no @ (22:30-06:00),3
+node,foot:conditional,yes @ (06:00-22:00),1
+node,access:conditional,"yes @ (05:30-10:00,15:00-21:00)",1
+node,foot,destination,3
+node,access:conditional,no @ (19:00-05:00),1
+node,access:conditional,permissive @ (21:00-06:00),1
+node,access:conditional,no @ (21:30-06:00),1
+node,access:conditional,no @ (Mo-Su 24:00-06:00),1
+node,access:conditional,no @ (Mo-Sa 06:00-16:00),1
+node,access:conditional,no @ 22:00-07:00,1
+node,access:conditional,no @ (23:00-04:30),2
+node,access:conditional,yes @ (06:00-23:00),4
+node,access:conditional,yes @ (04:30-23:00),1
+node,access:conditional,no @ (20:00 - 04:30),1
+node,access:conditional,"yes @ (Su,PH 06:00-10:30)",1
+node,access:conditional,yes @ (05:00-23:00),1
+node,barrier,lift_gate;gate,6
+node,access:conditional,no @ (00:30-05:30),1
+node,access:conditional,"yes @ (Mo-Fr 06:00-13:00, Sa, Su, PH Off)",1
+node,access:conditional,"no @ (00:00-06:00,22:00-24:00)",1
+node,barrier,swing_gate;height_restrictor,1
+node,access:conditional,"no @ (09.00-16.00,21.00-06.00)",1
+node,access:conditional,no @ (19:00-06:00),1
+node,access:conditional,no @ (18:30-05:30),1
+node,access:conditional,no @ (00:00-06:00; 22:00-24:00),1
+node,service,driveway,1
+node,access:conditional,yes @ (05:00-21:00),2
+node,foot:conditional,yes @ (04:00-22:00),2
+node,access:conditional,"no @ (10:00-16:00,20:00-06:00)",1
+node,foot:conditional,"no @ (10:00-16:00,22:00-06:00)",1
+node,access:conditional,"no @ (19:00-06:00, 09:00-16:00)",1
+node,barrier,gate;chain,1
+node,access:conditional,yes @ (05:45-21:00),1
+node,access:conditional,"no @ (09:00-12:00,17:00-05.30; PH)",1
+node,access:conditional,no @ (23:00 - 05:30),2
+node,access:conditional,no @ (24:00-04:00),2
+node,access:conditional,no @ (Mo-Su 22:00-06:00),2
+node,access:conditional,no @ (Mo-Su 24.00-06.00),1
+node,access:conditional,yes @ (Sa-Su 06:30-22:30),1
+node,access:conditional,yes @ (05:30-24:00),1
+node,access:conditional,no @ (21:00-07:00),1
+node,access:conditional,no @ (16:00-07:00),1
+node,access:conditional,"no @ (10:00-16:00, 18:00-05:30)",1
+node,access:conditional,yes @ (04:00 - 18:00),1
+node,access:conditional,no @ 22:00-05:00,3
+node,access:conditional,no @ (20.00-06.00),1
+node,access:conditional,no @ (21:00-05:30),1
+node,access:conditional,"yes @ (Mo-Fr 10:00-1600,20:00-6:00;Sa,Su,PH)",1
+node,access:conditional,no @ (21:00-24:00),1
+node,access:conditional,no @ (20:00-04:00),1
+node,access:conditional,no @ (Mo-Su 22:00-05:00),1
+node,access:conditional,"no @ (Su,Sa,PH on)",1
+node,barrier,motorcycle_barrier,1
+node,barrier,chain_gate,1
+node,access:conditional,no @ (21.00-06.00),1
+node,barrier,height_barrier,1
+node,access:conditional,no @ (19.30-05.30),1
+node,barrier,kerb,15
+node,access:conditional,no @ (21:00 - 06:00),2
+node,service,siding_gate,1
+node,access:conditional,yes @ (05:00-24:00),3
+node,access:conditional,no @ (23:30-05:30),2
+node,access:conditional,"yes @ (05:00-10:00,16:00-22:00)",1
+node,access:conditional,no @ (23:45-05:00),1
+node,access:conditional,"no @ (00:00-06:00,22:30-24:00)",1
+node,access:conditional,no @ (24.00-05.00),1
+node,access:conditional,no @ (22.00-05.30),1
+node,access:conditional,no @ (01:00-04:30),1
+node,access:conditional,yes @ 05:00-23:00,1
+node,access:conditional,yes @ (06:30-21:00),1
+node,access:conditional,yes @ (07:00-21:00),1
+node,access:conditional,no @ (Mo-Su 18:00-10:00),2
+node,access:conditional,no @ (20:00-05:30),3
+node,access:conditional,"no @ (00:00-05:00,21:00-24:00)",1
+node,access,foot,1
+node,access:conditional,no @ (Sa-Su 00:00-5:00),1
+node,access:conditional,no @ (Sa-Su),1
+node,access:conditional,no @ (22:00-6:00),1
+node,access:conditional,no @ (00:00 - 05:00),1
+node,access:conditional,private @ (21:30-05:00),1
+node,access:conditional,no @ (22:00-08:00),1
+node,barrier,turnstile,5
+node,access:conditional,destination @ (23:00-05:00),1
+node,barrier,stile,1
+node,foot,customers,1
+node,access:conditional,no @ (20:00-05:00),4
+node,access:conditional,"yes @ (06:00-10:00,16:00-19:00)",2
+node,access:conditional,no @ (22.00-05.00),2
+node,barrier,planter,2
+node,access:conditional,yes @ (06:00-18:00),1
+node,access:conditional,yes @ (05:30-23:00),1
+node,barrier,rope,2
+node,barrier,cycle_barrier,2
+node,access:conditional,"no @ (18:00-06:00, Su, PH)",1
+node,foot,private,1
+node,access:conditional,yes @ (04:30-21:00),1
+node,access:conditional,no @ (Mo-Sa 20:00-06:00; Su),1
+node,access:conditional,no @ (23:00-08:00),1
+node,access:conditional,"yes @ (Mo-Fr 08:00-22:00, Sa-Su 05:00-22:00)",1
+node,access:conditional,no @ 00:00-04:00,1
+node,access:conditional,yes @ (06:00-21:00),1
+node,access:conditional,no @ 24.00 - 05.00,1
+node,barrier,toll_booth,2
+node,access:conditional,no @ 23:00-06:00,1
+node,access:conditional,no @ (22:00-04:00),2
+node,access:conditional,no @ (21:00-04:30),2
+node,access:conditional,no @ (22:30-04:30),1
+node,access:conditional,no @ (17:00-05:00),2
+node,access:conditional,yes @ (06:00-09:00;16:00-19:00),1
+node,access:conditional,no @ (24:00-09:00),1
+node,access:conditional,"no @ (Mo-Fr 17:30-05:00; Sa-Su, Ph)",1
+node,access:conditional,private @ (23:00-06:00),1
+node,access:conditional,no @ 00:00-06:00,1
+node,access:conditional,no @ 17:00-05:00,1
+node,access:conditional,yes @ (22:00 - 06:00),1
+node,access:conditional,no @ 00.00-05.00,1
+node,access:conditional,no @ 22:00 - 5:00,2
+node,access:conditional,no @ (16:00-05:00),1
+node,access:conditional,no @ (22:00-07:00),1
+node,access:conditional,no @ (19:00-07:00),1
+node,access:conditional,no @ (Mo-Su 16:00-08:00),1
+node,access:conditional,no @ (23:59-04:00),1
+way,access,destination,10686
+way,access,permissive,3052
+way,access,yes,541
+way,foot,yes,2175
+way,access,private,127
+way,access:conditional,no @ (06:00-16:00),2
+way,service,driveway,931
+way,access:conditional,no @ (22:00-06:00),3
+way,access:conditional,yes @ (06:00-22:00),3
+way,foot,destination,19
+way,access,no,87
+way,access:conditional,no @ (22:00-05:00),1
+way,service,alley,159
+way,foot,designated,59
+way,access:conditional,no @ (Mo-Fr 22:00-05:00; Sa 19:00-10:00; Su 22:00-05:00),1
+way,service,parking_aisle,892
+way,service,drive-through,43
+way,service,Transjakarta,7
+way,access,customers,73
+way,foot,permissive,12
+way,access:conditional,no @ (24:00-05:00),4
+way,access,permit,4
+way,access:conditional,"no @ (06:30-10:00,16:00-19:00; PH off)",2
+way,service,emergency_access,2
+way,access:conditional,no @ (00:00-05:00),1
+way,access:conditional,no @ (11:00-12:00),1
+way,access:conditional,yes @ (05:30-22:00),1
+way,access:conditional,no @ (19:00-10:00),1
+way,access,service,1
+way,access:conditional,yes @ (Mo-Sa 08:00-20:00),1
+way,access:conditional,no @ (23:00-05:30),1
+way,access:conditional,no @ (24:00-05:30),1
+way,access:conditional,no @ (22:30-05:30),1
+way,access,unknown,1
+way,barrier,fence,1
+way,barrier,yes,3
+way,service,slipway,2
+way,access:conditional,no @ (22:30-06:00),1
+way,access,emergency,2

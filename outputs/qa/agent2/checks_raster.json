@@ -1,0 +1,102 @@
+[
+  {
+    "check": "geometry: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "geometry: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent1 geometry equals Person2",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent1 geometry CRS",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "all LST NDVI delivered",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_2024_lst_ndvi_qa.tif: projected CRS alignment",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_2024_lst_ndvi_qa.tif: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_2024_lst_ndvi_qa.tif: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "lst_c: recomputed all grid means within CSV precision",
+    "pass": true,
+    "detail": 0.0004994967582021559
+  },
+  {
+    "check": "LST valid fraction all cells",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "ndvi: recomputed all grid means within CSV precision",
+    "pass": true,
+    "detail": 4.996737912676963e-05
+  },
+  {
+    "check": "jakarta_2024_trees_built_probability.tif: projected CRS alignment",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_2024_trees_built_probability.tif: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "jakarta_2024_trees_built_probability.tif: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "tree_prob_mean: recomputed all grid means within CSV precision",
+    "pass": true,
+    "detail": 4.962353687687493e-07
+  },
+  {
+    "check": "built_prob_mean: recomputed all grid means within CSV precision",
+    "pass": true,
+    "detail": 4.997582098709152e-07
+  }
+]

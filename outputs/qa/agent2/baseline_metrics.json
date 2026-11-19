@@ -1,0 +1,37 @@
+{
+  "rows": 2765,
+  "unique_ids": 2765,
+  "missing": {
+    "grid_id": 0,
+    "population": 0,
+    "pop_child": 0,
+    "pop_elderly": 0,
+    "park_distance_m": 226,
+    "grid_snap_m": 0,
+    "park_reachable": 0,
+    "park_access_500m": 0,
+    "park_access_1000m": 0
+  },
+  "zeros": {
+    "population": 6,
+    "pop_child": 20,
+    "pop_elderly": 20
+  },
+  "missing_routes": 226,
+  "far_snap": 66,
+  "access500": 537,
+  "access1000": 1390,
+  "distance": {
+    "count": 2539.0,
+    "mean": 1143.2112712582737,
+    "std": 878.1079607514961,
+    "min": 34.134244641320095,
+    "5%": 219.7568807535971,
+    "25%": 555.7747125587734,
+    "50%": 909.8824937110941,
+    "75%": 1439.9493281455748,
+    "95%": 2928.0726855865414,
+    "99%": 4446.985724228079,
+    "max": 5756.018379949124
+  }
+}

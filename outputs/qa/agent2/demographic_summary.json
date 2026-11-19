@@ -1,0 +1,77 @@
+{
+  "totals": {
+    "population": 10983537.124834511,
+    "pop_child": 2567476.5377577264,
+    "pop_elderly": 675277.9544693524,
+    "pop_vulnerable": 3242754.4922270784
+  },
+  "vulnerable_share": {
+    "count": 2759.0,
+    "mean": 0.29326496037443694,
+    "std": 0.024512325693552637,
+    "min": 0.0,
+    "1%": 0.21107810675421584,
+    "5%": 0.289394426821274,
+    "50%": 0.2966796628860374,
+    "95%": 0.30156135740203105,
+    "99%": 0.301585454496836,
+    "max": 0.3051824450526071
+  },
+  "spearman_population_vulnerable": 0.9995513756121016,
+  "pearson_population_vulnerable": 0.9995895318170229,
+  "positive_pop_zero_ages": 14,
+  "zero_population": 6,
+  "recomputation": {
+    "population": {
+      "centroid": {
+        "sum": 10982341.485784844,
+        "max_abs_difference": 311.54245640022305,
+        "n_difference_gt1": 11
+      },
+      "fractional": {
+        "sum": 10983511.150010668,
+        "max_abs_difference": 1856.129437051226,
+        "n_difference_gt1": 2701
+      },
+      "qgis_hybrid": {
+        "sum": 10983537.136413433,
+        "max_abs_difference": 0.0016326904296875,
+        "n_difference_gt1": 0
+      }
+    },
+    "pop_child": {
+      "centroid": {
+        "sum": 2567400.8745010383,
+        "max_abs_difference": 16.382617865716053,
+        "n_difference_gt1": 11
+      },
+      "fractional": {
+        "sum": 2563276.68728069,
+        "max_abs_difference": 414.3624244919424,
+        "n_difference_gt1": 2666
+      },
+      "qgis_hybrid": {
+        "sum": 2567476.5387665043,
+        "max_abs_difference": 0.00029754638239865017,
+        "n_difference_gt1": 0
+      }
+    },
+    "pop_elderly": {
+      "centroid": {
+        "sum": 675260.3167692916,
+        "max_abs_difference": 3.94736022550709,
+        "n_difference_gt1": 6
+      },
+      "fractional": {
+        "sum": 674288.0477244549,
+        "max_abs_difference": 138.80469792377164,
+        "n_difference_gt1": 2562
+      },
+      "qgis_hybrid": {
+        "sum": 675277.9548701477,
+        "max_abs_difference": 8.96453857421875e-05,
+        "n_difference_gt1": 0
+      }
+    }
+  }
+}

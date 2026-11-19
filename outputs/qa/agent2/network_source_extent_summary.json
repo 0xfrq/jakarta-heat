@@ -1,0 +1,13 @@
+{
+  "declared_osm_bounds": {
+    "minlat": "-6.373",
+    "minlon": "106.315",
+    "maxlat": "-5.208",
+    "maxlon": "106.972"
+  },
+  "grid_intersects_outside_declared_extract": 4,
+  "outside_area_m2": 19298.49403658926,
+  "grids_within1500m_edge": 125,
+  "missing_grids_within1500m_edge": 12,
+  "limitation": "Header bounds describe declared source coverage, not verified outside-route completeness."
+}

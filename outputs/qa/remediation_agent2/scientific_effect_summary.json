@@ -1,0 +1,46 @@
+{
+  "baseline_common": 2538,
+  "corrected_common_proposal": 2536,
+  "original_no_support": {
+    "population": 6,
+    "pop_child": 19,
+    "pop_elderly": 19
+  },
+  "corrected_no_support": {
+    "population": 6,
+    "pop_child": 6,
+    "pop_elderly": 6
+  },
+  "original_age_missing_recovered_ids": [
+    "JKT_R000_C043",
+    "JKT_R000_C045",
+    "JKT_R001_C050",
+    "JKT_R013_C019",
+    "JKT_R016_C052",
+    "JKT_R017_C017",
+    "JKT_R018_C050",
+    "JKT_R032_C011",
+    "JKT_R042_C004",
+    "JKT_R059_C022",
+    "JKT_R060_C020",
+    "JKT_R060_C041",
+    "JKT_R062_C026"
+  ],
+  "total_people_known_original_age_missing": 64.99566943844266,
+  "sum_difference_people": {
+    "population": -8.195638656616211e-08,
+    "pop_child": 215.5912771280855,
+    "pop_elderly": 45.53702117293142
+  },
+  "partial_n": 383,
+  "coverage_lt_0_1_n": 65,
+  "six_null_ids": [
+    "JKT_R003_C031",
+    "JKT_R057_C063",
+    "JKT_R061_C009",
+    "JKT_R061_C010",
+    "JKT_R061_C011",
+    "JKT_R062_C043"
+  ],
+  "independent_baseline_scores_and_ranks_match": true
+}

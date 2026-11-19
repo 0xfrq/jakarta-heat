@@ -1,0 +1,357 @@
+{
+  "utc": "2026-11-19T16:42:43.730691+00:00",
+  "workspaces": {
+    "jakarta-heat": {
+      "branch": "main",
+      "sha": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
+      "status": ""
+    },
+    "jakarta-heat-agent1": {
+      "branch": "agent/person1",
+      "sha": "cdda42484c6bfc5bceb49093cb4a28be6c59d659",
+      "status": ""
+    },
+    "jakarta-heat-agent2": {
+      "branch": "agent/person2",
+      "sha": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
+      "status": "?? scripts/agent2_capture_baseline.py"
+    },
+    "jakarta-heat-agent3": {
+      "branch": "agent/person3",
+      "sha": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
+      "status": "M README.md\nR  dashboard/app.py -> dashboard/app_4b_prototype.py\n M jhim/compare.py\n M jhim/config.py\n M jhim/data.py\n M jhim/figures.py\n M jhim/io.py\n M jhim/models.py\n M jhim/sensitivity.py\n M jhim/spatial.py\n M jhim/util.py\n M scripts/03_prepare_model.py\n M scripts/04_priority_model.py\n M scripts/05_spatial_validation.py\n M scripts/06_sensitivity.py\n M scripts/07_export_paper.py\n?? .streamlit/config.toml\n?? dashboard/README.md\n?? dashboard/app.py\n?? dashboard/lib/__init__.py\n?? dashboard/lib/context.py\n?? dashboard/lib/maps.py\n?? dashboard/lib/ui.py\n?? dashboard/requirements.txt\n?? dashboard/views/data_explorer.py\n?? dashboard/views/heat_vegetation.py\n?? dashboard/views/methods.py\n?? dashboard/views/model_comparison.py\n?? dashboard/views/overview.py\n?? dashboard/views/priority_models.py\n?? dashboard/views/sensitivity.py\n?? dashboard/views/spatial_stats.py\n?? data/processed/modeling/lisa_m1.csv\n?? data/processed/modeling/lisa_m2.csv\n?? data/processed/modeling/lisa_m3.csv\n?? data/processed/modeling/lisa_m4.csv\n?? data/processed/modeling/merged_grid.csv\n?? data/processed/modeling/merged_meta.json\n?? data/processed/modeling/priority_meta.json\n?? data/processed/modeling/priority_models.csv\n?? data/processed/modeling/rank_shift_m1_m4.csv\n?? data/processed/modeling/run_manifest.json\n?? data/processed/modeling/sensitivity_m2_stability.csv\n?? data/processed/modeling/sensitivity_m3_stability.csv\n?? data/processed/modeling/sensitivity_m4_stability.csv\n?? docs/agent3_methods.md\n?? handoff/AGENT3_HANDOFF.md\n?? jhim/pipeline.py\n?? outputs/figures/fig_coverage_top10.png\n?? outputs/figures/fig_coverage_top10.svg\n?? outputs/figures/fig_jaccard.png\n?? outputs/figures/fig_jaccard.svg\n?? outputs/figures/fig_kota_top10.png\n?? outputs/figures/fig_kota_top10.svg\n?? outputs/figures/fig_map_lisa_m4.png\n?? outputs/figures/fig_map_lisa_m4.svg\n?? outputs/figures/fig_map_rank_shift_m1_m4.png\n?? outputs/figures/fig_map_rank_shift_m1_m4.svg\n?? outputs/figures/fig_map_scores_m1_m4.png\n?? outputs/figures/fig_map_scores_m1_m4.svg\n?? outputs/figures/fig_map_stability_m4.png\n?? outputs/figures/fig_map_stability_m4.svg\n?? outputs/figures/fig_map_top10_m1_m4.png\n?? outputs/figures/fig_map_top10_m1_m4.svg\n?? outputs/figures/fig_rank_m1_vs_m4.png\n?? outputs/figures/fig_rank_m1_vs_m4.svg\n?? outputs/figures/fig_score_distribution.png\n?? outputs/figures/fig_score_distribution.svg\n?? outputs/figures/fig_sensitivity_m4.png\n?? outputs/figures/fig_sensitivity_m4.svg\n?? outputs/figures/fig_spearman.png\n?? outputs/figures/fig_spearman.svg\n?? outputs/figures/fig_transition_m1_m4.png\n?? outputs/figures/fig_transition_m1_m4.svg\n?? outputs/gis/priority_models.gpkg\n?? outputs/qa/agent3/person2_component_spearman.csv\n?? outputs/qa/agent3/person2_diagnostics_info.json\n?? outputs/qa/agent3/person2_flagged_grids.csv\n?? outputs/qa/agent3/person2_kota_summary.csv\n?? outputs/qa/agent3/person2_lisa_park_distance.csv\n?? outputs/qa/agent3/person2_moran_global.csv\n?? outputs/qa/agent3/person2_quality.csv\n?? outputs/qa/agent3/run_manifest.json\n?? outputs/tables/data_quality.csv\n?? outputs/tables/eligibility_effect_m1.csv\n?? outputs/tables/heat_vs_aware_m1_m4.csv\n?? outputs/tables/jaccard_matrix.csv\n?? outputs/tables/kendall_matrix.csv\n?? outputs/tables/kota_summary.csv\n?? outputs/tables/lisa_cluster_counts.csv\n?? outputs/tables/model_comparison.csv\n?? outputs/tables/model_top10_coverage.csv\n?? outputs/tables/moran_global.csv\n?? outputs/tables/rank_movement.csv\n?? outputs/tables/score_summary.csv\n?? outputs/tables/sensitivity_m2_info.json\n?? outputs/tables/sensitivity_m2_summary.csv\n?? outputs/tables/sensitivity_m3_info.json\n?? outputs/tables/sensitivity_m3_summary.csv\n?? outputs/tables/sensitivity_m4_info.json\n?? outputs/tables/sensitivity_m4_summary.csv\n?? outputs/tables/spatial_validation_info.json\n?? outputs/tables/spearman_matrix.csv\n?? outputs/tables/top10_priority_m1.csv\n?? outputs/tables/top10_priority_m2.csv\n?? outputs/tables/top10_priority_m3.csv\n?? outputs/tables/top10_priority_m4.csv\n?? outputs/tables/top_overlap.csv\n?? outputs/tables/transition_m1_m2.csv\n?? outputs/tables/transition_m1_m4.csv\n?? outputs/tables/transition_m2_m3.csv\n?? outputs/tables/transition_m3_m4.csv\n?? scripts/run_agent3_pipeline.py\n?? tests/agent3/conftest.py\n?? tests/agent3/test_accessibility.py\n?? tests/agent3/test_compare.py\n?? tests/agent3/test_dashboard_app.py\n?? tests/agent3/test_data_contract.py\n?? tests/agent3/test_models.py\n?? tests/agent3/test_pipeline.py\n?? tests/agent3/test_sensitivity.py\n?? tests/agent3/test_spatial.py"
+    }
+  },
+  "copies": [
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\grid_master.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\grid_master.csv",
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\spatial_features.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\spatial_features.csv",
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\accessibility_grid.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\accessibility_grid.csv",
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\population_grid.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\population_grid.csv",
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\vulnerability_grid.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\vulnerability_grid.csv",
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent2\\data\\processed\\qa_problem_grids.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\person2\\qa_problem_grids.csv",
+      "sha256": "b64f97d391eee01857052aa88781b2cddf2064c612c84b98e598e2e445f5f42f"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent1\\handoff\\AGENT1_HANDOFF.md",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent1\\handoff\\AGENT1_HANDOFF.md",
+      "sha256": "0030969eb54ce63e323f6c51fb2051dc6f8ae690759cf8f129b2b7c30546fe2f"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent1\\data\\processed\\remote_sensing_grid.csv",
+      "sha256": "49297937f9510c13beceee986b2067dba05df7939800d9b7307852db9bec135a"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.gpkg",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent1\\data\\processed\\remote_sensing_grid.gpkg",
+      "sha256": "26547bbe5486fafeec765ec5ca99394be70abb3d0d2f187dcf41490007663944"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.meta.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent1\\data\\processed\\remote_sensing_grid.meta.json",
+      "sha256": "a98974bbcc45251402006716a45aa429158abb650668937f0c0b03f466994267"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\handoff\\AGENT3_HANDOFF.md",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\handoff\\AGENT3_HANDOFF.md",
+      "sha256": "befbb1e5f9dfb39d1ce6577c1c654cd5e5f99d29ff8c21910210ab056e3720b7"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\compare.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\compare.py",
+      "sha256": "b6bbd2362134dd419d01eb2a041590546516dfe4e16e478c0f2d83791d085683"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\config.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\config.py",
+      "sha256": "fe88530895651c30bb9c9169e99fb06a5c0f14fe2f0024c4f9e337582cfcee85"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\data.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\data.py",
+      "sha256": "f5e0936c1db9da66b63e5bbfbaa81c452006b4e82dbaefedcd2bce9b7c94d25e"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\dummy.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\dummy.py",
+      "sha256": "a9b27ae1a9c7bb289a499d8754216aa38c71a3a332f615bb3468ad53ccaacf97"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\figures.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\figures.py",
+      "sha256": "936de4ea99af83cd124ea8a5d296b0af5da1b759f105cea6af8ca1764678e9ea"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\io.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\io.py",
+      "sha256": "a17dd6ecb07e0da51b38d7a8e75ad3d85710367f6015fc678c7e212f93610d0b"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\models.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\models.py",
+      "sha256": "cabb31a22807c9f8e1ed459c8958b08178cfd8ffbe9e1800af852d08203f1fe0"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\pipeline.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\pipeline.py",
+      "sha256": "4d2266c1a568db995c56b30ceb644ba09ccbe5164725417fa639a16223020657"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\sensitivity.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\sensitivity.py",
+      "sha256": "1a5500bae3e99300e7808f23ad01937e6979c018bdf92bac3d0854a49e6a6266"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\spatial.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\spatial.py",
+      "sha256": "ce20c80b11f64098e6d2e4f7e5ceadc32d0f9a8968c9ae3418a34d6acc05baee"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\util.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\util.py",
+      "sha256": "6e85f260e10e8c6a42c1e71bb7353928e888993a373cb979eeaef19d6ce2754f"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\jhim\\__init__.py",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\jhim\\__init__.py",
+      "sha256": "17f0d4b00ca40651742aa6043be779aa1f1ddd27fd013d794b5ab79680a49bae"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\lisa_m1.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\lisa_m1.csv",
+      "sha256": "ed74a3ae5b6ced1b8307f200ff4a33d9a8adeea9f3dd6c1a623b3fac0b295f23"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\lisa_m2.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\lisa_m2.csv",
+      "sha256": "3d42c9872034984c0eb2b541f31a7c0bd087cbd6bdd9b376782d4892a7f84399"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\lisa_m3.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\lisa_m3.csv",
+      "sha256": "909795d842dd9569e4de23e703155a02a7357d944818e9f49c7c554e79ca0ae8"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\lisa_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\lisa_m4.csv",
+      "sha256": "a00116de47a552de7e33383408186532f338b3aca61464d6e0976dd55bfd4d36"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\merged_grid.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\merged_grid.csv",
+      "sha256": "1f334d0ac52d716809d1d1d27d906f7f9138d0f2da8584d7740dff3131d1b30e"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\merged_meta.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\merged_meta.json",
+      "sha256": "28ce64a018add48af2c382df00162f989216cae357970156260e32ca11cdaf23"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\priority_meta.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\priority_meta.json",
+      "sha256": "43993e58f31f21004971f2edea15095147d949571b8a17b28da3564eac8b7148"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\priority_models.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\priority_models.csv",
+      "sha256": "60174555b499e08fe6ac41fc977f6f228c661bf86f9f833b36bd52942f4fa83f"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\rank_shift_m1_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\rank_shift_m1_m4.csv",
+      "sha256": "971dcac0ec286365b55b20ab3d807d55a65066d5a76317824b4eec520364d67b"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\run_manifest.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\run_manifest.json",
+      "sha256": "9cb0d444c0bca523f4bf70a90739f1dd8ee5384ced30dc7fd071c73f2cf80471"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\sensitivity_m2_stability.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\sensitivity_m2_stability.csv",
+      "sha256": "26cc9d9ced833f4144e241ce3d5a153fe1570b328a3bce207efa961566289463"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\sensitivity_m3_stability.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\sensitivity_m3_stability.csv",
+      "sha256": "5066667cd7218fc5e5383a97deaa3744feecec67cbf9174113415ddcdbf8fc82"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\sensitivity_m4_stability.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\data\\processed\\modeling\\sensitivity_m4_stability.csv",
+      "sha256": "61d70378f012f7a167f8fc3cdab311151946e6cca140cf43df804989be38c831"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\data_quality.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\data_quality.csv",
+      "sha256": "2fb8c26e631fbc095d2748184614eed965643ec3df713fa9cbeb02665f7198b6"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\eligibility_effect_m1.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\eligibility_effect_m1.csv",
+      "sha256": "c282abad41d9182148346f13e8d49ae661bcb3cfccd0adb1a228b92ec3100289"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\heat_vs_aware_m1_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\heat_vs_aware_m1_m4.csv",
+      "sha256": "bc0b91b710252c294adcf56ef3c45e8df63cf25bcd3a46b2e4dcc4cf250cf0c4"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\jaccard_matrix.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\jaccard_matrix.csv",
+      "sha256": "84d943fb65c66faff88118226e72aa711cd5226e0d6acc6aec8d063b6053c878"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\kendall_matrix.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\kendall_matrix.csv",
+      "sha256": "6c8afa30d129c26f3f20773f0fccfa04f9614e6f265cbe479faebe386473e221"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\kota_summary.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\kota_summary.csv",
+      "sha256": "a2b5b45ff34f679a865bd6fda3976187b9707beba9acd2d3c40659f093a0c597"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\lisa_cluster_counts.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\lisa_cluster_counts.csv",
+      "sha256": "53356d6a469f57d293ea739094ff229d857fb6fe4aff824888573bff0650f91b"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\model_comparison.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\model_comparison.csv",
+      "sha256": "4c46dd0116bb72e16209c48f554a5daf1c234b650a310c3c3454a33779f9a75e"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\model_top10_coverage.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\model_top10_coverage.csv",
+      "sha256": "206a61f97e3d725f1d5370acbdf9e4e271e9082b0b8be1b2ab6e1442e42acc29"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\moran_global.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\moran_global.csv",
+      "sha256": "6605b0132f7ef6726e46bbc7435ed9c10d5d96c4b5bbf57c72936b7c56158e39"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\rank_movement.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\rank_movement.csv",
+      "sha256": "9c8e8738d5184785740418c35015d8ea285c44a5ee00f96117daf5922c71841c"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\score_summary.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\score_summary.csv",
+      "sha256": "70bc7cb0b19efe569ee5b047ca8312fcd2635055c9f63a22c74bdfa3a5bdd63b"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m2_info.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m2_info.json",
+      "sha256": "d474e2accba1a47e16fbdf1bcbaee2546f8b42eef024885046d9410fe1ce2fe8"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m2_summary.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m2_summary.csv",
+      "sha256": "fd8569731776115839dccefc3dd7966b794509cbc68c4b6db9dfc37f123d2663"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m3_info.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m3_info.json",
+      "sha256": "cf18c58614b0b4a7c9c154803d1ecd40da241d96bb74a5e4c577c80389311fef"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m3_summary.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m3_summary.csv",
+      "sha256": "d8eca46ec1b16939ccdb084ea3be4bc2f1aaac79574b2ba093aae96d67db1494"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m4_info.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m4_info.json",
+      "sha256": "7be8b7752ba671a936f3ab16c461a87c825e1bbd8ffb5f83dba9dc4329a94b9c"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\sensitivity_m4_summary.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\sensitivity_m4_summary.csv",
+      "sha256": "6b4131ba4b610acff93ebd91610a321ebd4572c8386e9a3725ec15d3b921aca3"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\spatial_validation_info.json",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\spatial_validation_info.json",
+      "sha256": "078d866548505d42cbb2c325310ecb68cec951fa646e19b8fcda59b3444dcd26"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\spearman_matrix.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\spearman_matrix.csv",
+      "sha256": "857139f8e7bbe49affc7634fa917e3b49d43a21abb6c9b3f5f9900872cee39ac"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\top10_priority_m1.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\top10_priority_m1.csv",
+      "sha256": "6228ad8db06719ce303981a6171d5a2e2f0294c9024cd6a1957f3c9e13ca5fc3"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\top10_priority_m2.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\top10_priority_m2.csv",
+      "sha256": "c629739e1f6d20df56fea15f7f15efe64b8b8e15abc6294a9cce31983c58cd62"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\top10_priority_m3.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\top10_priority_m3.csv",
+      "sha256": "cf92a63c6a68ccbb9455215b653977b2ce42b721bd33c1a4bf735b50e78dd573"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\top10_priority_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\top10_priority_m4.csv",
+      "sha256": "ee6b524615adf6cff4462e8fad9128795ef20cf94222983334b988f10f710521"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\top_overlap.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\top_overlap.csv",
+      "sha256": "cff60a68f2bfec3d04af688c01288b8d0e32a0d24b523f900cc3e0b58098b9fe"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\transition_m1_m2.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\transition_m1_m2.csv",
+      "sha256": "8c2e3857e5da5dc58bdc0065ec4d84b65e2b07da5f2edcebf76c4bf849327b99"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\transition_m1_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\transition_m1_m4.csv",
+      "sha256": "8dfa550b73db82e19d1537e3c45b99c318771617e185aca3151e5be805eefa57"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\transition_m2_m3.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\transition_m2_m3.csv",
+      "sha256": "51bb1f98824d17528dd2053bb2d201b1aaf697580f25d6fb4ef874d244d6c272"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\tables\\transition_m3_m4.csv",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\tables\\transition_m3_m4.csv",
+      "sha256": "92fb34d271778b6843d89f21b10f18c2126f189ad367919a06049a9599fa350a"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\outputs\\gis\\priority_models.gpkg",
+      "copy": "outputs\\qa\\agent2\\baseline\\agent3\\outputs\\gis\\priority_models.gpkg",
+      "sha256": "2362c9b92569b1ab9d8939b7a30e613a2cee493ee35224910572f655ca7966f6"
+    }
+  ]
+}

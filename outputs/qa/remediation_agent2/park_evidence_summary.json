@@ -1,0 +1,18 @@
+{
+  "candidate_count": 1015,
+  "evidence_states": {
+    "unknown": 980,
+    "conditional_unverified": 28,
+    "positive_osm_tag_unverified": 7
+  },
+  "verified_public_access": 0,
+  "verified_entrances": 0,
+  "initial_top20_reviewed_or_unresolved": 20,
+  "baseline_top_m4_n": 254,
+  "baseline_top_m4_winners_in_top20": 91,
+  "origins_with_second_candidate": 2526,
+  "official_context_documents": 4,
+  "inventory_changed": false,
+  "policy": "broad non-explicitly-restricted candidates; positive-only is a destination coverage stress test",
+  "coordinator_approval": "pending; no actual 2024 public-access claim"
+}

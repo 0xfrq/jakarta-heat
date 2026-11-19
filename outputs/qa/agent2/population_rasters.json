@@ -1,0 +1,202 @@
+[
+  {
+    "feature": "population",
+    "path": "D:\\jakarta-heat\\data\\raw\\worldpop\\idn_pop_2024.tif",
+    "sha256": "458c20fa8a3e9b982e2eff5620b4e56438373c3eb00dd78a9093bf4b06c1668f",
+    "crs": "EPSG:4326",
+    "shape": [
+      20502,
+      55238
+    ],
+    "res": [
+      0.00083333333,
+      0.00083333333
+    ],
+    "transform": [
+      0.00083333333,
+      0.0,
+      94.98999890003999,
+      0.0,
+      -0.00083333333,
+      6.076666978359988,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      94.98999890003999,
+      -11.008332953300012,
+      141.02166538257998,
+      6.076666978359988
+    ],
+    "nodata": -99999.0,
+    "dtype": [
+      "float32"
+    ],
+    "tags": {
+      "TIFFTAG_DOCUMENTNAME": "idn_pop_2024_CN_100m_R2025A_v1",
+      "TIFFTAG_IMAGEDESCRIPTION": "IDN population 2024 [WorldPop R2025A v1]",
+      "TIFFTAG_DATETIME": "2025-08-02 20:47:45",
+      "TIFFTAG_COPYRIGHT": "CC-BY-4.0",
+      "Description": "IDN population 2024 [WorldPop R2025A v1]",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "STATISTICS_MINIMUM": "0",
+      "STATISTICS_MAXIMUM": "756.42492675781",
+      "STATISTICS_MEAN": "11.370027855636",
+      "STATISTICS_STDDEV": "22.52602240039",
+      "STATISTICS_VALID_PERCENT": "2.193"
+    },
+    "units": [
+      null
+    ],
+    "description": [
+      "idn_pop_2024_CN_100m_R2025A_v1"
+    ]
+  },
+  {
+    "feature": "pop_child",
+    "path": "D:\\jakarta-heat\\data\\raw\\worldpop\\age\\jakarta_child_2024.tif",
+    "sha256": "784b00a7d5e080ff31500625be7fd554aea3a2c048095fe47d1d2c1f8c808e59",
+    "crs": "EPSG:4326",
+    "shape": [
+      339,
+      345
+    ],
+    "res": [
+      0.0008333333299999986,
+      0.0008333333299999999
+    ],
+    "transform": [
+      0.0008333333299999986,
+      0.0,
+      106.6858321865895,
+      0.0,
+      -0.0008333333299999999,
+      -6.088332972979984,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      106.6858321865895,
+      -6.370832971849984,
+      106.97333218543949,
+      -6.088332972979984
+    ],
+    "nodata": -99999.0,
+    "dtype": [
+      "float32"
+    ],
+    "tags": {
+      "TIFFTAG_IMAGEDESCRIPTION": "Population by age and sex 2024, 100 m, polygon [WorldPop Global2 R2025A]",
+      "TIFFTAG_SOFTWARE": "WorldPop API",
+      "TIFFTAG_DATETIME": "2026:11:19 10:39:16",
+      "TIFFTAG_COPYRIGHT": "CC BY 4.0, WorldPop (www.worldpop.org)",
+      "AGE_RANGE": "0-14",
+      "AREA": "polygon",
+      "BANDS": "sum",
+      "CITATION": "Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. Estimates of 2015-2030 total number of people per grid square broken down by gender and age groupings at a resolution of 3 arc (approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00841",
+      "DATASET": "WorldPop Global2",
+      "DOI": "10.5258/SOTON/WP00841",
+      "LAYER": "agesex",
+      "LICENCE": "CC BY 4.0",
+      "LICENCE_URL": "https://creativecommons.org/licenses/by/4.0/",
+      "RELEASE": "R2025A",
+      "RESOLUTION": "100m",
+      "SEX": "both",
+      "TOTAL_POPULATION": "2567400.87",
+      "UNITS": "people per cell",
+      "YEAR": "2024",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "AGE_RANGE": "0-14",
+      "SEX": "both",
+      "STATISTICS_MAXIMUM": "69.855880737305",
+      "STATISTICS_MEAN": "34.494630768822",
+      "STATISTICS_MINIMUM": "0",
+      "STATISTICS_STDDEV": "18.349951934409",
+      "STATISTICS_VALID_PERCENT": "63.64"
+    },
+    "units": [
+      null
+    ],
+    "description": [
+      "both_0_14"
+    ]
+  },
+  {
+    "feature": "pop_elderly",
+    "path": "D:\\jakarta-heat\\data\\raw\\worldpop\\age\\jakarta_elderly_2024.tif",
+    "sha256": "4fec433ff2a02c7897bae70485b27cb3a8cfd3855c8acdf0523239111f729653",
+    "crs": "EPSG:4326",
+    "shape": [
+      339,
+      345
+    ],
+    "res": [
+      0.0008333333299999986,
+      0.0008333333299999999
+    ],
+    "transform": [
+      0.0008333333299999986,
+      0.0,
+      106.6858321865895,
+      0.0,
+      -0.0008333333299999999,
+      -6.088332972979984,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "bounds": [
+      106.6858321865895,
+      -6.370832971849984,
+      106.97333218543949,
+      -6.088332972979984
+    ],
+    "nodata": -99999.0,
+    "dtype": [
+      "float32"
+    ],
+    "tags": {
+      "TIFFTAG_IMAGEDESCRIPTION": "Population by age and sex 2024, 100 m, polygon [WorldPop Global2 R2025A]",
+      "TIFFTAG_SOFTWARE": "WorldPop API",
+      "TIFFTAG_DATETIME": "2026:11:19 10:39:22",
+      "TIFFTAG_COPYRIGHT": "CC BY 4.0, WorldPop (www.worldpop.org)",
+      "AGE_RANGE": "65+",
+      "AREA": "polygon",
+      "BANDS": "sum",
+      "CITATION": "Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. Estimates of 2015-2030 total number of people per grid square broken down by gender and age groupings at a resolution of 3 arc (approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00841",
+      "DATASET": "WorldPop Global2",
+      "DOI": "10.5258/SOTON/WP00841",
+      "LAYER": "agesex",
+      "LICENCE": "CC BY 4.0",
+      "LICENCE_URL": "https://creativecommons.org/licenses/by/4.0/",
+      "RELEASE": "R2025A",
+      "RESOLUTION": "100m",
+      "SEX": "both",
+      "TOTAL_POPULATION": "675260.32",
+      "UNITS": "people per cell",
+      "YEAR": "2024",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "AGE_RANGE": "65+",
+      "SEX": "both",
+      "STATISTICS_MAXIMUM": "23.790866851807",
+      "STATISTICS_MEAN": "9.0725431803272",
+      "STATISTICS_MINIMUM": "0",
+      "STATISTICS_STDDEV": "5.0320815094931",
+      "STATISTICS_VALID_PERCENT": "63.64"
+    },
+    "units": [
+      null
+    ],
+    "description": [
+      "both_65_plus"
+    ]
+  }
+]

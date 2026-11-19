@@ -1,0 +1,17 @@
+{
+  "n": 1015,
+  "access": {
+    "unknown": 1005,
+    "yes": 9,
+    "permissive": 1
+  },
+  "classification": {
+    "unknown_or_conditional": 1005,
+    "access_positive_tag_unverified": 10
+  },
+  "unnamed": 577,
+  "duplicate_geometries": 0,
+  "total_area_km2": 9.011980417628326,
+  "original_unclipped_polygons_available": false,
+  "verified_public_entrances": 0
+}

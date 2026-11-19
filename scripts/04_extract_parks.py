@@ -1,12 +1,13 @@
 
 from pathlib import Path
+import json
 import geopandas as gpd
 import osmnx as ox
 
 ROOT = Path(__file__).resolve().parents[1]
 
 BOUNDARY = ROOT / "data/processed/jakarta_5kota.gpkg"
-OUTPUT = ROOT / "data/processed/parks_jakarta.gpkg"
+OUTPUT = ROOT / "data/processed/parks_candidates_tagged.gpkg"
 
 ox.settings.use_cache = True
 
@@ -50,6 +51,20 @@ if "access" not in parks.columns:
 parks["name"] = parks["name"].fillna("Unnamed Park")
 parks["access"] = parks["access"].fillna("unknown")
 
+# Preserve source assertions for review. They are not proof of public opening.
+evidence_tags = ["operator", "operator:type", "opening_hours", "entrance", "barrier",
+                 "fee", "foot", "foot:conditional", "access:conditional", "wheelchair"]
+for column in evidence_tags:
+    if column not in parks:
+        parks[column] = None
+parks["raw_access_evidence_json"] = [json.dumps({column: None if value is None or
+    (isinstance(value, float) and value != value) else value
+    for column, value in row.items()}, default=str, ensure_ascii=False)
+    for row in parks[["access", *evidence_tags]].to_dict(orient="records")]
+parks["access_evidence_state"] = parks["access"].str.lower().map(
+    {"yes": "positive_osm_tag_unverified", "permissive": "positive_osm_tag_unverified"}
+).fillna("unknown_or_conditional")
+
 # Kecualikan taman dengan larangan akses eksplisit.
 parks = parks[
     ~parks["access"].str.lower().isin(
@@ -70,7 +85,8 @@ parks["area_m2"] = parks.geometry.area
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 parks[
-    ["park_id", "name", "access", "area_m2", "geometry"]
+    ["park_id", "name", "access", "area_m2", *evidence_tags,
+     "raw_access_evidence_json", "access_evidence_state", "geometry"]
 ].to_file(OUTPUT, driver="GPKG")
 
 print("DONE!")

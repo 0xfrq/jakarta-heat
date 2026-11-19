@@ -1,0 +1,135 @@
+﻿No broken requirements found.
+Verified 55 frozen input hashes
+Aggregate population: data\raw\worldpop\idn_pop_2024.tif
+Aggregate pop_child: data\raw\worldpop\age\jakarta_child_2024.tif
+Aggregate pop_elderly: data\raw\worldpop\age\jakarta_elderly_2024.tif
+{'population': 6, 'pop_child': 19, 'pop_elderly': 19}
+Aggregate population: data\raw\worldpop\idn_pop_2024.tif
+Aggregate pop_child: data\raw\worldpop\age_buffered\jakarta_child_2024_buffered.tif
+Aggregate pop_elderly: data\raw\worldpop\age_buffered\jakarta_elderly_2024_buffered.tif
+{'population': 6, 'pop_child': 6, 'pop_elderly': 6}
+2765 source rows; 226 unknown routes. Saved D:\jakarta-heat-agent2\dist\cleanroom\data\processed\spatial_features_corrected.csv
+Compute two distinct candidate destinations on fixed full-graph nodes
+{
+  "candidate_count": 1015,
+  "evidence_states": {
+    "unknown": 980,
+    "conditional_unverified": 28,
+    "positive_osm_tag_unverified": 7
+  },
+  "verified_public_access": 0,
+  "verified_entrances": 0,
+  "initial_top20_reviewed_or_unresolved": 20,
+  "baseline_top_m4_n": 254,
+  "baseline_top_m4_winners_in_top20": 91,
+  "origins_with_second_candidate": 2526,
+  "official_context_documents": 4,
+  "inventory_changed": false,
+  "policy": "broad non-explicitly-restricted candidates; positive-only is a destination coverage stress test",
+  "coordinator_approval": "pending; no actual 2024 public-access claim"
+}
+Screen original simplified edges without changing snap nodes
+{
+  "policy_version": "AC-02-v1-conservative-exploratory",
+  "source_graph_sha256": "40a1eb84e287a01a4af83c2091261b4f21e9acf571e227d8593654bed87671a6",
+  "source_walk_xml_sha256": "66a6fe69132739a93ef8d09522eea3b05cd6845c1c96e41297ed862191861ee9",
+  "precedence": [
+    "foot=no/private forbids",
+    "access=no/private forbids unless foot=yes/designated/permissive",
+    "conditional tags remain unresolved",
+    "barrier alone is not confirmed closure"
+  ],
+  "edge_policy": "remove edges with explicit forbidden endpoints or 0.05m-matched geometry vertices",
+  "connector_policy": "exclude direct origin/park connector within 0.05m of explicitly forbidden source node; do not resnap",
+  "unknown_physical_crossings": "unresolved; no water/fence legality or opening-hours validation",
+  "node_counts": {
+    "barrier_permission_unknown": 25882,
+    "explicitly_forbidden": 12413,
+    "explicit_foot_permission_unverified": 588,
+    "conditional_unknown": 530,
+    "unknown": 173
+  },
+  "removed_directed_edges": 24370,
+  "origin_connector_forbidden": 167,
+  "park_connector_forbidden": 78,
+  "baseline_missing": 226,
+  "node_scenario_missing": 407,
+  "connector_scenario_missing": 407,
+  "same_original_snap_nodes": true,
+  "coordinator_policy_approval": "pending",
+  "physical_connector_validation": "unresolved"
+}
+{
+  "baseline_common": 2538,
+  "corrected_common_proposal": 2536,
+  "original_no_support": {
+    "population": 6,
+    "pop_child": 19,
+    "pop_elderly": 19
+  },
+  "corrected_no_support": {
+    "population": 6,
+    "pop_child": 6,
+    "pop_elderly": 6
+  },
+  "original_age_missing_recovered_ids": [
+    "JKT_R000_C043",
+    "JKT_R000_C045",
+    "JKT_R001_C050",
+    "JKT_R013_C019",
+    "JKT_R016_C052",
+    "JKT_R017_C017",
+    "JKT_R018_C050",
+    "JKT_R032_C011",
+    "JKT_R042_C004",
+    "JKT_R059_C022",
+    "JKT_R060_C020",
+    "JKT_R060_C041",
+    "JKT_R062_C026"
+  ],
+  "total_people_known_original_age_missing": 64.99566943844266,
+  "sum_difference_people": {
+    "population": -8.195638656616211e-08,
+    "pop_child": 215.5912771280855,
+    "pop_elderly": 45.53702117293142
+  },
+  "partial_n": 383,
+  "coverage_lt_0_1_n": 65,
+  "six_null_ids": [
+    "JKT_R003_C031",
+    "JKT_R057_C063",
+    "JKT_R061_C009",
+    "JKT_R061_C010",
+    "JKT_R061_C011",
+    "JKT_R062_C043"
+  ],
+  "independent_baseline_scores_and_ranks_match": true
+}
+                                  scenario  fixed_common_set  alternative_n  retained  entered  left  jaccard
+                      original_masks_nulls             False           2526       252        1     2 0.988235
+                      original_masks_nulls              True           2526       253        0     0 1.000000
+                 buffered_hybrid_corrected             False           2536       253        1     1 0.992157
+                 buffered_hybrid_corrected              True           2536       254        0     0 1.000000
+             buffered_fractional_corrected             False           2536       238       16    16 0.881481
+             buffered_fractional_corrected              True           2536       238       16    16 0.881481
+                             coverage_ge_0             False           2536       253        1     1 0.992157
+                             coverage_ge_0              True           2536       254        0     0 1.000000
+                           coverage_ge_0.1             False           2492       247        3     7 0.961089
+                           coverage_ge_0.1              True           2492       250        0     0 1.000000
+                          coverage_ge_0.25             False           2447       240        5    14 0.926641
+                          coverage_ge_0.25              True           2447       245        0     0 1.000000
+                           coverage_ge_0.5             False           2384       231        8    23 0.881679
+                           coverage_ge_0.5              True           2384       239        0     0 1.000000
+             density_objective_exploratory             False           2536       241       13    13 0.902622
+             density_objective_exploratory              True           2536       242       12    12 0.909774
+ positive_tags_destination_coverage_stress             False           2521       150      103   104 0.420168
+ positive_tags_destination_coverage_stress              True           2521       150      103   103 0.421348
+               explicit_nodes_conservative             False           2355       224       12    30 0.842105
+               explicit_nodes_conservative              True           2355       223       13    13 0.895582
+                       full_jakarta_extent             False           2536       253        1     1 0.992157
+                       full_jakarta_extent              True           2536       254        0     0 1.000000
+explicit_nodes_and_connectors_conservative             False           2355       224       12    30 0.842105
+explicit_nodes_and_connectors_conservative              True           2355       223       13    13 0.895582
+Wrote docs\integration_manifest.json worktrees 4 agent2 sources 35
+.....................................................................                                                                     [100%]
+69 passed, 7 subtests passed in 9.22s

@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://api.worldpop.org/v3/",
+    "status": 200,
+    "saved": "official_source_0.txt",
+    "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c",
+    "utc": "2026-11-19T17:01:35.533198+00:00",
+    "substantive_text_retrieved": false,
+    "note": "A JavaScript shell alone does not verify API methodology; use primary documentation via browser/search and TIFF tags."
+  },
+  {
+    "url": "https://api.worldpop.org/v3/documentation",
+    "status": 200,
+    "saved": "official_source_1.txt",
+    "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c",
+    "utc": "2026-11-19T17:01:36.634070+00:00",
+    "substantive_text_retrieved": false,
+    "note": "A JavaScript shell alone does not verify API methodology; use primary documentation via browser/search and TIFF tags."
+  },
+  {
+    "url": "https://api.worldpop.org/v3/about",
+    "status": 200,
+    "saved": "official_source_2.txt",
+    "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c",
+    "utc": "2026-11-19T17:01:37.764010+00:00",
+    "substantive_text_retrieved": false,
+    "note": "A JavaScript shell alone does not verify API methodology; use primary documentation via browser/search and TIFF tags."
+  },
+  {
+    "url": "https://raw.githubusercontent.com/qgis/QGIS/release-3_44/src/analysis/vector/qgszonalstatistics.cpp",
+    "status": 200,
+    "saved": "official_source_3.txt",
+    "sha256": "e8008f06656abdf3db82cc21e69d624a9b72f0d74e2c8e7f77bf85a11771bb52",
+    "utc": "2026-11-19T17:01:38.281926+00:00",
+    "substantive_text_retrieved": true,
+    "note": "A JavaScript shell alone does not verify API methodology; use primary documentation via browser/search and TIFF tags."
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "scope": "exploratory availability pilot; TM-01 scientific temporal scope not yet signed",
+  "selection": "three named influential destinations from initial top20; selection is purposive, not representative",
+  "aoi": "3km square centered on current park representative point; identical both dates",
+  "snapshots": [
+    "2024-12-31T23:59:59Z",
+    "2026-11-19T11:02:20Z"
+  ],
+  "proposed_materiality_not_approved": {
+    "destination_or_route_availability_change_fraction": 0.05,
+    "threshold_crossing_fraction": 0.05,
+    "fixed_set_top10_jaccard_below": 0.9
+  },
+  "limitations": "Query availability or raw tag counts cannot establish matching legal routes, temporal stability or physical park opening. No comparison effect is fabricated.",
+  "next_if_historical_claims_retained": "Coordinator signs thresholds and AC-01/AC-02 policy; build comparable restricted routes and fixed-normalization M4 within supported AOIs before full reconstruction."
+}

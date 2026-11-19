@@ -1,0 +1,112 @@
+[
+  {
+    "check": "geometry: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "geometry: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "expected 2765 master",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "grid: EPSG32748",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "grid: valid nonempty polygons",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "cities: EPSG32748",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "cities: valid nonempty polygons",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "parks: EPSG32748",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "parks: valid nonempty polygons",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "five mainland cities",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "clip coverage <= 1m2 discrepancy",
+    "pass": true,
+    "detail": 3.4401296706860346e-06
+  },
+  {
+    "check": "no internal overlap <= 1m2 tolerance",
+    "pass": true,
+    "detail": -1.3113021850585938e-06
+  },
+  {
+    "check": "unique grid geometry",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "500m projected lattice clipped exactly",
+    "pass": true,
+    "detail": 0.0
+  },
+  {
+    "check": "majority city assignments",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "CSV city matches geometry",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "CSV area matches geometry",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "coverage fraction matches geometry",
+    "pass": true,
+    "detail": null
+  }
+]

@@ -1,0 +1,1016 @@
+element,id,park_id,name,access,area_m2,access_class,geometry_valid,geometry_duplicate,osm_id_duplicate,area_recomputed_m2,outside_study_m2,unnamed,representative_point_inside,near_admin_boundary_100m,verified_public_entrance
+way,499845885,way_499845885,Taman Bermain Anak,unknown,134.66569894283103,unknown_or_conditional,True,False,False,134.66569894283103,0.0,False,True,False,False
+way,1530586555,way_1530586555,Blok C,unknown,8297.164959606094,unknown_or_conditional,True,False,False,8297.164959606094,0.0,False,True,True,False
+way,1530586263,way_1530586263,Blok B,unknown,4282.146941706779,unknown_or_conditional,True,False,False,4282.146941706779,0.0,False,True,True,False
+way,1530582035,way_1530582035,Blok A,unknown,1345.5337827186434,unknown_or_conditional,True,False,False,1345.5337827186434,0.0,False,True,True,False
+way,499845758,way_499845758,Taman Kumis Kucing,unknown,9432.26254984804,unknown_or_conditional,True,False,False,9432.26254984804,0.0,False,True,False,False
+way,500082537,way_500082537,Taman Bermain,unknown,792.4091183226735,unknown_or_conditional,True,False,False,792.4091183226735,0.0,False,True,False,False
+way,499795295,way_499795295,Taman Tidar,unknown,1914.9965673076626,unknown_or_conditional,True,False,False,1914.9965673076626,0.0,False,True,False,False
+way,499795253,way_499795253,Taman Merbabu,unknown,2100.9668519342013,unknown_or_conditional,True,False,False,2100.9668519342013,0.0,False,True,False,False
+way,499795366,way_499795366,Unnamed Park,unknown,1527.8772912873446,unknown_or_conditional,True,False,False,1527.8772912873446,0.0,True,True,False,False
+way,709149942,way_709149942,Taman Apung,unknown,4195.088488552675,unknown_or_conditional,True,False,False,4195.088488552675,0.0,False,True,False,False
+way,221344718,way_221344718,Bumi Perkemahan Wiladatika,unknown,1621318.419841748,unknown_or_conditional,True,False,False,1621318.419841748,0.0,False,True,True,False
+way,499845776,way_499845776,Taman Bermain Anak 417,unknown,567.8481289637148,unknown_or_conditional,True,False,False,567.8481289637148,0.0,False,True,False,False
+relation,9864245,relation_9864245,Taman Kota Pondok Ranggon,unknown,27541.99595732366,unknown_or_conditional,True,False,False,27541.99595732366,0.0,False,True,False,False
+way,506848474,way_506848474,Hutan Kota Munjul,unknown,10747.21336958895,unknown_or_conditional,True,False,False,10747.21336958895,0.0,False,True,False,False
+way,1104591273,way_1104591273,Unnamed Park,unknown,3089.495729473802,unknown_or_conditional,True,False,False,3089.495729473802,0.0,True,True,False,False
+relation,14706781,relation_14706781,Unnamed Park,unknown,126.23156283373575,unknown_or_conditional,True,False,False,126.23156283373575,0.0,True,True,False,False
+way,709174334,way_709174334,RPTRA,unknown,5281.629869978033,unknown_or_conditional,True,False,False,5281.629869978033,0.0,False,True,False,False
+way,960188069,way_960188069,Unnamed Park,unknown,15880.114820655284,unknown_or_conditional,True,False,False,15880.114820655284,0.0,True,True,False,False
+way,960188076,way_960188076,RPTRA Tunas Bangsa Bisa,unknown,1081.4241862429344,unknown_or_conditional,True,False,False,1081.4241862429344,0.0,False,True,False,False
+way,155948408,way_155948408,Agrowisata Cilangkap,unknown,199311.9807364862,unknown_or_conditional,True,False,False,199311.9807364862,0.0,False,True,False,False
+way,960192622,way_960192622,Unnamed Park,unknown,1131.420885863563,unknown_or_conditional,True,False,False,1131.420885863563,0.0,True,True,False,False
+way,709163645,way_709163645,Taman,unknown,889.7829448137151,unknown_or_conditional,True,False,False,889.7829448137151,0.0,False,True,False,False
+way,518253307,way_518253307,Taman Maju Bersama,unknown,3165.4694144209416,unknown_or_conditional,True,False,False,3165.4694144209416,0.0,False,True,False,False
+way,1104600118,way_1104600118,Unnamed Park,unknown,2711.287671472065,unknown_or_conditional,True,False,False,2711.287671472065,0.0,True,True,False,False
+way,155949294,way_155949294,Taman Mahoni,unknown,5604.579998627412,unknown_or_conditional,True,False,False,5604.579998627412,0.0,False,True,False,False
+way,1104600120,way_1104600120,Unnamed Park,unknown,1447.9529010599608,unknown_or_conditional,True,False,False,1447.9529010599608,0.0,True,True,False,False
+way,1104600119,way_1104600119,Unnamed Park,unknown,4218.193555957813,unknown_or_conditional,True,False,False,4218.193555957813,0.0,True,True,False,False
+way,1104600121,way_1104600121,Unnamed Park,unknown,746.2378991564751,unknown_or_conditional,True,False,False,746.2378991564751,0.0,True,True,False,False
+way,159950707,way_159950707,Hutan Kota Cipayung,unknown,11875.733697973485,unknown_or_conditional,True,False,False,11875.733697973485,0.0,False,True,False,False
+way,1104600123,way_1104600123,Unnamed Park,unknown,1733.0996894753648,unknown_or_conditional,True,False,False,1733.0996894753648,0.0,True,True,False,False
+way,960202515,way_960202515,RPTRA Garuda,unknown,4796.339927772919,unknown_or_conditional,True,False,False,4796.339927772919,0.0,False,True,False,False
+way,1104600116,way_1104600116,Unnamed Park,unknown,481.31569795393546,unknown_or_conditional,True,False,False,481.31569795393546,0.0,True,True,False,False
+way,155948440,way_155948440,Taman Flamboyan,unknown,10783.117198395606,unknown_or_conditional,True,False,False,10783.117198395606,0.0,False,True,False,False
+way,960195244,way_960195244,Taman Melati,unknown,13117.012580029961,unknown_or_conditional,True,False,False,13117.012580029961,0.0,False,True,False,False
+way,1104600122,way_1104600122,Unnamed Park,unknown,8438.153713634538,unknown_or_conditional,True,False,False,8438.153713634538,0.0,True,True,False,False
+way,159953275,way_159953275,Unnamed Park,unknown,18437.194426101592,unknown_or_conditional,True,False,False,18437.194426101592,0.0,True,True,False,False
+way,159810611,way_159810611,Unnamed Park,unknown,6734.101860522911,unknown_or_conditional,True,False,False,6734.101860522911,0.0,True,True,False,False
+way,513757155,way_513757155,Unnamed Park,unknown,305.652694161509,unknown_or_conditional,True,False,False,305.652694161509,0.0,True,True,False,False
+way,1316349676,way_1316349676,Taman Dara,unknown,11595.632319382059,unknown_or_conditional,True,False,False,11595.632319382059,0.0,False,True,False,False
+way,1476919985,way_1476919985,Unnamed Park,unknown,19645.519778390913,unknown_or_conditional,True,False,False,19645.519778390913,0.0,True,True,False,False
+way,1104600124,way_1104600124,Unnamed Park,unknown,3139.711013277357,unknown_or_conditional,True,False,False,3139.711013277357,0.0,True,True,False,False
+way,519614895,way_519614895,Taman Layang-Layang,unknown,7169.938976123765,unknown_or_conditional,True,False,False,7169.938976123765,0.0,False,True,False,False
+way,1234077452,way_1234077452,Unnamed Park,unknown,19142.909755649107,unknown_or_conditional,True,False,False,19142.909755649107,0.0,True,True,False,False
+way,514202575,way_514202575,Taman WARU,unknown,2554.107931523869,unknown_or_conditional,True,False,False,2554.107931523869,0.0,False,True,False,False
+relation,9864150,relation_9864150,Unnamed Park,unknown,8184.655195186736,unknown_or_conditional,True,False,False,8184.655195186736,0.0,True,True,False,False
+way,1234077451,way_1234077451,Unnamed Park,unknown,45238.10030284844,unknown_or_conditional,True,False,False,45238.10030284844,0.0,True,True,False,False
+way,155965205,way_155965205,Unnamed Park,unknown,13350.297782728017,unknown_or_conditional,True,False,False,13350.297782728017,0.0,True,True,False,False
+way,1260436470,way_1260436470,Taman Humaniora,unknown,1658.720994866199,unknown_or_conditional,True,False,False,1658.720994866199,0.0,False,True,False,False
+way,377411509,way_377411509,Plaza Keong Emas,unknown,9156.374554390748,unknown_or_conditional,True,False,False,9156.374554390748,0.0,False,True,False,False
+way,196953679,way_196953679,Unnamed Park,unknown,19444.356776229157,unknown_or_conditional,True,False,False,19444.356776229157,0.0,True,True,False,False
+way,492980553,way_492980553,RLS Pondok Ranggon,unknown,169403.7156551614,unknown_or_conditional,True,False,False,169403.7156551614,2.014262769339109e-08,False,True,True,False
+way,1478541302,way_1478541302,Jakarta Escape,unknown,15260.890928069413,unknown_or_conditional,True,False,False,15260.890928069413,3.0942870246327206e-09,False,True,True,False
+way,1330449127,way_1330449127,Taman Bambu,unknown,34712.302342918454,unknown_or_conditional,True,False,False,34712.302342918454,0.0,False,True,False,False
+way,123343173,way_123343173,Unnamed Park,unknown,3826.443118523237,unknown_or_conditional,True,False,False,3826.443118523237,0.0,True,True,False,False
+way,671178693,way_671178693,Taman Interaksi,unknown,1318.2263654141848,unknown_or_conditional,True,False,False,1318.2263654141848,0.0,False,True,False,False
+way,121188593,way_121188593,Taman Warga 0506,unknown,5042.37417684934,unknown_or_conditional,True,False,False,5042.37417684934,0.0,False,True,False,False
+way,558120890,way_558120890,Taman Hutan Pondok Kelapa,unknown,997.3995156939711,unknown_or_conditional,True,False,False,997.3995156939711,0.0,False,True,False,False
+way,512554817,way_512554817,Taman Lapangan Basket,unknown,622.8253510137647,unknown_or_conditional,True,False,False,622.8253510137647,0.0,False,True,False,False
+way,547854128,way_547854128,Taman Malaka Selatan,unknown,2179.3861057133463,unknown_or_conditional,True,False,False,2179.3861057133463,0.0,False,True,False,False
+way,1348477726,way_1348477726,Taman FT,unknown,229.73486571453986,unknown_or_conditional,True,False,False,229.73486571453986,0.0,False,True,False,False
+way,432786757,way_432786757,Unnamed Park,unknown,11963.302972018872,unknown_or_conditional,True,False,False,11963.302972018872,0.0,True,True,False,False
+way,1203430307,way_1203430307,Taman Dukuh,unknown,5734.905769718915,unknown_or_conditional,True,False,False,5734.905769718915,0.0,False,True,False,False
+way,1476528026,way_1476528026,Unnamed Park,unknown,35269.06410890186,unknown_or_conditional,True,False,False,35269.06410890186,0.0,True,True,False,False
+way,544489631,way_544489631,Unnamed Park,unknown,19369.006425465883,unknown_or_conditional,True,False,False,19369.006425465883,0.0,True,True,False,False
+way,544488355,way_544488355,Unnamed Park,unknown,19345.262077559328,unknown_or_conditional,True,False,False,19345.262077559328,0.0,True,True,False,False
+way,960202514,way_960202514,Hutan Kota Dukuh,unknown,6173.133526760485,unknown_or_conditional,True,False,False,6173.133526760485,0.0,False,True,False,False
+way,500567428,way_500567428,Unnamed Park,unknown,13006.735954825237,unknown_or_conditional,True,False,False,13006.735954825237,0.0,True,True,False,False
+way,155930830,way_155930830,Taman,unknown,612.4690410559432,unknown_or_conditional,True,False,False,612.4690410559432,0.0,False,True,False,False
+way,1158752464,way_1158752464,Taman Segitiga Intirub,yes,3466.7005965439243,access_positive_tag_unverified,True,False,False,3466.7005965439243,0.0,False,True,False,False
+way,98569381,way_98569381,Unnamed Park,unknown,2504.586480456826,unknown_or_conditional,True,False,False,2504.586480456826,0.0,True,True,False,False
+way,461292665,way_461292665,Taman Mini Borobudur,unknown,3550.6929065266863,unknown_or_conditional,True,False,False,3550.6929065266863,0.0,False,True,False,False
+way,1056619749,way_1056619749,Taman Prasasti APEC,unknown,1100.2646001080732,unknown_or_conditional,True,False,False,1100.2646001080732,0.0,False,True,False,False
+way,301440100,way_301440100,Taman Burung,unknown,5406.328668130763,unknown_or_conditional,True,False,False,5406.328668130763,0.0,False,True,False,False
+way,197726849,way_197726849,Taman Burung,unknown,2006.0033368552392,unknown_or_conditional,True,False,False,2006.0033368552392,0.0,False,True,False,False
+way,301440101,way_301440101,Taman Burung,unknown,3580.3902590853504,unknown_or_conditional,True,False,False,3580.3902590853504,0.0,False,True,False,False
+way,1260529451,way_1260529451,RPTRA Mutiara Rawa Binong,unknown,1840.8215708769935,unknown_or_conditional,True,False,False,1840.8215708769935,0.0,False,True,False,False
+way,158667991,way_158667991,Unnamed Park,unknown,53907.41933090897,unknown_or_conditional,True,False,False,53907.41933090897,6.702267952912386e-08,True,True,True,False
+way,155955620,way_155955620,Taman RW 011,unknown,714.6650252793602,unknown_or_conditional,True,False,False,714.6650252793602,0.0,False,True,False,False
+way,1154914329,way_1154914329,Lapangan Umum,unknown,2364.870601793753,unknown_or_conditional,True,False,False,2364.870601793753,0.0,False,True,False,False
+way,155955516,way_155955516,Taman RW 08,unknown,865.3002788767965,unknown_or_conditional,True,False,False,865.3002788767965,0.0,False,True,False,False
+way,1348477727,way_1348477727,Taman FBB,unknown,185.5072740358687,unknown_or_conditional,True,False,False,185.5072740358687,0.0,False,True,False,False
+way,1348477728,way_1348477728,Taman,unknown,852.4643011700344,unknown_or_conditional,True,False,False,852.4643011700344,0.0,False,True,False,False
+way,1323079368,way_1323079368,Unnamed Park,unknown,26573.235274106104,unknown_or_conditional,True,False,False,26573.235274106104,0.0,True,True,False,False
+way,1323079367,way_1323079367,Unnamed Park,unknown,2071.664998856549,unknown_or_conditional,True,False,False,2071.664998856549,0.0,True,True,False,False
+way,558120692,way_558120692,Taman GPTP,unknown,2757.0874234195717,unknown_or_conditional,True,False,False,2757.0874234195717,0.0,False,True,False,False
+way,1323079364,way_1323079364,Unnamed Park,unknown,6007.32210651319,unknown_or_conditional,True,False,False,6007.32210651319,0.0,True,True,False,False
+way,318510195,way_318510195,Taman Amehe Banjir Kanal Timur,unknown,1692.1370419764833,unknown_or_conditional,True,False,False,1692.1370419764833,0.0,False,True,False,False
+way,1323078025,way_1323078025,Unnamed Park,unknown,9185.145367368512,unknown_or_conditional,True,False,False,9185.145367368512,0.0,True,True,False,False
+way,1347906150,way_1347906150,Unnamed Park,unknown,2147.079619624287,unknown_or_conditional,True,False,False,2147.079619624287,0.0,True,True,False,False
+way,121375652,way_121375652,Unnamed Park,unknown,867.7523832044025,unknown_or_conditional,True,False,False,867.7523832044025,0.0,True,True,False,False
+way,1498839992,way_1498839992,tama segitiga cipinang indah,unknown,1557.8557571390786,unknown_or_conditional,True,False,False,1557.8557571390786,0.0,False,True,False,False
+way,1154914798,way_1154914798,Taman dan Pasar Malam Banjir Kanal Timur,unknown,863.9649690710228,unknown_or_conditional,True,False,False,863.9649690710228,0.0,False,True,False,False
+relation,18149747,relation_18149747,Unnamed Park,unknown,1832.2064938080769,unknown_or_conditional,True,False,False,1832.2064938080769,0.0,True,True,False,False
+way,1326442074,way_1326442074,Unnamed Park,unknown,3795.659772260971,unknown_or_conditional,True,False,False,3795.659772260971,0.0,True,True,False,False
+way,1326442075,way_1326442075,Unnamed Park,unknown,2426.07435621531,unknown_or_conditional,True,False,False,2426.07435621531,0.0,True,True,False,False
+way,845609274,way_845609274,Taman Jogging Outdoor Bassura City,unknown,1746.0483995755992,unknown_or_conditional,True,False,False,1746.0483995755992,0.0,False,True,False,False
+way,1498834499,way_1498834499,Taman Al Iman Cipinang Elok,unknown,1539.9704624480678,unknown_or_conditional,True,False,False,1539.9704624480678,0.0,False,True,False,False
+way,490845104,way_490845104,Taman Interaksi Sosial,unknown,354.65388155134724,unknown_or_conditional,True,False,False,354.65388155134724,0.0,False,True,False,False
+way,845589292,way_845589292,TAMAN BARKAH,unknown,3676.402279484303,unknown_or_conditional,True,False,False,3676.402279484303,0.0,False,True,False,False
+way,1498579028,way_1498579028,Taman Viaduk Jatinegara,unknown,19045.78656053338,unknown_or_conditional,True,False,False,19045.78656053338,0.0,False,True,False,False
+way,513486573,way_513486573,Unnamed Park,unknown,2721.3791067363027,unknown_or_conditional,True,False,False,2721.3791067363027,0.0,True,True,True,False
+way,960192623,way_960192623,Taman Delonix,unknown,8165.521935466943,unknown_or_conditional,True,False,False,8165.521935466943,0.0,False,True,False,False
+way,1511545322,way_1511545322,Unnamed Park,unknown,3287.3164110214393,unknown_or_conditional,True,False,False,3287.3164110214393,0.0,True,True,False,False
+way,155957598,way_155957598,Lapangan Kancut,unknown,1991.857198231427,unknown_or_conditional,True,False,False,1991.857198231427,0.0,False,True,True,False
+way,155957612,way_155957612,Trikora,unknown,456.04959736335593,unknown_or_conditional,True,False,False,456.04959736335593,0.0,False,True,False,False
+way,519194679,way_519194679,Unnamed Park,unknown,8782.26995643978,unknown_or_conditional,True,False,False,8782.26995643978,0.0,True,True,True,False
+way,1155598437,way_1155598437,Taman Bulak Rantai,unknown,219.59575762037696,unknown_or_conditional,True,False,False,219.59575762037696,0.0,False,True,False,False
+way,1498833755,way_1498833755,Lapangan 1,unknown,148.25657646798842,unknown_or_conditional,True,False,False,148.25657646798842,0.0,False,True,False,False
+way,487517516,way_487517516,Unnamed Park,unknown,2295.830614016416,unknown_or_conditional,True,False,False,2295.830614016416,0.0,True,True,False,False
+way,256007178,way_256007178,Unnamed Park,unknown,375.76887235247,unknown_or_conditional,True,False,False,375.76887235247,0.0,True,True,False,False
+way,1498946561,way_1498946561,Taman Al-Biruni,unknown,223.58176862735644,unknown_or_conditional,True,False,False,223.58176862735644,0.0,False,True,False,False
+way,514131595,way_514131595,Unnamed Park,unknown,458.99337315790626,unknown_or_conditional,True,False,False,458.99337315790626,0.0,True,True,False,False
+way,157364033,way_157364033,Taman Kota,unknown,5797.639652782723,unknown_or_conditional,True,False,False,5797.639652782723,0.0,False,True,False,False
+way,377096996,way_377096996,Unnamed Park,unknown,131.42955909282597,unknown_or_conditional,True,False,False,131.42955909282597,0.0,True,True,False,False
+way,284350651,way_284350651,Taman Janggrek,unknown,1534.4283406270135,unknown_or_conditional,True,False,False,1534.4283406270135,0.0,False,True,False,False
+way,157365909,way_157365909,Taman Tanjung,unknown,8335.073354414299,unknown_or_conditional,True,False,False,8335.073354414299,0.0,False,True,False,False
+way,32491717,way_32491717,Unnamed Park,unknown,2683.2935899677796,unknown_or_conditional,True,False,False,2683.2935899677796,0.0,True,True,False,False
+way,528275276,way_528275276,Unnamed Park,unknown,35.628500145266045,unknown_or_conditional,True,False,False,35.628500145266045,0.0,True,True,False,False
+way,1548779681,way_1548779681,Lapangan Besar AUP kampus Jakarta,permissive,2892.2523351855857,access_positive_tag_unverified,True,False,False,2892.2523351855857,0.0,False,True,False,False
+way,32261596,way_32261596,Unnamed Park,unknown,1872.1670054209503,unknown_or_conditional,True,False,False,1872.1670054209503,0.0,True,True,False,False
+way,32290684,way_32290684,Unnamed Park,unknown,1345.1231790522756,unknown_or_conditional,True,False,False,1345.1231790522756,0.0,True,True,False,False
+way,32261512,way_32261512,Unnamed Park,unknown,2604.344591512644,unknown_or_conditional,True,False,False,2604.344591512644,0.0,True,True,False,False
+way,32507115,way_32507115,Unnamed Park,unknown,1629.878594828444,unknown_or_conditional,True,False,False,1629.878594828444,0.0,True,True,False,False
+way,814541499,way_814541499,Unnamed Park,unknown,18.115103053176018,unknown_or_conditional,True,False,False,18.115103053176018,0.0,True,True,False,False
+way,32251703,way_32251703,Unnamed Park,unknown,3333.725719566969,unknown_or_conditional,True,False,False,3333.725719566969,0.0,True,True,False,False
+way,157363193,way_157363193,Taman Pemakaman,unknown,6579.897799213337,unknown_or_conditional,True,False,False,6579.897799213337,0.0,False,True,False,False
+way,32225824,way_32225824,Taman Komplek Bank Niaga - Al Fajri,unknown,664.8731791403823,unknown_or_conditional,True,False,False,664.8731791403823,0.0,False,True,False,False
+way,490022851,way_490022851,Taman Komplek Garuda,unknown,1911.9858752113691,unknown_or_conditional,True,False,False,1911.9858752113691,0.0,False,True,False,False
+way,157356711,way_157356711,Taman Komplek PT Pas,unknown,497.03941793011234,unknown_or_conditional,True,False,False,497.03941793011234,0.0,False,True,False,False
+way,31662814,way_31662814,Unnamed Park,unknown,4274.391467811548,unknown_or_conditional,True,False,False,4274.391467811548,0.0,True,True,False,False
+way,256007183,way_256007183,Unnamed Park,unknown,375.7682389054721,unknown_or_conditional,True,False,False,375.7682389054721,0.0,True,True,False,False
+way,256007184,way_256007184,Unnamed Park,unknown,375.70433036426874,unknown_or_conditional,True,False,False,375.70433036426874,0.0,True,True,False,False
+way,256007180,way_256007180,Unnamed Park,unknown,375.768667983862,unknown_or_conditional,True,False,False,375.768667983862,0.0,True,True,False,False
+way,256007182,way_256007182,Unnamed Park,unknown,375.7689589208788,unknown_or_conditional,True,False,False,375.7689589208788,0.0,True,True,False,False
+way,256007185,way_256007185,Unnamed Park,unknown,375.6644280648443,unknown_or_conditional,True,False,False,375.6644280648443,0.0,True,True,False,False
+way,256007179,way_256007179,Unnamed Park,unknown,375.5523464843867,unknown_or_conditional,True,False,False,375.5523464843867,0.0,True,True,False,False
+way,256007177,way_256007177,Unnamed Park,unknown,375.549995799947,unknown_or_conditional,True,False,False,375.549995799947,0.0,True,True,False,False
+way,256007176,way_256007176,Unnamed Park,unknown,375.6644290736515,unknown_or_conditional,True,False,False,375.6644290736515,0.0,True,True,False,False
+way,256007181,way_256007181,Unnamed Park,unknown,375.76996600483955,unknown_or_conditional,True,False,False,375.76996600483955,0.0,True,True,False,False
+way,685540738,way_685540738,Taman Segitiga,unknown,2412.196323873383,unknown_or_conditional,True,False,False,2412.196323873383,0.0,False,True,False,False
+way,491739757,way_491739757,Klub Eksekutif Persada,unknown,83122.01933546217,unknown_or_conditional,True,False,False,83122.01933546217,0.0,False,True,False,False
+way,1230501141,way_1230501141,Taman Belakang FT,unknown,111.10979316768683,unknown_or_conditional,True,False,False,111.10979316768683,0.0,False,True,False,False
+way,1230504448,way_1230504448,International Takraw Field,unknown,70.7286248329701,unknown_or_conditional,True,False,False,70.7286248329701,0.0,False,True,False,False
+way,1230501598,way_1230501598,Lapangan Futsal,unknown,265.4934315050443,unknown_or_conditional,True,False,False,265.4934315050443,0.0,False,True,False,False
+way,1230501597,way_1230501597,Lapangan Volly,unknown,239.5682301913075,unknown_or_conditional,True,False,False,239.5682301913075,0.0,False,True,False,False
+way,1230501596,way_1230501596,Lapangan Basket,unknown,474.73288805915746,unknown_or_conditional,True,False,False,474.73288805915746,0.0,False,True,False,False
+way,97921383,way_97921383,Biru Laut,unknown,2141.333281788535,unknown_or_conditional,True,False,False,2141.333281788535,0.0,False,True,False,False
+way,98588981,way_98588981,Unnamed Park,unknown,10534.292717479788,unknown_or_conditional,True,False,False,10534.292717479788,0.0,True,True,False,False
+way,155957309,way_155957309,Hijau Daun,unknown,1064.545570684845,unknown_or_conditional,True,False,False,1064.545570684845,0.0,False,True,False,False
+way,155957330,way_155957330,Taman Cornelius Simanjuntak,unknown,6480.076122524102,unknown_or_conditional,True,False,False,6480.076122524102,0.0,False,True,False,False
+way,1230504331,way_1230504331,Taman Baca,unknown,1514.570058224748,unknown_or_conditional,True,False,False,1514.570058224748,0.0,False,True,False,False
+way,1230504330,way_1230504330,Lapangan Bola,unknown,6664.029450767295,unknown_or_conditional,True,False,False,6664.029450767295,0.0,False,True,False,False
+way,1456472210,way_1456472210,Unnamed Park,unknown,4086.404726186198,unknown_or_conditional,True,False,False,4086.404726186198,0.0,True,True,False,False
+way,482343031,way_482343031,Unnamed Park,unknown,171.7546140116573,unknown_or_conditional,True,False,False,171.7546140116573,0.0,True,True,False,False
+way,155962694,way_155962694,interaktif RW 11,unknown,376.42037484063457,unknown_or_conditional,True,False,False,376.42037484063457,0.0,False,True,True,False
+way,684684387,way_684684387,seno park,unknown,4175.711285555574,unknown_or_conditional,True,False,False,4175.711285555574,0.0,False,True,False,False
+way,1268320079,way_1268320079,Tebet Eco Park,unknown,43619.92631437887,unknown_or_conditional,True,False,False,43619.92631437887,0.0,False,True,False,False
+way,1498994933,way_1498994933,Unnamed Park,unknown,450.5591738468881,unknown_or_conditional,True,False,False,450.5591738468881,0.0,True,True,False,False
+way,225197112,way_225197112,Unnamed Park,unknown,210.62456193818358,unknown_or_conditional,True,False,False,210.62456193818358,0.0,True,True,False,False
+way,225195355,way_225195355,Unnamed Park,unknown,402.3961762503903,unknown_or_conditional,True,False,False,402.3961762503903,0.0,True,True,False,False
+way,487616065,way_487616065,Unnamed Park,unknown,707.7858438189779,unknown_or_conditional,True,False,False,707.7858438189779,0.0,True,True,False,False
+way,31612748,way_31612748,Unnamed Park,unknown,5730.911246327578,unknown_or_conditional,True,False,False,5730.911246327578,0.0,True,True,False,False
+way,31613749,way_31613749,Unnamed Park,unknown,58726.61114587878,unknown_or_conditional,True,False,False,58726.61114587878,0.0,True,True,False,False
+way,488419585,way_488419585,Unnamed Park,unknown,258.9542917742529,unknown_or_conditional,True,False,False,258.9542917742529,0.0,True,True,False,False
+way,28224737,way_28224737,Taman Patra Kuningan,unknown,18661.261537340786,unknown_or_conditional,True,False,False,18661.261537340786,0.0,False,True,False,False
+way,28688587,way_28688587,Unnamed Park,unknown,1420.2137009376306,unknown_or_conditional,True,False,False,1420.2137009376306,0.0,True,True,False,False
+way,1498799295,way_1498799295,Taman Palbatu,unknown,1047.317377069355,unknown_or_conditional,True,False,False,1047.317377069355,0.0,False,True,False,False
+way,157357403,way_157357403,Taman Inetraktif Baturaya,unknown,481.2146166368058,unknown_or_conditional,True,False,False,481.2146166368058,0.0,False,True,False,False
+relation,17585207,relation_17585207,Taman Kuningan Mulia,unknown,15607.83009202261,unknown_or_conditional,True,False,False,15607.83009202261,0.0,False,True,False,False
+way,28194028,way_28194028,Taman Tangkuban Perahu,unknown,7477.778239016702,unknown_or_conditional,True,False,False,7477.778239016702,0.0,False,True,False,False
+way,29102684,way_29102684,Unnamed Park,unknown,333.86609890988154,unknown_or_conditional,True,False,False,333.86609890988154,0.0,True,True,False,False
+way,28259160,way_28259160,Tebet Eco Park,unknown,28600.168604321145,unknown_or_conditional,True,False,False,28600.168604321145,0.0,False,True,False,False
+way,484854771,way_484854771,Taman Tebet Timur Dalam VI,unknown,778.8244120260006,unknown_or_conditional,True,False,False,778.8244120260006,0.0,False,True,False,False
+way,227095902,way_227095902,Unnamed Park,unknown,566.2043806906108,unknown_or_conditional,True,False,False,566.2043806906108,0.0,True,True,False,False
+way,29253820,way_29253820,Unnamed Park,unknown,594.5960278872321,unknown_or_conditional,True,False,False,594.5960278872321,0.0,True,True,False,False
+way,29253819,way_29253819,Unnamed Park,unknown,1442.373663032675,unknown_or_conditional,True,False,False,1442.373663032675,0.0,True,True,False,False
+way,227098073,way_227098073,Taman Bermain,unknown,163.3318366835475,unknown_or_conditional,True,False,False,163.3318366835475,0.0,False,True,False,False
+way,29253818,way_29253818,Unnamed Park,unknown,1180.5171299248334,unknown_or_conditional,True,False,False,1180.5171299248334,0.0,True,True,False,False
+way,497613061,way_497613061,Unnamed Park,unknown,250.49648806905776,unknown_or_conditional,True,False,False,250.49648806905776,0.0,True,True,False,False
+way,487643200,way_487643200,Unnamed Park,unknown,235.78847224270697,unknown_or_conditional,True,False,False,235.78847224270697,0.0,True,True,False,False
+way,1268118681,way_1268118681,taman sederhana,unknown,1362.5490478368613,unknown_or_conditional,True,False,False,1362.5490478368613,0.0,False,True,False,False
+way,1131907583,way_1131907583,Unnamed Park,unknown,4916.148882746773,unknown_or_conditional,True,False,False,4916.148882746773,0.0,True,True,False,False
+way,1268118971,way_1268118971,taman kecil,unknown,622.6872735903784,unknown_or_conditional,True,False,False,622.6872735903784,0.0,False,True,False,False
+way,484859414,way_484859414,Unnamed Park,unknown,393.8071818677955,unknown_or_conditional,True,False,False,393.8071818677955,0.0,True,True,False,False
+way,485239270,way_485239270,Unnamed Park,unknown,1616.5248244014572,unknown_or_conditional,True,False,False,1616.5248244014572,0.0,True,True,False,False
+way,1098419494,way_1098419494,Taman Sentra BRI,unknown,4075.133955437881,unknown_or_conditional,True,False,False,4075.133955437881,0.0,False,True,False,False
+way,157347158,way_157347158,Taman Sampoerna Strategic Square,unknown,11518.301248057438,unknown_or_conditional,True,False,False,11518.301248057438,0.0,False,True,True,False
+way,1267913335,way_1267913335,Taman Karbela,unknown,1155.6863068076948,unknown_or_conditional,True,False,False,1155.6863068076948,0.0,False,True,False,False
+way,1267913334,way_1267913334,Taman Setiabudi,unknown,2299.471244982844,unknown_or_conditional,True,False,False,2299.471244982844,0.0,False,True,False,False
+way,31559904,way_31559904,Taman Bakrie,unknown,4332.068040216038,unknown_or_conditional,True,False,False,4332.068040216038,0.0,False,True,False,False
+way,845594693,way_845594693,Taman Segitiga Tongtek,unknown,1778.466301661871,unknown_or_conditional,True,False,False,1778.466301661871,0.0,False,True,True,False
+way,155950944,way_155950944,Pertigaan Tongtek,unknown,106.27119402477456,unknown_or_conditional,True,False,False,106.27119402477456,0.0,False,True,True,False
+way,846607203,way_846607203,Taman Himpunan Wanita Karya,unknown,1127.7395556461,unknown_or_conditional,True,False,False,1127.7395556461,0.0,False,True,False,False
+way,845892479,way_845892479,Unnamed Park,unknown,315.09539218389057,unknown_or_conditional,True,False,False,315.09539218389057,0.0,True,True,False,False
+way,846362302,way_846362302,Unnamed Park,unknown,38.901449930902686,unknown_or_conditional,True,False,False,38.901449930902686,0.0,True,True,False,False
+way,1568797906,way_1568797906,RPTRA Pesona Manggarai,unknown,1885.9551138379356,unknown_or_conditional,True,False,False,1885.9551138379356,0.0,False,True,False,False
+way,489268760,way_489268760,Unnamed Park,unknown,288.6924857096713,unknown_or_conditional,True,False,False,288.6924857096713,0.0,True,True,False,False
+way,31500044,way_31500044,Unnamed Park,unknown,222.93039911634722,unknown_or_conditional,True,False,False,222.93039911634722,0.0,True,True,False,False
+way,488432413,way_488432413,Plaza St. Manggarai,unknown,2603.635593970993,unknown_or_conditional,True,False,False,2603.635593970993,0.0,False,True,False,False
+way,482175947,way_482175947,Unnamed Park,unknown,516.4205176998198,unknown_or_conditional,True,False,False,516.4205176998198,0.0,True,True,False,False
+way,482175946,way_482175946,Unnamed Park,unknown,96.63762196255817,unknown_or_conditional,True,False,False,96.63762196255817,0.0,True,True,False,False
+way,28678758,way_28678758,Taman Proklamasi,unknown,36356.490592202535,unknown_or_conditional,True,False,False,36356.490592202535,0.0,False,True,False,False
+way,489779038,way_489779038,RPTRA Amir Hamzah,unknown,3609.780118285205,unknown_or_conditional,True,False,False,3609.780118285205,0.0,False,True,True,False
+way,28678754,way_28678754,Unnamed Park,unknown,12795.039663174397,unknown_or_conditional,True,False,False,12795.039663174397,0.0,True,True,False,False
+way,483403678,way_483403678,Taman Simpang UKU,unknown,397.54769789019167,unknown_or_conditional,True,False,False,397.54769789019167,0.0,False,True,False,False
+way,155109647,way_155109647,"Taman Pasar Genjing, Pramuka",unknown,4045.736931380589,unknown_or_conditional,True,False,False,4045.736931380589,0.0,False,True,True,False
+way,155946238,way_155946238,Taman Pengayoman,unknown,1444.1734451598193,unknown_or_conditional,True,False,False,1444.1734451598193,0.0,False,True,True,False
+way,1498551805,way_1498551805,Taman Mencos,unknown,1139.0221512344783,unknown_or_conditional,True,False,False,1139.0221512344783,0.0,False,True,False,False
+way,482410205,way_482410205,Unnamed Park,unknown,167.37031231193575,unknown_or_conditional,True,False,False,167.37031231193575,0.0,True,True,True,False
+way,1375865413,way_1375865413,Unnamed Park,unknown,354.2675782411093,unknown_or_conditional,True,False,False,354.2675782411093,0.0,True,True,False,False
+way,490845106,way_490845106,Unnamed Park,unknown,174.2282947665019,unknown_or_conditional,True,False,False,174.2282947665019,0.0,True,True,False,False
+way,490845105,way_490845105,Unnamed Park,unknown,116.77459486437769,unknown_or_conditional,True,False,False,116.77459486437769,0.0,True,True,False,False
+way,155953489,way_155953489,Taman Interaktif RW 05,unknown,713.0404828235919,unknown_or_conditional,True,False,False,713.0404828235919,0.0,False,True,False,False
+way,29497193,way_29497193,Unnamed Park,unknown,1526.1214004209753,unknown_or_conditional,True,False,False,1526.1214004209753,0.0,True,True,False,False
+way,29991345,way_29991345,Unnamed Park,unknown,544.0518904028953,unknown_or_conditional,True,False,False,544.0518904028953,0.0,True,True,False,False
+way,1427440918,way_1427440918,Unnamed Park,unknown,10005.491767673497,unknown_or_conditional,True,False,False,10005.491767673497,0.0,True,True,True,False
+way,1427440920,way_1427440920,Taman Arion,unknown,24698.516671343536,unknown_or_conditional,True,False,False,24698.516671343536,0.0,False,True,True,False
+way,1075721002,way_1075721002,Link In Park,unknown,15556.900925722846,unknown_or_conditional,True,False,False,15556.900925722846,0.0,False,True,True,False
+way,810686017,way_810686017,Taman Bela Negara,unknown,383.91558776321165,unknown_or_conditional,True,False,False,383.91558776321165,0.0,False,True,False,False
+way,500337099,way_500337099,Unnamed Park,unknown,1045.457368512886,unknown_or_conditional,True,False,False,1045.457368512886,0.0,True,True,False,False
+way,482904039,way_482904039,Taman Dukuh Atas,unknown,6056.244016228402,unknown_or_conditional,True,False,False,6056.244016228402,0.0,False,True,True,False
+way,404674684,way_404674684,Taman Sumenep,unknown,6211.236011788293,unknown_or_conditional,True,False,False,6211.236011788293,0.0,False,True,False,False
+way,28680053,way_28680053,Unnamed Park,unknown,14119.262245994973,unknown_or_conditional,True,False,False,14119.262245994973,0.0,True,True,False,False
+way,28679876,way_28679876,Taman Panarukan,unknown,2956.1465051551872,unknown_or_conditional,True,False,False,2956.1465051551872,0.0,False,True,False,False
+way,28679843,way_28679843,Taman Kodok,unknown,2782.4492045425613,unknown_or_conditional,True,False,False,2782.4492045425613,0.0,False,True,False,False
+way,28679873,way_28679873,Taman Panarukan,unknown,1828.6419594853044,unknown_or_conditional,True,False,False,1828.6419594853044,0.0,False,True,False,False
+way,28193134,way_28193134,Taman Menteng,unknown,24528.630598386728,unknown_or_conditional,True,False,False,24528.630598386728,0.0,False,True,False,False
+way,203858818,way_203858818,Mini Space Shuttle Park,unknown,490.3305823535077,unknown_or_conditional,True,False,False,490.3305823535077,0.0,False,True,False,False
+way,486500805,way_486500805,Unnamed Park,unknown,668.6459199381061,unknown_or_conditional,True,False,False,668.6459199381061,0.0,True,True,False,False
+way,481722143,way_481722143,Unnamed Park,unknown,461.5841253782856,unknown_or_conditional,True,False,False,461.5841253782856,0.0,True,True,False,False
+way,28678733,way_28678733,Taman Sukabumi,unknown,2911.000816493257,unknown_or_conditional,True,False,False,2911.000816493257,0.0,False,True,False,False
+way,155116923,way_155116923,Taman Karawang,unknown,407.3399013930057,unknown_or_conditional,True,False,False,407.3399013930057,0.0,False,True,False,False
+way,482208411,way_482208411,Taman Patung Diponegoro,unknown,2126.5326171916495,unknown_or_conditional,True,False,False,2126.5326171916495,0.0,False,True,False,False
+way,155116927,way_155116927,Taman Semarang,unknown,525.3600438864217,unknown_or_conditional,True,False,False,525.3600438864217,0.0,False,True,False,False
+way,28193017,way_28193017,Taman Suropati,unknown,15966.60012022966,unknown_or_conditional,True,False,False,15966.60012022966,0.0,False,True,False,False
+relation,7640286,relation_7640286,Taman Situ Lembang,unknown,4897.39804013984,unknown_or_conditional,True,False,False,4897.39804013984,0.0,False,True,False,False
+way,31598522,way_31598522,Unnamed Park,unknown,566.746864765978,unknown_or_conditional,True,False,False,566.746864765978,0.0,True,True,False,False
+way,1568797916,way_1568797916,Taman Cut Meutia,unknown,1909.050556811435,unknown_or_conditional,True,False,False,1909.050556811435,0.0,False,True,False,False
+way,499758735,way_499758735,Unnamed Park,unknown,219.02814819957655,unknown_or_conditional,True,False,False,219.02814819957655,0.0,True,True,False,False
+way,28697636,way_28697636,Tugu Tani,unknown,7081.555025175649,unknown_or_conditional,True,False,False,7081.555025175649,0.0,False,True,False,False
+way,493564011,way_493564011,Unnamed Park,unknown,109.29076292872942,unknown_or_conditional,True,False,False,109.29076292872942,0.0,True,True,False,False
+way,482109409,way_482109409,Unnamed Park,unknown,12202.457876109114,unknown_or_conditional,True,False,False,12202.457876109114,0.0,True,True,False,False
+way,484649970,way_484649970,Unnamed Park,unknown,106.85535669488932,unknown_or_conditional,True,False,False,106.85535669488932,0.0,True,True,False,False
+way,1331516886,way_1331516886,Unnamed Park,unknown,51.40476770498603,unknown_or_conditional,True,False,False,51.40476770498603,0.0,True,True,False,False
+way,155114331,way_155114331,Taman Lingkungan Tanah Tinggi,unknown,253.8999444973955,unknown_or_conditional,True,False,False,253.8999444973955,0.0,False,True,False,False
+way,29851149,way_29851149,Unnamed Park,unknown,1008.9887055039044,unknown_or_conditional,True,False,False,1008.9887055039044,0.0,True,True,False,False
+way,29851142,way_29851142,Unnamed Park,unknown,1062.274348388826,unknown_or_conditional,True,False,False,1062.274348388826,0.0,True,True,False,False
+way,155114330,way_155114330,Taman Bunderan Tanah Tinggi,unknown,1010.8233591705637,unknown_or_conditional,True,False,False,1010.8233591705637,0.0,False,True,False,False
+way,155114543,way_155114543,RTH RW 07,unknown,186.4900589608338,unknown_or_conditional,True,False,False,186.4900589608338,0.0,False,True,False,False
+way,155114893,way_155114893,RTH RT 03 RW 07,unknown,276.4754095630691,unknown_or_conditional,True,False,False,276.4754095630691,0.0,False,True,False,False
+way,1331226188,way_1331226188,Unnamed Park,unknown,510.7207893524082,unknown_or_conditional,True,False,False,510.7207893524082,0.0,True,True,False,False
+way,1331226187,way_1331226187,Unnamed Park,unknown,5299.583827619433,unknown_or_conditional,True,False,False,5299.583827619433,0.0,True,True,False,False
+way,1426002438,way_1426002438,Unnamed Park,unknown,7370.076496315904,unknown_or_conditional,True,False,False,7370.076496315904,0.0,True,True,False,False
+way,498981425,way_498981425,Unnamed Park,unknown,112.94841161906348,unknown_or_conditional,True,False,False,112.94841161906348,0.0,True,True,False,False
+way,498981424,way_498981424,Unnamed Park,unknown,101.4426887045934,unknown_or_conditional,True,False,False,101.4426887045934,0.0,True,True,False,False
+way,498981423,way_498981423,Unnamed Park,unknown,69.59042152331277,unknown_or_conditional,True,False,False,69.59042152331277,0.0,True,True,False,False
+way,886588522,way_886588522,Unnamed Park,unknown,312.06873369085156,unknown_or_conditional,True,False,False,312.06873369085156,0.0,True,True,False,False
+way,491288965,way_491288965,Unnamed Park,unknown,61.2517771995618,unknown_or_conditional,True,False,False,61.2517771995618,0.0,True,True,False,False
+way,498981729,way_498981729,Unnamed Park,unknown,46.635575709491235,unknown_or_conditional,True,False,False,46.635575709491235,0.0,True,True,False,False
+way,1208726556,way_1208726556,Unnamed Park,unknown,272.80649629826564,unknown_or_conditional,True,False,False,272.80649629826564,0.0,True,True,False,False
+way,628537709,way_628537709,Taman Monas,yes,670286.9688607678,access_positive_tag_unverified,True,False,False,670286.9688607678,0.0,False,True,False,False
+way,28216697,way_28216697,Monas Timur,unknown,52843.37465383065,unknown_or_conditional,True,False,False,52843.37465383065,0.0,False,True,False,False
+way,28216685,way_28216685,Monas Utara,unknown,112699.31640527541,unknown_or_conditional,True,False,False,112699.31640527541,0.0,False,True,False,False
+way,1160791201,way_1160791201,Taman Pandang Istana,unknown,570.6457793822286,unknown_or_conditional,True,False,False,570.6457793822286,0.0,False,True,False,False
+relation,18580255,relation_18580255,Unnamed Park,unknown,4031.5762227799764,unknown_or_conditional,True,False,False,4031.5762227799764,0.0,True,True,False,False
+way,157489878,way_157489878,Unnamed Park,unknown,2700.578230441943,unknown_or_conditional,True,False,False,2700.578230441943,0.0,True,True,False,False
+way,28706214,way_28706214,Unnamed Park,unknown,1173.634873423397,unknown_or_conditional,True,False,False,1173.634873423397,0.0,True,True,False,False
+way,775849626,way_775849626,Unnamed Park,unknown,159.04196211293788,unknown_or_conditional,True,False,False,159.04196211293788,0.0,True,True,False,False
+way,728928030,way_728928030,Unnamed Park,unknown,1202.8649143506698,unknown_or_conditional,True,False,False,1202.8649143506698,0.0,True,True,False,False
+way,763533926,way_763533926,Unnamed Park,unknown,319.35570331822373,unknown_or_conditional,True,False,False,319.35570331822373,0.0,True,True,False,False
+way,1330869496,way_1330869496,Unnamed Park,unknown,6799.634908021203,unknown_or_conditional,True,False,False,6799.634908021203,0.0,True,True,False,False
+way,1330869492,way_1330869492,Unnamed Park,unknown,1119.7456433566203,unknown_or_conditional,True,False,False,1119.7456433566203,0.0,True,True,False,False
+way,1330869491,way_1330869491,Unnamed Park,unknown,2079.642167317231,unknown_or_conditional,True,False,False,2079.642167317231,0.0,True,True,False,False
+way,1330869493,way_1330869493,Unnamed Park,unknown,689.2758993628615,unknown_or_conditional,True,False,False,689.2758993628615,0.0,True,True,False,False
+way,28705164,way_28705164,Lapangan Banteng,unknown,106263.27355069465,unknown_or_conditional,True,False,False,106263.27355069465,0.0,False,True,False,False
+way,155112800,way_155112800,Unnamed Park,unknown,3724.1379790124765,unknown_or_conditional,True,False,False,3724.1379790124765,0.0,True,True,False,False
+relation,22149809,relation_22149809,Unnamed Park,unknown,30443.461413033445,unknown_or_conditional,True,False,False,30443.461413033445,0.0,True,True,False,False
+way,594375798,way_594375798,OJK Park,unknown,1267.3969202178553,unknown_or_conditional,True,False,False,1267.3969202178553,0.0,False,True,False,False
+way,155112793,way_155112793,Unnamed Park,unknown,4019.2477663388354,unknown_or_conditional,True,False,False,4019.2477663388354,0.0,True,True,False,False
+relation,18580256,relation_18580256,Unnamed Park,unknown,4299.147795314962,unknown_or_conditional,True,False,False,4299.147795314962,0.0,True,True,False,False
+way,155114215,way_155114215,Ruang Terbuka Hijau,unknown,511.0467453864271,unknown_or_conditional,True,False,False,511.0467453864271,0.0,False,True,False,False
+way,1331517565,way_1331517565,Unnamed Park,unknown,705.1479668715142,unknown_or_conditional,True,False,False,705.1479668715142,0.0,True,True,False,False
+way,491273881,way_491273881,Unnamed Park,unknown,75.98947851558724,unknown_or_conditional,True,False,False,75.98947851558724,0.0,True,True,False,False
+way,492477449,way_492477449,RPTRA Harapan Mulia Agung Sedayu Group,unknown,4332.015843968296,unknown_or_conditional,True,False,False,4332.015843968296,0.0,False,True,False,False
+way,99851805,way_99851805,Taman Pirus,unknown,1937.537428313588,unknown_or_conditional,True,False,False,1937.537428313588,0.0,False,True,False,False
+way,155114686,way_155114686,Taman Intan,unknown,880.2838736015198,unknown_or_conditional,True,False,False,880.2838736015198,0.0,False,True,False,False
+way,155114688,way_155114688,Taman Topaz,unknown,1039.0411214077212,unknown_or_conditional,True,False,False,1039.0411214077212,0.0,False,True,False,False
+way,484265642,way_484265642,Unnamed Park,unknown,1174.3364785289116,unknown_or_conditional,True,False,False,1174.3364785289116,0.0,True,True,False,False
+way,511934498,way_511934498,Unnamed Park,unknown,518.2454460648655,unknown_or_conditional,True,False,False,518.2454460648655,0.0,True,True,False,False
+way,1330869478,way_1330869478,Unnamed Park,unknown,1469.7554830259476,unknown_or_conditional,True,False,False,1469.7554830259476,0.0,True,True,False,False
+way,318495633,way_318495633,Taman Waduk Ria Rio,unknown,11868.329393398093,unknown_or_conditional,True,False,False,11868.329393398093,0.0,False,True,True,False
+way,29796171,way_29796171,Unnamed Park,unknown,762.0467700609591,unknown_or_conditional,True,False,False,762.0467700609591,0.0,True,True,False,False
+way,1197353464,way_1197353464,Taman Teluk Ratai,yes,579.8101440188624,access_positive_tag_unverified,True,False,False,579.8101440188624,0.0,False,True,False,False
+way,508942960,way_508942960,Unnamed Park,unknown,399.47888065164267,unknown_or_conditional,True,False,False,399.47888065164267,0.0,True,True,False,False
+way,1188384120,way_1188384120,Taman Teluk Ratai,unknown,1395.8423480197712,unknown_or_conditional,True,False,False,1395.8423480197712,0.0,False,True,False,False
+way,834626654,way_834626654,Taman Teluk Ratai,unknown,662.0314128550123,unknown_or_conditional,True,False,False,662.0314128550123,0.0,False,True,False,False
+way,834627797,way_834627797,Taman Pulau Sambu,unknown,97.83748208449859,unknown_or_conditional,True,False,False,97.83748208449859,0.0,False,True,False,False
+way,1561048631,way_1561048631,Unnamed Park,unknown,282.6127993611322,unknown_or_conditional,True,False,False,282.6127993611322,0.0,True,True,False,False
+way,99345840,way_99345840,Unnamed Park,unknown,590.6832572766975,unknown_or_conditional,True,False,False,590.6832572766975,0.0,True,True,False,False
+way,99345821,way_99345821,Unnamed Park,unknown,589.7322130184572,unknown_or_conditional,True,False,False,589.7322130184572,0.0,True,True,False,False
+way,121375643,way_121375643,Unnamed Park,unknown,1421.9832659673914,unknown_or_conditional,True,False,False,1421.9832659673914,0.0,True,True,False,False
+way,121219765,way_121219765,Taman PKK RW.10,unknown,401.2252529909692,unknown_or_conditional,True,False,False,401.2252529909692,0.0,False,True,False,False
+way,1323077358,way_1323077358,Unnamed Park,unknown,3742.5931924655747,unknown_or_conditional,True,False,False,3742.5931924655747,0.0,True,True,False,False
+way,820878322,way_820878322,Unnamed Park,unknown,115.03190060752586,unknown_or_conditional,True,False,False,115.03190060752586,8.546373871185647e-10,True,True,True,False
+way,820878323,way_820878323,Unnamed Park,unknown,1760.145403652211,unknown_or_conditional,True,False,False,1760.145403652211,0.0,True,True,True,False
+way,318491873,way_318491873,Taman Kompleks Bumi Malaka Asri,unknown,891.277517871591,unknown_or_conditional,True,False,False,891.277517871591,0.0,False,True,False,False
+way,820878324,way_820878324,Unnamed Park,unknown,1301.7352872648876,unknown_or_conditional,True,False,False,1301.7352872648876,0.0,True,True,False,False
+way,119913564,way_119913564,Unnamed Park,unknown,6294.103642319846,unknown_or_conditional,True,False,False,6294.103642319846,0.0,True,True,False,False
+way,121651766,way_121651766,Unnamed Park,unknown,1493.3130863782355,unknown_or_conditional,True,False,False,1493.3130863782355,0.0,True,True,False,False
+way,820905765,way_820905765,Unnamed Park,unknown,171.2505133598271,unknown_or_conditional,True,False,False,171.2505133598271,0.0,True,True,False,False
+way,155955707,way_155955707,Taman RW 09,unknown,820.1569532278479,unknown_or_conditional,True,False,False,820.1569532278479,0.0,False,True,False,False
+way,691650759,way_691650759,Taman UT,unknown,2134.5601690835188,unknown_or_conditional,True,False,False,2134.5601690835188,0.0,False,True,False,False
+way,1323079369,way_1323079369,Unnamed Park,unknown,48332.29082907029,unknown_or_conditional,True,False,False,48332.29082907029,0.0,True,True,False,False
+way,1323082152,way_1323082152,Unnamed Park,unknown,7270.097779132152,unknown_or_conditional,True,False,False,7270.097779132152,0.0,True,True,False,False
+way,1323082157,way_1323082157,Unnamed Park,unknown,9690.698155405105,unknown_or_conditional,True,False,False,9690.698155405105,0.0,True,True,False,False
+way,117522976,way_117522976,Unnamed Park,unknown,10912.465860004479,unknown_or_conditional,True,False,False,10912.465860004479,0.0,True,True,False,False
+way,1268190572,way_1268190572,Unnamed Park,unknown,113.30818988518588,unknown_or_conditional,True,False,False,113.30818988518588,0.0,True,True,False,False
+way,123433371,way_123433371,Unnamed Park,unknown,2632.2193579274676,unknown_or_conditional,True,False,False,2632.2193579274676,0.0,True,True,False,False
+way,155960164,way_155960164,Interaktif RW 05,unknown,499.08208191706274,unknown_or_conditional,True,False,False,499.08208191706274,0.0,False,True,False,False
+way,29564171,way_29564171,Unnamed Park,unknown,100985.37301251691,unknown_or_conditional,True,False,False,100985.37301251691,0.0,True,True,False,False
+way,29687250,way_29687250,Unnamed Park,unknown,7257.389294386294,unknown_or_conditional,True,False,False,7257.389294386294,0.0,True,True,False,False
+way,820895230,way_820895230,Unnamed Park,unknown,7079.824681554406,unknown_or_conditional,True,False,False,7079.824681554406,0.0,True,True,False,False
+way,820895231,way_820895231,Unnamed Park,unknown,1301.4527808946107,unknown_or_conditional,True,False,False,1301.4527808946107,0.0,True,True,False,False
+way,29687798,way_29687798,Unnamed Park,unknown,1947.5559084227086,unknown_or_conditional,True,False,False,1947.5559084227086,0.0,True,True,False,False
+way,29687801,way_29687801,Unnamed Park,unknown,12230.338973162847,unknown_or_conditional,True,False,False,12230.338973162847,0.0,True,True,False,False
+way,29687799,way_29687799,Unnamed Park,unknown,4734.596650666804,unknown_or_conditional,True,False,False,4734.596650666804,0.0,True,True,False,False
+way,121341543,way_121341543,Unnamed Park,unknown,7409.90804392519,unknown_or_conditional,True,False,False,7409.90804392519,0.0,True,True,False,False
+way,29687797,way_29687797,Unnamed Park,unknown,2395.903251202601,unknown_or_conditional,True,False,False,2395.903251202601,0.0,True,True,False,False
+way,29690259,way_29690259,Unnamed Park,unknown,1725.0734751109496,unknown_or_conditional,True,False,False,1725.0734751109496,0.0,True,True,False,False
+way,263921133,way_263921133,Lapangan Taman Pinus,unknown,2279.205336241121,unknown_or_conditional,True,False,False,2279.205336241121,0.0,False,True,False,False
+way,29972991,way_29972991,Ketang-Ketang,unknown,2052.3803115000783,unknown_or_conditional,True,False,False,2052.3803115000783,0.0,False,True,False,False
+way,155957761,way_155957761,Taman Kompleks Perhubungan,unknown,2151.9382368824436,unknown_or_conditional,True,False,False,2151.9382368824436,0.0,False,True,False,False
+way,155957760,way_155957760,Taman Kompleks Perhubungan,unknown,3139.869424445498,unknown_or_conditional,True,False,False,3139.869424445498,0.0,False,True,False,False
+way,155962925,way_155962925,Gabus,unknown,319.2002484754074,unknown_or_conditional,True,False,False,319.2002484754074,0.0,False,True,False,False
+way,29972923,way_29972923,Nilam,unknown,2447.865876156451,unknown_or_conditional,True,False,False,2447.865876156451,0.0,False,True,False,False
+way,29973065,way_29973065,Lele,unknown,411.40920429043865,unknown_or_conditional,True,False,False,411.40920429043865,0.0,False,True,False,False
+way,29972922,way_29972922,Kepiting,unknown,489.94199628130656,unknown_or_conditional,True,False,False,489.94199628130656,0.0,False,True,False,False
+way,29973251,way_29973251,Taman Bandeng,unknown,353.5088511352454,unknown_or_conditional,True,False,False,353.5088511352454,0.0,False,True,False,False
+way,1411246824,way_1411246824,Taman Maskoki,unknown,882.0433533621633,unknown_or_conditional,True,False,False,882.0433533621633,0.0,False,True,False,False
+way,155962262,way_155962262,Duyung,unknown,1206.353816479409,unknown_or_conditional,True,False,False,1206.353816479409,0.0,False,True,False,False
+way,29687692,way_29687692,Unnamed Park,unknown,30156.385123876185,unknown_or_conditional,True,False,False,30156.385123876185,0.0,True,True,False,False
+way,263921132,way_263921132,Unnamed Park,unknown,2884.284698499009,unknown_or_conditional,True,False,False,2884.284698499009,0.0,True,True,False,False
+way,155961172,way_155961172,Hutan Kota Kawasan Industri Pulogadung,unknown,16731.8494839268,unknown_or_conditional,True,False,False,16731.8494839268,0.0,False,True,False,False
+way,1497568802,way_1497568802,Lapangan Tenis,yes,656.3068134410726,access_positive_tag_unverified,True,False,False,656.3068134410726,0.0,False,True,False,False
+way,159946247,way_159946247,Unnamed Park,unknown,2919.9213955130863,unknown_or_conditional,True,False,False,2919.9213955130863,0.0,True,True,False,False
+way,29548743,way_29548743,Unnamed Park,unknown,8298.442526485429,unknown_or_conditional,True,False,False,8298.442526485429,0.0,True,True,False,False
+way,29548745,way_29548745,Unnamed Park,unknown,2996.474238312094,unknown_or_conditional,True,False,False,2996.474238312094,0.0,True,True,False,False
+way,1498840372,way_1498840372,Lapangan #Mapathon_Ubakrie #Kelas_GIS_2026_Ubakrie #Latihan,unknown,4318.340630552153,unknown_or_conditional,True,False,False,4318.340630552153,0.0,False,True,False,False
+way,1558732211,way_1558732211,Hutan Kota Satria,unknown,8072.007109886693,unknown_or_conditional,True,False,False,8072.007109886693,0.0,False,True,False,False
+way,155961392,way_155961392,Taman Interaktif,unknown,1319.9253506422858,unknown_or_conditional,True,False,False,1319.9253506422858,0.0,False,True,False,False
+way,29973478,way_29973478,Duyung,unknown,1165.3310596289768,unknown_or_conditional,True,False,False,1165.3310596289768,0.0,False,True,False,False
+way,29973249,way_29973249,Taman Bandeng III,unknown,844.854039891778,unknown_or_conditional,True,False,False,844.854039891778,0.0,False,True,False,False
+way,155956170,way_155956170,Berdikari Sentosa,unknown,2247.387481690943,unknown_or_conditional,True,False,False,2247.387481690943,0.0,False,True,False,False
+way,1411246309,way_1411246309,Taman Lodan,unknown,970.5766132495472,unknown_or_conditional,True,False,False,970.5766132495472,0.0,False,True,False,False
+way,29973482,way_29973482,Taman Cakalang,unknown,735.9380235439453,unknown_or_conditional,True,False,False,735.9380235439453,0.0,False,True,False,False
+way,29482212,way_29482212,Unnamed Park,unknown,862.7229159909662,unknown_or_conditional,True,False,False,862.7229159909662,0.0,True,True,False,False
+way,29482189,way_29482189,Unnamed Park,unknown,2355.0686097677485,unknown_or_conditional,True,False,False,2355.0686097677485,0.0,True,True,False,False
+way,155956198,way_155956198,Unnamed Park,unknown,1085.4435633068285,unknown_or_conditional,True,False,False,1085.4435633068285,0.0,True,True,False,False
+way,155956215,way_155956215,Pulo Asem Utara,unknown,1086.9534726044535,unknown_or_conditional,True,False,False,1086.9534726044535,0.0,False,True,False,False
+way,29487281,way_29487281,Unnamed Park,unknown,2157.874315289594,unknown_or_conditional,True,False,False,2157.874315289594,0.0,True,True,False,False
+way,792506896,way_792506896,Unnamed Park,unknown,236.68068848657674,unknown_or_conditional,True,False,False,236.68068848657674,0.0,True,True,False,False
+way,792506898,way_792506898,Unnamed Park,unknown,60.90939708368985,unknown_or_conditional,True,False,False,60.90939708368985,0.0,True,True,False,False
+way,792506897,way_792506897,Unnamed Park,unknown,177.19621921577604,unknown_or_conditional,True,False,False,177.19621921577604,0.0,True,True,False,False
+way,792506895,way_792506895,Unnamed Park,unknown,1152.3361604395654,unknown_or_conditional,True,False,False,1152.3361604395654,0.0,True,True,False,False
+way,1147369096,way_1147369096,Unnamed Park,unknown,11465.87871147978,unknown_or_conditional,True,False,False,11465.87871147978,0.0,True,True,False,False
+way,758632395,way_758632395,Taman Gading Indah,unknown,910.4590980885537,unknown_or_conditional,True,False,False,910.4590980885537,0.0,False,True,False,False
+way,1409710855,way_1409710855,Unnamed Park,unknown,1035.3695629929482,unknown_or_conditional,True,False,False,1035.3695629929482,0.0,True,True,False,False
+way,525520321,way_525520321,RPTRA Griya Pratama,unknown,788.2460753149849,unknown_or_conditional,True,False,False,788.2460753149849,0.0,False,True,False,False
+way,627949032,way_627949032,Taman Melodi Mas,unknown,609.1155338671759,unknown_or_conditional,True,False,False,609.1155338671759,0.0,False,True,False,False
+way,128170680,way_128170680,Unnamed Park,unknown,5921.470355822053,unknown_or_conditional,True,False,False,5921.470355822053,0.0,True,True,False,False
+way,155961393,way_155961393,Taman Interaktif,unknown,156.1836096087356,unknown_or_conditional,True,False,False,156.1836096087356,0.0,False,True,False,False
+way,1417579114,way_1417579114,Taman Kota JGC,unknown,8532.050943813156,unknown_or_conditional,True,False,False,8532.050943813156,0.0,False,True,False,False
+way,415389259,way_415389259,Club House Jakarta Garden City,unknown,24257.08558965846,unknown_or_conditional,True,False,False,24257.08558965846,0.0,False,True,False,False
+way,1429026526,way_1429026526,Unnamed Park,unknown,2673.3442167208354,unknown_or_conditional,True,False,False,2673.3442167208354,0.0,True,True,False,False
+way,1558732222,way_1558732222,Taman Kerbau,unknown,10340.568685268465,unknown_or_conditional,True,False,False,10340.568685268465,0.0,False,True,False,False
+way,1558732223,way_1558732223,Taman Semut,unknown,18001.292845894586,unknown_or_conditional,True,False,False,18001.292845894586,0.0,False,True,False,False
+way,873115104,way_873115104,Unnamed Park,unknown,33797.72181651463,unknown_or_conditional,True,False,False,33797.72181651463,0.0,True,True,True,False
+way,1268146604,way_1268146604,Unnamed Park,unknown,186.32716537067944,unknown_or_conditional,True,False,False,186.32716537067944,0.0,True,True,False,False
+way,1378191866,way_1378191866,RPTRA Rorotan,unknown,13033.453967058944,unknown_or_conditional,True,False,False,13033.453967058944,0.0,False,True,False,False
+way,1451512847,way_1451512847,Ruang Interaksi Rakyat Sukapura,yes,796.7586971432709,access_positive_tag_unverified,True,False,False,796.7586971432709,0.0,False,True,False,False
+way,1093333712,way_1093333712,Taman Bongo,unknown,763.2282149422542,unknown_or_conditional,True,False,False,763.2282149422542,0.0,False,True,False,False
+way,128170641,way_128170641,RPTRA Biru Laut,unknown,2645.633267301443,unknown_or_conditional,True,False,False,2645.633267301443,0.0,False,True,False,False
+way,298469165,way_298469165,Taman,unknown,1548.9471816448126,unknown_or_conditional,True,False,False,1548.9471816448126,0.0,False,True,False,False
+way,1173424273,way_1173424273,Unnamed Park,unknown,23153.183364095228,unknown_or_conditional,True,False,False,23153.183364095228,0.0,True,True,False,False
+way,298468878,way_298468878,Taman Pancasila,unknown,504.28317609104,unknown_or_conditional,True,False,False,504.28317609104,0.0,False,True,False,False
+way,298470371,way_298470371,RPTRA Kelapa Puan,unknown,1610.6110113391487,unknown_or_conditional,True,False,False,1610.6110113391487,0.0,False,True,False,False
+way,519848552,way_519848552,Taman Jogging 2,unknown,8917.321795086451,unknown_or_conditional,True,False,False,8917.321795086451,0.0,False,True,False,False
+way,128366522,way_128366522,Taman Jogging 1,unknown,19169.913076438745,unknown_or_conditional,True,False,False,19169.913076438745,0.0,False,True,False,False
+way,298471036,way_298471036,Taman,unknown,999.9916505592394,unknown_or_conditional,True,False,False,999.9916505592394,0.0,False,True,False,False
+way,1561040153,way_1561040153,Unnamed Park,unknown,412.9689853825785,unknown_or_conditional,True,False,False,412.9689853825785,0.0,True,True,False,False
+way,618781878,way_618781878,Gading Walk,unknown,927.3694053094769,unknown_or_conditional,True,False,False,927.3694053094769,0.0,False,True,False,False
+way,298468879,way_298468879,Taman NKRI,unknown,2165.352049126034,unknown_or_conditional,True,False,False,2165.352049126034,0.0,False,True,False,False
+way,41192479,way_41192479,Unnamed Park,unknown,3814.9452163676087,unknown_or_conditional,True,False,False,3814.9452163676087,0.0,True,True,False,False
+way,41208639,way_41208639,Unnamed Park,unknown,7384.312097419151,unknown_or_conditional,True,False,False,7384.312097419151,0.0,True,True,False,False
+way,41208665,way_41208665,Unnamed Park,unknown,4016.8843416858667,unknown_or_conditional,True,False,False,4016.8843416858667,0.0,True,True,False,False
+way,34637449,way_34637449,Unnamed Park,unknown,2993.4818709657793,unknown_or_conditional,True,False,False,2993.4818709657793,0.0,True,True,False,False
+way,34636754,way_34636754,Unnamed Park,unknown,3316.162238783704,unknown_or_conditional,True,False,False,3316.162238783704,0.0,True,True,False,False
+way,452035021,way_452035021,Taman Pelumpang,unknown,2457.145745505266,unknown_or_conditional,True,False,False,2457.145745505266,0.0,False,True,False,False
+way,517498552,way_517498552,TAMAN WALANG,unknown,4026.317543928909,unknown_or_conditional,True,False,False,4026.317543928909,0.0,False,True,False,False
+way,523546113,way_523546113,Unnamed Park,unknown,423.73565615369324,unknown_or_conditional,True,False,False,423.73565615369324,0.0,True,True,False,False
+way,1330869495,way_1330869495,Unnamed Park,unknown,6597.335708791931,unknown_or_conditional,True,False,False,6597.335708791931,0.0,True,True,False,False
+way,473476132,way_473476132,Unnamed Park,unknown,3304.7489927320516,unknown_or_conditional,True,False,False,3304.7489927320516,0.0,True,True,False,False
+way,461268075,way_461268075,Lapangan Kemenkeu,unknown,2172.064708714128,unknown_or_conditional,True,False,False,2172.064708714128,0.0,False,True,False,False
+way,155110685,way_155110685,Jalur Hijau,unknown,11346.366380372301,unknown_or_conditional,True,False,False,11346.366380372301,0.0,False,True,False,False
+way,155242960,way_155242960,Unnamed Park,unknown,85.60904501271544,unknown_or_conditional,True,False,False,85.60904501271544,0.0,True,True,False,False
+way,155242957,way_155242957,Unnamed Park,unknown,112.68870756987155,unknown_or_conditional,True,False,False,112.68870756987155,0.0,True,True,False,False
+way,155242962,way_155242962,Unnamed Park,unknown,262.39474065248527,unknown_or_conditional,True,False,False,262.39474065248527,0.0,True,True,False,False
+way,155242952,way_155242952,Unnamed Park,unknown,102.4283307075728,unknown_or_conditional,True,False,False,102.4283307075728,0.0,True,True,False,False
+way,734708371,way_734708371,Unnamed Park,unknown,354.89380519800625,unknown_or_conditional,True,False,False,354.89380519800625,0.0,True,True,False,False
+way,510722239,way_510722239,Unnamed Park,unknown,5770.168622405559,unknown_or_conditional,True,False,False,5770.168622405559,0.0,True,True,True,False
+way,734407186,way_734407186,Unnamed Park,unknown,348.0452517985973,unknown_or_conditional,True,False,False,348.0452517985973,0.0,True,True,True,False
+way,155252931,way_155252931,Unnamed Park,unknown,1543.5665584531616,unknown_or_conditional,True,False,False,1543.5665584531616,0.0,True,True,False,False
+way,155252932,way_155252932,Unnamed Park,unknown,835.8282135329869,unknown_or_conditional,True,False,False,835.8282135329869,0.0,True,True,False,False
+way,156919806,way_156919806,Unnamed Park,unknown,996.4263567695941,unknown_or_conditional,True,False,False,996.4263567695941,0.0,True,True,False,False
+way,510416118,way_510416118,Unnamed Park,unknown,495.14570451699103,unknown_or_conditional,True,False,False,495.14570451699103,0.0,True,True,False,False
+way,510416124,way_510416124,Unnamed Park,unknown,657.6514133562463,unknown_or_conditional,True,False,False,657.6514133562463,0.0,True,True,False,False
+way,510416122,way_510416122,Unnamed Park,unknown,1301.5668765047628,unknown_or_conditional,True,False,False,1301.5668765047628,0.0,True,True,False,False
+way,292262696,way_292262696,Unnamed Park,unknown,328.72470964060994,unknown_or_conditional,True,False,False,328.72470964060994,0.0,True,True,False,False
+way,292262698,way_292262698,Unnamed Park,unknown,126.05122624229152,unknown_or_conditional,True,False,False,126.05122624229152,0.0,True,True,False,False
+way,493928223,way_493928223,Taman Kantor Kelurahan Glodok,unknown,251.15773635827978,unknown_or_conditional,True,False,False,251.15773635827978,0.0,False,True,False,False
+way,827990993,way_827990993,Taman Masjid Dirgantara,unknown,522.8868777869334,unknown_or_conditional,True,False,False,522.8868777869334,0.0,False,True,True,False
+way,155104952,way_155104952,Taman WAP,unknown,1354.6973634056494,unknown_or_conditional,True,False,False,1354.6973634056494,0.0,False,True,False,False
+way,155116040,way_155116040,budi rahayu,unknown,2475.456780186278,unknown_or_conditional,True,False,False,2475.456780186278,0.0,False,True,False,False
+way,519932750,way_519932750,"Taman Terpadu Bermain dan Olahraga ""GARUDA""",unknown,1316.979991879534,unknown_or_conditional,True,False,False,1316.979991879534,0.0,False,True,True,False
+way,733455174,way_733455174,Maspion Park,unknown,877.8863017354256,unknown_or_conditional,True,False,False,877.8863017354256,0.0,False,True,True,False
+way,733453786,way_733453786,South Riverbank Park,unknown,406.19089765701915,unknown_or_conditional,True,False,False,406.19089765701915,0.0,False,True,True,False
+way,733453783,way_733453783,Domino Park,unknown,166.74573726234576,unknown_or_conditional,True,False,False,166.74573726234576,0.0,False,True,False,False
+way,733453785,way_733453785,South Riverbank Park 2,unknown,464.56419130162783,unknown_or_conditional,True,False,False,464.56419130162783,0.0,False,True,False,False
+way,733453784,way_733453784,North Riverbank Park,unknown,638.1121824263466,unknown_or_conditional,True,False,False,638.1121824263466,0.0,False,True,False,False
+way,733454680,way_733454680,North Riverbank 2,unknown,3419.480693836196,unknown_or_conditional,True,False,False,3419.480693836196,0.0,False,True,True,False
+way,512174713,way_512174713,Unnamed Park,unknown,494.3307222911303,unknown_or_conditional,True,False,False,494.3307222911303,0.0,True,True,False,False
+way,99490706,way_99490706,Unnamed Park,unknown,1790.0058922672813,unknown_or_conditional,True,False,False,1790.0058922672813,0.0,True,True,False,False
+way,510396498,way_510396498,Unnamed Park,unknown,3410.3589815274645,unknown_or_conditional,True,False,False,3410.3589815274645,0.0,True,True,False,False
+way,520277800,way_520277800,Taman Sunter,unknown,893.3662978809728,unknown_or_conditional,True,False,False,893.3662978809728,0.0,False,True,False,False
+way,300423871,way_300423871,Unnamed Park,unknown,641.6897979549882,unknown_or_conditional,True,False,False,641.6897979549882,0.0,True,True,False,False
+way,529234633,way_529234633,Unnamed Park,unknown,635.3909539812277,unknown_or_conditional,True,False,False,635.3909539812277,0.0,True,True,False,False
+relation,9204061,relation_9204061,Hutan Kota Kemayoran,unknown,110201.36739177658,unknown_or_conditional,True,False,False,110201.36739177658,0.0,False,True,False,False
+way,529234630,way_529234630,Unnamed Park,unknown,2955.052914142919,unknown_or_conditional,True,False,False,2955.052914142919,0.0,True,True,False,False
+way,34562394,way_34562394,Unnamed Park,unknown,3828.0900119153393,unknown_or_conditional,True,False,False,3828.0900119153393,0.0,True,True,False,False
+way,524648243,way_524648243,Unnamed Park,unknown,1839.5612708898902,unknown_or_conditional,True,False,False,1839.5612708898902,0.0,True,True,False,False
+way,528285557,way_528285557,Unnamed Park,unknown,3214.714975574345,unknown_or_conditional,True,False,False,3214.714975574345,0.0,True,True,False,False
+way,99341170,way_99341170,Unnamed Park,unknown,4161.750729629284,unknown_or_conditional,True,False,False,4161.750729629284,0.0,True,True,False,False
+way,763008415,way_763008415,Taman DKI Sunter,unknown,936.1142608330891,unknown_or_conditional,True,False,False,936.1142608330891,0.0,False,True,False,False
+way,99125442,way_99125442,Unnamed Park,unknown,1693.5304743190197,unknown_or_conditional,True,False,False,1693.5304743190197,0.0,True,True,False,False
+way,99122809,way_99122809,Unnamed Park,unknown,1347.49882785707,unknown_or_conditional,True,False,False,1347.49882785707,0.0,True,True,False,False
+way,34635288,way_34635288,Unnamed Park,unknown,1269.561358663952,unknown_or_conditional,True,False,False,1269.561358663952,0.0,True,True,False,False
+way,765596100,way_765596100,Jalur Hijau,unknown,951.6243280171686,unknown_or_conditional,True,False,False,951.6243280171686,0.0,False,True,False,False
+way,763011524,way_763011524,BP3IP Park,unknown,1525.8658376752405,unknown_or_conditional,True,False,False,1525.8658376752405,0.0,False,True,False,False
+way,34580034,way_34580034,Unnamed Park,unknown,1701.3412427871267,unknown_or_conditional,True,False,False,1701.3412427871267,0.0,True,True,False,False
+way,524648235,way_524648235,Unnamed Park,unknown,984.413723201346,unknown_or_conditional,True,False,False,984.413723201346,0.0,True,True,False,False
+way,733453787,way_733453787,Unnamed Park,unknown,4832.132775147789,unknown_or_conditional,True,False,False,4832.132775147789,0.0,True,True,False,False
+way,733453788,way_733453788,Unnamed Park,unknown,2075.666447914922,unknown_or_conditional,True,False,False,2075.666447914922,0.0,True,True,False,False
+way,1388412381,way_1388412381,Taman Ancol,unknown,19062.22515047408,unknown_or_conditional,True,False,False,19062.22515047408,0.0,False,True,False,False
+way,1098150166,way_1098150166,Dunia Kartun,unknown,16616.913423986032,unknown_or_conditional,True,False,False,16616.913423986032,0.0,False,True,False,False
+way,1097871888,way_1097871888,Kawasan Jakarta,unknown,14083.77211403948,unknown_or_conditional,True,False,False,14083.77211403948,0.0,False,True,False,False
+way,1098150173,way_1098150173,Kawasan Ballara,unknown,8947.389438410019,unknown_or_conditional,True,False,False,8947.389438410019,0.0,False,True,False,False
+way,1098150172,way_1098150172,Kawasan Amerika,unknown,19802.01949426412,unknown_or_conditional,True,False,False,19802.01949426412,0.0,False,True,False,False
+way,1098150170,way_1098150170,Kawasan Asia,unknown,10691.316910191426,unknown_or_conditional,True,False,False,10691.316910191426,0.0,False,True,False,False
+way,492885979,way_492885979,Unnamed Park,unknown,534.0792846354834,unknown_or_conditional,True,False,False,534.0792846354834,0.0,True,True,True,False
+way,1098150171,way_1098150171,Kawasan Indonesia,unknown,14736.200005411849,unknown_or_conditional,True,False,False,14736.200005411849,0.0,False,True,False,False
+way,524648242,way_524648242,Unnamed Park,unknown,7569.366289147394,unknown_or_conditional,True,False,False,7569.366289147394,0.0,True,True,False,False
+way,154835448,way_154835448,Taman BMW,unknown,30151.971549892503,unknown_or_conditional,True,False,False,30151.971549892503,0.0,False,True,False,False
+way,211021857,way_211021857,Unnamed Park,unknown,916.2046802010302,unknown_or_conditional,True,False,False,916.2046802010302,0.0,True,True,False,False
+way,1098150169,way_1098150169,Kawasan Yunani,unknown,26391.63411176364,unknown_or_conditional,True,False,False,26391.63411176364,0.0,False,True,True,False
+way,1098150168,way_1098150168,Kawasan Eropa,unknown,15972.951011044275,unknown_or_conditional,True,False,False,15972.951011044275,0.0,False,True,False,False
+way,203570739,way_203570739,Taman Gazebo,unknown,3679.1613691662874,unknown_or_conditional,True,False,False,3679.1613691662874,0.0,False,True,True,False
+way,34761306,way_34761306,Unnamed Park,unknown,1693.2402657175307,unknown_or_conditional,True,False,False,1693.2402657175307,0.0,True,True,False,False
+way,34761303,way_34761303,Unnamed Park,unknown,908.1897334135263,unknown_or_conditional,True,False,False,908.1897334135263,0.0,True,True,False,False
+way,668817880,way_668817880,Taman Sungai Kendal,unknown,62738.071597179485,unknown_or_conditional,True,False,False,62738.071597179485,0.0,False,True,False,False
+way,30027021,way_30027021,Unnamed Park,unknown,15294.15104657882,unknown_or_conditional,True,False,False,15294.15104657882,0.0,True,True,False,False
+way,1486325795,way_1486325795,Unnamed Park,unknown,19312.279752690825,unknown_or_conditional,True,False,False,19312.279752690825,0.0,True,True,False,False
+way,1486325796,way_1486325796,Unnamed Park,unknown,23395.977756802888,unknown_or_conditional,True,False,False,23395.977756802888,0.0,True,True,False,False
+way,1241639008,way_1241639008,Taman Sarang Bangau,unknown,9149.206344228864,unknown_or_conditional,True,False,False,9149.206344228864,0.0,False,True,False,False
+way,314217252,way_314217252,Taman Interasi Sosial,unknown,267.27148523990365,unknown_or_conditional,True,False,False,267.27148523990365,0.0,False,True,False,False
+way,513955938,way_513955938,Unnamed Park,unknown,771.8873001457431,unknown_or_conditional,True,False,False,771.8873001457431,0.0,True,True,False,False
+way,515789363,way_515789363,Unnamed Park,unknown,335.51593504971413,unknown_or_conditional,True,False,False,335.51593504971413,0.0,True,True,False,False
+way,523546112,way_523546112,Unnamed Park,unknown,1048.664439120454,unknown_or_conditional,True,False,False,1048.664439120454,0.0,True,True,False,False
+way,523546115,way_523546115,Unnamed Park,unknown,162.02716260547228,unknown_or_conditional,True,False,False,162.02716260547228,0.0,True,True,False,False
+way,523546114,way_523546114,Unnamed Park,unknown,521.9978819504277,unknown_or_conditional,True,False,False,521.9978819504277,0.0,True,True,False,False
+way,154831899,way_154831899,Taman RW 08,unknown,769.4756707110796,unknown_or_conditional,True,False,False,769.4756707110796,0.0,False,True,False,False
+way,33112827,way_33112827,Unnamed Park,unknown,5417.839732858692,unknown_or_conditional,True,False,False,5417.839732858692,0.0,True,True,False,False
+way,154893010,way_154893010,Taman Segitiga Gorontalo,unknown,6013.598107720145,unknown_or_conditional,True,False,False,6013.598107720145,0.0,False,True,False,False
+way,513955939,way_513955939,Unnamed Park,unknown,478.27258726539094,unknown_or_conditional,True,False,False,478.27258726539094,0.0,True,True,False,False
+way,513955940,way_513955940,Unnamed Park,unknown,307.62864384756335,unknown_or_conditional,True,False,False,307.62864384756335,0.0,True,True,False,False
+way,513955946,way_513955946,Unnamed Park,unknown,398.2091687484278,unknown_or_conditional,True,False,False,398.2091687484278,0.0,True,True,False,False
+way,513955944,way_513955944,Unnamed Park,unknown,243.4940809817502,unknown_or_conditional,True,False,False,243.4940809817502,0.0,True,True,False,False
+way,527501640,way_527501640,Unnamed Park,unknown,289.3647936609769,unknown_or_conditional,True,False,False,289.3647936609769,0.0,True,True,False,False
+way,494219327,way_494219327,Unnamed Park,unknown,195.75470394099676,unknown_or_conditional,True,False,False,195.75470394099676,0.0,True,True,False,False
+way,493932135,way_493932135,Unnamed Park,unknown,256.0469323200549,unknown_or_conditional,True,False,False,256.0469323200549,0.0,True,True,False,False
+way,493932433,way_493932433,Unnamed Park,unknown,503.7579259827796,unknown_or_conditional,True,False,False,503.7579259827796,0.0,True,True,False,False
+way,493935171,way_493935171,Unnamed Park,unknown,1246.8291601100177,unknown_or_conditional,True,False,False,1246.8291601100177,0.0,True,True,False,False
+way,494234394,way_494234394,Unnamed Park,unknown,364.57506926760254,unknown_or_conditional,True,False,False,364.57506926760254,0.0,True,True,False,False
+way,154832893,way_154832893,Unnamed Park,unknown,3784.522795241724,unknown_or_conditional,True,False,False,3784.522795241724,0.0,True,True,False,False
+way,153936951,way_153936951,Unnamed Park,unknown,5228.821961529372,unknown_or_conditional,True,False,False,5228.821961529372,0.0,True,True,False,False
+way,522350726,way_522350726,Plaza Kalibaru,unknown,2752.7454493883583,unknown_or_conditional,True,False,False,2752.7454493883583,0.0,False,True,True,False
+way,153941192,way_153941192,Unnamed Park,unknown,6384.552442145412,unknown_or_conditional,True,False,False,6384.552442145412,0.0,True,True,True,False
+way,153936931,way_153936931,Unnamed Park,unknown,2014.6393663669983,unknown_or_conditional,True,False,False,2014.6393663669983,0.0,True,True,False,False
+way,732257026,way_732257026,Taman Casuarina,unknown,27336.11315569209,unknown_or_conditional,True,False,False,27336.11315569209,0.0,False,True,False,False
+way,1327455506,way_1327455506,Lapangan,unknown,386.90054069599097,unknown_or_conditional,True,False,False,386.90054069599097,0.0,False,True,False,False
+way,1289359463,way_1289359463,Lapangan Voli Pemadam Brigief,unknown,140.79606072583658,unknown_or_conditional,True,False,False,140.79606072583658,0.0,False,True,False,False
+way,523196772,way_523196772,Taman Kiara Payung,unknown,6607.314515132,unknown_or_conditional,True,False,False,6607.314515132,0.0,False,True,True,False
+way,523196775,way_523196775,Taman Buni,unknown,4577.941086059473,unknown_or_conditional,True,False,False,4577.941086059473,0.0,False,True,False,False
+way,157366861,way_157366861,Taman Tabebuya,unknown,10098.901791321214,unknown_or_conditional,True,False,False,10098.901791321214,0.0,False,True,False,False
+way,511944657,way_511944657,Hutan Kota Pondok Labu,unknown,19532.33658132057,unknown_or_conditional,True,False,False,19532.33658132057,0.0,False,True,False,False
+way,157345667,way_157345667,RTH MARINIR,unknown,22190.247952642745,unknown_or_conditional,True,False,False,22190.247952642745,0.0,False,True,False,False
+way,1557818984,way_1557818984,Taman wijaya kusuma kecil,yes,1045.1016592857654,access_positive_tag_unverified,True,False,False,1045.1016592857654,0.0,False,True,False,False
+way,446613118,way_446613118,Taman Wijaya Kusuma,unknown,3339.6597648255406,unknown_or_conditional,True,False,False,3339.6597648255406,0.0,False,True,False,False
+way,1110481584,way_1110481584,Taman Alang-Alang,unknown,4706.03590190699,unknown_or_conditional,True,False,False,4706.03590190699,3.907931755975369e-10,False,True,True,False
+way,1450794053,way_1450794053,RPTRA Cinta Aselih,unknown,1346.7251472664498,unknown_or_conditional,True,False,False,1346.7251472664498,0.0,False,True,True,False
+way,1230875329,way_1230875329,RLS Brigif,unknown,99832.03112525115,unknown_or_conditional,True,False,False,99832.03112525115,0.0,False,True,True,False
+way,1499544544,way_1499544544,Taman DDN,unknown,457.37749500112045,unknown_or_conditional,True,False,False,457.37749500112045,0.0,False,True,False,False
+way,1103334395,way_1103334395,Taman Wijaya Kusuma II,unknown,812.2359009713757,unknown_or_conditional,True,False,False,812.2359009713757,0.0,False,True,False,False
+way,1338629771,way_1338629771,Taman Bulus Bali,unknown,2901.4310145003365,unknown_or_conditional,True,False,False,2901.4310145003365,0.0,False,True,False,False
+way,514441687,way_514441687,Unnamed Park,unknown,475.92953587241226,unknown_or_conditional,True,False,False,475.92953587241226,0.0,True,True,False,False
+way,1230322702,way_1230322702,Ruang Limpah Sungai Lebak Bulus,unknown,38301.73971911869,unknown_or_conditional,True,False,False,38301.73971911869,0.0,False,True,False,False
+way,1476954103,way_1476954103,Unnamed Park,unknown,1354.4939069119375,unknown_or_conditional,True,False,False,1354.4939069119375,0.0,True,True,False,False
+way,486893574,way_486893574,Unnamed Park,unknown,437.80981358701536,unknown_or_conditional,True,False,False,437.80981358701536,0.0,True,True,False,False
+way,646464275,way_646464275,UI Park,unknown,607509.9860767513,unknown_or_conditional,True,False,False,607509.9860767513,0.0,False,True,True,False
+way,866500128,way_866500128,Perkampungan Budaya Betawi,unknown,34740.838084540715,unknown_or_conditional,True,False,False,34740.838084540715,0.0,False,True,False,False
+way,519201026,way_519201026,Taman Matoa,unknown,4688.445600024507,unknown_or_conditional,True,False,False,4688.445600024507,0.0,False,True,False,False
+way,286239848,way_286239848,Taman Spatodea,unknown,19045.55527268088,unknown_or_conditional,True,False,False,19045.55527268088,0.0,False,True,False,False
+way,502138777,way_502138777,Unnamed Park,unknown,83.7927571625768,unknown_or_conditional,True,False,False,83.7927571625768,0.0,True,True,False,False
+way,469227176,way_469227176,Unnamed Park,unknown,4632.986682845086,unknown_or_conditional,True,False,False,4632.986682845086,0.0,True,True,False,False
+way,510897349,way_510897349,Unnamed Park,unknown,257.943866135848,unknown_or_conditional,True,False,False,257.943866135848,0.0,True,True,False,False
+way,297137467,way_297137467,Unnamed Park,unknown,763.9914244565834,unknown_or_conditional,True,False,False,763.9914244565834,0.0,True,True,False,False
+way,653154885,way_653154885,Taman Zakia Jatipadang,unknown,709.4745797852374,unknown_or_conditional,True,False,False,709.4745797852374,0.0,False,True,False,False
+way,781578672,way_781578672,Unnamed Park,unknown,713.8645668779059,unknown_or_conditional,True,False,False,713.8645668779059,0.0,True,True,False,False
+way,510977337,way_510977337,Unnamed Park,unknown,122.11135100946247,unknown_or_conditional,True,False,False,122.11135100946247,0.0,True,True,False,False
+way,510897348,way_510897348,Unnamed Park,unknown,51.10924858417254,unknown_or_conditional,True,False,False,51.10924858417254,0.0,True,True,False,False
+way,510977333,way_510977333,Unnamed Park,unknown,52.99558814827836,unknown_or_conditional,True,False,False,52.99558814827836,0.0,True,True,False,False
+way,510897346,way_510897346,Unnamed Park,unknown,189.04926811680573,unknown_or_conditional,True,False,False,189.04926811680573,0.0,True,True,False,False
+way,510897345,way_510897345,Unnamed Park,unknown,215.83537838420784,unknown_or_conditional,True,False,False,215.83537838420784,0.0,True,True,False,False
+way,510897354,way_510897354,Unnamed Park,unknown,62.73947476434556,unknown_or_conditional,True,False,False,62.73947476434556,0.0,True,True,False,False
+way,510897352,way_510897352,Unnamed Park,unknown,426.8223370895617,unknown_or_conditional,True,False,False,426.8223370895617,0.0,True,True,False,False
+way,510896440,way_510896440,Unnamed Park,unknown,208.70900628748473,unknown_or_conditional,True,False,False,208.70900628748473,0.0,True,True,False,False
+way,510896438,way_510896438,Unnamed Park,unknown,244.25086676195815,unknown_or_conditional,True,False,False,244.25086676195815,0.0,True,True,False,False
+way,508069785,way_508069785,RPTRA Taman Gajah,unknown,3218.14842276631,unknown_or_conditional,True,False,False,3218.14842276631,0.0,False,True,False,False
+way,32077842,way_32077842,Unnamed Park,unknown,938.3019931217449,unknown_or_conditional,True,False,False,938.3019931217449,0.0,True,True,False,False
+way,32077847,way_32077847,Unnamed Park,unknown,5139.356044569504,unknown_or_conditional,True,False,False,5139.356044569504,0.0,True,True,False,False
+way,32077843,way_32077843,Unnamed Park,unknown,595.1166443488349,unknown_or_conditional,True,False,False,595.1166443488349,0.0,True,True,False,False
+way,542183718,way_542183718,Taman Puspita,unknown,19329.67679395562,unknown_or_conditional,True,False,False,19329.67679395562,0.0,False,True,False,False
+way,32077838,way_32077838,Unnamed Park,unknown,1635.4156531819403,unknown_or_conditional,True,False,False,1635.4156531819403,0.0,True,True,False,False
+way,32077840,way_32077840,Unnamed Park,unknown,6670.794563552988,unknown_or_conditional,True,False,False,6670.794563552988,0.0,True,True,False,False
+way,32077848,way_32077848,Unnamed Park,unknown,2284.4924216541785,unknown_or_conditional,True,False,False,2284.4924216541785,0.0,True,True,False,False
+way,32077846,way_32077846,Unnamed Park,unknown,890.0305728708435,unknown_or_conditional,True,False,False,890.0305728708435,0.0,True,True,False,False
+way,32077844,way_32077844,Unnamed Park,unknown,4044.5254118530156,unknown_or_conditional,True,False,False,4044.5254118530156,0.0,True,True,False,False
+way,32077829,way_32077829,Unnamed Park,unknown,2858.843987844323,unknown_or_conditional,True,False,False,2858.843987844323,0.0,True,True,False,False
+way,1303431703,way_1303431703,Urban Forest Cipete,unknown,19299.238274860716,unknown_or_conditional,True,False,False,19299.238274860716,0.0,False,True,False,False
+way,508395034,way_508395034,Unnamed Park,unknown,330.0393866364403,unknown_or_conditional,True,False,False,330.0393866364403,0.0,True,True,False,False
+way,498229838,way_498229838,Unnamed Park,unknown,169.27551386568229,unknown_or_conditional,True,False,False,169.27551386568229,0.0,True,True,False,False
+way,498229836,way_498229836,Unnamed Park,unknown,87.1387932678554,unknown_or_conditional,True,False,False,87.1387932678554,0.0,True,True,False,False
+way,310393730,way_310393730,Taman Radio Dalam,unknown,1639.9933068682553,unknown_or_conditional,True,False,False,1639.9933068682553,0.0,False,True,False,False
+way,310393729,way_310393729,Unnamed Park,unknown,353.7289228590976,unknown_or_conditional,True,False,False,353.7289228590976,0.0,True,True,False,False
+way,157354430,way_157354430,Taman Panglima Polim 13,unknown,2706.051432563543,unknown_or_conditional,True,False,False,2706.051432563543,0.0,False,True,False,False
+way,157354428,way_157354428,Taman Panglima Polim 12,unknown,2196.37428841946,unknown_or_conditional,True,False,False,2196.37428841946,0.0,False,True,False,False
+way,157354429,way_157354429,Taman Panglima Polim 12,unknown,499.8908417091312,unknown_or_conditional,True,False,False,499.8908417091312,0.0,False,True,False,False
+way,29977839,way_29977839,Unnamed Park,unknown,1708.4218763274143,unknown_or_conditional,True,False,False,1708.4218763274143,0.0,True,True,False,False
+way,483359185,way_483359185,Unnamed Park,unknown,40.297934979849174,unknown_or_conditional,True,False,False,40.297934979849174,0.0,True,True,False,False
+way,31813364,way_31813364,Unnamed Park,unknown,1138.782760016316,unknown_or_conditional,True,False,False,1138.782760016316,0.0,True,True,False,False
+way,31813362,way_31813362,Taman gajah,unknown,2057.546558742841,unknown_or_conditional,True,False,False,2057.546558742841,0.0,False,True,False,False
+way,31812541,way_31812541,Unnamed Park,unknown,2100.860215809762,unknown_or_conditional,True,False,False,2100.860215809762,0.0,True,True,False,False
+way,157344902,way_157344902,Taman Prapanca 2,unknown,1377.3987684656033,unknown_or_conditional,True,False,False,1377.3987684656033,0.0,False,True,False,False
+way,659433558,way_659433558,Taman Dharmawangsa 8,unknown,1834.6443316584928,unknown_or_conditional,True,False,False,1834.6443316584928,0.0,False,True,False,False
+way,311483657,way_311483657,Unnamed Park,unknown,919.1399020432711,unknown_or_conditional,True,False,False,919.1399020432711,0.0,True,True,False,False
+way,157344932,way_157344932,Brawijaya 8,unknown,4516.252527314424,unknown_or_conditional,True,False,False,4516.252527314424,0.0,False,True,False,False
+way,157354432,way_157354432,Taman Sega,unknown,1297.9897658847626,unknown_or_conditional,True,False,False,1297.9897658847626,0.0,False,True,False,False
+way,514395543,way_514395543,Unnamed Park,unknown,726.043111880152,unknown_or_conditional,True,False,False,726.043111880152,0.0,True,True,False,False
+way,31811941,way_31811941,Taman Wijaya 2,unknown,1143.3871635922114,unknown_or_conditional,True,False,False,1143.3871635922114,0.0,False,True,False,False
+way,31758398,way_31758398,Unnamed Park,unknown,15253.819443190398,unknown_or_conditional,True,False,False,15253.819443190398,0.0,True,True,False,False
+way,31813367,way_31813367,Taman Wijaya,unknown,2819.623450397508,unknown_or_conditional,True,False,False,2819.623450397508,0.0,False,True,False,False
+way,157354433,way_157354433,Taman Sepeda,unknown,3579.2255101421806,unknown_or_conditional,True,False,False,3579.2255101421806,0.0,False,True,False,False
+way,687880357,way_687880357,PTIK Park,unknown,8338.960444778297,unknown_or_conditional,True,False,False,8338.960444778297,0.0,False,True,False,False
+way,31812295,way_31812295,Unnamed Park,unknown,2353.5569532969043,unknown_or_conditional,True,False,False,2353.5569532969043,0.0,True,True,False,False
+way,157347111,way_157347111,Taman Eks Pom Bensin (Wijaya 1),unknown,1300.4456096790977,unknown_or_conditional,True,False,False,1300.4456096790977,0.0,False,True,False,False
+way,521952302,way_521952302,Unnamed Park,unknown,288.37193191992,unknown_or_conditional,True,False,False,288.37193191992,0.0,True,True,False,False
+way,29980684,way_29980684,Unnamed Park,unknown,1016.6038689720065,unknown_or_conditional,True,False,False,1016.6038689720065,0.0,True,True,False,False
+way,157354434,way_157354434,Unnamed Park,unknown,326.07261336690283,unknown_or_conditional,True,False,False,326.07261336690283,0.0,True,True,False,False
+way,542356854,way_542356854,Taman Sambas,unknown,1502.0882406416474,unknown_or_conditional,True,False,False,1502.0882406416474,0.0,False,True,False,False
+way,29051023,way_29051023,Unnamed Park,unknown,1224.4156052187745,unknown_or_conditional,True,False,False,1224.4156052187745,0.0,True,True,False,False
+way,542357046,way_542357046,Unnamed Park,unknown,3181.2865907538103,unknown_or_conditional,True,False,False,3181.2865907538103,0.0,True,True,False,False
+way,545382177,way_545382177,Taman Bendera Pusaka Timur,unknown,6777.799631188282,unknown_or_conditional,True,False,False,6777.799631188282,0.0,False,True,False,False
+way,687892342,way_687892342,Taman Sampit,unknown,1637.0491110027608,unknown_or_conditional,True,False,False,1637.0491110027608,0.0,False,True,False,False
+way,157361255,way_157361255,Taman Gandaria Tengah,unknown,3545.041572658838,unknown_or_conditional,True,False,False,3545.041572658838,0.0,False,True,False,False
+way,29051021,way_29051021,Unnamed Park,unknown,552.1144917147261,unknown_or_conditional,True,False,False,552.1144917147261,0.0,True,True,False,False
+way,29051018,way_29051018,Taman Bendera Pusaka Selatan,unknown,38236.36505907321,unknown_or_conditional,True,False,False,38236.36505907321,0.0,False,True,False,False
+way,29046629,way_29046629,Unnamed Park,unknown,2365.2094928763104,unknown_or_conditional,True,False,False,2365.2094928763104,0.0,True,True,False,False
+way,28198231,way_28198231,Taman Martha Tiahahu,unknown,8512.622324833672,unknown_or_conditional,True,False,False,8512.622324833672,0.0,False,True,False,False
+relation,7791808,relation_7791808,Taman Bendera Pusaka,unknown,56773.41980630035,unknown_or_conditional,True,False,False,56773.41980630035,0.0,False,True,False,False
+way,157354431,way_157354431,Taman Sedayu Blok M,unknown,854.4287268678207,unknown_or_conditional,True,False,False,854.4287268678207,0.0,False,True,False,False
+way,672790591,way_672790591,Taman Lamandau,unknown,385.8879192339862,unknown_or_conditional,True,False,False,385.8879192339862,0.0,False,True,False,False
+way,28199167,way_28199167,Taman Puring,unknown,11909.656214540031,unknown_or_conditional,True,False,False,11909.656214540031,0.0,False,True,False,False
+way,28275316,way_28275316,Taman Bendera Pusaka Utara,unknown,11759.255116038885,unknown_or_conditional,True,False,False,11759.255116038885,0.0,False,True,False,False
+way,28275318,way_28275318,Unnamed Park,unknown,1901.905589169788,unknown_or_conditional,True,False,False,1901.905589169788,0.0,True,True,False,False
+way,361366317,way_361366317,Unnamed Park,unknown,358.3637973018817,unknown_or_conditional,True,False,False,358.3637973018817,0.0,True,True,False,False
+way,361366284,way_361366284,Unnamed Park,unknown,2152.3904204473297,unknown_or_conditional,True,False,False,2152.3904204473297,0.0,True,True,False,False
+way,157361275,way_157361275,Taman,unknown,1380.395111939096,unknown_or_conditional,True,False,False,1380.395111939096,0.0,False,True,False,False
+way,687892370,way_687892370,Taman Lauser Utara,unknown,2184.7164955219932,unknown_or_conditional,True,False,False,2184.7164955219932,0.0,False,True,False,False
+way,157363151,way_157363151,Taman dan Hutan Kota Sangga Buana,unknown,99805.34434761107,unknown_or_conditional,True,False,False,99805.34434761107,3.4235391992024425e-09,False,True,True,False
+way,31846564,way_31846564,Unnamed Park,unknown,3386.7495680034203,unknown_or_conditional,True,False,False,3386.7495680034203,0.0,True,True,False,False
+way,31846601,way_31846601,Unnamed Park,unknown,1635.1929156737333,unknown_or_conditional,True,False,False,1635.1929156737333,0.0,True,True,False,False
+way,502297657,way_502297657,Unnamed Park,unknown,1835.049878952042,unknown_or_conditional,True,False,False,1835.049878952042,0.0,True,True,False,False
+way,1502390892,way_1502390892,Taman Bona Indah,unknown,5966.572121970388,unknown_or_conditional,True,False,False,5966.572121970388,0.0,False,True,False,False
+way,508870497,way_508870497,Taman Bona,unknown,2686.3347460027826,unknown_or_conditional,True,False,False,2686.3347460027826,0.0,False,True,False,False
+way,511963802,way_511963802,Unnamed Park,unknown,2772.841719673356,unknown_or_conditional,True,False,False,2772.841719673356,0.0,True,True,False,False
+way,1233229979,way_1233229979,Unnamed Park,unknown,5274.601306449964,unknown_or_conditional,True,False,False,5274.601306449964,0.0,True,True,False,False
+way,1233229980,way_1233229980,Unnamed Park,unknown,5288.114163744434,unknown_or_conditional,True,False,False,5288.114163744434,0.0,True,True,False,False
+way,512193799,way_512193799,Unnamed Park,unknown,2643.256761260399,unknown_or_conditional,True,False,False,2643.256761260399,0.0,True,True,False,False
+way,511963803,way_511963803,Unnamed Park,unknown,12382.508067305032,unknown_or_conditional,True,False,False,12382.508067305032,0.0,True,True,False,False
+way,511963804,way_511963804,Unnamed Park,unknown,7484.945445879078,unknown_or_conditional,True,False,False,7484.945445879078,0.0,True,True,False,False
+way,511963806,way_511963806,Unnamed Park,unknown,6210.8272996979695,unknown_or_conditional,True,False,False,6210.8272996979695,0.0,True,True,False,False
+way,521454667,way_521454667,Unnamed Park,unknown,258.79373754931436,unknown_or_conditional,True,False,False,258.79373754931436,0.0,True,True,False,False
+way,1529164737,way_1529164737,Unnamed Park,unknown,733.9116048383281,unknown_or_conditional,True,False,False,733.9116048383281,0.0,True,True,False,False
+way,32051802,way_32051802,Unnamed Park,unknown,571.3814079490542,unknown_or_conditional,True,False,False,571.3814079490542,0.0,True,True,False,False
+way,32051742,way_32051742,Unnamed Park,unknown,510.67095451790055,unknown_or_conditional,True,False,False,510.67095451790055,0.0,True,True,False,False
+way,360471128,way_360471128,Unnamed Park,unknown,1885.4120984639985,unknown_or_conditional,True,False,False,1885.4120984639985,0.0,True,True,False,False
+way,303571029,way_303571029,Unnamed Park,unknown,6895.388422228287,unknown_or_conditional,True,False,False,6895.388422228287,0.0,True,True,False,False
+way,31857195,way_31857195,Unnamed Park,unknown,435.424948974954,unknown_or_conditional,True,False,False,435.424948974954,0.0,True,True,False,False
+way,32077830,way_32077830,Unnamed Park,unknown,1121.5357658597918,unknown_or_conditional,True,False,False,1121.5357658597918,0.0,True,True,False,False
+way,32077837,way_32077837,Unnamed Park,unknown,5850.5896985750205,unknown_or_conditional,True,False,False,5850.5896985750205,0.0,True,True,False,False
+way,32077831,way_32077831,Unnamed Park,unknown,1683.4423190957498,unknown_or_conditional,True,False,False,1683.4423190957498,0.0,True,True,False,False
+way,32077836,way_32077836,Unnamed Park,unknown,1307.1363323489006,unknown_or_conditional,True,False,False,1307.1363323489006,0.0,True,True,False,False
+way,32077832,way_32077832,Unnamed Park,unknown,3833.9207076272255,unknown_or_conditional,True,False,False,3833.9207076272255,0.0,True,True,False,False
+way,32077833,way_32077833,Unnamed Park,unknown,1539.4934598177942,unknown_or_conditional,True,False,False,1539.4934598177942,0.0,True,True,False,False
+way,32077834,way_32077834,Unnamed Park,unknown,4385.480498531526,unknown_or_conditional,True,False,False,4385.480498531526,0.0,True,True,False,False
+way,32077835,way_32077835,Unnamed Park,unknown,1077.0708042398976,unknown_or_conditional,True,False,False,1077.0708042398976,0.0,True,True,False,False
+way,691918965,way_691918965,Taman Pinang,unknown,1313.486749003824,unknown_or_conditional,True,False,False,1313.486749003824,0.0,False,True,False,False
+way,687547104,way_687547104,Taman Pinang Emas,unknown,1249.8587450094674,unknown_or_conditional,True,False,False,1249.8587450094674,0.0,False,True,False,False
+way,32051767,way_32051767,Unnamed Park,unknown,1678.7972690691947,unknown_or_conditional,True,False,False,1678.7972690691947,0.0,True,True,True,False
+way,745522454,way_745522454,Pendopo Park,unknown,624.9656690521786,unknown_or_conditional,True,False,False,624.9656690521786,0.0,False,True,False,False
+way,746519430,way_746519430,Taman Tengah UBL,unknown,533.8698881921629,unknown_or_conditional,True,False,False,533.8698881921629,0.0,False,True,False,False
+way,746519459,way_746519459,Taman Masjid UBL,unknown,629.3306184655456,unknown_or_conditional,True,False,False,629.3306184655456,0.0,False,True,False,False
+way,746519350,way_746519350,Taman Kupu-Kupu UBL,unknown,2019.4633829818695,unknown_or_conditional,True,False,False,2019.4633829818695,0.0,False,True,False,False
+way,745531738,way_745531738,Taman Blok K,unknown,780.0551930405434,unknown_or_conditional,True,False,False,780.0551930405434,0.0,False,True,True,False
+way,745531349,way_745531349,Taman Komplek DKI,unknown,838.7801671981804,unknown_or_conditional,True,False,False,838.7801671981804,0.0,False,True,True,False
+way,745532099,way_745532099,Taman Masjid Assalam,unknown,1842.7550268654054,unknown_or_conditional,True,False,False,1842.7550268654054,0.0,False,True,True,False
+way,745533208,way_745533208,Taman Blok G,unknown,1292.1455681804978,unknown_or_conditional,True,False,False,1292.1455681804978,0.0,False,True,False,False
+way,745531796,way_745531796,Taman Balita,unknown,844.5378859435239,unknown_or_conditional,True,False,False,844.5378859435239,0.0,False,True,False,False
+way,745521902,way_745521902,PIOT Park,unknown,342.82466670999474,unknown_or_conditional,True,False,False,342.82466670999474,0.0,False,True,False,False
+way,518511863,way_518511863,Taman Komplek Bina Marga Tanah Kusir,unknown,2240.444391505055,unknown_or_conditional,True,False,False,2240.444391505055,0.0,False,True,False,False
+way,1387018067,way_1387018067,Keyla Park,unknown,774.175336445271,unknown_or_conditional,True,False,False,774.175336445271,0.0,False,True,False,False
+way,318965862,way_318965862,Unnamed Park,unknown,4858.678505688435,unknown_or_conditional,True,False,False,4858.678505688435,0.0,True,True,False,False
+way,318965863,way_318965863,Unnamed Park,unknown,5232.136813277003,unknown_or_conditional,True,False,False,5232.136813277003,0.0,True,True,False,False
+way,520201799,way_520201799,Taman Interaktif,unknown,1287.376135132126,unknown_or_conditional,True,False,False,1287.376135132126,0.0,False,True,False,False
+way,799846403,way_799846403,Unnamed Park,unknown,420.6559241312732,unknown_or_conditional,True,False,False,420.6559241312732,0.0,True,True,False,False
+way,799846402,way_799846402,Unnamed Park,unknown,149.5699809750959,unknown_or_conditional,True,False,False,149.5699809750959,0.0,True,True,False,False
+way,500576942,way_500576942,Unnamed Park,unknown,217.75448843452585,unknown_or_conditional,True,False,False,217.75448843452585,0.0,True,True,True,False
+way,600028769,way_600028769,Unnamed Park,unknown,12273.485670187172,unknown_or_conditional,True,False,False,12273.485670187172,0.0,True,True,False,False
+way,1554687236,way_1554687236,Unnamed Park,unknown,334.6801824356191,unknown_or_conditional,True,False,False,334.6801824356191,0.0,True,True,False,False
+way,1466679531,way_1466679531,Pos Kamling,unknown,25.50400254155047,unknown_or_conditional,True,False,False,25.50400254155047,0.0,False,True,False,False
+way,157367789,way_157367789,Taman Teletubies,unknown,11347.809076188336,unknown_or_conditional,True,False,False,11347.809076188336,0.0,False,True,False,False
+way,318965866,way_318965866,Taman Puma,unknown,16137.594982283703,unknown_or_conditional,True,False,False,16137.594982283703,0.0,False,True,False,False
+way,687891336,way_687891336,Delman Elok Park,unknown,4021.842407627146,unknown_or_conditional,True,False,False,4021.842407627146,0.0,False,True,False,False
+way,1543954790,way_1543954790,Lapangan,unknown,321.0177677938721,unknown_or_conditional,True,False,False,321.0177677938721,0.0,False,True,False,False
+way,159001565,way_159001565,Unnamed Park,unknown,3416.741745246861,unknown_or_conditional,True,False,False,3416.741745246861,0.0,True,True,True,False
+way,159001570,way_159001570,Unnamed Park,unknown,3725.638180884672,unknown_or_conditional,True,False,False,3725.638180884672,0.0,True,True,False,False
+way,682379012,way_682379012,RTH,unknown,3888.8162875203802,unknown_or_conditional,True,False,False,3888.8162875203802,0.0,False,True,False,False
+way,30952645,way_30952645,Hutan Kota Srengseng,unknown,117797.10836853941,unknown_or_conditional,True,False,False,117797.10836853941,0.0,False,True,False,False
+way,745532580,way_745532580,Taman SDN Joglo,unknown,1349.3373450506963,unknown_or_conditional,True,False,False,1349.3373450506963,0.0,False,True,False,False
+way,745532911,way_745532911,Taman Pemancingan Joglo,unknown,2021.3651812139947,unknown_or_conditional,True,False,False,2021.3651812139947,0.0,False,True,False,False
+way,500346210,way_500346210,Unnamed Park,unknown,2183.4699986245755,unknown_or_conditional,True,False,False,2183.4699986245755,0.0,True,True,False,False
+way,30968983,way_30968983,Unnamed Park,unknown,643.357916080225,unknown_or_conditional,True,False,False,643.357916080225,0.0,True,True,False,False
+way,30968940,way_30968940,Unnamed Park,unknown,8584.338810643727,unknown_or_conditional,True,False,False,8584.338810643727,0.0,True,True,False,False
+way,30969024,way_30969024,Unnamed Park,unknown,2599.6932892022874,unknown_or_conditional,True,False,False,2599.6932892022874,0.0,True,True,False,False
+way,594816394,way_594816394,Intercon Park,unknown,5211.785463185109,unknown_or_conditional,True,False,False,5211.785463185109,0.0,False,True,False,False
+way,594871446,way_594871446,Unnamed Park,unknown,2595.4615269709875,unknown_or_conditional,True,False,False,2595.4615269709875,0.0,True,True,False,False
+way,157206004,way_157206004,Taman,unknown,1431.6548682566681,unknown_or_conditional,True,False,False,1431.6548682566681,0.0,False,True,False,False
+way,550550323,way_550550323,Aries Ayu Park,unknown,1275.9532856726048,unknown_or_conditional,True,False,False,1275.9532856726048,0.0,False,True,False,False
+way,30990772,way_30990772,Unnamed Park,unknown,3656.758389210041,unknown_or_conditional,True,False,False,3656.758389210041,0.0,True,True,False,False
+way,1498869882,way_1498869882,Unnamed Park,unknown,41.495891960792164,unknown_or_conditional,True,False,False,41.495891960792164,0.0,True,True,False,False
+way,594819205,way_594819205,Flamboyan park,unknown,1912.477742243294,unknown_or_conditional,True,False,False,1912.477742243294,0.0,False,True,False,False
+way,30970655,way_30970655,Unnamed Park,unknown,6246.305182754283,unknown_or_conditional,True,False,False,6246.305182754283,0.0,True,True,False,False
+way,699586661,way_699586661,WIR Hub Green Area,unknown,154.88796032426194,unknown_or_conditional,True,False,False,154.88796032426194,0.0,False,True,False,False
+way,699586659,way_699586659,Green Area Kebon Jeruk,unknown,10342.120326925415,unknown_or_conditional,True,False,False,10342.120326925415,0.0,False,True,False,False
+way,30215599,way_30215599,Unnamed Park,unknown,3848.086455021965,unknown_or_conditional,True,False,False,3848.086455021965,0.0,True,True,False,False
+way,30776831,way_30776831,Unnamed Park,unknown,1752.0781341319796,unknown_or_conditional,True,False,False,1752.0781341319796,0.0,True,True,False,False
+way,30776826,way_30776826,Unnamed Park,unknown,2094.551256396461,unknown_or_conditional,True,False,False,2094.551256396461,0.0,True,True,False,False
+way,30776834,way_30776834,Unnamed Park,unknown,6419.315920498081,unknown_or_conditional,True,False,False,6419.315920498081,0.0,True,True,False,False
+way,600028768,way_600028768,Unnamed Park,unknown,2277.083772189991,unknown_or_conditional,True,False,False,2277.083772189991,0.0,True,True,False,False
+way,498469701,way_498469701,Unnamed Park,unknown,10.659821523860455,unknown_or_conditional,True,False,False,10.659821523860455,0.0,True,True,False,False
+way,497545539,way_497545539,Unnamed Park,unknown,869.9107073009237,unknown_or_conditional,True,False,False,869.9107073009237,0.0,True,True,False,False
+way,492969190,way_492969190,Taman Komplek DPR RI,unknown,2029.9509733494992,unknown_or_conditional,True,False,False,2029.9509733494992,0.0,False,True,False,False
+way,1070483255,way_1070483255,Taman Gema Quran,unknown,62.802018098478015,unknown_or_conditional,True,False,False,62.802018098478015,0.0,False,True,False,False
+way,561818014,way_561818014,Unnamed Park,unknown,228.25678930828647,unknown_or_conditional,True,False,False,228.25678930828647,0.0,True,True,False,False
+way,999816538,way_999816538,Unnamed Park,unknown,1854.7110468410137,unknown_or_conditional,True,False,False,1854.7110468410137,0.0,True,True,False,False
+way,515218140,way_515218140,Unnamed Park,unknown,854.2320597358128,unknown_or_conditional,True,False,False,854.2320597358128,0.0,True,True,False,False
+way,511895416,way_511895416,RPTRA Dupa Wangi,unknown,3221.556176202803,unknown_or_conditional,True,False,False,3221.556176202803,0.0,False,True,False,False
+way,1023822062,way_1023822062,RPTRA Taman Apel,unknown,1575.2607329888367,unknown_or_conditional,True,False,False,1575.2607329888367,0.0,False,True,False,False
+way,548479532,way_548479532,Unnamed Park,unknown,2758.658384481183,unknown_or_conditional,True,False,False,2758.658384481183,0.0,True,True,False,False
+way,594872047,way_594872047,Taman Pasar Aries,unknown,1786.0412224798965,unknown_or_conditional,True,False,False,1786.0412224798965,0.0,False,True,False,False
+way,30970306,way_30970306,Unnamed Park,unknown,1922.4600183150728,unknown_or_conditional,True,False,False,1922.4600183150728,0.0,True,True,False,False
+way,594875594,way_594875594,Unnamed Park,unknown,5612.729353420405,unknown_or_conditional,True,False,False,5612.729353420405,0.0,True,True,False,False
+way,594867240,way_594867240,Unnamed Park,unknown,3039.3659694391185,unknown_or_conditional,True,False,False,3039.3659694391185,0.0,True,True,False,False
+way,594875221,way_594875221,Unnamed Park,unknown,4736.3883834426915,unknown_or_conditional,True,False,False,4736.3883834426915,0.0,True,True,False,False
+way,552420538,way_552420538,Unnamed Park,unknown,4492.360566403812,unknown_or_conditional,True,False,False,4492.360566403812,0.0,True,True,False,False
+way,552420172,way_552420172,Unnamed Park,unknown,1389.4919169569641,unknown_or_conditional,True,False,False,1389.4919169569641,0.0,True,True,False,False
+way,157206008,way_157206008,Unnamed Park,unknown,3382.4748008652805,unknown_or_conditional,True,False,False,3382.4748008652805,0.0,True,True,False,False
+way,494637335,way_494637335,Basketball park,yes,201.3495273071698,access_positive_tag_unverified,True,False,False,201.3495273071698,0.0,False,True,False,False
+way,489537647,way_489537647,Unnamed Park,unknown,385.48445292526833,unknown_or_conditional,True,False,False,385.48445292526833,0.0,True,True,False,False
+way,489537649,way_489537649,Unnamed Park,unknown,385.49318078870056,unknown_or_conditional,True,False,False,385.49318078870056,0.0,True,True,False,False
+way,630512079,way_630512079,Pondok Karya Park,unknown,2404.2033484363583,unknown_or_conditional,True,False,False,2404.2033484363583,0.0,False,True,False,False
+way,773028985,way_773028985,Gymnasium Park,unknown,1459.2450785061162,unknown_or_conditional,True,False,False,1459.2450785061162,0.0,False,True,False,False
+way,157349969,way_157349969,Taman Laksana,unknown,1410.1596293684108,unknown_or_conditional,True,False,False,1410.1596293684108,0.0,False,True,False,False
+way,659433570,way_659433570,Taman Ciniru,unknown,2066.5747125210737,unknown_or_conditional,True,False,False,2066.5747125210737,0.0,False,True,False,False
+way,28378312,way_28378312,Taman Suren,unknown,2322.7991886622867,unknown_or_conditional,True,False,False,2322.7991886622867,0.0,False,True,False,False
+way,157349972,way_157349972,Taman Cibeber,unknown,1260.0902162923608,unknown_or_conditional,True,False,False,1260.0902162923608,0.0,False,True,False,False
+way,484638070,way_484638070,Unnamed Park,unknown,18685.547478466735,unknown_or_conditional,True,False,False,18685.547478466735,0.0,True,True,False,False
+way,157349966,way_157349966,Taman Suryo,unknown,1733.4925652526117,unknown_or_conditional,True,False,False,1733.4925652526117,0.0,False,True,False,False
+way,157347108,way_157347108,Taman Cibulan,unknown,1179.3832572388055,unknown_or_conditional,True,False,False,1179.3832572388055,0.0,False,True,False,False
+way,28715528,way_28715528,Taman Kota Peruri,unknown,16065.258542944715,unknown_or_conditional,True,False,False,16065.258542944715,0.0,False,True,False,False
+way,29980741,way_29980741,Unnamed Park,unknown,1059.4129251386435,unknown_or_conditional,True,False,False,1059.4129251386435,0.0,True,True,False,False
+way,28207600,way_28207600,Taman Sanjaya,unknown,2835.1376838863275,unknown_or_conditional,True,False,False,2835.1376838863275,0.0,False,True,False,False
+way,659433900,way_659433900,Taman Senjaya 2,unknown,1649.7669482556685,unknown_or_conditional,True,False,False,1649.7669482556685,0.0,False,True,False,False
+way,752096710,way_752096710,PUPR Park,unknown,2415.289130257982,unknown_or_conditional,True,False,False,2415.289130257982,0.0,False,True,False,False
+way,157359593,way_157359593,Taman Ragatnata,unknown,949.321434229994,unknown_or_conditional,True,False,False,949.321434229994,0.0,False,True,False,False
+way,659434104,way_659434104,Taman Raden Patah,unknown,1798.0401973032,unknown_or_conditional,True,False,False,1798.0401973032,0.0,False,True,False,False
+way,28207639,way_28207639,Unnamed Park,unknown,2339.9701688264763,unknown_or_conditional,True,False,False,2339.9701688264763,0.0,True,True,False,False
+way,28207640,way_28207640,Unnamed Park,unknown,3718.570232687599,unknown_or_conditional,True,False,False,3718.570232687599,0.0,True,True,False,False
+way,29020423,way_29020423,Unnamed Park,unknown,518.7697375170833,unknown_or_conditional,True,False,False,518.7697375170833,0.0,True,True,False,False
+way,799574106,way_799574106,Unnamed Park,unknown,49.692229346115134,unknown_or_conditional,True,False,False,49.692229346115134,0.0,True,True,False,False
+way,28275392,way_28275392,Unnamed Park,unknown,4210.943976920388,unknown_or_conditional,True,False,False,4210.943976920388,0.0,True,True,False,False
+way,28948525,way_28948525,Unnamed Park,unknown,819.457916212695,unknown_or_conditional,True,False,False,819.457916212695,0.0,True,True,False,False
+way,157361276,way_157361276,Taman Hang Tuah,unknown,2853.326333299212,unknown_or_conditional,True,False,False,2853.326333299212,0.0,False,True,False,False
+way,29020424,way_29020424,Unnamed Park,unknown,962.1499789030215,unknown_or_conditional,True,False,False,962.1499789030215,0.0,True,True,False,False
+way,29020420,way_29020420,Unnamed Park,unknown,2372.381618649979,unknown_or_conditional,True,False,False,2372.381618649979,0.0,True,True,False,False
+way,29020422,way_29020422,Unnamed Park,unknown,2979.614053404207,unknown_or_conditional,True,False,False,2979.614053404207,0.0,True,True,False,False
+way,29020426,way_29020426,Unnamed Park,unknown,444.7243019057116,unknown_or_conditional,True,False,False,444.7243019057116,0.0,True,True,False,False
+way,29020421,way_29020421,Unnamed Park,unknown,2150.713184510259,unknown_or_conditional,True,False,False,2150.713184510259,0.0,True,True,False,False
+way,28207789,way_28207789,Taman Rajasa,unknown,2785.6194668780636,unknown_or_conditional,True,False,False,2785.6194668780636,0.0,False,True,False,False
+way,28207592,way_28207592,Taman Sriwijaya,unknown,2707.1129294218363,unknown_or_conditional,True,False,False,2707.1129294218363,0.0,False,True,False,False
+way,28207804,way_28207804,Unnamed Park,unknown,5044.680660126809,unknown_or_conditional,True,False,False,5044.680660126809,0.0,True,True,False,False
+way,31813380,way_31813380,Taman Mataram,unknown,11314.829522762726,unknown_or_conditional,True,False,False,11314.829522762726,0.0,False,True,False,False
+way,28207578,way_28207578,Taman Mataram,unknown,4118.1755564576315,unknown_or_conditional,True,False,False,4118.1755564576315,0.0,False,True,False,False
+way,731130819,way_731130819,Unnamed Park,unknown,18.009920916134178,unknown_or_conditional,True,False,False,18.009920916134178,0.0,True,True,False,False
+way,659434589,way_659434589,Taman Daksa,unknown,3154.993162116249,unknown_or_conditional,True,False,False,3154.993162116249,0.0,False,True,False,False
+way,659434144,way_659434144,Taman Mpu Sendok,unknown,1051.947327652709,unknown_or_conditional,True,False,False,1051.947327652709,0.0,False,True,False,False
+way,28207743,way_28207743,Taman Balitung,unknown,2641.4501144285937,unknown_or_conditional,True,False,False,2641.4501144285937,0.0,False,True,False,False
+way,463037287,way_463037287,Taman Daha,unknown,2629.9866757261607,unknown_or_conditional,True,False,False,2629.9866757261607,0.0,False,True,False,False
+way,272343549,way_272343549,Unnamed Park,unknown,1204.7806661400145,unknown_or_conditional,True,False,False,1204.7806661400145,0.0,True,True,False,False
+way,157359589,way_157359589,Taman Cemara,unknown,2104.6656385580636,unknown_or_conditional,True,False,False,2104.6656385580636,0.0,False,True,False,False
+way,483587694,way_483587694,Unnamed Park,unknown,3228.9980257204525,unknown_or_conditional,True,False,False,3228.9980257204525,0.0,True,True,False,False
+way,552012934,way_552012934,Dirgantara Park,unknown,1599.7294405824493,unknown_or_conditional,True,False,False,1599.7294405824493,0.0,False,True,False,False
+way,125114663,way_125114663,Unnamed Park,unknown,3632.2717018023536,unknown_or_conditional,True,False,False,3632.2717018023536,0.0,True,True,False,False
+way,630927861,way_630927861,LIPI Park,unknown,2549.109302398472,unknown_or_conditional,True,False,False,2549.109302398472,0.0,False,True,False,False
+way,28197413,way_28197413,Taman Widya Chandra,unknown,2503.5920109088747,unknown_or_conditional,True,False,False,2503.5920109088747,0.0,False,True,False,False
+way,630928423,way_630928423,BKPM Park,unknown,5876.98698238057,unknown_or_conditional,True,False,False,5876.98698238057,0.0,False,True,False,False
+way,553671536,way_553671536,Taman DJP,unknown,2396.219963704115,unknown_or_conditional,True,False,False,2396.219963704115,0.0,False,True,False,False
+way,481974410,way_481974410,DJP Park,unknown,23728.179514297,unknown_or_conditional,True,False,False,23728.179514297,0.0,False,True,False,False
+way,28207630,way_28207630,Taman Jenggala,unknown,3356.646270629574,unknown_or_conditional,True,False,False,3356.646270629574,0.0,False,True,False,False
+way,659433882,way_659433882,Taman Pulombangkeng,unknown,643.7211138426918,unknown_or_conditional,True,False,False,643.7211138426918,0.0,False,True,False,False
+way,367667398,way_367667398,Unnamed Park,unknown,1856.3442442415874,unknown_or_conditional,True,False,False,1856.3442442415874,0.0,True,True,True,False
+way,528667327,way_528667327,SCBD Park,unknown,59036.696931658975,unknown_or_conditional,True,False,False,59036.696931658975,0.0,False,True,False,False
+way,28191844,way_28191844,Hutan Kota Gelora Bung Karno,unknown,43872.9950979395,unknown_or_conditional,True,False,False,43872.9950979395,0.0,False,True,True,False
+way,403720826,way_403720826,Taman Kota Gelora Bung Karno,unknown,49704.04434096477,unknown_or_conditional,True,False,False,49704.04434096477,0.0,False,True,False,False
+way,403720897,way_403720897,Taman Kridaloka,unknown,28851.967789004368,unknown_or_conditional,True,False,False,28851.967789004368,0.0,False,True,False,False
+way,755282381,way_755282381,Taman Kridaloka,unknown,6464.07045891932,unknown_or_conditional,True,False,False,6464.07045891932,0.0,False,True,False,False
+way,367725568,way_367725568,Unnamed Park,unknown,9795.583980595322,unknown_or_conditional,True,False,False,9795.583980595322,0.0,True,True,False,False
+way,553671325,way_553671325,Amusement Park,unknown,2239.3079093851397,unknown_or_conditional,True,False,False,2239.3079093851397,0.0,False,True,False,False
+way,334968999,way_334968999,Unnamed Park,unknown,330.27586412127084,unknown_or_conditional,True,False,False,330.27586412127084,0.0,True,True,False,False
+way,655011403,way_655011403,Unnamed Park,unknown,28.16293497434551,unknown_or_conditional,True,False,False,28.16293497434551,0.0,True,True,False,False
+way,655011402,way_655011402,Unnamed Park,unknown,29.523756580616446,unknown_or_conditional,True,False,False,29.523756580616446,0.0,True,True,False,False
+way,743185467,way_743185467,Dukuh Atas Skatepark,unknown,2436.16565473367,unknown_or_conditional,True,False,False,2436.16565473367,0.0,False,True,True,False
+way,404674683,way_404674683,Taman Viaduct Latuharhary,unknown,2332.9619251599697,unknown_or_conditional,True,False,False,2332.9619251599697,0.0,False,True,False,False
+way,1144627050,way_1144627050,Taman Kudus,unknown,644.4362030361426,unknown_or_conditional,True,False,False,644.4362030361426,0.0,False,True,True,False
+way,1230682340,way_1230682340,Jakarta Creative Zone Riverview,unknown,2020.2897902441925,unknown_or_conditional,True,False,False,2020.2897902441925,0.0,False,True,True,False
+way,400097241,way_400097241,Unnamed Park,unknown,1520.336314196539,unknown_or_conditional,True,False,False,1520.336314196539,0.0,True,True,False,False
+way,28680084,way_28680084,Taman Sumenep,unknown,9194.170019640223,unknown_or_conditional,True,False,False,9194.170019640223,0.0,False,True,False,False
+way,28245822,way_28245822,Taman Lawang,unknown,957.8969282243794,unknown_or_conditional,True,False,False,957.8969282243794,0.0,False,True,False,False
+way,157361317,way_157361317,Unnamed Park,unknown,1160.8378183146765,unknown_or_conditional,True,False,False,1160.8378183146765,0.0,True,True,False,False
+way,29020462,way_29020462,Unnamed Park,unknown,6533.392396823501,unknown_or_conditional,True,False,False,6533.392396823501,0.0,True,True,False,False
+way,29020476,way_29020476,Unnamed Park,unknown,1074.614572642404,unknown_or_conditional,True,False,False,1074.614572642404,0.0,True,True,False,False
+way,1233026042,way_1233026042,Unnamed Park,unknown,2243.7115473070235,unknown_or_conditional,True,False,False,2243.7115473070235,0.0,True,True,False,False
+way,29029404,way_29029404,Unnamed Park,unknown,10055.574313495108,unknown_or_conditional,True,False,False,10055.574313495108,0.0,True,True,False,False
+way,557847706,way_557847706,Taman Museum Manggala,unknown,687.8291034429575,unknown_or_conditional,True,False,False,687.8291034429575,0.0,False,True,False,False
+way,499842254,way_499842254,Taman Blok Garuda,unknown,1500.777956366676,unknown_or_conditional,True,False,False,1500.777956366676,0.0,False,True,False,False
+way,156918988,way_156918988,Koramil,unknown,174.07308419125,unknown_or_conditional,True,False,False,174.07308419125,0.0,False,True,False,False
+way,156917687,way_156917687,Taman Cattleya,unknown,47947.865699917864,unknown_or_conditional,True,False,False,47947.865699917864,0.0,False,True,False,False
+way,277749225,way_277749225,Tribeca Park,unknown,16140.813522639253,unknown_or_conditional,True,False,False,16140.813522639253,0.0,False,True,False,False
+way,496809375,way_496809375,Taman Danau Singkarak RW 03,unknown,1834.669731455768,unknown_or_conditional,True,False,False,1834.669731455768,0.0,False,True,False,False
+way,121243536,way_121243536,Unnamed Park,unknown,19811.695210121274,unknown_or_conditional,True,False,False,19811.695210121274,0.0,True,True,False,False
+way,367725561,way_367725561,Taman Cattleya,unknown,13784.520008055588,unknown_or_conditional,True,False,False,13784.520008055588,0.0,False,True,False,False
+way,557847705,way_557847705,Taman Manggala Wanabhakti,unknown,2504.983584278476,unknown_or_conditional,True,False,False,2504.983584278476,0.0,False,True,False,False
+way,1415306434,way_1415306434,Taman Halte Gedung Manggala Wanabhakti,unknown,1831.0558577973263,unknown_or_conditional,True,False,False,1831.0558577973263,0.0,False,True,False,False
+way,496809374,way_496809374,Taman RT 001/07,unknown,269.3798465135449,unknown_or_conditional,True,False,False,269.3798465135449,0.0,False,True,False,False
+way,1533737143,way_1533737143,Unnamed Park,unknown,1340.5624651807823,unknown_or_conditional,True,False,False,1340.5624651807823,0.0,True,True,True,False
+way,573583392,way_573583392,Unnamed Park,unknown,1103.3470963102832,unknown_or_conditional,True,False,False,1103.3470963102832,0.0,True,True,True,False
+way,1155443070,way_1155443070,Taman RS Pelni,yes,1317.3815104962848,access_positive_tag_unverified,True,False,False,1317.3815104962848,0.0,False,True,True,False
+way,156915159,way_156915159,Taman Juang,unknown,489.8444836397319,unknown_or_conditional,True,False,False,489.8444836397319,0.0,False,True,False,False
+way,481722144,way_481722144,Unnamed Park,unknown,125.38375984874031,unknown_or_conditional,True,False,False,125.38375984874031,0.0,True,True,False,False
+way,657131796,way_657131796,Thamrin 10,unknown,9664.615501911287,unknown_or_conditional,True,False,False,9664.615501911287,0.0,False,True,False,False
+way,497048610,way_497048610,Unnamed Park,unknown,1251.102130242261,unknown_or_conditional,True,False,False,1251.102130242261,0.0,True,True,False,False
+way,598383279,way_598383279,Unnamed Park,unknown,2127.6997518824996,unknown_or_conditional,True,False,False,2127.6997518824996,0.0,True,True,False,False
+way,655649085,way_655649085,Unnamed Park,unknown,1408.3631151967952,unknown_or_conditional,True,False,False,1408.3631151967952,0.0,True,True,False,False
+way,28932377,way_28932377,Unnamed Park,unknown,1147.391208962946,unknown_or_conditional,True,False,False,1147.391208962946,0.0,True,True,False,False
+way,28216654,way_28216654,Monas Selatan,unknown,161963.9369440225,unknown_or_conditional,True,False,False,161963.9369440225,0.0,False,True,False,False
+way,496643324,way_496643324,RPTRA Tanah Abang 3,unknown,485.0799095480827,unknown_or_conditional,True,False,False,485.0799095480827,0.0,False,True,False,False
+way,636804832,way_636804832,Unnamed Park,unknown,3751.2880122374013,unknown_or_conditional,True,False,False,3751.2880122374013,0.0,True,True,False,False
+way,28216671,way_28216671,Monas Barat,unknown,164948.3308771657,unknown_or_conditional,True,False,False,164948.3308771657,0.0,False,True,False,False
+way,505553821,way_505553821,Unnamed Park,unknown,1278.0075166420138,unknown_or_conditional,True,False,False,1278.0075166420138,0.0,True,True,False,False
+way,30159075,way_30159075,Unnamed Park,unknown,1887.9338670203435,unknown_or_conditional,True,False,False,1887.9338670203435,0.0,True,True,False,False
+way,30776853,way_30776853,Unnamed Park,unknown,912.1656037729862,unknown_or_conditional,True,False,False,912.1656037729862,0.0,True,True,False,False
+way,30776835,way_30776835,Unnamed Park,unknown,2174.576205967506,unknown_or_conditional,True,False,False,2174.576205967506,0.0,True,True,False,False
+way,30776838,way_30776838,Unnamed Park,unknown,2268.1565355654566,unknown_or_conditional,True,False,False,2268.1565355654566,0.0,True,True,False,False
+way,505428477,way_505428477,Unnamed Park,unknown,285.00387535053704,unknown_or_conditional,True,False,False,285.00387535053704,0.0,True,True,False,False
+way,505428478,way_505428478,Unnamed Park,unknown,284.8824910270082,unknown_or_conditional,True,False,False,284.8824910270082,0.0,True,True,False,False
+way,156920894,way_156920894,Unnamed Park,unknown,1508.7831724845887,unknown_or_conditional,True,False,False,1508.7831724845887,0.0,True,True,False,False
+way,806275127,way_806275127,Unnamed Park,unknown,102.29103456011583,unknown_or_conditional,True,False,False,102.29103456011583,0.0,True,True,False,False
+way,599635837,way_599635837,SPBU Kedoya Raya Park,unknown,487.90591693552045,unknown_or_conditional,True,False,False,487.90591693552045,0.0,False,True,False,False
+way,153751778,way_153751778,Unnamed Park,unknown,1424.7153640258732,unknown_or_conditional,True,False,False,1424.7153640258732,0.0,True,True,False,False
+way,30931411,way_30931411,Unnamed Park,unknown,227.99400847561563,unknown_or_conditional,True,False,False,227.99400847561563,0.0,True,True,False,False
+way,34988983,way_34988983,Unnamed Park,unknown,2631.092801343639,unknown_or_conditional,True,False,False,2631.092801343639,0.0,True,True,False,False
+way,156918207,way_156918207,Taman BPN,unknown,292.9923574239819,unknown_or_conditional,True,False,False,292.9923574239819,0.0,False,True,False,False
+way,156918193,way_156918193,HUTAN KOTA KEMBANGAN,unknown,24950.6453186508,unknown_or_conditional,True,False,False,24950.6453186508,0.0,False,True,False,False
+way,512497768,way_512497768,WibisanaPark,unknown,2137.0248803037884,unknown_or_conditional,True,False,False,2137.0248803037884,0.0,False,True,False,False
+way,915787567,way_915787567,Wibisana Park,unknown,1395.2151656199862,unknown_or_conditional,True,False,False,1395.2151656199862,0.0,False,True,False,False
+way,30933134,way_30933134,Unnamed Park,unknown,1716.4946086103387,unknown_or_conditional,True,False,False,1716.4946086103387,0.0,True,True,False,False
+way,880255379,way_880255379,Taman Delima,unknown,986.1453690982943,unknown_or_conditional,True,False,False,986.1453690982943,0.0,False,True,False,False
+way,527458004,way_527458004,Hutan Kota Rawa Buaya,unknown,11882.360280531664,unknown_or_conditional,True,False,False,11882.360280531664,0.0,False,True,False,False
+way,30931306,way_30931306,Unnamed Park,unknown,3777.300449824829,unknown_or_conditional,True,False,False,3777.300449824829,0.0,True,True,False,False
+way,812922247,way_812922247,Unnamed Park,unknown,286.1955865367756,unknown_or_conditional,True,False,False,286.1955865367756,0.0,True,True,False,False
+way,156912842,way_156912842,Unnamed Park,unknown,2654.6929991844545,unknown_or_conditional,True,False,False,2654.6929991844545,0.0,True,True,False,False
+way,30931307,way_30931307,Unnamed Park,unknown,3238.3936925049693,unknown_or_conditional,True,False,False,3238.3936925049693,0.0,True,True,False,False
+way,30758581,way_30758581,Unnamed Park,unknown,2135.4452898294544,unknown_or_conditional,True,False,False,2135.4452898294544,0.0,True,True,False,False
+way,30758519,way_30758519,Unnamed Park,unknown,195.82795938314294,unknown_or_conditional,True,False,False,195.82795938314294,0.0,True,True,False,False
+way,581289959,way_581289959,Surya Wijaya Park,unknown,1172.6139717995231,unknown_or_conditional,True,False,False,1172.6139717995231,0.0,False,True,False,False
+way,30125546,way_30125546,Unnamed Park,unknown,2820.9256361874272,unknown_or_conditional,True,False,False,2820.9256361874272,0.0,True,True,False,False
+way,30126639,way_30126639,Unnamed Park,unknown,3840.6545058377806,unknown_or_conditional,True,False,False,3840.6545058377806,0.0,True,True,False,False
+way,30735009,way_30735009,Unnamed Park,unknown,995.1957520503627,unknown_or_conditional,True,False,False,995.1957520503627,0.0,True,True,False,False
+way,30129147,way_30129147,Unnamed Park,unknown,1912.273456462015,unknown_or_conditional,True,False,False,1912.273456462015,0.0,True,True,False,False
+way,30127837,way_30127837,Unnamed Park,unknown,1675.3080576928178,unknown_or_conditional,True,False,False,1675.3080576928178,0.0,True,True,False,False
+way,30129150,way_30129150,Unnamed Park,unknown,1914.579589417111,unknown_or_conditional,True,False,False,1914.579589417111,0.0,True,True,False,False
+way,30127833,way_30127833,Unnamed Park,unknown,2065.7679946518333,unknown_or_conditional,True,False,False,2065.7679946518333,0.0,True,True,False,False
+way,30127835,way_30127835,Unnamed Park,unknown,2368.1973522553435,unknown_or_conditional,True,False,False,2368.1973522553435,0.0,True,True,False,False
+way,30112311,way_30112311,Unnamed Park,unknown,875.4889899793087,unknown_or_conditional,True,False,False,875.4889899793087,0.0,True,True,False,False
+way,30112308,way_30112308,Unnamed Park,unknown,872.933179479448,unknown_or_conditional,True,False,False,872.933179479448,0.0,True,True,False,False
+way,517171018,way_517171018,Unnamed Park,unknown,1985.504730525432,unknown_or_conditional,True,False,False,1985.504730525432,0.0,True,True,False,False
+way,517171015,way_517171015,Unnamed Park,unknown,7805.411168593448,unknown_or_conditional,True,False,False,7805.411168593448,0.0,True,True,False,False
+way,30112310,way_30112310,Unnamed Park,unknown,1452.9578221951845,unknown_or_conditional,True,False,False,1452.9578221951845,0.0,True,True,False,False
+way,581291028,way_581291028,Ratu Kamboja Park,unknown,878.3187067944973,unknown_or_conditional,True,False,False,878.3187067944973,0.0,False,True,False,False
+way,599634391,way_599634391,Ratu Kamboja Park,unknown,13281.595892995303,unknown_or_conditional,True,False,False,13281.595892995303,0.0,False,True,False,False
+way,30735015,way_30735015,Unnamed Park,unknown,570.134918496,unknown_or_conditional,True,False,False,570.134918496,0.0,True,True,False,False
+way,1273585525,way_1273585525,Taman Gang Buaya,unknown,841.2060803517969,unknown_or_conditional,True,False,False,841.2060803517969,0.0,False,True,False,False
+way,793340025,way_793340025,Taman Warga RW 09,unknown,4385.848742544925,unknown_or_conditional,True,False,False,4385.848742544925,0.0,False,True,False,False
+way,675926381,way_675926381,Unnamed Park,unknown,615.4921941533337,unknown_or_conditional,True,False,False,615.4921941533337,0.0,True,True,False,False
+way,675926583,way_675926583,Unnamed Park,unknown,494.4864508283083,unknown_or_conditional,True,False,False,494.4864508283083,0.0,True,True,False,False
+way,675926643,way_675926643,Unnamed Park,unknown,2565.862495409857,unknown_or_conditional,True,False,False,2565.862495409857,0.0,True,True,False,False
+way,675926663,way_675926663,Unnamed Park,unknown,1396.3194249109379,unknown_or_conditional,True,False,False,1396.3194249109379,0.0,True,True,False,False
+way,793367222,way_793367222,Block X Park,unknown,664.9061807315564,unknown_or_conditional,True,False,False,664.9061807315564,0.0,False,True,False,False
+way,746337115,way_746337115,Budi Indah Public Park,unknown,2787.895914619032,unknown_or_conditional,True,False,False,2787.895914619032,9.6212685854382e-10,False,True,True,False
+way,594801094,way_594801094,Taman Kota Bojong,unknown,2440.196265378663,unknown_or_conditional,True,False,False,2440.196265378663,0.0,False,True,False,False
+way,594831638,way_594831638,Unnamed Park,unknown,617.8239671392819,unknown_or_conditional,True,False,False,617.8239671392819,0.0,True,True,False,False
+way,923594084,way_923594084,Unnamed Park,unknown,725.9676593018787,unknown_or_conditional,True,False,False,725.9676593018787,0.0,True,True,False,False
+way,839778663,way_839778663,Taman Jeruk 2,unknown,710.5118121253206,unknown_or_conditional,True,False,False,710.5118121253206,0.0,False,True,False,False
+way,923593984,way_923593984,Unnamed Park,unknown,382.8904483460893,unknown_or_conditional,True,False,False,382.8904483460893,0.0,True,True,False,False
+way,923597051,way_923597051,Unnamed Park,unknown,559.4590672624405,unknown_or_conditional,True,False,False,559.4590672624405,0.0,True,True,False,False
+way,156918730,way_156918730,Taman Pemakaman,unknown,5328.443930740072,unknown_or_conditional,True,False,False,5328.443930740072,0.0,False,True,False,False
+way,1131910403,way_1131910403,Pengolahan Air,unknown,686.8760292753934,unknown_or_conditional,True,False,False,686.8760292753934,0.0,False,True,False,False
+way,1159072833,way_1159072833,Unnamed Park,unknown,15387.231665371408,unknown_or_conditional,True,False,False,15387.231665371408,0.0,True,True,False,False
+way,30112307,way_30112307,Unnamed Park,unknown,1185.336474107249,unknown_or_conditional,True,False,False,1185.336474107249,0.0,True,True,False,False
+way,30112306,way_30112306,Unnamed Park,unknown,1687.638380013368,unknown_or_conditional,True,False,False,1687.638380013368,0.0,True,True,False,False
+way,820003501,way_820003501,Unnamed Park,unknown,5844.235339497832,unknown_or_conditional,True,False,False,5844.235339497832,0.0,True,True,False,False
+way,820003502,way_820003502,Unnamed Park,unknown,14151.40782864427,unknown_or_conditional,True,False,False,14151.40782864427,0.0,True,True,False,False
+way,820002450,way_820002450,Unnamed Park,unknown,461.06671762315136,unknown_or_conditional,True,False,False,461.06671762315136,0.0,True,True,False,False
+way,30125144,way_30125144,Unnamed Park,unknown,1954.0126763446447,unknown_or_conditional,True,False,False,1954.0126763446447,0.0,True,True,False,False
+way,820002451,way_820002451,Unnamed Park,unknown,356.18033227312884,unknown_or_conditional,True,False,False,356.18033227312884,0.0,True,True,False,False
+way,820002452,way_820002452,Unnamed Park,unknown,433.17262583606157,unknown_or_conditional,True,False,False,433.17262583606157,0.0,True,True,False,False
+way,30124936,way_30124936,Unnamed Park,unknown,1274.4637543462425,unknown_or_conditional,True,False,False,1274.4637543462425,0.0,True,True,False,False
+way,30125145,way_30125145,Unnamed Park,unknown,1202.3520380281295,unknown_or_conditional,True,False,False,1202.3520380281295,0.0,True,True,False,False
+way,34871406,way_34871406,Unnamed Park,unknown,1419.0097048043417,unknown_or_conditional,True,False,False,1419.0097048043417,0.0,True,True,False,False
+way,1089611816,way_1089611816,Taman Jati Raya,unknown,1034.9571626113016,unknown_or_conditional,True,False,False,1034.9571626113016,0.0,False,True,False,False
+way,1089611815,way_1089611815,Taman Terbuka,unknown,264.6879308907962,unknown_or_conditional,True,False,False,264.6879308907962,0.0,False,True,False,False
+way,33763118,way_33763118,Unnamed Park,unknown,749.2811221662431,unknown_or_conditional,True,False,False,749.2811221662431,0.0,True,True,False,False
+way,33763117,way_33763117,Unnamed Park,unknown,1636.9759127897726,unknown_or_conditional,True,False,False,1636.9759127897726,0.0,True,True,False,False
+way,33768798,way_33768798,Unnamed Park,unknown,1003.3529497591089,unknown_or_conditional,True,False,False,1003.3529497591089,0.0,True,True,False,False
+way,33208318,way_33208318,Unnamed Park,unknown,3325.87564615366,unknown_or_conditional,True,False,False,3325.87564615366,0.0,True,True,False,False
+way,33209144,way_33209144,Unnamed Park,unknown,242.89470501143077,unknown_or_conditional,True,False,False,242.89470501143077,0.0,True,True,False,False
+way,33211331,way_33211331,Unnamed Park,unknown,3443.08624889256,unknown_or_conditional,True,False,False,3443.08624889256,0.0,True,True,False,False
+way,367045173,way_367045173,Unnamed Park,unknown,239.4655527349061,unknown_or_conditional,True,False,False,239.4655527349061,0.0,True,True,False,False
+way,30090664,way_30090664,Unnamed Park,unknown,321.2189404390151,unknown_or_conditional,True,False,False,321.2189404390151,0.0,True,True,False,False
+way,1427562572,way_1427562572,Unnamed Park,unknown,2378.7670083105286,unknown_or_conditional,True,False,False,2378.7670083105286,0.0,True,True,False,False
+way,556488049,way_556488049,Grawisa Park,unknown,1679.1825269404465,unknown_or_conditional,True,False,False,1679.1825269404465,0.0,False,True,False,False
+way,1427562575,way_1427562575,Forest Park,unknown,11291.549846459286,unknown_or_conditional,True,False,False,11291.549846459286,0.0,False,True,False,False
+way,526035330,way_526035330,Unnamed Park,unknown,1943.5078705592994,unknown_or_conditional,True,False,False,1943.5078705592994,0.0,True,True,False,False
+way,1534175578,way_1534175578,Taman E1,yes,4544.4690740628175,access_positive_tag_unverified,True,False,False,4544.4690740628175,0.0,False,True,False,False
+way,492693935,way_492693935,Unnamed Park,unknown,28731.282558144943,unknown_or_conditional,True,False,False,28731.282558144943,0.0,True,True,False,False
+way,31080480,way_31080480,Unnamed Park,unknown,3445.520446769313,unknown_or_conditional,True,False,False,3445.520446769313,0.0,True,True,False,False
+way,1370289204,way_1370289204,Manyar Park,unknown,10299.584321067217,unknown_or_conditional,True,False,False,10299.584321067217,0.0,False,True,False,False
+way,1370286354,way_1370286354,Manyar Playground,unknown,1153.6618766874085,unknown_or_conditional,True,False,False,1153.6618766874085,0.0,False,True,False,False
+way,33197034,way_33197034,Unnamed Park,unknown,878.3457426836916,unknown_or_conditional,True,False,False,878.3457426836916,0.0,True,True,False,False
+way,33197524,way_33197524,Unnamed Park,unknown,671.918865667245,unknown_or_conditional,True,False,False,671.918865667245,0.0,True,True,False,False
+way,33833436,way_33833436,Unnamed Park,unknown,1755.7369621249793,unknown_or_conditional,True,False,False,1755.7369621249793,0.0,True,True,False,False
+way,33833418,way_33833418,Unnamed Park,unknown,1822.660010521265,unknown_or_conditional,True,False,False,1822.660010521265,0.0,True,True,False,False
+way,33197533,way_33197533,Unnamed Park,unknown,344.68612076422255,unknown_or_conditional,True,False,False,344.68612076422255,0.0,True,True,False,False
+way,33197214,way_33197214,Unnamed Park,unknown,226.3227674423046,unknown_or_conditional,True,False,False,226.3227674423046,0.0,True,True,False,False
+way,33196085,way_33196085,Unnamed Park,unknown,245.73234417235986,unknown_or_conditional,True,False,False,245.73234417235986,0.0,True,True,False,False
+way,33197216,way_33197216,Unnamed Park,unknown,1526.7276579478041,unknown_or_conditional,True,False,False,1526.7276579478041,0.0,True,True,False,False
+way,33196087,way_33196087,Unnamed Park,unknown,172.4430606417691,unknown_or_conditional,True,False,False,172.4430606417691,0.0,True,True,False,False
+way,33196084,way_33196084,Unnamed Park,unknown,5444.204469480602,unknown_or_conditional,True,False,False,5444.204469480602,0.0,True,True,False,False
+way,28926393,way_28926393,Unnamed Park,unknown,1120.3336330910333,unknown_or_conditional,True,False,False,1120.3336330910333,0.0,True,True,False,False
+way,734371082,way_734371082,Unnamed Park,unknown,4597.063692920417,unknown_or_conditional,True,False,False,4597.063692920417,0.0,True,True,False,False
+way,734371083,way_734371083,Unnamed Park,unknown,1241.2479182992793,unknown_or_conditional,True,False,False,1241.2479182992793,0.0,True,True,False,False
+way,734377315,way_734377315,Unnamed Park,unknown,10470.987781300852,unknown_or_conditional,True,False,False,10470.987781300852,0.0,True,True,False,False
+way,35275861,way_35275861,Unnamed Park,unknown,8645.237464934813,unknown_or_conditional,True,False,False,8645.237464934813,0.0,True,True,False,False
+way,734371085,way_734371085,Unnamed Park,unknown,3470.8163541999656,unknown_or_conditional,True,False,False,3470.8163541999656,0.0,True,True,False,False
+way,734371084,way_734371084,Unnamed Park,unknown,5234.870310941857,unknown_or_conditional,True,False,False,5234.870310941857,0.0,True,True,False,False
+way,490815236,way_490815236,Taman Jayakarta,unknown,3544.472243077462,unknown_or_conditional,True,False,False,3544.472243077462,0.0,False,True,False,False
+way,843634528,way_843634528,Taman Pakuwon,unknown,945.3712466669934,unknown_or_conditional,True,False,False,945.3712466669934,0.0,False,True,False,False
+way,843636371,way_843636371,Pakuwon Playground,unknown,1431.1299979142645,unknown_or_conditional,True,False,False,1431.1299979142645,0.0,False,True,False,False
+way,28932356,way_28932356,Unnamed Park,unknown,2078.4948195572697,unknown_or_conditional,True,False,False,2078.4948195572697,0.0,True,True,True,False
+way,801641962,way_801641962,Unnamed Park,unknown,4.263101720176676,unknown_or_conditional,True,False,False,4.263101720176676,0.0,True,True,False,False
+way,801641961,way_801641961,Unnamed Park,unknown,5.39174038542564,unknown_or_conditional,True,False,False,5.39174038542564,0.0,True,True,False,False
+way,28931539,way_28931539,Unnamed Park,unknown,14099.837865156776,unknown_or_conditional,True,False,False,14099.837865156776,0.0,True,True,True,False
+way,492704028,way_492704028,Taman Pos Duri,unknown,883.5058979924383,unknown_or_conditional,True,False,False,883.5058979924383,0.0,False,True,False,False
+way,1110584762,way_1110584762,Vihara Tanda Bakti Jakarta,unknown,138.29398484532592,unknown_or_conditional,True,False,False,138.29398484532592,0.0,False,True,False,False
+way,492079694,way_492079694,Taman Bermain Kota Layak Anak,unknown,280.8896245959367,unknown_or_conditional,True,False,False,280.8896245959367,0.0,False,True,False,False
+way,484411850,way_484411850,Unnamed Park,unknown,550.572548188254,unknown_or_conditional,True,False,False,550.572548188254,0.0,True,True,False,False
+way,211034452,way_211034452,Unnamed Park,unknown,3500.2068286472786,unknown_or_conditional,True,False,False,3500.2068286472786,0.0,True,True,False,False
+way,1271186299,way_1271186299,Unnamed Park,unknown,2998.2919423836747,unknown_or_conditional,True,False,False,2998.2919423836747,0.0,True,True,False,False
+way,490815205,way_490815205,Taman Sayang Anak Latumenten,unknown,359.7005502007395,unknown_or_conditional,True,False,False,359.7005502007395,0.0,False,True,False,False
+way,187000530,way_187000530,Taman THI,unknown,814.7056909108725,unknown_or_conditional,True,False,False,814.7056909108725,0.0,False,True,False,False
+way,490047977,way_490047977,Taman Kali Jodoh Kelurahan Angke,unknown,2990.576334492267,unknown_or_conditional,True,False,False,2990.576334492267,0.0,False,True,False,False
+way,404675353,way_404675353,RTH/RPTRA Kalijodo,unknown,33057.69878504939,unknown_or_conditional,True,False,False,33057.69878504939,0.0,False,True,True,False
+way,492691953,way_492691953,Unnamed Park,unknown,7911.914226771147,unknown_or_conditional,True,False,False,7911.914226771147,0.0,True,True,False,False
+way,548397851,way_548397851,Jogging Park CBD Pluit,unknown,691.6990456721223,unknown_or_conditional,True,False,False,691.6990456721223,0.0,False,True,False,False
+way,548397364,way_548397364,Playground Park CBD,unknown,195.07772058053888,unknown_or_conditional,True,False,False,195.07772058053888,0.0,False,True,False,False
+way,548397363,way_548397363,PlayGround Park,unknown,119.47398462841866,unknown_or_conditional,True,False,False,119.47398462841866,0.0,False,True,False,False
+way,548397361,way_548397361,CBD Pluit Pool Park,unknown,810.741609546246,unknown_or_conditional,True,False,False,810.741609546246,0.0,False,True,False,False
+way,29308269,way_29308269,Unnamed Park,unknown,1467.4865257293663,unknown_or_conditional,True,False,False,1467.4865257293663,0.0,True,True,False,False
+way,510416120,way_510416120,Unnamed Park,unknown,249.2359817769617,unknown_or_conditional,True,False,False,249.2359817769617,0.0,True,True,False,False
+way,1113327124,way_1113327124,Taman Museum Fatahillah,unknown,1102.2735666868703,unknown_or_conditional,True,False,False,1102.2735666868703,0.0,False,True,False,False
+way,492884918,way_492884918,Unnamed Park,unknown,647.274138636014,unknown_or_conditional,True,False,False,647.274138636014,0.0,True,True,False,False
+way,820003503,way_820003503,Unnamed Park,unknown,6508.99978461431,unknown_or_conditional,True,False,False,6508.99978461431,0.0,True,True,False,False
+way,804545300,way_804545300,Unnamed Park,unknown,1358.842108232176,unknown_or_conditional,True,False,False,1358.842108232176,0.0,True,True,False,False
+way,445861203,way_445861203,Taman Hutan Kota Penjaringan,unknown,70555.70085765694,unknown_or_conditional,True,False,False,70555.70085765694,0.0,False,True,False,False
+way,34197515,way_34197515,Unnamed Park,unknown,2181.3957507838422,unknown_or_conditional,True,False,False,2181.3957507838422,0.0,True,True,False,False
+way,29338727,way_29338727,Unnamed Park,unknown,2876.428105973061,unknown_or_conditional,True,False,False,2876.428105973061,0.0,True,True,False,False
+way,246965170,way_246965170,Unnamed Park,unknown,4147.036935613089,unknown_or_conditional,True,False,False,4147.036935613089,0.0,True,True,False,False
+way,29338639,way_29338639,Unnamed Park,unknown,4365.116600563153,unknown_or_conditional,True,False,False,4365.116600563153,0.0,True,True,False,False
+way,29338649,way_29338649,Unnamed Park,unknown,2923.040502873114,unknown_or_conditional,True,False,False,2923.040502873114,0.0,True,True,False,False
+way,246967159,way_246967159,Unnamed Park,unknown,4506.323305477636,unknown_or_conditional,True,False,False,4506.323305477636,0.0,True,True,False,False
+way,29338679,way_29338679,Unnamed Park,unknown,4136.859248037798,unknown_or_conditional,True,False,False,4136.859248037798,0.0,True,True,False,False
+way,492693906,way_492693906,Unnamed Park,unknown,55.556145347186515,unknown_or_conditional,True,False,False,55.556145347186515,0.0,True,True,False,False
+way,784891934,way_784891934,Unnamed Park,unknown,9172.999102108899,unknown_or_conditional,True,False,False,9172.999102108899,0.0,True,True,False,False
+way,784891933,way_784891933,Unnamed Park,unknown,15554.931768888375,unknown_or_conditional,True,False,False,15554.931768888375,0.0,True,True,False,False
+way,29308249,way_29308249,Unnamed Park,unknown,10289.778387192986,unknown_or_conditional,True,False,False,10289.778387192986,0.0,True,True,False,False
+way,29308238,way_29308238,Unnamed Park,unknown,8306.230254678823,unknown_or_conditional,True,False,False,8306.230254678823,0.0,True,True,False,False
+way,156270932,way_156270932,Klinik Hemodialisislions,unknown,1146.1977047481632,unknown_or_conditional,True,False,False,1146.1977047481632,0.0,False,True,False,False
+way,29308237,way_29308237,Unnamed Park,unknown,6309.249047112315,unknown_or_conditional,True,False,False,6309.249047112315,0.0,True,True,False,False
+way,492694310,way_492694310,Unnamed Park,unknown,19461.065288191272,unknown_or_conditional,True,False,False,19461.065288191272,0.0,True,True,False,False
+way,32974082,way_32974082,Taman Waduk Pluit,unknown,69157.07481027504,unknown_or_conditional,True,False,False,69157.07481027504,0.0,False,True,False,False
+way,492692533,way_492692533,Unnamed Park,unknown,11107.054995087856,unknown_or_conditional,True,False,False,11107.054995087856,0.0,True,True,False,False
+way,492692534,way_492692534,Unnamed Park,unknown,6594.3900871666965,unknown_or_conditional,True,False,False,6594.3900871666965,0.0,True,True,False,False
+way,30087053,way_30087053,Unnamed Park,unknown,1085.0014588637264,unknown_or_conditional,True,False,False,1085.0014588637264,0.0,True,True,False,False
+way,30087054,way_30087054,Unnamed Park,unknown,941.2923439154099,unknown_or_conditional,True,False,False,941.2923439154099,0.0,True,True,False,False
+way,647485165,way_647485165,Unnamed Park,unknown,1408.9616463481048,unknown_or_conditional,True,False,False,1408.9616463481048,0.0,True,True,True,False
+way,30087055,way_30087055,Unnamed Park,unknown,1284.9539868927334,unknown_or_conditional,True,False,False,1284.9539868927334,0.0,True,True,False,False
+way,30087057,way_30087057,Unnamed Park,unknown,1696.1858845363724,unknown_or_conditional,True,False,False,1696.1858845363724,0.0,True,True,True,False
+way,33213288,way_33213288,Unnamed Park,unknown,241.09156593795117,unknown_or_conditional,True,False,False,241.09156593795117,0.0,True,True,False,False
+way,345676241,way_345676241,Unnamed Park,unknown,1043.2193695325086,unknown_or_conditional,True,False,False,1043.2193695325086,0.0,True,True,False,False
+way,33195916,way_33195916,Unnamed Park,unknown,1674.364762568818,unknown_or_conditional,True,False,False,1674.364762568818,0.0,True,True,False,False
+way,249677542,way_249677542,Taman Bermain Tzu Chi,unknown,1597.0862430975671,unknown_or_conditional,True,False,False,1597.0862430975671,0.0,False,True,False,False
+way,365955449,way_365955449,Taman CityPark,unknown,1325.8636051933242,unknown_or_conditional,True,False,False,1325.8636051933242,0.0,False,True,False,False
+way,33195914,way_33195914,Unnamed Park,unknown,1318.667518660846,unknown_or_conditional,True,False,False,1318.667518660846,0.0,True,True,False,False
+way,33195242,way_33195242,Unnamed Park,unknown,1027.010120279216,unknown_or_conditional,True,False,False,1027.010120279216,0.0,True,True,False,False
+way,33194647,way_33194647,Unnamed Park,unknown,1502.6532168434687,unknown_or_conditional,True,False,False,1502.6532168434687,0.0,True,True,False,False
+way,33262696,way_33262696,Unnamed Park,unknown,2012.4075914647083,unknown_or_conditional,True,False,False,2012.4075914647083,0.0,True,True,False,False
+way,492693650,way_492693650,Unnamed Park,unknown,2577.2552788125568,unknown_or_conditional,True,False,False,2577.2552788125568,0.0,True,True,False,False
+way,31076139,way_31076139,Unnamed Park,unknown,2294.1238602862722,unknown_or_conditional,True,False,False,2294.1238602862722,0.0,True,True,False,False
+way,31078248,way_31078248,Unnamed Park,unknown,2314.4957453252664,unknown_or_conditional,True,False,False,2314.4957453252664,0.0,True,True,False,False
+way,1370288585,way_1370288585,Unnamed Park,unknown,2025.5756553371937,unknown_or_conditional,True,False,False,2025.5756553371937,0.0,True,True,False,False
+way,31077356,way_31077356,Unnamed Park,unknown,3624.8980823875845,unknown_or_conditional,True,False,False,3624.8980823875845,0.0,True,True,False,False
+way,31076839,way_31076839,Unnamed Park,unknown,2485.15905059956,unknown_or_conditional,True,False,False,2485.15905059956,0.0,True,True,False,False
+way,31078255,way_31078255,Unnamed Park,unknown,1864.7622087692907,unknown_or_conditional,True,False,False,1864.7622087692907,0.0,True,True,False,False
+way,31076075,way_31076075,Unnamed Park,unknown,1743.5957219984239,unknown_or_conditional,True,False,False,1743.5957219984239,0.0,True,True,False,False
+way,31043554,way_31043554,Unnamed Park,unknown,2673.590547392321,unknown_or_conditional,True,False,False,2673.590547392321,0.0,True,True,False,False
+way,31043547,way_31043547,Unnamed Park,unknown,3900.221554609592,unknown_or_conditional,True,False,False,3900.221554609592,0.0,True,True,False,False
+way,32970813,way_32970813,Unnamed Park,unknown,2084.046082679981,unknown_or_conditional,True,False,False,2084.046082679981,0.0,True,True,False,False
+way,1324943500,way_1324943500,Unnamed Park,unknown,1930.9401435481639,unknown_or_conditional,True,False,False,1930.9401435481639,0.0,True,True,False,False
+way,492693654,way_492693654,Unnamed Park,unknown,545.2155410069772,unknown_or_conditional,True,False,False,545.2155410069772,0.0,True,True,False,False
+way,33194648,way_33194648,Unnamed Park,unknown,1343.8687663210362,unknown_or_conditional,True,False,False,1343.8687663210362,0.0,True,True,False,False
+way,33194414,way_33194414,Stella Maris,unknown,1634.910868790862,unknown_or_conditional,True,False,False,1634.910868790862,0.0,False,True,False,False
+way,33194134,way_33194134,Unnamed Park,unknown,1449.322828582968,unknown_or_conditional,True,False,False,1449.322828582968,0.0,True,True,False,False
+way,33262871,way_33262871,Unnamed Park,unknown,1425.933766386299,unknown_or_conditional,True,False,False,1425.933766386299,0.0,True,True,False,False
+way,797252411,way_797252411,Taman Sekolah Citra Kasih,unknown,2359.004509164917,unknown_or_conditional,True,False,False,2359.004509164917,0.0,False,True,False,False
+way,32742715,way_32742715,Unnamed Park,unknown,6133.196364444896,unknown_or_conditional,True,False,False,6133.196364444896,0.0,True,True,False,False
+way,32718249,way_32718249,Unnamed Park,unknown,4594.376608018058,unknown_or_conditional,True,False,False,4594.376608018058,0.0,True,True,False,False
+way,32718278,way_32718278,Unnamed Park,unknown,1806.8960370120699,unknown_or_conditional,True,False,False,1806.8960370120699,0.0,True,True,False,False
+way,32742712,way_32742712,Unnamed Park,unknown,9061.27866697289,unknown_or_conditional,True,False,False,9061.27866697289,0.0,True,True,False,False
+way,32716100,way_32716100,Unnamed Park,unknown,2062.888597632482,unknown_or_conditional,True,False,False,2062.888597632482,0.0,True,True,False,False
+way,32716073,way_32716073,Unnamed Park,unknown,2868.8240697231286,unknown_or_conditional,True,False,False,2868.8240697231286,0.0,True,True,False,False
+way,29338665,way_29338665,Unnamed Park,unknown,5962.569235389329,unknown_or_conditional,True,False,False,5962.569235389329,0.0,True,True,False,False
+way,29340149,way_29340149,Unnamed Park,unknown,2314.539190278811,unknown_or_conditional,True,False,False,2314.539190278811,0.0,True,True,False,False
+way,29340147,way_29340147,Unnamed Park,unknown,2072.7450123198178,unknown_or_conditional,True,False,False,2072.7450123198178,0.0,True,True,False,False
+way,29340260,way_29340260,Unnamed Park,unknown,2242.4679743185425,unknown_or_conditional,True,False,False,2242.4679743185425,0.0,True,True,False,False
+way,29340197,way_29340197,Unnamed Park,unknown,2077.4268836824413,unknown_or_conditional,True,False,False,2077.4268836824413,0.0,True,True,False,False
+way,29340258,way_29340258,Unnamed Park,unknown,2224.7522974021467,unknown_or_conditional,True,False,False,2224.7522974021467,0.0,True,True,False,False
+way,29340146,way_29340146,Unnamed Park,unknown,2894.773470107706,unknown_or_conditional,True,False,False,2894.773470107706,0.0,True,True,False,False
+way,29367649,way_29367649,Unnamed Park,unknown,3471.378799138957,unknown_or_conditional,True,False,False,3471.378799138957,0.0,True,True,False,False
+way,29340196,way_29340196,Unnamed Park,unknown,1263.843907492754,unknown_or_conditional,True,False,False,1263.843907492754,0.0,True,True,False,False
+way,29340285,way_29340285,Unnamed Park,unknown,1003.9873748207838,unknown_or_conditional,True,False,False,1003.9873748207838,0.0,True,True,False,False
+way,32927848,way_32927848,Unnamed Park,unknown,3130.948019792105,unknown_or_conditional,True,False,False,3130.948019792105,0.0,True,True,False,False
+way,34092915,way_34092915,Unnamed Park,unknown,3835.720363036532,unknown_or_conditional,True,False,False,3835.720363036532,0.0,True,True,False,False
+way,32927492,way_32927492,Unnamed Park,unknown,2206.594523417295,unknown_or_conditional,True,False,False,2206.594523417295,0.0,True,True,False,False
+way,32970900,way_32970900,Unnamed Park,unknown,3262.1211155654237,unknown_or_conditional,True,False,False,3262.1211155654237,0.0,True,True,False,False
+way,156270968,way_156270968,Ruang Terbuka Hijau,unknown,14003.776897328049,unknown_or_conditional,True,False,False,14003.776897328049,0.0,False,True,False,False
+way,492692882,way_492692882,Unnamed Park,unknown,22032.205371584227,unknown_or_conditional,True,False,False,22032.205371584227,0.0,True,True,False,False
+way,29340809,way_29340809,Unnamed Park,unknown,1219.6661755299228,unknown_or_conditional,True,False,False,1219.6661755299228,0.0,True,True,False,False
+way,492692883,way_492692883,Unnamed Park,unknown,8991.259947219614,unknown_or_conditional,True,False,False,8991.259947219614,0.0,True,True,False,False
+way,32947597,way_32947597,Unnamed Park,unknown,56660.46800718151,unknown_or_conditional,True,False,False,56660.46800718151,0.0,True,True,False,False
+way,32970583,way_32970583,Unnamed Park,unknown,1953.3859504120096,unknown_or_conditional,True,False,False,1953.3859504120096,0.0,True,True,False,False
+way,29340287,way_29340287,Unnamed Park,unknown,1322.6482009144822,unknown_or_conditional,True,False,False,1322.6482009144822,0.0,True,True,False,False
+way,29344765,way_29344765,Unnamed Park,unknown,2109.7540603298557,unknown_or_conditional,True,False,False,2109.7540603298557,0.0,True,True,False,False
+way,29344764,way_29344764,Unnamed Park,unknown,2502.3752635779247,unknown_or_conditional,True,False,False,2502.3752635779247,0.0,True,True,False,False
+way,32970582,way_32970582,Unnamed Park,unknown,1971.4410673622542,unknown_or_conditional,True,False,False,1971.4410673622542,0.0,True,True,False,False
+way,32947063,way_32947063,Unnamed Park,unknown,1009.8967035363451,unknown_or_conditional,True,False,False,1009.8967035363451,0.0,True,True,False,False
+way,492692661,way_492692661,Unnamed Park,unknown,282.22332847688926,unknown_or_conditional,True,False,False,282.22332847688926,0.0,True,True,False,False

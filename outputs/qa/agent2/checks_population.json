@@ -1,0 +1,97 @@
+[
+  {
+    "check": "geometry: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "geometry: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "population: finite nonnegative",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_child: finite nonnegative",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_elderly: finite nonnegative",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "ages <= total +1 person",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "population exact extraction: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "population exact extraction: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "population: original QGIS hybrid aggregation reproduced",
+    "pass": true,
+    "detail": 0.0016326904296875
+  },
+  {
+    "check": "pop_child exact extraction: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_child exact extraction: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_child: original QGIS hybrid aggregation reproduced",
+    "pass": true,
+    "detail": 0.00029754638239865017
+  },
+  {
+    "check": "pop_elderly exact extraction: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_elderly exact extraction: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_elderly: original QGIS hybrid aggregation reproduced",
+    "pass": true,
+    "detail": 8.96453857421875e-05
+  }
+]

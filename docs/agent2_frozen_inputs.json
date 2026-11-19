@@ -1,0 +1,289 @@
+{
+  "version": "Agent2-remediation-v2",
+  "supersedes": "v1 (clean-room restore showed audited baseline copies and TM-02 pilot archive were missing)",
+  "scope": "Agent2 frozen-input offline rebuild; not consolidated release",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "source_reference": "2024 WorldPop R2025A / 2026-11-19 OSM; source dates are not all observation dates",
+  "licenses": {
+    "WorldPop": "CC BY 4.0",
+    "OpenStreetMap": "ODbL 1.0; attribution required"
+  },
+  "inputs": [
+    {
+      "path": "data/processed/grid_master.csv",
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078",
+      "bytes": 236568
+    },
+    {
+      "path": "data/processed/grid_500m_jakarta.gpkg",
+      "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7",
+      "bytes": 970752
+    },
+    {
+      "path": "data/processed/jakarta_5kota.gpkg",
+      "sha256": "658d75b5e94991f4c633c97a012b552a117d2f7ffacaa8a875845a23d735a905",
+      "bytes": 303104
+    },
+    {
+      "path": "data/processed/parks_jakarta.gpkg",
+      "sha256": "208e66d541f9f13a8b355aa726259bb155b4a68643e300a36cfc1675e1ab2777",
+      "bytes": 487424
+    },
+    {
+      "path": "data/processed/population_grid.csv",
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589",
+      "bytes": 88110
+    },
+    {
+      "path": "data/processed/vulnerability_grid.csv",
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937",
+      "bytes": 134439
+    },
+    {
+      "path": "data/processed/accessibility_grid.csv",
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e",
+      "bytes": 155822
+    },
+    {
+      "path": "data/processed/spatial_features.csv",
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724",
+      "bytes": 295418
+    },
+    {
+      "path": "data/processed/final_model_features.csv",
+      "sha256": "fa6a258f8f848c0afc3a44ad51c49a4df9390b2b131dd900b37a6b4f72a2e376",
+      "bytes": 1109792
+    },
+    {
+      "path": "data/processed/walk_jakarta_all.graphml",
+      "sha256": "40a1eb84e287a01a4af83c2091261b4f21e9acf571e227d8593654bed87671a6",
+      "bytes": 255988312
+    },
+    {
+      "path": "data/raw/osm/jakarta_all_walk.osm",
+      "sha256": "66a6fe69132739a93ef8d09522eea3b05cd6845c1c96e41297ed862191861ee9",
+      "bytes": 97202959
+    },
+    {
+      "path": "data/raw/worldpop/idn_pop_2024.tif",
+      "sha256": "458c20fa8a3e9b982e2eff5620b4e56438373c3eb00dd78a9093bf4b06c1668f",
+      "bytes": 169081457
+    },
+    {
+      "path": "data/raw/worldpop/age/jakarta_child_2024.tif",
+      "sha256": "784b00a7d5e080ff31500625be7fd554aea3a2c048095fe47d1d2c1f8c808e59",
+      "bytes": 268480
+    },
+    {
+      "path": "data/raw/worldpop/age/jakarta_elderly_2024.tif",
+      "sha256": "4fec433ff2a02c7897bae70485b27cb3a8cfd3855c8acdf0523239111f729653",
+      "bytes": 268089
+    },
+    {
+      "path": "data/raw/worldpop/age_buffered/jakarta_child_2024_buffered.tif",
+      "sha256": "88073193dcabb34af561246ff11d952118704b4c5e9b0c42097606a963971506",
+      "bytes": 418768
+    },
+    {
+      "path": "data/raw/worldpop/age_buffered/jakarta_elderly_2024_buffered.tif",
+      "sha256": "acf77612a4a7165a79f7948c81b592df756677f3cefabcecf7e183ab8c5b6fbf",
+      "bytes": 417229
+    },
+    {
+      "path": "data/raw/worldpop/age_buffered/retrieval_manifest.json",
+      "sha256": "f9b125e6e9eaf78b00745212dff60469b19c9ccf0cabc393fe3f5cd3fda383d8",
+      "bytes": 2534
+    },
+    {
+      "path": "data/raw/worldpop/age_buffered/child_request.json",
+      "sha256": "3a036f43d6289bcccf72d8208b3dfe30dccfb4e6589ba3ed485dfb3c94c7d08d",
+      "bytes": 655
+    },
+    {
+      "path": "data/raw/worldpop/age_buffered/elderly_request.json",
+      "sha256": "7f79a341f822d36bdd979f70fdb29cc5d94a1f1c194347b04313809d231f41a6",
+      "bytes": 656
+    },
+    {
+      "path": "cache/6e077f2b7acf776f3021034c57eb512f76e96175.json",
+      "sha256": "16c5f21ef00812f6bd44c2d42d25c81c650f67f172c60379f517e9ea874e8d5a",
+      "bytes": 1086918
+    },
+    {
+      "path": "outputs/qa/agent2/network_grid_diagnostics.csv",
+      "sha256": "c37418aa6f1decef00820c1ad81fcbcaaf3b04e186653e10a10c99f4ae2dd2ef",
+      "bytes": 1698440
+    },
+    {
+      "path": "outputs/qa/agent2/park_network_destinations.csv",
+      "sha256": "e06fe3b36cd831b717849d7c45a872b1cda89ddf741fad2d547fc38603940e71",
+      "bytes": 135423
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/priority_models.csv",
+      "sha256": "60174555b499e08fe6ac41fc977f6f228c661bf86f9f833b36bd52942f4fa83f",
+      "bytes": 763254
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_impact_priority_auditor.csv",
+      "sha256": "0781149d6805d5043537ef166720e53c1f1fe4ec0da4da94ffac805fc53a484f",
+      "bytes": 137478
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_official_evidence_sources.json",
+      "sha256": "0f08ca9713028678fedfcd783f7035cb620b4a58660a3358a07c39b0a3da0878",
+      "bytes": 2502
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_source_way_517498552.html",
+      "sha256": "38de64221b3cce443d7f215ce63c93c46084ea80e5bf6250716f1c8a37eef21c",
+      "bytes": 53232
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_source_way_1158752464.html",
+      "sha256": "75d628219e47a3897020efa5c6c276e1f2904e5ca869645825643a00da5ca480",
+      "bytes": 375933
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_source_way_155961172.html",
+      "sha256": "4ed3e034b5629e015de49ba9a95c9febc80933199214972224b2bf08c599c6ea",
+      "bytes": 31363
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/park_source_way_404675353.html",
+      "sha256": "5dd45e2ded0465e38ac7feb53cff4b21211e673055043070faf8ccc516c0d74d",
+      "bytes": 379919
+    },
+    {
+      "path": "outputs/qa/agent2/spatial_features_rebuilt.csv",
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724",
+      "bytes": 295418
+    },
+    {
+      "path": "outputs/qa/agent2/unreachable_grid_diagnostics.csv",
+      "sha256": "d3807b6c7824559677fcea100c6d28f5d9a32973ada1968b7da57ae75d2cc366",
+      "bytes": 108077
+    },
+    {
+      "path": "outputs/qa/agent2/far_snap_grid_diagnostics.csv",
+      "sha256": "19c99de1dc691df79366db1a3ed69bbb722bef0ce109f5172ed103efae50cca2",
+      "bytes": 38259
+    },
+    {
+      "path": "outputs/qa/agent2/raster_grid_alignment.csv",
+      "sha256": "debbd4903174bb3b4177bbe00677da5fae32f7538fb666141c0d0a5c11c0ad67",
+      "bytes": 1012602
+    },
+    {
+      "path": "outputs/qa/agent2/geographic_integrity.json",
+      "sha256": "19d14a7ecdc0159419b525836359a9f5f0bee9840c0cbb68004e4777580c1291",
+      "bytes": 741
+    },
+    {
+      "path": "outputs/qa/agent2/population_raster_recomputation.csv",
+      "sha256": "b4627771a17c2ecc6a8f2ed496cfc591910508d27f2aca2825de5ff76fd71acf",
+      "bytes": 1384173
+    },
+    {
+      "path": "outputs/qa/agent2/model_eligibility_reconciliation.csv",
+      "sha256": "b8cd2fec5c546fb576057abb2a15f459ed9870ac8efaf25545e1f6ee812404ea",
+      "bytes": 179885
+    },
+    {
+      "path": "outputs/qa/agent2/node_restriction_scenario.csv",
+      "sha256": "d2808475a0302763e42b2d658babc9fce708c251474789e5dd0fa2f13a85f6cb",
+      "bytes": 297501
+    },
+    {
+      "path": "outputs/qa/agent2/gis_model_sensitivity_summary.csv",
+      "sha256": "c3170a593d4fb1b3083273643ef951d58dc5aa3c8a0bd35f907ce45bd57a6c78",
+      "bytes": 1767
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/population_grid.csv",
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589",
+      "bytes": 88110
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/vulnerability_grid.csv",
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937",
+      "bytes": 134439
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/accessibility_grid.csv",
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e",
+      "bytes": 155822
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_osm_pilot.csv",
+      "sha256": "159aac65d8006aebee9786fc599c1b13b228816ef966a0492adcd4097328e31e",
+      "bytes": 3777
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/predeclared_plan.json",
+      "sha256": "72a95b4c5e0a20769429c4ea5a32af965a58f51c77c5708e36e42dd321f0b9da",
+      "bytes": 973
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_1158752464_2024-12-31.overpassql",
+      "sha256": "a71ec8083d0fd86bc36807779791f9d11d3a47166d877d1e28e5d02090348442",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_1158752464_2024-12-31.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_1158752464_2026-11-19.overpassql",
+      "sha256": "1e2df8e5cb485fbc56828a6b98571ad0b04c15645903397d79638bc8e72b6347",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_1158752464_2026-11-19.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_404675353_2024-12-31.overpassql",
+      "sha256": "e85e2e93d22beaaf4d4512b1a4009a532c60bd9b444cbf1ec32a1be0e10b375d",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_404675353_2024-12-31.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_404675353_2026-11-19.overpassql",
+      "sha256": "c278bb470c547345586ae3c7bbe39b02d8c80a21273f51c68190eba256b3115a",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_404675353_2026-11-19.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_517498552_2024-12-31.overpassql",
+      "sha256": "b19cb3ccbaa51ae114480dfaac87abaf5004151ed5f5d731c04415104b702e1f",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_517498552_2024-12-31.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_517498552_2026-11-19.overpassql",
+      "sha256": "f9f09b1215f01cf416a2564a7875071f337689f0022850f61f0f538e973b26cc",
+      "bytes": 211
+    },
+    {
+      "path": "outputs/qa/remediation_agent2/historical_pilot/way_517498552_2026-11-19.response",
+      "sha256": "7cd905d731bc5983f218aa91824747ef52e7b2cef4a2bf4aa2adba91dc3e61e6",
+      "bytes": 156
+    }
+  ]
+}

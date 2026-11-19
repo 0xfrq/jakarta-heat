@@ -1,0 +1,30 @@
+{
+  "crs": "EPSG:32748",
+  "bounds_utm": [
+    686589.2648946282,
+    9295418.337508159,
+    718314.8792905912,
+    9326648.165239446
+  ],
+  "bounds_wgs84": [
+    106.6862108000001,
+    -6.370829799999974,
+    106.97282430000007,
+    -6.089035799999982
+  ],
+  "area_km2": 643.2370546311181,
+  "coverage_symdiff_m2": 3.4401296706860346e-06,
+  "overlap_m2": -1.3113021850585938e-06,
+  "partial_cells": 383,
+  "coverage_lt10pct": 65,
+  "area_lt005km2": 101,
+  "routing_city_differs_majority": 14,
+  "city_counts": {
+    "Kota Jakarta Timur": 797,
+    "Kota Jakarta Utara": 625,
+    "Kota Jakarta Selatan": 624,
+    "Kota Jakarta Barat": 530,
+    "Kota Jakarta Pusat": 189
+  },
+  "min_area_m2": 0.42288453666019515
+}

@@ -1,0 +1,16 @@
+{
+  "n": 2765,
+  "delivery_complete": 2765,
+  "eligible": 2538,
+  "missing_route": 226,
+  "lst_quality_excluded": 1,
+  "exclusion_intersection": 0,
+  "canonical_agent3_baseline_unchanged": true,
+  "agent3_snapshot": "D:\\jakarta-heat-agent2\\outputs\\qa\\agent2\\baseline\\agent3",
+  "adjacency_directed_pairs": 20988,
+  "loader_notes": [
+    "remote_sensing: kolom tidak dipakai diabaikan: ['lst_mean_c', 'ndvi_mean', 'tree_fraction', 'grass_fraction', 'built_fraction', 'lst_std_c', 'lst_min_c', 'lst_max_c', 'lst_observation_min', 'ndvi_std', 'ndvi_valid_fraction', 'landsat_footprint_fraction', 'dw_valid_fraction', 'water_fraction', 'flooded_vegetation_fraction', 'crops_fraction', 'shrub_fraction', 'bare_fraction', 'dw_label_valid_fraction', 'qa_area_km2']",
+    "grid_master: kolom tidak dipakai diabaikan: ['longitude', 'latitude']"
+  ],
+  "source_integrated_sha256": "fa6a258f8f848c0afc3a44ad51c49a4df9390b2b131dd900b37a6b4f72a2e376"
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "check": "geometry: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "geometry: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "spatial: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "remote sensing: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "population: source value preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_child: source value preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "pop_elderly: source value preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "park_distance_m: source value preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "grid_snap_m: source value preserved",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "final exact IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "final all source delivery complete",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "eligibility no unknown distance imputation",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 loader exact eligibility agreement",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 original eligibility agreement",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m1: baseline scores reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m1: baseline ranks reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m2: baseline scores reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m2: baseline ranks reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m3: baseline scores reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m3: baseline ranks reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m4: baseline scores reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "m4: baseline ranks reproduced",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS: unique nonnull IDs",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS: exact master ID set",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS CRS",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS exact master geometry",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS city assignment",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 merged population",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS population",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 merged pop_child",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 merged pop_elderly",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 merged park_distance_m",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS park_distance_m",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Agent3 GIS combined ages",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "Queen adjacency geographically local",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "city summary n_grid_valid",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "city summary n_top",
+    "pass": true,
+    "detail": null
+  },
+  {
+    "check": "city summary populasi_di_top",
+    "pass": true,
+    "detail": null
+  }
+]

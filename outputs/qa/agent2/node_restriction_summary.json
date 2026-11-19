@@ -1,0 +1,11 @@
+{
+  "blocked_source_nodes": 12413,
+  "blocked_retained_graph_nodes": 8465,
+  "removed_directed_edges": 24370,
+  "known_routes": 2358,
+  "missing_routes": 407,
+  "baseline_known_now_missing": 181,
+  "same_origin_node": 2765,
+  "policy": "Fixed original snap nodes/connectors. Exclude parks snapped onto forbidden nodes. Block explicit node foot=no/private or access=no/private unless foot=yes/designated/permissive; remove crossing simplified edges, 0.05m vertex tolerance",
+  "status": "CONSERVATIVE SENSITIVITY ONLY; ignores conditional hours and not verified in field"
+}

@@ -1,0 +1,8 @@
+Component,Existing output,Actual validation status at start,Gaps,Action/result
+Boundary/grid,GPKG + master CSV,Exists; earlier integrity assertions only,Independent geometry/clip/city evidence absent,Full lattice/union/owner recomputation; PASS
+Population/age,3 CSV + local TIFF,No missing CSV values,Manual QGIS aggregation; provenance not catalogued,"TIFF metadata, alignment, hybrid recomputation, mask QA"
+Parks,parks_jakarta.gpkg,"Mapped candidates, public entry unverified",Unknown access; original polygons not yet inspected,"Recover cache, reproduce polygons, tag/exclusion audit"
+Walking,5 city outputs + full graph in main repo,"226 unknown routes, 66 far snaps","Cause, crop, barriers and temporal scope unverified","Reproduce routes, components, full graph and gate scenarios"
+Remote sensing,Agent1 committed CSV/GPKG/rasters,2765 delivered values,Independent alignment/aggregation pending,Exact geometry match + all-grid raster recomputation
+Models/maps,Agent3 uncommitted working outputs,Provisional 2538 common grids,Need independent GIS/input reconciliation,Freeze code/results; recompute M1-M4 and city summaries
+Integrated sources,No final_model_features.csv initially,Missing companion integration,Full source population + QA/eligibility separation,Created 2765-row compatible companion table

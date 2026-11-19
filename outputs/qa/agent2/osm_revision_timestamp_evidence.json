@@ -1,0 +1,8 @@
+{
+  "earliest_revision_utc": "2007-06-03T07:25:41Z",
+  "latest_revision_utc": "2026-11-18T20:09:46Z",
+  "revision_timestamp_count": 9675428,
+  "source_sha256": "b4a84ec0930ff3e61ef3ef3e09331cabfb4c0af24d45dc721bb6110ed498d109",
+  "source_url": null,
+  "meaning": "Latest object revision is a lower bound on extraction date; it does not establish an exact snapshot date."
+}

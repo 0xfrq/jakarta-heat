@@ -1,0 +1,155 @@
+{
+  "full_nodes": 190367,
+  "full_edges": 489672,
+  "full_components": 2033,
+  "full_largest_component": 181148,
+  "graph_attributes": {
+    "created_date": "2026-11-19 19:54:27",
+    "created_with": "OSMnx 2.2.0",
+    "crs": "EPSG:32748",
+    "simplified": "True",
+    "walking_pipeline_version": "2"
+  },
+  "reciprocal_edge_missing": 0,
+  "city_metrics": [
+    {
+      "city": "Kota Jakarta Barat",
+      "nodes": 53631,
+      "edges": 137856,
+      "components": 567,
+      "largest_component": 51552,
+      "baseline_missing": 22,
+      "full_missing": 22,
+      "source_metadata": {
+        "version": 2,
+        "city": "Jakarta Barat",
+        "buffer_m": 1500,
+        "source_kind": "offline",
+        "source": {
+          "version": 2,
+          "path": "D:\\jakarta-heat\\data\\processed\\walk_jakarta_all.graphml",
+          "size": 255988312,
+          "mtime_ns": 1795093390791091500
+        }
+      }
+    },
+    {
+      "city": "Kota Jakarta Pusat",
+      "nodes": 43192,
+      "edges": 116190,
+      "components": 385,
+      "largest_component": 40878,
+      "baseline_missing": 6,
+      "full_missing": 6,
+      "source_metadata": {
+        "version": 2,
+        "city": "Jakarta Pusat",
+        "buffer_m": 1500,
+        "source_kind": "offline",
+        "source": {
+          "version": 2,
+          "path": "D:\\jakarta-heat\\data\\processed\\walk_jakarta_all.graphml",
+          "size": 255988312,
+          "mtime_ns": 1795093390791091500
+        }
+      }
+    },
+    {
+      "city": "Kota Jakarta Selatan",
+      "nodes": 65570,
+      "edges": 164012,
+      "components": 787,
+      "largest_component": 62270,
+      "baseline_missing": 27,
+      "full_missing": 27,
+      "source_metadata": {
+        "version": 2,
+        "city": "Jakarta Selatan",
+        "buffer_m": 1500,
+        "source_kind": "offline",
+        "source": {
+          "version": 2,
+          "path": "D:\\jakarta-heat\\data\\processed\\walk_jakarta_all.graphml",
+          "size": 255988312,
+          "mtime_ns": 1795093390791091500
+        }
+      }
+    },
+    {
+      "city": "Kota Jakarta Timur",
+      "nodes": 76555,
+      "edges": 195112,
+      "components": 828,
+      "largest_component": 73026,
+      "baseline_missing": 95,
+      "full_missing": 95,
+      "source_metadata": {
+        "version": 2,
+        "city": "Jakarta Timur",
+        "buffer_m": 1500,
+        "source_kind": "offline",
+        "source": {
+          "version": 2,
+          "path": "D:\\jakarta-heat\\data\\processed\\walk_jakarta_all.graphml",
+          "size": 255988312,
+          "mtime_ns": 1795093390791091500
+        }
+      }
+    },
+    {
+      "city": "Kota Jakarta Utara",
+      "nodes": 49441,
+      "edges": 130412,
+      "components": 563,
+      "largest_component": 46032,
+      "baseline_missing": 76,
+      "full_missing": 76,
+      "source_metadata": {
+        "version": 2,
+        "city": "Jakarta Utara",
+        "buffer_m": 1500,
+        "source_kind": "offline",
+        "source": {
+          "version": 2,
+          "path": "D:\\jakarta-heat\\data\\processed\\walk_jakarta_all.graphml",
+          "size": 255988312,
+          "mtime_ns": 1795093390791091500
+        }
+      }
+    }
+  ],
+  "baseline_missing": 226,
+  "full_missing": 226,
+  "resolved_by_full": 0,
+  "cause_counts": {
+    "disconnected_component_without_candidate_park": 226
+  },
+  "far_count": 66,
+  "far_missing_overlap": 17,
+  "far_snap_distribution": {
+    "count": 66.0,
+    "mean": 336.39886307348434,
+    "std": 72.87391224838966,
+    "min": 251.47865769216958,
+    "25%": 276.3849850016817,
+    "50%": 316.5116647287077,
+    "75%": 376.1147542349172,
+    "max": 581.1019471217292
+  },
+  "far_node_but_edge_lt250": 19,
+  "distance_changes": {
+    "count": 2539.0,
+    "mean": -0.21241482510799753,
+    "std": 3.562126774015827,
+    "min": -59.92458232768968,
+    "25%": 0.0,
+    "50%": 0.0,
+    "75%": 0.0,
+    "max": 0.0
+  },
+  "changed_known_gt1m": 9,
+  "euclidean_500": 1526,
+  "full_network_500": 537,
+  "positive_tag_scenario_missing": 241,
+  "positive_tag_parks": 10
+}

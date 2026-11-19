@@ -1,0 +1,808 @@
+{
+  "utc": "2026-11-19T17:17:30.390042+00:00",
+  "workspace": "D:\\jakarta-heat-agent2",
+  "packages": {
+    "geopandas": "1.2.0",
+    "rasterio": "1.5.2",
+    "osmnx": "2.2.0",
+    "networkx": "3.7",
+    "scipy": "1.18.1",
+    "exactextract": "0.3.0",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "pytest": "9.2.0"
+  },
+  "source_identity": "See immutable baseline/capture.json, population_rasters.json, park_cache_provenance.json, osm_revision_timestamp_evidence.json",
+  "artifacts": [
+    {
+      "path": "data/processed/final_model_features.csv",
+      "bytes": 1109792,
+      "sha256": "fa6a258f8f848c0afc3a44ad51c49a4df9390b2b131dd900b37a6b4f72a2e376"
+    },
+    {
+      "path": "handoff/AGENT2_DATA_DICTIONARY.md",
+      "bytes": 17155,
+      "sha256": "8123e40aeeb26d5c403a688492a5f3bca4fab71d5a47973ec06198ac5a17c3b4"
+    },
+    {
+      "path": "handoff/AGENT2_DECISION_REGISTER.md",
+      "bytes": 4377,
+      "sha256": "223a6bdcc2f3e6d178f3d5ddc765fa5075ce401bc6b82f7f11008a1c9d4126f3"
+    },
+    {
+      "path": "handoff/AGENT2_HANDOFF.md",
+      "bytes": 29321,
+      "sha256": "94576682db45fbacaf5dd08d4d2da2cfc43b561361e64d74ff0807e649a17d2a"
+    },
+    {
+      "path": "handoff/AGENT2_ISSUES.md",
+      "bytes": 7432,
+      "sha256": "895cabb8a3bbb5d4df28066fcdaff4bceb41f1770c7df9767003b769abf0edd1"
+    },
+    {
+      "path": "handoff/AGENT2_README_ID.md",
+      "bytes": 2538,
+      "sha256": "27d286ee0c83b515e63c218c235fd2f79b3c8a6d9864ae334302a300ae5ef496"
+    },
+    {
+      "path": "handoff/AGENT2_VISUAL_QA.md",
+      "bytes": 3796,
+      "sha256": "e258c9af48db7c13e6e9926ed495fcfa3dc80273fac8419d3b8bd3951365d92a"
+    },
+    {
+      "path": "outputs/qa/agent2/age_alignment_summary.json",
+      "bytes": 1618,
+      "sha256": "44c8ff1df3a955ef44c289d336366d9223f40e6c96ff06990a31443796598019"
+    },
+    {
+      "path": "outputs/qa/agent2/age_source_pixel_ratio_groups.csv",
+      "bytes": 21349,
+      "sha256": "e9f884793361cf52d84718a4d397f1f596dcd1fbdac0faba67420ccccf53c8e0"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent1/data/processed/remote_sensing_grid.csv",
+      "bytes": 366381,
+      "sha256": "49297937f9510c13beceee986b2067dba05df7939800d9b7307852db9bec135a"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent1/data/processed/remote_sensing_grid.gpkg",
+      "bytes": 1314816,
+      "sha256": "26547bbe5486fafeec765ec5ca99394be70abb3d0d2f187dcf41490007663944"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent1/data/processed/remote_sensing_grid.meta.json",
+      "bytes": 7358,
+      "sha256": "a98974bbcc45251402006716a45aa429158abb650668937f0c0b03f466994267"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent1/handoff/AGENT1_HANDOFF.md",
+      "bytes": 16277,
+      "sha256": "0030969eb54ce63e323f6c51fb2051dc6f8ae690759cf8f129b2b7c30546fe2f"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/lisa_m1.csv",
+      "bytes": 171641,
+      "sha256": "ed74a3ae5b6ced1b8307f200ff4a33d9a8adeea9f3dd6c1a623b3fac0b295f23"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/lisa_m2.csv",
+      "bytes": 171546,
+      "sha256": "3d42c9872034984c0eb2b541f31a7c0bd087cbd6bdd9b376782d4892a7f84399"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/lisa_m3.csv",
+      "bytes": 171508,
+      "sha256": "909795d842dd9569e4de23e703155a02a7357d944818e9f49c7c554e79ca0ae8"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/lisa_m4.csv",
+      "bytes": 171776,
+      "sha256": "a00116de47a552de7e33383408186532f338b3aca61464d6e0976dd55bfd4d36"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/merged_grid.csv",
+      "bytes": 1277367,
+      "sha256": "1f334d0ac52d716809d1d1d27d906f7f9138d0f2da8584d7740dff3131d1b30e"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/merged_meta.json",
+      "bytes": 2400,
+      "sha256": "28ce64a018add48af2c382df00162f989216cae357970156260e32ca11cdaf23"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/priority_meta.json",
+      "bytes": 1762,
+      "sha256": "43993e58f31f21004971f2edea15095147d949571b8a17b28da3564eac8b7148"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/priority_models.csv",
+      "bytes": 763254,
+      "sha256": "60174555b499e08fe6ac41fc977f6f228c661bf86f9f833b36bd52942f4fa83f"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/rank_shift_m1_m4.csv",
+      "bytes": 128773,
+      "sha256": "971dcac0ec286365b55b20ab3d807d55a65066d5a76317824b4eec520364d67b"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/run_manifest.json",
+      "bytes": 3349,
+      "sha256": "9cb0d444c0bca523f4bf70a90739f1dd8ee5384ced30dc7fd071c73f2cf80471"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/sensitivity_m2_stability.csv",
+      "bytes": 99891,
+      "sha256": "26cc9d9ced833f4144e241ce3d5a153fe1570b328a3bce207efa961566289463"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/sensitivity_m3_stability.csv",
+      "bytes": 99843,
+      "sha256": "5066667cd7218fc5e5383a97deaa3744feecec67cbf9174113415ddcdbf8fc82"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/data/processed/modeling/sensitivity_m4_stability.csv",
+      "bytes": 103369,
+      "sha256": "61d70378f012f7a167f8fc3cdab311151946e6cca140cf43df804989be38c831"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/handoff/AGENT3_HANDOFF.md",
+      "bytes": 18297,
+      "sha256": "befbb1e5f9dfb39d1ce6577c1c654cd5e5f99d29ff8c21910210ab056e3720b7"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/__init__.py",
+      "bytes": 121,
+      "sha256": "17f0d4b00ca40651742aa6043be779aa1f1ddd27fd013d794b5ab79680a49bae"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/compare.py",
+      "bytes": 11445,
+      "sha256": "b6bbd2362134dd419d01eb2a041590546516dfe4e16e478c0f2d83791d085683"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/config.py",
+      "bytes": 10264,
+      "sha256": "fe88530895651c30bb9c9169e99fb06a5c0f14fe2f0024c4f9e337582cfcee85"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/data.py",
+      "bytes": 26015,
+      "sha256": "f5e0936c1db9da66b63e5bbfbaa81c452006b4e82dbaefedcd2bce9b7c94d25e"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/dummy.py",
+      "bytes": 2428,
+      "sha256": "a9b27ae1a9c7bb289a499d8754216aa38c71a3a332f615bb3468ad53ccaacf97"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/figures.py",
+      "bytes": 7600,
+      "sha256": "936de4ea99af83cd124ea8a5d296b0af5da1b759f105cea6af8ca1764678e9ea"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/io.py",
+      "bytes": 1722,
+      "sha256": "a17dd6ecb07e0da51b38d7a8e75ad3d85710367f6015fc678c7e212f93610d0b"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/models.py",
+      "bytes": 9300,
+      "sha256": "cabb31a22807c9f8e1ed459c8958b08178cfd8ffbe9e1800af852d08203f1fe0"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/pipeline.py",
+      "bytes": 17966,
+      "sha256": "4d2266c1a568db995c56b30ceb644ba09ccbe5164725417fa639a16223020657"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/sensitivity.py",
+      "bytes": 8391,
+      "sha256": "1a5500bae3e99300e7808f23ad01937e6979c018bdf92bac3d0854a49e6a6266"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/spatial.py",
+      "bytes": 8388,
+      "sha256": "ce20c80b11f64098e6d2e4f7e5ceadc32d0f9a8968c9ae3418a34d6acc05baee"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/jhim/util.py",
+      "bytes": 2923,
+      "sha256": "6e85f260e10e8c6a42c1e71bb7353928e888993a373cb979eeaef19d6ce2754f"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/gis/priority_models.gpkg",
+      "bytes": 1490944,
+      "sha256": "2362c9b92569b1ab9d8939b7a30e613a2cee493ee35224910572f655ca7966f6"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/data_quality.csv",
+      "bytes": 860,
+      "sha256": "2fb8c26e631fbc095d2748184614eed965643ec3df713fa9cbeb02665f7198b6"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/eligibility_effect_m1.csv",
+      "bytes": 168,
+      "sha256": "c282abad41d9182148346f13e8d49ae661bcb3cfccd0adb1a228b92ec3100289"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/heat_vs_aware_m1_m4.csv",
+      "bytes": 541,
+      "sha256": "bc0b91b710252c294adcf56ef3c45e8df63cf25bcd3a46b2e4dcc4cf250cf0c4"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/jaccard_matrix.csv",
+      "bytes": 281,
+      "sha256": "84d943fb65c66faff88118226e72aa711cd5226e0d6acc6aec8d063b6053c878"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/kendall_matrix.csv",
+      "bytes": 277,
+      "sha256": "6c8afa30d129c26f3f20773f0fccfa04f9614e6f265cbe479faebe386473e221"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/kota_summary.csv",
+      "bytes": 1806,
+      "sha256": "a2b5b45ff34f679a865bd6fda3976187b9707beba9acd2d3c40659f093a0c597"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/lisa_cluster_counts.csv",
+      "bytes": 109,
+      "sha256": "53356d6a469f57d293ea739094ff229d857fb6fe4aff824888573bff0650f91b"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/model_comparison.csv",
+      "bytes": 1380,
+      "sha256": "4c46dd0116bb72e16209c48f554a5daf1c234b650a310c3c3454a33779f9a75e"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/model_top10_coverage.csv",
+      "bytes": 924,
+      "sha256": "206a61f97e3d725f1d5370acbdf9e4e271e9082b0b8be1b2ab6e1442e42acc29"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/moran_global.csv",
+      "bytes": 2157,
+      "sha256": "6605b0132f7ef6726e46bbc7435ed9c10d5d96c4b5bbf57c72936b7c56158e39"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/rank_movement.csv",
+      "bytes": 641,
+      "sha256": "9c8e8738d5184785740418c35015d8ea285c44a5ee00f96117daf5922c71841c"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/score_summary.csv",
+      "bytes": 700,
+      "sha256": "70bc7cb0b19efe569ee5b047ca8312fcd2635055c9f63a22c74bdfa3a5bdd63b"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m2_info.json",
+      "bytes": 493,
+      "sha256": "d474e2accba1a47e16fbdf1bcbaee2546f8b42eef024885046d9410fe1ce2fe8"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m2_summary.csv",
+      "bytes": 2096,
+      "sha256": "fd8569731776115839dccefc3dd7966b794509cbc68c4b6db9dfc37f123d2663"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m3_info.json",
+      "bytes": 510,
+      "sha256": "cf18c58614b0b4a7c9c154803d1ecd40da241d96bb74a5e4c577c80389311fef"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m3_summary.csv",
+      "bytes": 2600,
+      "sha256": "d8eca46ec1b16939ccdb084ea3be4bc2f1aaac79574b2ba093aae96d67db1494"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m4_info.json",
+      "bytes": 539,
+      "sha256": "7be8b7752ba671a936f3ab16c461a87c825e1bbd8ffb5f83dba9dc4329a94b9c"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/sensitivity_m4_summary.csv",
+      "bytes": 4078,
+      "sha256": "6b4131ba4b610acff93ebd91610a321ebd4572c8386e9a3725ec15d3b921aca3"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/spatial_validation_info.json",
+      "bytes": 554,
+      "sha256": "078d866548505d42cbb2c325310ecb68cec951fa646e19b8fcda59b3444dcd26"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/spearman_matrix.csv",
+      "bytes": 279,
+      "sha256": "857139f8e7bbe49affc7634fa917e3b49d43a21abb6c9b3f5f9900872cee39ac"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/top10_priority_m1.csv",
+      "bytes": 103534,
+      "sha256": "6228ad8db06719ce303981a6171d5a2e2f0294c9024cd6a1957f3c9e13ca5fc3"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/top10_priority_m2.csv",
+      "bytes": 103626,
+      "sha256": "c629739e1f6d20df56fea15f7f15efe64b8b8e15abc6294a9cce31983c58cd62"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/top10_priority_m3.csv",
+      "bytes": 104188,
+      "sha256": "cf92a63c6a68ccbb9455215b653977b2ce42b721bd33c1a4bf735b50e78dd573"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/top10_priority_m4.csv",
+      "bytes": 103510,
+      "sha256": "ee6b524615adf6cff4462e8fad9128795ef20cf94222983334b988f10f710521"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/top_overlap.csv",
+      "bytes": 1102,
+      "sha256": "cff60a68f2bfec3d04af688c01288b8d0e32a0d24b523f900cc3e0b58098b9fe"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/transition_m1_m2.csv",
+      "bytes": 220,
+      "sha256": "8c2e3857e5da5dc58bdc0065ec4d84b65e2b07da5f2edcebf76c4bf849327b99"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/transition_m1_m4.csv",
+      "bytes": 225,
+      "sha256": "8dfa550b73db82e19d1537e3c45b99c318771617e185aca3151e5be805eefa57"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/transition_m2_m3.csv",
+      "bytes": 218,
+      "sha256": "51bb1f98824d17528dd2053bb2d201b1aaf697580f25d6fb4ef874d244d6c272"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/agent3/outputs/tables/transition_m3_m4.csv",
+      "bytes": 224,
+      "sha256": "92fb34d271778b6843d89f21b10f18c2126f189ad367919a06049a9599fa350a"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/capture.json",
+      "bytes": 23277,
+      "sha256": "5cb3e0e7c84dbf849a9b2c4fe9c89abbb4b82bf7a6bce03bbb17a2a6532bf500"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/main_project.xml",
+      "bytes": 362499,
+      "sha256": "01dae9ec915be95d1a7d227295011b995c92fca54b0c67a4edc94a6428925747"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/accessibility_grid.csv",
+      "bytes": 155822,
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/grid_master.csv",
+      "bytes": 236568,
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/population_grid.csv",
+      "bytes": 88110,
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/qa_problem_grids.csv",
+      "bytes": 28193,
+      "sha256": "b64f97d391eee01857052aa88781b2cddf2064c612c84b98e598e2e445f5f42f"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/spatial_features.csv",
+      "bytes": 295418,
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline/person2/vulnerability_grid.csv",
+      "bytes": 134439,
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
+    },
+    {
+      "path": "outputs/qa/agent2/baseline_metrics.json",
+      "bytes": 818,
+      "sha256": "c3e48b10aabb52a39250a30b12f1b5a9c0e825bf2281a4f19a3d0b39d538d7ac"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_geography.json",
+      "bytes": 2129,
+      "sha256": "60b5588766f2fb9b23650c90a788f5755d506f11821d525dad1135081ad1036e"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_integration.json",
+      "bytes": 3897,
+      "sha256": "cdac4732170552e52ead03789e7ebc3967b2647b801e0fcc2e20ac96e0e796b0"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_network.json",
+      "bytes": 3273,
+      "sha256": "a92741d93ce894fdd43d5b8bceeedd2473785ddd2b458e27fc92d1748f14bcc5"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_parks.json",
+      "bytes": 769,
+      "sha256": "af40f8e4255e9e1fa7c5f339fe23e6545869660ed4d15ecf789f5a98ab9b6373"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_population.json",
+      "bytes": 2087,
+      "sha256": "103a59f8c2b5d0f74486ff3033e705607f4f3900c7b57de87569484fc8852502"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_raster.json",
+      "bytes": 2277,
+      "sha256": "19ce6c778677cb6bdb87f81ad7d806ec1b07f5fb852176445bd5d2f1cffd7388"
+    },
+    {
+      "path": "outputs/qa/agent2/checks_visual.json",
+      "bytes": 592,
+      "sha256": "be04835adbbe16d8e000090ece777f426e04576fdc637767221bc82418a2f3b4"
+    },
+    {
+      "path": "outputs/qa/agent2/decision_register.csv",
+      "bytes": 3996,
+      "sha256": "109fcd140d86873c3021e45cb5fa71dec9be016e5611df40b82b8764f05a2d71"
+    },
+    {
+      "path": "outputs/qa/agent2/demographic_summary.json",
+      "bytes": 2155,
+      "sha256": "27828a1ff1aeeddb3836455afc3bbb7bde298f107a54298ec69f7b0642168bd3"
+    },
+    {
+      "path": "outputs/qa/agent2/eastern_raster_coverage_detail.png",
+      "bytes": 140532,
+      "sha256": "c27dc44c9850b7dce8426c69d791f5524d971d8e94f853d0d95e85d7085048b3"
+    },
+    {
+      "path": "outputs/qa/agent2/explicit_restricted_osm_nodes.csv",
+      "bytes": 1120301,
+      "sha256": "dd3fb7f153b2ace64776de843a271fef7237130e09fce1900d7dd6fff9bcecda"
+    },
+    {
+      "path": "outputs/qa/agent2/far_snap_by_city.csv",
+      "bytes": 241,
+      "sha256": "673edeba64fd2d6e064e21f744018c9edcfc302c5be197f48a721365c4b7789d"
+    },
+    {
+      "path": "outputs/qa/agent2/far_snap_grid_diagnostics.csv",
+      "bytes": 38259,
+      "sha256": "19c99de1dc691df79366db1a3ed69bbb722bef0ce109f5172ed103efae50cca2"
+    },
+    {
+      "path": "outputs/qa/agent2/far_snap_node_vs_edge.csv",
+      "bytes": 3461,
+      "sha256": "90808f45176c7be22a2a198743d2da21608a4777335b50ef450da7eb397e56cd"
+    },
+    {
+      "path": "outputs/qa/agent2/far_snap_sample_details.png",
+      "bytes": 254414,
+      "sha256": "780624b682302f88f336419cf42f79ae956217acab1fcde73992abb49e2ec79b"
+    },
+    {
+      "path": "outputs/qa/agent2/final_features_data_dictionary.csv",
+      "bytes": 12073,
+      "sha256": "a285a7c712f8f37544ba5336cf15f6ba68d67d309357f5b62ffbf855e1f404e3"
+    },
+    {
+      "path": "outputs/qa/agent2/final_model_features.gpkg",
+      "bytes": 1638400,
+      "sha256": "3f0f2041ba5949acc6d2bb24a9ec13c523df607f8843e182c777fa9fd9b98c1d"
+    },
+    {
+      "path": "outputs/qa/agent2/geographic_integrity.json",
+      "bytes": 741,
+      "sha256": "19d14a7ecdc0159419b525836359a9f5f0bee9840c0cbb68004e4777580c1291"
+    },
+    {
+      "path": "outputs/qa/agent2/geographic_qa.gpkg",
+      "bytes": 4038656,
+      "sha256": "904d1c984d81c90b75216bfdb3fad4070095d420f07a9f625234d80fdc150586"
+    },
+    {
+      "path": "outputs/qa/agent2/gis_model_sensitivity_grid.csv",
+      "bytes": 11990003,
+      "sha256": "6332720088141c31ba91f29e0447fa9af29dfba97f2e5c6c3a19f98e80c89535"
+    },
+    {
+      "path": "outputs/qa/agent2/gis_model_sensitivity_summary.csv",
+      "bytes": 1767,
+      "sha256": "c3170a593d4fb1b3083273643ef951d58dc5aa3c8a0bd35f907ce45bd57a6c78"
+    },
+    {
+      "path": "outputs/qa/agent2/gis_review_atlas.png",
+      "bytes": 743753,
+      "sha256": "eb9150e5802e1bdc284583bff7fb1e2f74c2c27d031c9d1fd91d115b550af443"
+    },
+    {
+      "path": "outputs/qa/agent2/grid_area_diagnostics.csv",
+      "bytes": 465908,
+      "sha256": "3b40a61171a4fbd853520e6fb4713251dc7b9b0bf22c0a0604ad3f17cbb9d90c"
+    },
+    {
+      "path": "outputs/qa/agent2/initial_status.csv",
+      "bytes": 1328,
+      "sha256": "9776b3a62aa7bc604c2a9af9aea73e11651b6d6afdf31c124e8c3987a6cd72f9"
+    },
+    {
+      "path": "outputs/qa/agent2/integration_summary.json",
+      "bytes": 960,
+      "sha256": "60a2843acac9ae02c28c2b2e2f5887d90ecfc707959218f88362b55583ab518d"
+    },
+    {
+      "path": "outputs/qa/agent2/issue_register.csv",
+      "bytes": 6914,
+      "sha256": "970e8e291fddc458a90f4b474b8645f31142bb4bbc2a2cc3149524cb6ab7b809"
+    },
+    {
+      "path": "outputs/qa/agent2/lisa_m4_qa.png",
+      "bytes": 54222,
+      "sha256": "d409e1ff38bcae5c49172fe24a8ab222a923c46f52510f3421bf79cb60586e28"
+    },
+    {
+      "path": "outputs/qa/agent2/model_city_summary_reconciliation.csv",
+      "bytes": 2405,
+      "sha256": "2e792003d6514c6efd569547bcc40a9f45c36d56004f2fa7da5a1bc2659385f5"
+    },
+    {
+      "path": "outputs/qa/agent2/model_eligibility_reconciliation.csv",
+      "bytes": 179885,
+      "sha256": "b8cd2fec5c546fb576057abb2a15f459ed9870ac8efaf25545e1f6ee812404ea"
+    },
+    {
+      "path": "outputs/qa/agent2/model_top_quality.csv",
+      "bytes": 143,
+      "sha256": "818050b55824e00518ac61e380ab4f9d20c330ce7eab33ce773be1cf254b2e81"
+    },
+    {
+      "path": "outputs/qa/agent2/network_components.csv",
+      "bytes": 19380,
+      "sha256": "23db0216e0162002a774dd727891c0248941581fe7c3f013845286c6bab640f6"
+    },
+    {
+      "path": "outputs/qa/agent2/network_edge_qa_map.png",
+      "bytes": 287756,
+      "sha256": "bae6eae43bf1bc8d412ee14166b57ddae8037c0efb190c71601468f40b92d1d0"
+    },
+    {
+      "path": "outputs/qa/agent2/network_edge_tags.csv",
+      "bytes": 4635,
+      "sha256": "c5db4ec3d1ca8c9059eb9a971cffc8e4eb7154ead4048c23a31c930a6759facb"
+    },
+    {
+      "path": "outputs/qa/agent2/network_grid_diagnostics.csv",
+      "bytes": 1698440,
+      "sha256": "c37418aa6f1decef00820c1ad81fcbcaaf3b04e186653e10a10c99f4ae2dd2ef"
+    },
+    {
+      "path": "outputs/qa/agent2/network_source_extent.csv",
+      "bytes": 190301,
+      "sha256": "86fe006783a8735c40d7ba468d29754e8e1707289ee4e4bdcc4649d605f9fa18"
+    },
+    {
+      "path": "outputs/qa/agent2/network_source_extent_summary.json",
+      "bytes": 414,
+      "sha256": "14895635e1d3462a7193b27811fb5f0fb1342aca4ca401a2f7d1cd0f4cd9e1af"
+    },
+    {
+      "path": "outputs/qa/agent2/network_summary.json",
+      "bytes": 4202,
+      "sha256": "a7d1d2ff33dcc3e2cca99758f38b164f4ff479c6df522962c8ece834bccfeca2"
+    },
+    {
+      "path": "outputs/qa/agent2/node_restriction_scenario.csv",
+      "bytes": 297501,
+      "sha256": "d2808475a0302763e42b2d658babc9fce708c251474789e5dd0fa2f13a85f6cb"
+    },
+    {
+      "path": "outputs/qa/agent2/node_restriction_summary.json",
+      "bytes": 582,
+      "sha256": "94a28e93f873bdd1f48fc1bc4635b151ba08e17e9bc589b03c8cc319451df5f2"
+    },
+    {
+      "path": "outputs/qa/agent2/official_source_0.txt",
+      "bytes": 12,
+      "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c"
+    },
+    {
+      "path": "outputs/qa/agent2/official_source_1.txt",
+      "bytes": 12,
+      "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c"
+    },
+    {
+      "path": "outputs/qa/agent2/official_source_2.txt",
+      "bytes": 12,
+      "sha256": "aad97149862ada847dae2022bbb6d5ab3122cb72bd014057eb27cac4476cba1c"
+    },
+    {
+      "path": "outputs/qa/agent2/official_source_3.txt",
+      "bytes": 15847,
+      "sha256": "e8008f06656abdf3db82cc21e69d624a9b72f0d74e2c8e7f77bf85a11771bb52"
+    },
+    {
+      "path": "outputs/qa/agent2/official_sources.json",
+      "bytes": 1771,
+      "sha256": "718715fafd65a8d56c8a83b4c30245933afa0ada9aeffef3e2d040203f0ce191"
+    },
+    {
+      "path": "outputs/qa/agent2/osm_revision_timestamp_evidence.json",
+      "bytes": 379,
+      "sha256": "73360fc526512bac65f8ea02272d67e25c2345f91661716fdd433986ebd49f3d"
+    },
+    {
+      "path": "outputs/qa/agent2/park_cache_provenance.json",
+      "bytes": 650,
+      "sha256": "4351dd59107e0ce730deab3975c2d293fa73ddaf61cee16812666e31a23fce94"
+    },
+    {
+      "path": "outputs/qa/agent2/park_inventory_qa.csv",
+      "bytes": 157587,
+      "sha256": "8e78d0005779d18a8a5dea0ec4eed95ca9dc7023009f78db83c336d0c4c534a6"
+    },
+    {
+      "path": "outputs/qa/agent2/park_manual_review_samples.csv",
+      "bytes": 3110,
+      "sha256": "ad876bf0af8507e1271e581a96daa323a6e4ddde185612a93f7bd81df515540d"
+    },
+    {
+      "path": "outputs/qa/agent2/park_network_destinations.csv",
+      "bytes": 135423,
+      "sha256": "e06fe3b36cd831b717849d7c45a872b1cda89ddf741fad2d547fc38603940e71"
+    },
+    {
+      "path": "outputs/qa/agent2/park_samples_qa.png",
+      "bytes": 453943,
+      "sha256": "3220f9dd7959aca56cc5146822fbf018e07fec224b23c7bbaa58f3510ffa5f35"
+    },
+    {
+      "path": "outputs/qa/agent2/park_summary.json",
+      "bytes": 379,
+      "sha256": "1761187d69da2bc17e2682e73defe545b75af79d5e45666288b84ab64d7abbe5"
+    },
+    {
+      "path": "outputs/qa/agent2/parks_excluded_original_tags.csv",
+      "bytes": 325,
+      "sha256": "9a37dca8fe71730afa629f039d02209222e774138ea8ea4fbcbd6938e69ff848"
+    },
+    {
+      "path": "outputs/qa/agent2/parks_original_cache_inventory.csv",
+      "bytes": 86642,
+      "sha256": "b5faf5e5c12fffde176449365e0a0696d94e4b5eba2ea8f07de776d166ae4a57"
+    },
+    {
+      "path": "outputs/qa/agent2/population_age_checks.csv",
+      "bytes": 406869,
+      "sha256": "444b5aae45177aca4a623f161d405892801a3adcbfb20c9bfbe9aa10f7de98a7"
+    },
+    {
+      "path": "outputs/qa/agent2/population_city_summary.csv",
+      "bytes": 502,
+      "sha256": "039987360cba1d31c59cdf31a4aca7b568b044f3f88f644bf21a8ace58efba2f"
+    },
+    {
+      "path": "outputs/qa/agent2/population_raster_recomputation.csv",
+      "bytes": 1384173,
+      "sha256": "b4627771a17c2ecc6a8f2ed496cfc591910508d27f2aca2825de5ff76fd71acf"
+    },
+    {
+      "path": "outputs/qa/agent2/population_rasters.json",
+      "bytes": 6453,
+      "sha256": "8993bf9e720e7756e310c96f1d5d3e297ee12e747150bc17262313f74f0d23a5"
+    },
+    {
+      "path": "outputs/qa/agent2/pytest_results.xml",
+      "bytes": 4913,
+      "sha256": "d6ef8934a2f7eb8ccfd168a4a26ea5ba41a3bfd3776abf3a2dcc172ee009af16"
+    },
+    {
+      "path": "outputs/qa/agent2/raster_grid_alignment.csv",
+      "bytes": 1012602,
+      "sha256": "debbd4903174bb3b4177bbe00677da5fae32f7538fb666141c0d0a5c11c0ad67"
+    },
+    {
+      "path": "outputs/qa/agent2/raw_walk_restriction_tags.csv",
+      "bytes": 10562,
+      "sha256": "3e49d1b4d4ff73a961fc6b8e3cd97b18acb90d6c2be1a82e33715959c825070c"
+    },
+    {
+      "path": "outputs/qa/agent2/remote_alignment_summary.json",
+      "bytes": 549,
+      "sha256": "fd02e848dbd1f1fbdbd472197eb18fe72f2a9520d4431bbd07e93ed6f212fef8"
+    },
+    {
+      "path": "outputs/qa/agent2/route_missingness_selection.csv",
+      "bytes": 1178,
+      "sha256": "ea78ca0b6677c19a31fcd75908615e5b495c9129041e92e98308755102f56339"
+    },
+    {
+      "path": "outputs/qa/agent2/spatial_features_rebuilt.csv",
+      "bytes": 295418,
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    {
+      "path": "outputs/qa/agent2/unreachable_cause_by_city.csv",
+      "bytes": 475,
+      "sha256": "d9ed473814c51c8deb3e9f2c8fadecf009e4d50cc4df02fb6904a679523d0a93"
+    },
+    {
+      "path": "outputs/qa/agent2/unreachable_grid_diagnostics.csv",
+      "bytes": 108077,
+      "sha256": "d3807b6c7824559677fcea100c6d28f5d9a32973ada1968b7da57ae75d2cc366"
+    },
+    {
+      "path": "outputs/qa/agent2/validation_summary.json",
+      "bytes": 1338,
+      "sha256": "b037e8d560434e4ec19e85f3935f401edfb9707bc0c04b18f140ebf0c6f14daa"
+    },
+    {
+      "path": "outputs/qa/agent2/zero_age_populated_grid_diagnostics.csv",
+      "bytes": 5361,
+      "sha256": "7e8b99de7537612f38212f59cef68576fef89ba30e3310df8c562a01b4532e7f"
+    },
+    {
+      "path": "qgis/agent2_gis_qa.qgz",
+      "bytes": 43555,
+      "sha256": "670a8641807b8f7e3c3c4c6be5954c4c29cd115a9c3ee9f17dee4922e5a4f184"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4988,
+      "sha256": "96678b25b3f72e786fd8bea4a08e0c3e664878f205ca454349e5b0095bd98637"
+    },
+    {
+      "path": "requirements-agent2.txt",
+      "bytes": 581,
+      "sha256": "e53456bcd1fcba224026aef82e066bc02d4deddd9d04c3ecef464f5fcc274a87"
+    },
+    {
+      "path": "scripts/07_integrate_spatial.py",
+      "bytes": 1024,
+      "sha256": "50d13571ba5f046e0d46f0ff5a91f9923f984d6c49754f4e722dd8ca16a1f31b"
+    },
+    {
+      "path": "scripts/agent2_capture_baseline.py",
+      "bytes": 2820,
+      "sha256": "8e3dca1c90b455eb0b5d79be7f83792680f84eda377f7a44f7debd6e4f98fc2e"
+    },
+    {
+      "path": "scripts/agent2_enrich_evidence.py",
+      "bytes": 10448,
+      "sha256": "909df20c003e02fc68d8540d0e6dec4fd22916e01acac4b4ca4f962fa339ca55"
+    },
+    {
+      "path": "scripts/agent2_finalize.py",
+      "bytes": 4613,
+      "sha256": "4f1f76ed7427b4ea90f05598e21ca3da70ff393c11a5d82531ff11dfe4fd9786"
+    },
+    {
+      "path": "scripts/agent2_gis.py",
+      "bytes": 50649,
+      "sha256": "029550c579068f2864ed299e551a162045c760ccbafa08ffe87b5e20904707d4"
+    },
+    {
+      "path": "scripts/agent2_node_restrictions.py",
+      "bytes": 5164,
+      "sha256": "7b4f26bf9079c5e50533830c8edef6f0be816ee9d3a25b24a55f622ba7e9ec52"
+    },
+    {
+      "path": "scripts/agent2_qgis_project.py",
+      "bytes": 3708,
+      "sha256": "c77ad9b513c62f45f72647ed49c55a7c6291fe5bbdf65a70846fe5cf6f779009"
+    },
+    {
+      "path": "scripts/agent2_write_handoff.py",
+      "bytes": 57620,
+      "sha256": "bdeeda9ff307e5bc3fb6a8f1c512b406653f6a1344544beb9d6746fb76327044"
+    },
+    {
+      "path": "scripts/person2_contracts.py",
+      "bytes": 2821,
+      "sha256": "0fe4659e809be6e8b6466dd0d4965c2b5b3e627ea55c16b9391c869324db3994"
+    },
+    {
+      "path": "tests/test_agent2_gis.py",
+      "bytes": 7471,
+      "sha256": "42eea394edcc4dd615246a87063e218c8073e99abcfdf5c3f951b3173edc9c96"
+    }
+  ]
+}

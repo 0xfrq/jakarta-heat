@@ -1,0 +1,131 @@
+tag,value,directed_edges
+highway,footway,14776
+foot,<missing>,483246
+access,<missing>,442496
+service,<missing>,485070
+oneway,False,489672
+oneway:foot,<missing>,489672
+highway,primary,17208
+highway,residential,156954
+highway,service,82638
+highway,living_street,140644
+highway,secondary_link,632
+highway,secondary,17186
+access,permissive,9142
+service,driveway,1894
+highway,tertiary,41422
+highway,tertiary_link,490
+highway,primary_link,1342
+foot,yes,6122
+access,no,176
+highway,"['footway', 'steps']",1616
+access,destination,34968
+highway,unclassified,4826
+highway,pedestrian,370
+access,yes,2244
+highway,cycleway,22
+highway,track,310
+highway,"['living_street', 'residential']",2228
+service,alley,330
+service,parking_aisle,2276
+highway,steps,588
+highway,"['living_street', 'footway']",236
+highway,"['living_street', 'service']",146
+highway,"['path', 'living_street']",194
+highway,busway,120
+highway,path,4212
+highway,"['primary', 'secondary']",32
+access,"['destination', 'permissive']",60
+highway,"['primary_link', 'secondary']",2
+highway,"['footway', 'residential']",228
+highway,"['footway', 'corridor']",16
+highway,"['tertiary', 'secondary_link']",2
+access,private,370
+highway,"['footway', 'service']",112
+highway,"['primary', 'primary_link']",56
+highway,"['unclassified', 'residential']",34
+highway,"['living_street', 'steps']",102
+highway,"['living_street', 'footway', 'steps']",18
+service,emergency_access,8
+highway,"['service', 'residential']",188
+highway,"['footway', 'steps', 'pedestrian']",8
+highway,"['primary', 'service']",8
+highway,"['path', 'steps']",42
+foot,"['designated', 'yes']",6
+foot,designated,232
+foot,"['destination', 'yes']",4
+foot,permissive,30
+access,customers,156
+access,"['destination', 'yes']",24
+highway,"['path', 'residential']",94
+foot,destination,32
+highway,"['footway', 'secondary']",4
+highway,"['primary', 'tertiary']",34
+highway,"['service', 'pedestrian']",6
+highway,"['footway', 'steps', 'residential']",2
+highway,"['secondary_link', 'secondary']",14
+highway,"['steps', 'residential']",28
+highway,"['path', 'living_street', 'residential']",10
+highway,"['footway', 'steps', 'service']",3
+highway,"['path', 'footway', 'steps']",14
+access,"['private', 'yes']",2
+highway,"['path', 'service']",54
+highway,"['living_street', 'footway', 'residential']",10
+highway,"['unclassified', 'service']",6
+highway,"['footway', 'pedestrian']",6
+highway,"['primary', 'residential']",8
+highway,"['living_street', 'unclassified', 'residential']",2
+highway,"['living_street', 'service', 'residential']",6
+highway,"['footway', 'service', 'residential']",2
+access,"['no', 'destination']",2
+highway,"['tertiary', 'residential']",30
+highway,"['tertiary', 'secondary']",18
+access,permit,10
+access,unknown,2
+service,"['parking_aisle', 'driveway']",12
+highway,"['steps', 'service']",14
+service,drive-through,66
+highway,"['living_street', 'track', 'residential']",4
+access,"['permissive', 'yes']",10
+highway,"['pedestrian', 'residential']",4
+access,"['destination', 'private']",2
+highway,"['track', 'residential']",12
+highway,"['steps', 'footway', 'service']",3
+highway,"['secondary', 'residential']",6
+highway,"['secondary_link', 'unclassified']",2
+highway,"['footway', 'steps', 'corridor']",20
+highway,"['primary', 'footway']",12
+highway,"['living_street', 'steps', 'residential']",12
+highway,"['path', 'steps', 'service']",4
+highway,"['living_street', 'tertiary']",4
+highway,"['tertiary', 'living_street']",4
+highway,"['path', 'living_street', 'service']",2
+highway,"['living_street', 'pedestrian']",8
+highway,"['living_street', 'unclassified']",12
+highway,"['path', 'footway']",18
+highway,"['track', 'unclassified']",2
+highway,"['track', 'service']",6
+highway,"['service', 'unclassified']",6
+highway,"['path', 'steps', 'residential']",2
+service,Transjakarta,12
+highway,"['living_street', 'track']",14
+highway,"['path', 'unclassified']",6
+highway,bus_stop,8
+highway,"['path', 'track']",4
+highway,"['busway', 'service']",4
+highway,"['busway', 'unclassified']",2
+highway,"['living_street', 'cycleway']",2
+highway,"['tertiary', 'tertiary_link']",2
+highway,"['path', 'service', 'residential']",2
+highway,"['path', 'cycleway']",2
+highway,"['living_street', 'tertiary', 'residential']",1
+highway,"['tertiary', 'service']",2
+highway,"['tertiary', 'unclassified']",4
+access,"['permissive', 'customers']",2
+highway,"['steps', 'corridor']",30
+highway,"['tertiary', 'living_street', 'residential']",1
+highway,"['steps', 'pedestrian']",6
+access,service,4
+access,emergency,2
+highway,corridor,66
+service,slipway,4

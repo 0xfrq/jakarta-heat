@@ -1,0 +1,71 @@
+{
+  "baseline_common": 2538,
+  "corrected_common_proposal": 2536,
+  "original_no_support": {
+    "population": 6,
+    "pop_child": 19,
+    "pop_elderly": 19
+  },
+  "corrected_no_support": {
+    "population": 6,
+    "pop_child": 6,
+    "pop_elderly": 6
+  },
+  "original_age_missing_recovered_ids": [
+    "JKT_R000_C043",
+    "JKT_R000_C045",
+    "JKT_R001_C050",
+    "JKT_R013_C019",
+    "JKT_R016_C052",
+    "JKT_R017_C017",
+    "JKT_R018_C050",
+    "JKT_R032_C011",
+    "JKT_R042_C004",
+    "JKT_R059_C022",
+    "JKT_R060_C020",
+    "JKT_R060_C041",
+    "JKT_R062_C026"
+  ],
+  "total_people_known_original_age_missing": 64.99566943844266,
+  "sum_difference_people": {
+    "population": -8.195638656616211e-08,
+    "pop_child": 215.5912771280855,
+    "pop_elderly": 45.53702117293142
+  },
+  "partial_n": 383,
+  "coverage_lt_0_1_n": 65,
+  "six_null_ids": [
+    "JKT_R003_C031",
+    "JKT_R057_C063",
+    "JKT_R061_C009",
+    "JKT_R061_C010",
+    "JKT_R061_C011",
+    "JKT_R062_C043"
+  ],
+  "independent_baseline_scores_and_ranks_match": true
+}
+                                  scenario  fixed_common_set  alternative_n  retained  entered  left  jaccard
+                      original_masks_nulls             False           2526       252        1     2 0.988235
+                      original_masks_nulls              True           2526       253        0     0 1.000000
+                 buffered_hybrid_corrected             False           2536       253        1     1 0.992157
+                 buffered_hybrid_corrected              True           2536       254        0     0 1.000000
+             buffered_fractional_corrected             False           2536       238       16    16 0.881481
+             buffered_fractional_corrected              True           2536       238       16    16 0.881481
+                             coverage_ge_0             False           2536       253        1     1 0.992157
+                             coverage_ge_0              True           2536       254        0     0 1.000000
+                           coverage_ge_0.1             False           2492       247        3     7 0.961089
+                           coverage_ge_0.1              True           2492       250        0     0 1.000000
+                          coverage_ge_0.25             False           2447       240        5    14 0.926641
+                          coverage_ge_0.25              True           2447       245        0     0 1.000000
+                           coverage_ge_0.5             False           2384       231        8    23 0.881679
+                           coverage_ge_0.5              True           2384       239        0     0 1.000000
+             density_objective_exploratory             False           2536       241       13    13 0.902622
+             density_objective_exploratory              True           2536       242       12    12 0.909774
+ positive_tags_destination_coverage_stress             False           2521       150      103   104 0.420168
+ positive_tags_destination_coverage_stress              True           2521       150      103   103 0.421348
+               explicit_nodes_conservative             False           2355       224       12    30 0.842105
+               explicit_nodes_conservative              True           2355       223       13    13 0.895582
+                       full_jakarta_extent             False           2536       253        1     1 0.992157
+                       full_jakarta_extent              True           2536       254        0     0 1.000000
+explicit_nodes_and_connectors_conservative             False           2355       224       12    30 0.842105
+explicit_nodes_and_connectors_conservative              True           2355       223       13    13 0.895582

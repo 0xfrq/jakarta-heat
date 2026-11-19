@@ -1,0 +1,50 @@
+[
+  {
+    "park_id": "way_517498552",
+    "url": "https://www.beritajakarta.id/read/6836/tahun-2015-dki-bangun-15-taman-terpadu",
+    "publication_date": "",
+    "checked_utc": "2026-11-19T18:55:56.882762+00:00",
+    "limited_finding": "Municipal report names a planned Taman Walang improvement; dated plan does not prove current opening or polygon identity.",
+    "proves_current_public_opening": false,
+    "proves_entrance_location": false,
+    "http_status": 200,
+    "snapshot_path": "park_source_way_517498552.html",
+    "sha256": "38de64221b3cce443d7f215ce63c93c46084ea80e5bf6250716f1c8a37eef21c"
+  },
+  {
+    "park_id": "way_1158752464",
+    "url": "https://timur.jakarta.go.id/kecamatan/Makasar/informasi/potensi",
+    "publication_date": "",
+    "checked_utc": "2026-11-19T18:55:56.882762+00:00",
+    "limited_finding": "Municipal district listing names Taman Segitiga Intirub at Jl Komodor Halim; no verified entrance or operating hours.",
+    "proves_current_public_opening": false,
+    "proves_entrance_location": false,
+    "http_status": 200,
+    "snapshot_path": "park_source_way_1158752464.html",
+    "sha256": "75d628219e47a3897020efa5c6c276e1f2904e5ca869645825643a00da5ca480"
+  },
+  {
+    "park_id": "way_155961172",
+    "url": "https://m.beritajakarta.id/read/128999/pt-jiep-berhasil-kembalikan-fungsi-hutan-kota-di-kawasan-industri-pulogadung",
+    "publication_date": "",
+    "checked_utc": "2026-11-19T18:55:56.882762+00:00",
+    "limited_finding": "Municipal report describes restoration and intended jogging/public use; exact OSM polygon match and current access unresolved.",
+    "proves_current_public_opening": false,
+    "proves_entrance_location": false,
+    "http_status": 200,
+    "snapshot_path": "park_source_way_155961172.html",
+    "sha256": "4ed3e034b5629e015de49ba9a95c9febc80933199214972224b2bf08c599c6ea"
+  },
+  {
+    "park_id": "way_404675353",
+    "url": "https://smartcity.jakarta.go.id/id/blog/nikmati-jakarta-bareng-bus-wisata-transjakarta/",
+    "publication_date": "",
+    "checked_utc": "2026-11-19T18:55:56.882762+00:00",
+    "limited_finding": "Official tourism page names RPTRA Kalijodo; RTH/RPTRA subareas and exact mapped entrance remain unresolved.",
+    "proves_current_public_opening": false,
+    "proves_entrance_location": false,
+    "http_status": 200,
+    "snapshot_path": "park_source_way_404675353.html",
+    "sha256": "5dd45e2ded0465e38ac7feb53cff4b21211e673055043070faf8ccc516c0d74d"
+  }
+]

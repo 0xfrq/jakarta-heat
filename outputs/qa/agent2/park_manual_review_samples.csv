@@ -1,0 +1,15 @@
+element,id,park_id,name,access,area_m2,full_node,park_snap_m,full_component,full_component_nodes,full_grid_destinations,access_class,evidence,confirmed_exclusion
+way,33194134,way_33194134,Unnamed Park,unknown,1449.322828582968,10075816733,52.220647729338616,0,181148,44,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,153936931,way_153936931,Unnamed Park,unknown,2014.6393663669983,6308275181,35.02311412699761,0,181148,38,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1378191866,way_1378191866,RPTRA Rorotan,unknown,13033.453967058944,12760869279,22.369977548042254,0,181148,36,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,668817880,way_668817880,Taman Sungai Kendal,unknown,62738.071597179485,11536766634,37.68398330947303,0,181148,32,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,34988983,way_34988983,Unnamed Park,unknown,2631.092801343639,410402376,14.849494336784817,0,181148,26,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,517498552,way_517498552,TAMAN WALANG,unknown,4026.317543928909,407627399,23.618129297979227,0,181148,21,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1497568802,way_1497568802,Lapangan Tenis,yes,656.3068134410726,5504749790,20.98588727664995,0,181148,20,access_positive_tag_unverified,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1104600121,way_1104600121,Unnamed Park,unknown,746.2378991564751,4984662441,31.987099865082413,0,181148,20,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,499795366,way_499795366,Unnamed Park,unknown,1527.8772912873446,4978457556,41.175343557198964,0,181148,1,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1104591273,way_1104591273,Unnamed Park,unknown,3089.495729473802,1710957318,42.69786490899654,0,181148,2,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+relation,14706781,relation_14706781,Unnamed Park,unknown,126.23156283373575,5068128746,15.861689470188283,0,181148,4,unknown_or_conditional,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1158752464,way_1158752464,Taman Segitiga Intirub,yes,3466.7005965439243,7027154718,44.35512267236681,0,181148,16,access_positive_tag_unverified,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,1548779681,way_1548779681,Lapangan Besar AUP kampus Jakarta,permissive,2892.2523351855857,9584407401,114.23757533767439,0,181148,1,access_positive_tag_unverified,Local OSM polygon/tags and graph only; no field/gate verification,False
+way,628537709,way_628537709,Taman Monas,yes,670286.9688607678,2624398887,47.785112906557885,0,181148,0,access_positive_tag_unverified,Local OSM polygon/tags and graph only; no field/gate verification,False

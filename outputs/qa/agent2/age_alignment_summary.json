@@ -1,0 +1,65 @@
+{
+  "same_crs": true,
+  "same_pixel_size": true,
+  "age_origin_offset_total_pixels": [
+    14034.999999999403,
+    14597.999999999967
+  ],
+  "integer_pixel_offsets": true,
+  "age_shape_matches_total_window": true,
+  "common_populated_pixels": 74395,
+  "unique_rounded_child_share": 986,
+  "unique_rounded_elderly_share": 522,
+  "major_share_pairs": [
+    {
+      "child_share": 0.23910999298095703,
+      "elderly_share": 0.05761000141501427,
+      "pixels": 6859
+    },
+    {
+      "child_share": 0.23514999449253082,
+      "elderly_share": 0.061159998178482056,
+      "pixels": 5630
+    },
+    {
+      "child_share": 0.2258799970149994,
+      "elderly_share": 0.06351999938488007,
+      "pixels": 5413
+    },
+    {
+      "child_share": 0.22588999569416046,
+      "elderly_share": 0.06351999938488007,
+      "pixels": 4045
+    },
+    {
+      "child_share": 0.2351599931716919,
+      "elderly_share": 0.061159998178482056,
+      "pixels": 4017
+    },
+    {
+      "child_share": 0.23909999430179596,
+      "elderly_share": 0.05761000141501427,
+      "pixels": 3914
+    },
+    {
+      "child_share": 0.24323000013828278,
+      "elderly_share": 0.058329999446868896,
+      "pixels": 3875
+    },
+    {
+      "child_share": 0.2391200065612793,
+      "elderly_share": 0.05762000009417534,
+      "pixels": 3636
+    },
+    {
+      "child_share": 0.24323999881744385,
+      "elderly_share": 0.058329999446868896,
+      "pixels": 2930
+    },
+    {
+      "child_share": 0.22586999833583832,
+      "elderly_share": 0.063510000705719,
+      "pixels": 2848
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "rows": 2765,
+  "delivered": 2765,
+  "low_coverage": [
+    {
+      "grid_id": "JKT_R037_C062",
+      "kota": "Kota Jakarta Timur",
+      "area_km2": 0.024223111369723837,
+      "lst_valid_fraction": 0.277592,
+      "rs_qa_flags": "partial_lst;edge_cell"
+    }
+  ],
+  "threshold_sensitivity": {
+    "0": 2539,
+    "0.25": 2539,
+    "0.5": 2538,
+    "0.75": 2538,
+    "0.9": 2536,
+    "0.99": 2534
+  },
+  "geometry_exact_match": true,
+  "full_raster_means_recomputed": true,
+  "gee_asset_geometry_directly_verified": false
+}

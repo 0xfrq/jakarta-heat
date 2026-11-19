@@ -1,0 +1,126 @@
+[
+  {
+    "feature": "population",
+    "path": "data/raw/worldpop/idn_pop_2024.tif",
+    "sha256": "458c20fa8a3e9b982e2eff5620b4e56438373c3eb00dd78a9093bf4b06c1668f",
+    "tags": {
+      "TIFFTAG_DOCUMENTNAME": "idn_pop_2024_CN_100m_R2025A_v1",
+      "TIFFTAG_IMAGEDESCRIPTION": "IDN population 2024 [WorldPop R2025A v1]",
+      "TIFFTAG_DATETIME": "2025-08-02 20:47:45",
+      "TIFFTAG_COPYRIGHT": "CC-BY-4.0",
+      "Description": "IDN population 2024 [WorldPop R2025A v1]",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "STATISTICS_MINIMUM": "0",
+      "STATISTICS_MAXIMUM": "756.42492675781",
+      "STATISTICS_MEAN": "11.370027855636",
+      "STATISTICS_STDDEV": "22.52602240039",
+      "STATISTICS_VALID_PERCENT": "2.193"
+    },
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00083333333,
+      0.0,
+      94.98999890003999,
+      0.0,
+      -0.00083333333,
+      6.076666978359988,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -99999.0,
+    "method": "hybrid"
+  },
+  {
+    "feature": "pop_child",
+    "path": "data/raw/worldpop/age_buffered/jakarta_child_2024_buffered.tif",
+    "sha256": "88073193dcabb34af561246ff11d952118704b4c5e9b0c42097606a963971506",
+    "tags": {
+      "TIFFTAG_IMAGEDESCRIPTION": "Population by age and sex 2024, 100 m, polygon [WorldPop Global2 R2025A]",
+      "TIFFTAG_SOFTWARE": "WorldPop API",
+      "TIFFTAG_DATETIME": "2026:11:19 18:49:30",
+      "TIFFTAG_COPYRIGHT": "CC BY 4.0, WorldPop (www.worldpop.org)",
+      "AGE_RANGE": "0-14",
+      "AREA": "polygon",
+      "BANDS": "sum",
+      "CITATION": "Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. Estimates of 2015-2030 total number of people per grid square broken down by gender and age groupings at a resolution of 3 arc (approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00841",
+      "DATASET": "WorldPop Global2",
+      "DOI": "10.5258/SOTON/WP00841",
+      "LAYER": "agesex",
+      "LICENCE": "CC BY 4.0",
+      "LICENCE_URL": "https://creativecommons.org/licenses/by/4.0/",
+      "RELEASE": "R2025A",
+      "RESOLUTION": "100m",
+      "SEX": "both",
+      "TOTAL_POPULATION": "3665762.59",
+      "UNITS": "people per cell",
+      "YEAR": "2024",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "AGE_RANGE": "0-14",
+      "SEX": "both"
+    },
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0008333333299999986,
+      0.0,
+      106.6766655199595,
+      0.0,
+      -0.0008333333299999999,
+      -6.078332973019982,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -99999.0,
+    "method": "hybrid"
+  },
+  {
+    "feature": "pop_elderly",
+    "path": "data/raw/worldpop/age_buffered/jakarta_elderly_2024_buffered.tif",
+    "sha256": "acf77612a4a7165a79f7948c81b592df756677f3cefabcecf7e183ab8c5b6fbf",
+    "tags": {
+      "TIFFTAG_IMAGEDESCRIPTION": "Population by age and sex 2024, 100 m, polygon [WorldPop Global2 R2025A]",
+      "TIFFTAG_SOFTWARE": "WorldPop API",
+      "TIFFTAG_DATETIME": "2026:11:19 18:49:32",
+      "TIFFTAG_COPYRIGHT": "CC BY 4.0, WorldPop (www.worldpop.org)",
+      "AGE_RANGE": "65+",
+      "AREA": "polygon",
+      "BANDS": "sum",
+      "CITATION": "Bondarenko M., Priyatikanto R., Tejedor-Garavito N., Zhang W., McKeen T., Cunningham A., Woods T., Hilton J., Cihan D., Nosatiuk B., Brinkhoff T., Tatem A., Sorichetta A.. 2025. Estimates of 2015-2030 total number of people per grid square broken down by gender and age groupings at a resolution of 3 arc (approximately 100m at the equator) R2025A version v1. Global Demographic Data Project - Funded by The Bill and Melinda Gates Foundation (INV-045237). WorldPop - School of Geography and Environmental Science, University of Southampton. DOI:10.5258/SOTON/WP00841",
+      "DATASET": "WorldPop Global2",
+      "DOI": "10.5258/SOTON/WP00841",
+      "LAYER": "agesex",
+      "LICENCE": "CC BY 4.0",
+      "LICENCE_URL": "https://creativecommons.org/licenses/by/4.0/",
+      "RELEASE": "R2025A",
+      "RESOLUTION": "100m",
+      "SEX": "both",
+      "TOTAL_POPULATION": "904198.46",
+      "UNITS": "people per cell",
+      "YEAR": "2024",
+      "AREA_OR_POINT": "Area"
+    },
+    "band_tags": {
+      "AGE_RANGE": "65+",
+      "SEX": "both"
+    },
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0008333333299999986,
+      0.0,
+      106.6766655199595,
+      0.0,
+      -0.0008333333299999999,
+      -6.078332973019982,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nodata": -99999.0,
+    "method": "hybrid"
+  }
+]
