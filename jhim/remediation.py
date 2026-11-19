@@ -327,7 +327,7 @@ def selection_analysis(baseline, feat, paths):
                                   "top_population_supported_sum": tt.population.sum(min_count=1),
                                   "area_km2": t.area_km2.sum(), "top_area_km2": tt.area_km2.sum()})
     write_csv(pd.DataFrame(city_rows), paths.tables / "full_area_vs_common_city.csv")
-    thermal = baseline.loc[baseline.elig_m1]
+    thermal = feat.loc[feat.elig_m1]
     _, rk = M.score_rank(thermal, C.MODELS["M1"])
     lost = thermal.loc[(rk <= M.n_top(len(thermal))) & ~thermal.valid]
     write_csv(lost[[C.KEY, "kota", "lst_c", "f_park_route_missing"]], paths.tables / "full_thermal_top_lost.csv")
