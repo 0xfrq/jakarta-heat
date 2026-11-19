@@ -45,6 +45,16 @@ def test_pages_demo_mode_always_labelled(page):
 
 
 @pytest.mark.parametrize("page", PAGES)
+def test_pages_missing_rs_mode(page, monkeypatch, tmp_path):
+    monkeypatch.setenv("JHIM_RS_PATH", str(tmp_path / "unavailable_remote_sensing.csv"))
+    at = _run(page, "Data asli")
+    assert not at.exception, [e.value for e in at.exception]
+    assert len(at.title) == 1
+    if page in ("priority_models", "model_comparison", "sensitivity", "heat_vegetation"):
+        assert any("belum tersedia" in w.value for w in at.warning)
+
+
+@pytest.mark.parametrize("page", PAGES)
 def test_pages_corrected_candidate_scope_and_support(page, monkeypatch):
     inputs = REPO / "data/processed/remediation_inputs"
     if not (inputs / "demographic_support.csv").exists():
