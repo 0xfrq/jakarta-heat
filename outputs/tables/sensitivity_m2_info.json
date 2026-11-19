@@ -1,0 +1,18 @@
+{
+  "model": "M2",
+  "weights": {
+    "lst": 0.6,
+    "ndvi_low": 0.4
+  },
+  "n_valid": 2538,
+  "n_top": 254,
+  "top_frac": 0.1,
+  "n_scenarios": 12,
+  "n_baseline_top_stable": 231,
+  "share_baseline_top_stable": 0.9094488188976378,
+  "n_baseline_top_in_all": 170,
+  "min_jaccard": 0.6025236593059937,
+  "median_jaccard": 0.9279006798018204,
+  "stable_threshold": 0.8,
+  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak."
+}

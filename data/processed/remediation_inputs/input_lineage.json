@@ -1,0 +1,34 @@
+{
+  "source_files": [
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\merged_grid.csv",
+      "copy": "D:\\jakarta-heat-agent3\\data\\processed\\remediation_inputs\\audited_merged_grid.csv",
+      "sha256": "1f334d0ac52d716809d1d1d27d906f7f9138d0f2da8584d7740dff3131d1b30e"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\modeling\\priority_models.csv",
+      "copy": "D:\\jakarta-heat-agent3\\data\\processed\\remediation_inputs\\audited_priority_models.csv",
+      "sha256": "60174555b499e08fe6ac41fc977f6f228c661bf86f9f833b36bd52942f4fa83f"
+    },
+    {
+      "source": "D:\\jakarta-heat-agent3\\data\\processed\\spatial_features.csv",
+      "copy": "D:\\jakarta-heat-agent3\\data\\processed\\remediation_inputs\\spatial_features.csv",
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    {
+      "source": "D:\\jakarta-heat\\audit\\evidence\\gis\\independent_raster_support.csv",
+      "copy": "D:\\jakarta-heat-agent3\\data\\processed\\remediation_inputs\\auditor_raster_support.csv",
+      "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
+    },
+    {
+      "source": "D:\\jakarta-heat\\audit\\evidence\\gis\\independent_full_network.csv",
+      "copy": "D:\\jakarta-heat-agent3\\data\\processed\\remediation_inputs\\auditor_network.csv",
+      "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
+    }
+  ],
+  "derived": {
+    "remote_sensing_grid.csv": "0bcaf1710a3b63ae2140c4b98136a3fa66b9672d123b39edec820e4def011534",
+    "demographic_support.csv": "e9ffe6260164a81204bc0f44d669572b8a21c65b736cd56746a72273a9181ece"
+  },
+  "restriction": "RS values copied from existing audited merged output, not a new Agent1 export; support evidence provisional pending canonical DM-01; raw exports unchanged."
+}

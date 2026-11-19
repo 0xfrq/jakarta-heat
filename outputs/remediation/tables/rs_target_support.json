@@ -1,0 +1,9 @@
+{
+  "grid_id": "JKT_R037_C062",
+  "delivered": true,
+  "valid_lst_area_m2_auditor": 6724.1312,
+  "clipped_grid_area_m2_auditor": 24223.1114,
+  "independent_support_fraction": 0.27759155663215085,
+  "nominal_cell_coverage_fraction": 0.0968924456,
+  "interpretation": "Different denominators; support threshold is provisional modeling QA, never missing delivery"
+}

@@ -1,0 +1,21 @@
+{
+  "result": "PASS within local frozen candidate",
+  "n_master": 2765,
+  "n_common": 2526,
+  "max_score_decomposition_error": 2.498001805406602e-16,
+  "max_rank_attribution_error": 2.2737367544323206e-13,
+  "manual_moran_m4": 0.5921406953903985,
+  "checks": [
+    "support null propagation",
+    "all four independent equations",
+    "contribution sums",
+    "Shapley efficiency",
+    "GIS/table scores and ranks",
+    "independent BH/BY",
+    "manual Moran I",
+    "preserved raw walking/RS",
+    "frozen input hashes",
+    "baseline byte preservation"
+  ],
+  "boundary": "No consolidated integration or scientific sign-off is implied."
+}

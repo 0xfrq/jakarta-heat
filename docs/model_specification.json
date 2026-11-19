@@ -1,0 +1,101 @@
+{
+  "status": "PROVISIONAL_UNSIGNED",
+  "approved_by": null,
+  "equations": {
+    "M1": "S1 = n(LST)",
+    "M2": "S2 = 0.60 n(LST) + 0.40 [1 - n(NDVI)]",
+    "M3": "S3 = 0.40 n(LST) + 0.30 [1 - n(NDVI)] + 0.30 n(log1p(populasi))",
+    "M4": "S4 = 0.30 n(LST) + 0.20 [1 - n(NDVI)] + 0.25 n(log1p(anak 0-14 + lansia 65+)) + 0.25 min(jarak_taman, 1000)/1000"
+  },
+  "config": {
+    "models": {
+      "M1": {
+        "lst": 1.0
+      },
+      "M2": {
+        "lst": 0.6,
+        "ndvi_low": 0.4
+      },
+      "M3": {
+        "lst": 0.4,
+        "ndvi_low": 0.3,
+        "pop": 0.3
+      },
+      "M4": {
+        "lst": 0.3,
+        "ndvi_low": 0.2,
+        "vuln": 0.25,
+        "park_deficit": 0.25
+      }
+    },
+    "weights_status": "PROVISIONAL: bobot ditetapkan Person 3 sebelum data LST asli tersedia; bukan dari literatur spesifik dan belum disepakati tim. Hasil wajib dibaca bersama uji sensitivitas.",
+    "model_formulas": {
+      "M1": "S1 = n(LST)",
+      "M2": "S2 = 0.60 n(LST) + 0.40 [1 - n(NDVI)]",
+      "M3": "S3 = 0.40 n(LST) + 0.30 [1 - n(NDVI)] + 0.30 n(log1p(populasi))",
+      "M4": "S4 = 0.30 n(LST) + 0.20 [1 - n(NDVI)] + 0.25 n(log1p(anak 0-14 + lansia 65+)) + 0.25 min(jarak_taman, 1000)/1000"
+    },
+    "norm_clip": [
+      0.05,
+      0.95
+    ],
+    "park_cap_m": 1000.0,
+    "park_thresholds_m": [
+      500.0,
+      1000.0
+    ],
+    "park_caps_alt_m": [
+      750.0,
+      1500.0
+    ],
+    "top_frac": 0.1,
+    "top_fracs": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "class_cutoffs": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "lst_range_c": [
+      15.0,
+      60.0
+    ],
+    "ndvi_range": [
+      -1.0,
+      1.0
+    ],
+    "min_lst_valid_frac": 0.5,
+    "snap_qa_m": 250.0,
+    "low_coverage": 0.1,
+    "age_tolerance": 1.05,
+    "weight_factors": [
+      0.8,
+      1.2
+    ],
+    "stable_share": 0.8,
+    "lisa_alpha": 0.05,
+    "permutations": 999,
+    "seed": 42,
+    "spatial_weights_baseline": "queen",
+    "local_alternative": "directed",
+    "global_alternative": "greater",
+    "multiple_testing_family": "each preselected map separately; non-island eligible grids"
+  },
+  "constructs": {
+    "lst": "relative morning surface temperature",
+    "ndvi_low": "relative vegetation deficit",
+    "pop": "log1p modeled total persons per clipped grid",
+    "vuln": "log1p modeled child 0-14 plus elderly 65+ persons; exposure-oriented count",
+    "vuln_share": "child+elderly / supported positive total; composition; undefined for zero/missing denominator",
+    "park_deficit": "modeled 2026 OSM candidate-park network distance capped at 1000 m; unverified physical/public entry"
+  },
+  "burden_sensitivity": {
+    "formula": "supported persons * n(LST)",
+    "units": "persons times dimensionless relative surface burden",
+    "health_threshold": null
+  },
+  "primary_change_authorized": false
+}

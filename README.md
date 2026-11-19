@@ -77,3 +77,15 @@ python -m unittest discover -s tests -v
 Pengujian menggunakan data sintetis dan respons jaringan tiruan; tidak mengunduh
 OSM atau menimpa hasil analisis proyek. Referensi API:
 [dokumentasi OSMnx](https://osmnx.readthedocs.io/en/latest/user-reference.html).
+
+## Modeling, statistik spasial, dan dashboard (Person 3 / Agent 3)
+
+Lihat [`dashboard/README.md`](dashboard/README.md), metode di [`docs/agent3_methods.md`](docs/agent3_methods.md),
+dan serah terima di [`handoff/AGENT3_HANDOFF.md`](handoff/AGENT3_HANDOFF.md).
+
+```powershell
+python -m pip install -r dashboard\requirements.txt
+python -m pytest tests\agent3 -q
+python scripts\run_agent3_pipeline.py --status
+python -m streamlit run dashboard\app.py
+```

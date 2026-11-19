@@ -1,0 +1,55 @@
+{
+  "source": "real",
+  "built_at": "2026-11-19T15:57:26Z",
+  "n_grid": 2765,
+  "n_valid": 2538,
+  "valid_share": 0.9179023508137433,
+  "n_valid_rs": 2764,
+  "n_valid_p2": 2539,
+  "unreachable_policy": "exclude",
+  "notes": [
+    "Person 2: spatial_features.csv (2,765 baris)",
+    "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])",
+    "remote_sensing: kolom tidak dipakai diabaikan: ['lst_mean_c', 'ndvi_mean', 'tree_fraction', 'grass_fraction', 'built_fraction', 'lst_std_c', 'lst_min_c', 'lst_max_c', 'lst_observation_min', 'ndvi_std', 'ndvi_valid_fraction', 'landsat_footprint_fraction', 'dw_valid_fraction', 'water_fraction', 'flooded_vegetation_fraction', 'crops_fraction', 'shrub_fraction', 'bare_fraction', 'dw_label_valid_fraction', 'qa_area_km2']"
+  ],
+  "python": "3.12.10",
+  "pandas": "3.1.1",
+  "numpy": "2.5.5",
+  "geopandas": "1.2.0",
+  "libpysal": "4.15.1",
+  "esda": "2.10.0",
+  "scipy": "1.18.1",
+  "input_status": "COMPLETE",
+  "input_status_detail": {
+    "state": "COMPLETE",
+    "demo": false,
+    "files": {
+      "master_grid": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_500m_jakarta.gpkg",
+        "exists": true
+      },
+      "grid_master_csv": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_master.csv",
+        "exists": true
+      },
+      "person2_spatial_features": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\spatial_features.csv",
+        "exists": true
+      },
+      "remote_sensing": {
+        "path": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.csv",
+        "exists": true
+      }
+    },
+    "n_grid": 2765,
+    "n_rs_rows": 2765,
+    "n_rs_usable": 2764,
+    "errors": [],
+    "notes": [
+      "Person 2: spatial_features.csv (2,765 baris)",
+      "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])",
+      "Remote sensing: 1 grid punya nilai tetapi DIKELUARKAN aturan QA (LST/NDVI di luar rentang atau piksel LST valid < 50%): JKT_R037_C062"
+    ],
+    "text": "Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan."
+  }
+}

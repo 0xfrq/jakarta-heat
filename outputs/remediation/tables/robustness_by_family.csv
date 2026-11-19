@@ -1,0 +1,265 @@
+scenario,family,comparison,top_fraction,baseline_n,scenario_n,intersection_n,baseline_budget,scenario_budget,rank_spearman,retained,entered,left,jaccard
+bobot lst x0.8,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9984618445056694,122,5,5,0.9242424242424242
+bobot lst x0.8,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9984618445056694,240,13,13,0.9022556390977443
+bobot lst x0.8,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9984618445056694,490,16,16,0.9386973180076629
+bobot lst x0.8,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9984618445056694,122,5,5,0.9242424242424242
+bobot lst x0.8,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9984618445056694,240,13,13,0.9022556390977443
+bobot lst x0.8,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9984618445056694,490,16,16,0.9386973180076629
+bobot lst x1.2,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9988830636882541,122,5,5,0.9242424242424242
+bobot lst x1.2,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9988830636882541,242,11,11,0.9166666666666666
+bobot lst x1.2,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9988830636882541,491,15,15,0.9424184261036468
+bobot lst x1.2,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9988830636882541,122,5,5,0.9242424242424242
+bobot lst x1.2,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9988830636882541,242,11,11,0.9166666666666666
+bobot lst x1.2,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9988830636882541,491,15,15,0.9424184261036468
+bobot ndvi_low x0.8,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9988258943296223,121,6,6,0.9097744360902256
+bobot ndvi_low x0.8,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9988258943296223,246,7,7,0.9461538461538461
+bobot ndvi_low x0.8,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9988258943296223,492,14,14,0.9461538461538461
+bobot ndvi_low x0.8,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9988258943296223,121,6,6,0.9097744360902256
+bobot ndvi_low x0.8,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9988258943296223,246,7,7,0.9461538461538461
+bobot ndvi_low x0.8,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9988258943296223,492,14,14,0.9461538461538461
+bobot ndvi_low x1.2,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9990211878546902,121,6,6,0.9097744360902256
+bobot ndvi_low x1.2,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9990211878546902,240,13,13,0.9022556390977443
+bobot ndvi_low x1.2,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9990211878546902,493,13,13,0.9499036608863198
+bobot ndvi_low x1.2,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9990211878546902,121,6,6,0.9097744360902256
+bobot ndvi_low x1.2,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9990211878546902,240,13,13,0.9022556390977443
+bobot ndvi_low x1.2,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9990211878546902,493,13,13,0.9499036608863198
+bobot vuln x0.8,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9986077564392936,124,3,3,0.9538461538461539
+bobot vuln x0.8,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9986077564392936,246,7,7,0.9461538461538461
+bobot vuln x0.8,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9986077564392936,493,13,13,0.9499036608863198
+bobot vuln x0.8,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9986077564392936,124,3,3,0.9538461538461539
+bobot vuln x0.8,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9986077564392936,246,7,7,0.9461538461538461
+bobot vuln x0.8,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9986077564392936,493,13,13,0.9499036608863198
+bobot vuln x1.2,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9988472771856105,124,3,3,0.9538461538461539
+bobot vuln x1.2,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9988472771856105,247,6,6,0.9536679536679536
+bobot vuln x1.2,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9988472771856105,496,10,10,0.9612403100775194
+bobot vuln x1.2,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9988472771856105,124,3,3,0.9538461538461539
+bobot vuln x1.2,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9988472771856105,247,6,6,0.9536679536679536
+bobot vuln x1.2,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9988472771856105,496,10,10,0.9612403100775194
+bobot park_deficit x0.8,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9964978470518447,120,7,7,0.8955223880597015
+bobot park_deficit x0.8,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9964978470518447,236,17,17,0.8740740740740741
+bobot park_deficit x0.8,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9964978470518447,484,22,22,0.9166666666666666
+bobot park_deficit x0.8,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9964978470518447,120,7,7,0.8955223880597015
+bobot park_deficit x0.8,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9964978470518447,236,17,17,0.8740740740740741
+bobot park_deficit x0.8,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9964978470518447,484,22,22,0.9166666666666666
+bobot park_deficit x1.2,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9970023826863567,121,6,6,0.9097744360902256
+bobot park_deficit x1.2,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9970023826863567,244,9,9,0.9312977099236641
+bobot park_deficit x1.2,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9970023826863567,487,19,19,0.9276190476190476
+bobot park_deficit x1.2,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9970023826863567,121,6,6,0.9097744360902256
+bobot park_deficit x1.2,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9970023826863567,244,9,9,0.9312977099236641
+bobot park_deficit x1.2,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9970023826863567,487,19,19,0.9276190476190476
+bobot sama rata,bobot,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.99746654924585,119,8,8,0.8814814814814815
+bobot sama rata,bobot,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.99746654924585,235,18,18,0.8671586715867159
+bobot sama rata,bobot,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.99746654924585,486,20,20,0.9239543726235742
+bobot sama rata,bobot,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.99746654924585,119,8,8,0.8814814814814815
+bobot sama rata,bobot,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.99746654924585,235,18,18,0.8671586715867159
+bobot sama rata,bobot,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.99746654924585,486,20,20,0.9239543726235742
+normalisasi min-max murni,normalisasi,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9171266742594295,112,15,15,0.7887323943661971
+normalisasi min-max murni,normalisasi,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9171266742594295,215,38,38,0.738831615120275
+normalisasi min-max murni,normalisasi,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9171266742594295,425,81,81,0.7240204429301533
+normalisasi min-max murni,normalisasi,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9171266742594295,112,15,15,0.7887323943661971
+normalisasi min-max murni,normalisasi,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9171266742594295,215,38,38,0.738831615120275
+normalisasi min-max murni,normalisasi,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9171266742594295,425,81,81,0.7240204429301533
+normalisasi persentil 1-99,normalisasi,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9731397906909136,116,11,11,0.8405797101449275
+normalisasi persentil 1-99,normalisasi,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9731397906909136,230,23,23,0.8333333333333334
+normalisasi persentil 1-99,normalisasi,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9731397906909136,457,49,49,0.8234234234234235
+normalisasi persentil 1-99,normalisasi,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9731397906909136,116,11,11,0.8405797101449275
+normalisasi persentil 1-99,normalisasi,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9731397906909136,230,23,23,0.8333333333333334
+normalisasi persentil 1-99,normalisasi,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9731397906909136,457,49,49,0.8234234234234235
+normalisasi peringkat persentil,normalisasi,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9807599101826981,108,19,19,0.7397260273972602
+normalisasi peringkat persentil,normalisasi,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9807599101826981,222,31,31,0.7816901408450704
+normalisasi peringkat persentil,normalisasi,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9807599101826981,451,55,55,0.803921568627451
+normalisasi peringkat persentil,normalisasi,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9807599101826981,108,19,19,0.7397260273972602
+normalisasi peringkat persentil,normalisasi,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9807599101826981,222,31,31,0.7816901408450704
+normalisasi peringkat persentil,normalisasi,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9807599101826981,451,55,55,0.803921568627451
+akses taman biner >500 m,ambang taman,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9465414312797438,85,42,42,0.5029585798816568
+akses taman biner >500 m,ambang taman,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9465414312797438,175,78,78,0.5287009063444109
+akses taman biner >500 m,ambang taman,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9465414312797438,407,99,99,0.6727272727272727
+akses taman biner >500 m,ambang taman,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9465414312797438,85,42,42,0.5029585798816568
+akses taman biner >500 m,ambang taman,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9465414312797438,175,78,78,0.5287009063444109
+akses taman biner >500 m,ambang taman,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9465414312797438,407,99,99,0.6727272727272727
+akses taman biner >1000 m,ambang taman,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.8707988829877463,98,29,29,0.6282051282051282
+akses taman biner >1000 m,ambang taman,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.8707988829877463,174,79,79,0.5240963855421686
+akses taman biner >1000 m,ambang taman,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.8707988829877463,312,194,194,0.44571428571428573
+akses taman biner >1000 m,ambang taman,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.8707988829877463,98,29,29,0.6282051282051282
+akses taman biner >1000 m,ambang taman,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.8707988829877463,174,79,79,0.5240963855421686
+akses taman biner >1000 m,ambang taman,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.8707988829877463,312,194,194,0.44571428571428573
+defisit taman jenuh 750 m,ambang taman,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9898538087751553,101,26,26,0.6601307189542484
+defisit taman jenuh 750 m,ambang taman,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9898538087751553,204,49,49,0.6754966887417219
+defisit taman jenuh 750 m,ambang taman,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9898538087751553,442,64,64,0.775438596491228
+defisit taman jenuh 750 m,ambang taman,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9898538087751553,101,26,26,0.6601307189542484
+defisit taman jenuh 750 m,ambang taman,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9898538087751553,204,49,49,0.6754966887417219
+defisit taman jenuh 750 m,ambang taman,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9898538087751553,442,64,64,0.775438596491228
+defisit taman jenuh 1500 m,ambang taman,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9851951195380848,93,34,34,0.577639751552795
+defisit taman jenuh 1500 m,ambang taman,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9851951195380848,200,53,53,0.6535947712418301
+defisit taman jenuh 1500 m,ambang taman,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9851951195380848,444,62,62,0.7816901408450704
+defisit taman jenuh 1500 m,ambang taman,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9851951195380848,93,34,34,0.577639751552795
+defisit taman jenuh 1500 m,ambang taman,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9851951195380848,200,53,53,0.6535947712418301
+defisit taman jenuh 1500 m,ambang taman,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9851951195380848,444,62,62,0.7816901408450704
+jarak kosong = defisit maksimum,jarak taman kosong,eligibility_changing_refit_anchors,0.05,2526,2745,2526,127,138,0.9996339466500908,126,12,1,0.9064748201438849
+jarak kosong = defisit maksimum,jarak taman kosong,eligibility_changing_refit_anchors,0.1,2526,2745,2526,253,275,0.9996339466500908,251,24,2,0.9061371841155235
+jarak kosong = defisit maksimum,jarak taman kosong,eligibility_changing_refit_anchors,0.2,2526,2745,2526,506,549,0.9996339466500908,503,46,3,0.9112318840579711
+jarak kosong = defisit maksimum,jarak taman kosong,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+jarak kosong = defisit maksimum,jarak taman kosong,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+jarak kosong = defisit maksimum,jarak taman kosong,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+jarak kosong = median teramati,jarak taman kosong,eligibility_changing_refit_anchors,0.05,2526,2745,2526,127,138,0.9996339466500908,127,11,0,0.9202898550724637
+jarak kosong = median teramati,jarak taman kosong,eligibility_changing_refit_anchors,0.1,2526,2745,2526,253,275,0.9996339466500908,251,24,2,0.9061371841155235
+jarak kosong = median teramati,jarak taman kosong,eligibility_changing_refit_anchors,0.2,2526,2745,2526,506,549,0.9996339466500908,505,44,1,0.9181818181818182
+jarak kosong = median teramati,jarak taman kosong,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+jarak kosong = median teramati,jarak taman kosong,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+jarak kosong = median teramati,jarak taman kosong,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+porsi rentan (bukan jumlah),penduduk,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.7754057379706522,54,73,73,0.27
+porsi rentan (bukan jumlah),penduduk,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.7754057379706522,131,122,122,0.34933333333333333
+porsi rentan (bukan jumlah),penduduk,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.7754057379706522,327,179,179,0.47737226277372263
+porsi rentan (bukan jumlah),penduduk,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.7754057379706522,54,73,73,0.27
+porsi rentan (bukan jumlah),penduduk,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.7754057379706522,131,122,122,0.34933333333333333
+porsi rentan (bukan jumlah),penduduk,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.7754057379706522,327,179,179,0.47737226277372263
+total populasi (bukan rentan),penduduk,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9999616754000005,125,2,2,0.9689922480620154
+total populasi (bukan rentan),penduduk,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9999616754000005,250,3,3,0.9765625
+total populasi (bukan rentan),penduduk,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9999616754000005,505,1,1,0.9960552268244576
+total populasi (bukan rentan),penduduk,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999616754000005,125,2,2,0.9689922480620154
+total populasi (bukan rentan),penduduk,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999616754000005,250,3,3,0.9765625
+total populasi (bukan rentan),penduduk,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999616754000005,505,1,1,0.9960552268244576
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9785900431777153,101,26,26,0.6601307189542484
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9785900431777153,222,31,31,0.7816901408450704
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9785900431777153,442,64,64,0.775438596491228
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9785900431777153,101,26,26,0.6601307189542484
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9785900431777153,222,31,31,0.7816901408450704
+Dynamic World pohon rendah (ganti NDVI),tutupan lahan,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9785900431777153,442,64,64,0.775438596491228
+keluarkan snap > 250 m,eksklusi QA,eligibility_changing_refit_anchors,0.05,2526,2479,2479,127,124,0.9997507667074675,124,0,3,0.9763779527559056
+keluarkan snap > 250 m,eksklusi QA,eligibility_changing_refit_anchors,0.1,2526,2479,2479,253,248,0.9997507667074675,246,2,7,0.9647058823529412
+keluarkan snap > 250 m,eksklusi QA,eligibility_changing_refit_anchors,0.2,2526,2479,2479,506,496,0.9997507667074675,495,1,11,0.9763313609467456
+keluarkan snap > 250 m,eksklusi QA,fixed_intersection_same_anchors,0.05,2479,2479,2479,124,124,1.0,124,0,0,1.0
+keluarkan snap > 250 m,eksklusi QA,fixed_intersection_same_anchors,0.1,2479,2479,2479,248,248,1.0,248,0,0,1.0
+keluarkan snap > 250 m,eksklusi QA,fixed_intersection_same_anchors,0.2,2479,2479,2479,496,496,1.0,496,0,0,1.0
+keluarkan coverage < 10%,eksklusi QA,eligibility_changing_refit_anchors,0.05,2526,2492,2492,127,125,0.9995985547972701,125,0,2,0.984251968503937
+keluarkan coverage < 10%,eksklusi QA,eligibility_changing_refit_anchors,0.1,2526,2492,2492,253,250,0.9995985547972701,248,2,5,0.9725490196078431
+keluarkan coverage < 10%,eksklusi QA,eligibility_changing_refit_anchors,0.2,2526,2492,2492,506,499,0.9995985547972701,497,2,9,0.9783464566929134
+keluarkan coverage < 10%,eksklusi QA,fixed_intersection_same_anchors,0.05,2492,2492,2492,125,125,1.0,125,0,0,1.0
+keluarkan coverage < 10%,eksklusi QA,fixed_intersection_same_anchors,0.1,2492,2492,2492,250,250,1.0,250,0,0,1.0
+keluarkan coverage < 10%,eksklusi QA,fixed_intersection_same_anchors,0.2,2492,2492,2492,499,499,1.0,499,0,0,1.0
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,eligibility_changing_refit_anchors,0.05,2526,2515,2515,127,126,0.9999965685056879,126,0,1,0.9921259842519685
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,eligibility_changing_refit_anchors,0.1,2526,2515,2515,253,252,0.9999965685056879,251,1,2,0.9881889763779528
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,eligibility_changing_refit_anchors,0.2,2526,2515,2515,506,503,0.9999965685056879,503,0,3,0.9940711462450593
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,fixed_intersection_same_anchors,0.05,2515,2515,2515,126,126,1.0,126,0,0,1.0
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,fixed_intersection_same_anchors,0.1,2515,2515,2515,252,252,1.0,252,0,0,1.0
+keluarkan rs_qa_ok = False (Agent 1),eksklusi QA,fixed_intersection_same_anchors,0.2,2515,2515,2515,503,503,1.0,503,0,0,1.0
+uniform_fractional_auditor_values,aggregation,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9976667425123964,119,8,8,0.8814814814814815
+uniform_fractional_auditor_values,aggregation,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9976667425123964,237,16,16,0.8810408921933085
+uniform_fractional_auditor_values,aggregation,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9976667425123964,484,22,22,0.9166666666666666
+uniform_fractional_auditor_values,aggregation,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9976754386042467,120,7,7,0.8955223880597015
+uniform_fractional_auditor_values,aggregation,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9976754386042467,238,15,15,0.8880597014925373
+uniform_fractional_auditor_values,aggregation,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9976754386042467,484,22,22,0.9166666666666666
+thermal_support_0.25,thermal_support,eligibility_changing_refit_anchors,0.05,2526,2527,2526,127,127,0.9999987789734045,127,0,0,1.0
+thermal_support_0.25,thermal_support,eligibility_changing_refit_anchors,0.1,2526,2527,2526,253,253,0.9999987789734045,253,0,0,1.0
+thermal_support_0.25,thermal_support,eligibility_changing_refit_anchors,0.2,2526,2527,2526,506,506,0.9999987789734045,506,0,0,1.0
+thermal_support_0.25,thermal_support,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+thermal_support_0.25,thermal_support,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+thermal_support_0.25,thermal_support,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+thermal_support_0.5,thermal_support,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+thermal_support_0.5,thermal_support,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+thermal_support_0.5,thermal_support,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+thermal_support_0.5,thermal_support,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+thermal_support_0.5,thermal_support,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+thermal_support_0.5,thermal_support,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+corrected_support,missing_support,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+corrected_support,missing_support,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+corrected_support,missing_support,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+corrected_support,missing_support,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9999999999999999,127,0,0,1.0
+corrected_support,missing_support,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9999999999999999,253,0,0,1.0
+corrected_support,missing_support,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9999999999999999,506,0,0,1.0
+joint_vuln_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9898538087751553,101,26,26,0.6601307189542484
+joint_vuln_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9898538087751553,204,49,49,0.6754966887417219
+joint_vuln_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9898538087751553,442,64,64,0.775438596491228
+joint_vuln_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9898538087751553,101,26,26,0.6601307189542484
+joint_vuln_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9898538087751553,204,49,49,0.6754966887417219
+joint_vuln_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9898538087751553,442,64,64,0.775438596491228
+joint_vuln_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9871940711117886,103,24,24,0.6821192052980133
+joint_vuln_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9871940711117886,203,50,50,0.66996699669967
+joint_vuln_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9871940711117886,434,72,72,0.7508650519031141
+joint_vuln_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9872863710435329,103,24,24,0.6821192052980133
+joint_vuln_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9872863710435329,203,50,50,0.66996699669967
+joint_vuln_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9872863710435329,434,72,72,0.7508650519031141
+joint_vuln_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9697677872653756,92,35,35,0.5679012345679012
+joint_vuln_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9697677872653756,188,65,65,0.5911949685534591
+joint_vuln_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9697677872653756,414,92,92,0.6923076923076923
+joint_vuln_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9697677872653756,92,35,35,0.5679012345679012
+joint_vuln_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9697677872653756,188,65,65,0.5911949685534591
+joint_vuln_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9697677872653756,414,92,92,0.6923076923076923
+joint_vuln_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9658828030195504,89,38,38,0.5393939393939394
+joint_vuln_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9658828030195504,192,61,61,0.6114649681528662
+joint_vuln_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9658828030195504,406,100,100,0.66996699669967
+joint_vuln_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9672038443501186,90,37,37,0.5487804878048781
+joint_vuln_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9672038443501186,192,61,61,0.6114649681528662
+joint_vuln_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9672038443501186,406,100,100,0.66996699669967
+joint_vuln_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9851951195380848,93,34,34,0.577639751552795
+joint_vuln_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9851951195380848,200,53,53,0.6535947712418301
+joint_vuln_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9851951195380848,444,62,62,0.7816901408450704
+joint_vuln_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9851951195380848,93,34,34,0.577639751552795
+joint_vuln_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9851951195380848,200,53,53,0.6535947712418301
+joint_vuln_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9851951195380848,444,62,62,0.7816901408450704
+joint_vuln_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9831762607637053,95,32,32,0.5974842767295597
+joint_vuln_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9831762607637053,200,53,53,0.6535947712418301
+joint_vuln_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9831762607637053,439,67,67,0.7661431064572426
+joint_vuln_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9830104192935528,95,32,32,0.5974842767295597
+joint_vuln_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9830104192935528,201,52,52,0.659016393442623
+joint_vuln_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9830104192935528,439,67,67,0.7661431064572426
+joint_vuln_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.967868360527125,102,25,25,0.6710526315789473
+joint_vuln_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.967868360527125,212,41,41,0.7210884353741497
+joint_vuln_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.967868360527125,444,62,62,0.7816901408450704
+joint_vuln_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.967868360527125,102,25,25,0.6710526315789473
+joint_vuln_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.967868360527125,212,41,41,0.7210884353741497
+joint_vuln_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.967868360527125,444,62,62,0.7816901408450704
+joint_vuln_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9646393929219563,104,23,23,0.6933333333333334
+joint_vuln_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9646393929219563,210,43,43,0.7094594594594594
+joint_vuln_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9646393929219563,432,74,74,0.7448275862068966
+joint_vuln_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.966273647676517,105,22,22,0.7046979865771812
+joint_vuln_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.966273647676517,214,39,39,0.7328767123287672
+joint_vuln_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.966273647676517,436,70,70,0.7569444444444444
+joint_pop_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9897136892725749,100,27,27,0.6493506493506493
+joint_pop_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9897136892725749,203,50,50,0.66996699669967
+joint_pop_cap750_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9897136892725749,439,67,67,0.7661431064572426
+joint_pop_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9897136892725749,100,27,27,0.6493506493506493
+joint_pop_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9897136892725749,203,50,50,0.66996699669967
+joint_pop_cap750_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9897136892725749,439,67,67,0.7661431064572426
+joint_pop_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9869721108125935,103,24,24,0.6821192052980133
+joint_pop_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9869721108125935,204,49,49,0.6754966887417219
+joint_pop_cap750_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9869721108125935,432,74,74,0.7448275862068966
+joint_pop_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9872373862857328,103,24,24,0.6821192052980133
+joint_pop_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9872373862857328,204,49,49,0.6754966887417219
+joint_pop_cap750_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9872373862857328,433,73,73,0.7478411053540587
+joint_pop_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9694619930670073,91,36,36,0.558282208588957
+joint_pop_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9694619930670073,186,67,67,0.58125
+joint_pop_cap750_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9694619930670073,415,91,91,0.695142378559464
+joint_pop_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9694619930670073,91,36,36,0.558282208588957
+joint_pop_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9694619930670073,186,67,67,0.58125
+joint_pop_cap750_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9694619930670073,415,91,91,0.695142378559464
+joint_pop_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9656027494019646,90,37,37,0.5487804878048781
+joint_pop_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9656027494019646,192,61,61,0.6114649681528662
+joint_pop_cap750_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9656027494019646,405,101,101,0.6672158154859967
+joint_pop_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9670830937541726,91,36,36,0.558282208588957
+joint_pop_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9670830937541726,192,61,61,0.6114649681528662
+joint_pop_cap750_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9670830937541726,406,100,100,0.66996699669967
+joint_pop_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9852768292976992,93,34,34,0.577639751552795
+joint_pop_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9852768292976992,202,51,51,0.6644736842105263
+joint_pop_cap1500_clipped_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9852768292976992,444,62,62,0.7816901408450704
+joint_pop_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9852768292976992,93,34,34,0.577639751552795
+joint_pop_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9852768292976992,202,51,51,0.6644736842105263
+joint_pop_cap1500_clipped_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9852768292976992,444,62,62,0.7816901408450704
+joint_pop_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9833311122499706,96,31,31,0.6075949367088608
+joint_pop_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9833311122499706,199,54,54,0.6482084690553745
+joint_pop_cap1500_clipped_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9833311122499706,440,66,66,0.7692307692307693
+joint_pop_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.982953014663943,96,31,31,0.6075949367088608
+joint_pop_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.982953014663943,199,54,54,0.6482084690553745
+joint_pop_cap1500_clipped_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.982953014663943,439,67,67,0.7661431064572426
+joint_pop_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9677304895003485,101,26,26,0.6601307189542484
+joint_pop_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9677304895003485,214,39,39,0.7328767123287672
+joint_pop_cap1500_rank_legacy,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9677304895003485,442,64,64,0.775438596491228
+joint_pop_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9677304895003485,101,26,26,0.6601307189542484
+joint_pop_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9677304895003485,214,39,39,0.7328767123287672
+joint_pop_cap1500_rank_legacy,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9677304895003485,442,64,64,0.775438596491228
+joint_pop_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.05,2526,2526,2526,127,127,0.9644911573151587,104,23,23,0.6933333333333334
+joint_pop_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.1,2526,2526,2526,253,253,0.9644911573151587,210,43,43,0.7094594594594594
+joint_pop_cap1500_rank_fractional,joint_factorial,eligibility_changing_refit_anchors,0.2,2526,2526,2526,506,506,0.9644911573151587,434,72,72,0.7508650519031141
+joint_pop_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.05,2526,2526,2526,127,127,0.9662045986225462,104,23,23,0.6933333333333334
+joint_pop_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.1,2526,2526,2526,253,253,0.9662045986225462,214,39,39,0.7328767123287672
+joint_pop_cap1500_rank_fractional,joint_factorial,fixed_intersection_same_anchors,0.2,2526,2526,2526,506,506,0.9662045986225462,436,70,70,0.7569444444444444

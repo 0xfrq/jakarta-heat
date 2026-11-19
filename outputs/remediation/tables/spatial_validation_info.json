@@ -1,0 +1,20 @@
+{
+  "weights_baseline": "Queen contiguity (poligon), row-standardized",
+  "weights_sensitivity": [
+    "rook",
+    "knn8"
+  ],
+  "permutations": 999,
+  "seed": 42,
+  "alpha": 0.05,
+  "islands_dropped": {
+    "M1": [],
+    "M2": [],
+    "M3": [],
+    "M4": []
+  },
+  "local_alternative": "directed",
+  "global_alternative": "greater",
+  "testing_family": "each preselected map separately; all non-island eligible grids",
+  "catatan": "LISA diuji per grid (uji berganda); klaim memakai kolom klaster_fdr (Benjamini-Hochberg). Klaster adalah deskriptif, bukan penjelasan kausal."
+}

@@ -1,0 +1,23 @@
+{
+  "source": "real",
+  "built_at": "2026-11-19T19:28:31Z",
+  "n_grid": 2765,
+  "n_valid": 2526,
+  "valid_share": 0.9135623869801085,
+  "n_valid_rs": 2764,
+  "n_valid_p2": 2527,
+  "unreachable_policy": "exclude",
+  "notes": [
+    "Person 2: spatial_features.csv (2,765 baris)",
+    "Demographic evidence: demographic_support.csv; versions ['audit-2026-11-20-fractional-mask-v1-PROVISIONAL']",
+    "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])"
+  ],
+  "python": "3.12.10",
+  "pandas": "3.1.1",
+  "numpy": "2.5.5",
+  "geopandas": "1.2.0",
+  "libpysal": "4.15.1",
+  "esda": "2.10.0",
+  "scipy": "1.18.1",
+  "input_status": "COMPLETE"
+}

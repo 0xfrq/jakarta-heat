@@ -1,0 +1,9 @@
+{
+  "kind": "queen",
+  "row_standardized": true,
+  "n": 2526,
+  "directed_pairs": 18336,
+  "islands": [],
+  "esda": "2.10.0",
+  "seed": 42
+}

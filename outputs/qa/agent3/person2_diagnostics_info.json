@@ -1,0 +1,126 @@
+{
+  "status": {
+    "state": "P2_ONLY",
+    "demo": false,
+    "files": {
+      "master_grid": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_500m_jakarta.gpkg",
+        "exists": true
+      },
+      "grid_master_csv": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_master.csv",
+        "exists": true
+      },
+      "person2_spatial_features": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\spatial_features.csv",
+        "exists": true
+      },
+      "remote_sensing": {
+        "path": "D:\\jakarta-heat-agent3\\data\\processed\\remote_sensing_grid.csv",
+        "exists": false
+      }
+    },
+    "n_grid": 2765,
+    "n_rs_rows": 0,
+    "n_rs_usable": 0,
+    "errors": [],
+    "notes": [
+      "Person 2: spatial_features.csv (2,765 baris)",
+      "Remote sensing: remote_sensing_grid.csv belum ada di D:\\jakarta-heat-agent3\\data\\processed."
+    ],
+    "text": "Data Person 2 tersedia dan valid; data remote sensing Agent 1 BELUM ada. Skor M1-M4 belum dapat dihitung."
+  },
+  "n_flagged": 315,
+  "moran": [
+    {
+      "variabel": "log1p_population",
+      "bobot": "queen",
+      "I": 0.49926516899546036,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "log1p_population",
+      "bobot": "rook",
+      "I": 0.5729535921473009,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "log1p_population",
+      "bobot": "knn8",
+      "I": 0.4900408134974255,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "log1p_pop_vulnerable",
+      "bobot": "queen",
+      "I": 0.4973228510739086,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "log1p_pop_vulnerable",
+      "bobot": "rook",
+      "I": 0.5731770659569145,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "log1p_pop_vulnerable",
+      "bobot": "knn8",
+      "I": 0.4897361301047163,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "vuln_share",
+      "bobot": "queen",
+      "I": 0.07428079113298876,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "vuln_share",
+      "bobot": "rook",
+      "I": 0.11210888480177321,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "vuln_share",
+      "bobot": "knn8",
+      "I": 0.083315715840005,
+      "p_sim": 0.001,
+      "n": 2765
+    },
+    {
+      "variabel": "park_distance_m",
+      "bobot": "queen",
+      "I": 0.7405712971274404,
+      "p_sim": 0.001,
+      "n": 2538
+    },
+    {
+      "variabel": "park_distance_m",
+      "bobot": "rook",
+      "I": 0.7822645963375272,
+      "p_sim": 0.001,
+      "n": 2537
+    },
+    {
+      "variabel": "park_distance_m",
+      "bobot": "knn8",
+      "I": 0.7120046219736493,
+      "p_sim": 0.001,
+      "n": 2539
+    }
+  ],
+  "lisa_park_distance_islands": [
+    "JKT_R013_C019"
+  ],
+  "built_at": "2026-11-19T15:22:33Z",
+  "source": "real",
+  "catatan": "Deskriptif data Person 2 (WorldPop, OSM, jarak jaringan model). Bukan skor prioritas. park_distance_m kosong = rute tidak dihitung; dikeluarkan dari statistik jarak."
+}
