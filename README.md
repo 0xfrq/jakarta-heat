@@ -1,5 +1,10 @@
 # Jakarta Heat
 
+RC1 integration: see [consolidated reproduction](docs/RC1_REPRODUCE.md),
+[handoff](handoff/RC1_HANDOFF.md), and [verification](handoff/RC1_VERIFICATION.md).
+These describe the consolidated candidate; workstream handoffs below retain
+their historical scope. Scientific policy remains provisional pending re-audit.
+
 Analisis spasial penduduk rentan dan akses berjalan kaki ke taman di lima kota Jakarta.
 Unit analisisnya grid 500 meter. Script aksesibilitas menghasilkan jarak model ke taman
 terdekat, termasuk jarak penghubung titik grid/taman ke jaringan jalan.

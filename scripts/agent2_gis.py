@@ -523,6 +523,7 @@ def raster_alignment():
 
 
 def integration():
+    raise RuntimeError("Historical integration stage retired: run scripts/run_rc1.py using the live jhim package. Frozen baseline code is evidence only.")
     master,grid,sp,rs,cities,parks=frames()
     area=pd.read_csv(OUT/'grid_area_diagnostics.csv')
     demo=pd.read_csv(OUT/'population_age_checks.csv')
@@ -552,10 +553,6 @@ def integration():
     final.to_csv(DATA/'final_model_features.csv',index=False)
     gpd.GeoDataFrame(final,geometry=grid.geometry,crs=grid.crs).to_file(OUT/'final_model_features.gpkg',layer='source_features',driver='GPKG')
     # Isolated import of frozen Agent3 code. Do not import baseline worktree package by accident.
-    sys.path.insert(0,str(BASE/'agent3'))
-    for name in list(sys.modules):
-        if name=='jhim' or name.startswith('jhim.'):
-            del sys.modules[name]
     from jhim import data as D, config as C, models as M
     original=pd.read_csv(BASE/'agent3/data/processed/modeling/merged_grid.csv')
     pri=pd.read_csv(BASE/'agent3/data/processed/modeling/priority_models.csv')
@@ -794,7 +791,7 @@ def visual():
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--source-root',type=Path,default=ROOT.parent/'jakarta-heat')
+    parser.add_argument('--source-root',type=Path,default=ROOT)
     parser.add_argument('--stage',choices=['geography','population','parks','network','raster','integration','visual','all'],default='all')
     ARGS=parser.parse_args()
     OUT.mkdir(parents=True,exist_ok=True)

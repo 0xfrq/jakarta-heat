@@ -13,7 +13,7 @@ import subprocess
 from aggregate_demographics import digest
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT/'docs/integration_manifest.json'
+OUT = ROOT/'docs/agent2_preintegration_manifest.json'
 CANONICAL = {
     'demographic_support': 'data/processed/demographic_support.csv',
     'demographic_features_corrected': 'data/processed/demographic_features_corrected.csv',

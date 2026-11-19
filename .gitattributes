@@ -1,0 +1,3 @@
+# Preserve artifact bytes used by frozen-input and output SHA256 manifests.
+data/** -text
+outputs/** -text

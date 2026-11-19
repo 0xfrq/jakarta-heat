@@ -16,7 +16,7 @@ from scipy.spatial import cKDTree
 from agent2_gis import ROOT,OUT,DATA,load_light_graph,nearest,route,table,write_json
 from walking_network import values
 
-SOURCE=ROOT.parent/'jakarta-heat'
+SOURCE=ROOT
 
 
 def main():

@@ -17,6 +17,8 @@ try {
         foreach ($requiredPath in @('tests/test_remote_sensing_grid.py','tests/agent3','scripts/run_agent3_pipeline.py')) {
             if (-not (Test-Path -LiteralPath $requiredPath)) { throw "IN-01 candidate incomplete: $requiredPath absent. Consolidated verification NOT TESTED." }
         }
+        Invoke-CheckedPython -Arguments @('scripts/run_rc1.py')
+        return
     }
     Invoke-CheckedPython -Arguments @('-m','pip','check')
     # Boundary/grid, source masks, frozen OSM graph and export identities are

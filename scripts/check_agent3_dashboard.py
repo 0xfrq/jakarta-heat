@@ -1,5 +1,6 @@
 """Local corrected workstream browser check; never certifies a consolidated release."""
 import json
+import argparse
 import os
 import subprocess
 import sys
@@ -13,11 +14,27 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs/remediation/qa/dashboard"
 OUT.mkdir(parents=True, exist_ok=True)
 INPUTS = ROOT / "data/processed/remediation_inputs"
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--integrated", action="store_true")
+args = parser.parse_args()
 env = {**os.environ, "JHIM_INPUT_DIR": str(INPUTS), "JHIM_RS_PATH": str(INPUTS / "remote_sensing_grid.csv"),
        "JHIM_DEMOGRAPHIC_SUPPORT": str(INPUTS / "demographic_support.csv"), "PYTHONIOENCODING": "utf-8"}
+if args.integrated:
+    INPUTS = ROOT / "data/processed"
+    for key in list(env):
+        if key.startswith("JHIM_"):
+            del env[key]
+expected = __import__("pandas").read_csv(ROOT / ("data/processed/modeling/merged_grid.csv" if args.integrated else "data/processed/modeling_remediation/merged_grid.csv"))
+expected_age = int(expected.qa_age_source_no_support.sum())
+expected_valid = f"{int(expected.valid.sum()):,}"
+support_text = f"Dukungan sumber usia tidak tersedia pada {expected_age} grid"
 command = [sys.executable, "-m", "streamlit", "run", str(ROOT / "dashboard/app.py"),
            "--server.headless=true", "--server.address=127.0.0.1", "--server.port=8543", "--browser.gatherUsageStats=false"]
 result = {"scope": "Agent3 corrected local workstream only; final integrated candidate NOT YET TESTED", "command": command, "pages": []}
+if args.integrated:
+    OUT = ROOT / "outputs/qa/rc1/dashboard"
+    OUT.mkdir(parents=True, exist_ok=True)
+    result["scope"] = "RC1 consolidated canonical inputs; provisional scientific policy"
 log = (OUT / "server.log").open("w", encoding="utf-8")
 proc = subprocess.Popen(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT,
                         creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))
@@ -81,12 +98,12 @@ try:
         for i, (name, sentinel) in enumerate(sentinels.items()):
             page.get_by_role("link", name=name, exact=False).first.click()
             page.locator("h1").first.wait_for(timeout=60000)
-            page.get_by_text("Dukungan sumber usia tidak tersedia pada 19 grid", exact=False).first.wait_for(timeout=60000)
+            page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
             settle(sentinel)
             body = page.locator("body").inner_text()
             record = {"page": name, "heading": page.locator("h1").first.inner_text(), "exceptions": errors_now(),
                       "mixed_period_visible": "2026" in body and "2024" in body,
-                      "corrected_n_visible": "2,526" in body, "canvas_count": page.locator("canvas").count()}
+                      "corrected_n_visible": expected_valid in body, "canvas_count": page.locator("canvas").count()}
             if i in (0, 1, 3, 5, 6, 7):
                 shot(OUT / f"page_{i}_desktop.png")
                 page.set_viewport_size({"width": 390, "height": 844})
@@ -134,7 +151,7 @@ try:
         interact("sidebar: DEMO mode labelled", lambda: page.get_by_text("DEMO (data sintetis)", exact=False).first.click(),
                  "MODE DEMO")
         interact("sidebar: back to real data", lambda: page.get_by_text("Data asli", exact=True).first.click(),
-                 "Dukungan sumber usia tidak tersedia pada 19 grid")
+                 support_text)
         result["interactions"] = interactions
         result["page_errors"] = errors
         browser.close()

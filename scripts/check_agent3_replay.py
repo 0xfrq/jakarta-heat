@@ -41,6 +41,11 @@ EXPECTED_RUNTIME = {"permutations": 999, "high_permutations": 9999, "seed": C.SE
 
 
 def candidate_paths():
+    man = json.loads((MODELING / "run_manifest.json").read_text(encoding="utf-8"))
+    if man.get("source") == "real-integrated-candidate":
+        for name in ("JHIM_INPUT_DIR", "JHIM_RS_PATH", "JHIM_DEMOGRAPHIC_SUPPORT", "JHIM_DEMOGRAPHIC_CORRECTED"):
+            os.environ.pop(name, None)
+        return C.RemediationPaths(root=ROOT)
     # Same environment as jhim.remediation.run so input identities resolve to the frozen evidence.
     inputs = ROOT / "data/processed/remediation_inputs"
     os.environ["JHIM_INPUT_DIR"] = str(inputs)

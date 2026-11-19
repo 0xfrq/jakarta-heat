@@ -188,8 +188,15 @@ def test_real_person2_known_counts():
     assert int(f["f_park_route_missing"].sum()) == 226
     assert int((f["park_reachable"] == 0).sum()) == 226 and int(f["f_reach_mismatch"].sum()) == 0
     assert int(f["f_snap_far"].sum()) == 66
-    assert int(f["f_pop_zero"].sum()) == 6
-    assert f[["population", "pop_child", "pop_elderly"]].isna().sum().sum() == 0
+    if paths.demographic_corrected.exists():
+        support = pd.read_csv(paths.demographic_support).set_index(C.KEY).loc[f[C.KEY]]
+        assert int(f["f_pop_zero"].sum()) == 0
+        assert f.population.isna().sum() == support.qa_population_source_no_support.sum() == 6
+        assert f.pop_child.isna().sum() == f.pop_elderly.isna().sum() == support.qa_age_source_no_support.sum() == 6
+        assert (f.raw_population.eq(0) == f.qa_population_source_no_support).all()
+    else:
+        assert int(f["f_pop_zero"].sum()) == 6
+        assert f[["population", "pop_child", "pop_elderly"]].isna().sum().sum() == 0
     assert int(f["f_park_access_500m_mismatch"].sum()) == 0 and int(f["f_park_access_1000m_mismatch"].sum()) == 0
 
 

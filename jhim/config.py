@@ -160,6 +160,9 @@ class Paths:
     def rs(self) -> Path:
         if not self.demo and _env_path("JHIM_RS_PATH"):
             return _env_path("JHIM_RS_PATH")
+        revised = self.inputs_dir / "remote_sensing_remediated/remote_sensing_grid.csv"
+        if not self.demo and revised.exists():
+            return revised
         return self.inputs_dir / "remote_sensing_grid.csv"
 
     @property
@@ -169,10 +172,14 @@ class Paths:
 
     @property
     def demographic_support(self) -> Path:
+        if self.demo:
+            return self.inputs_dir / "demographic_support.csv"
         return _env_path("JHIM_DEMOGRAPHIC_SUPPORT") or self.inputs_dir / "demographic_support.csv"
 
     @property
     def demographic_corrected(self) -> Path:
+        if self.demo:
+            return self.inputs_dir / "demographic_features_corrected.csv"
         return _env_path("JHIM_DEMOGRAPHIC_CORRECTED") or self.inputs_dir / "demographic_features_corrected.csv"
 
     @property

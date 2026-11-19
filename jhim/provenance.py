@@ -31,6 +31,10 @@ def inputs_identity(paths):
              ("remote_sensing", paths.rs), ("demographic_support", paths.demographic_support),
              ("demographic_corrected", paths.demographic_corrected)]
     pairs += [(f"part_{p.stem}", p) for p in paths.pop_parts]
+    pairs += [(f"integrated_{name}", paths.processed / name) for name in (
+        "agent2_route_scenarios.csv", "integrated_comparisons/input_lineage.json",
+        "integrated_comparisons/auditor_raster_support.csv", "integrated_comparisons/auditor_network.csv")]
+    pairs += [("aggregation_scenarios", paths.root / "outputs/qa/remediation_agent2/partial_grid_scenarios.csv")]
     pairs += [(f"frozen_{name}", paths.inputs_dir / name) for name in (
         "audited_merged_grid.csv", "audited_priority_models.csv", "auditor_raster_support.csv", "auditor_network.csv", "input_lineage.json")]
     return {k: {"path": str(p.resolve()), "exists": p.exists(), "sha256": sha256(p)} for k, p in pairs}
@@ -38,7 +42,7 @@ def inputs_identity(paths):
 
 def output_identity(paths):
     # Includes numerical/geometry exports. GPKG byte identity is conservative: a byte change is stale.
-    return {str(p.resolve()): sha256(p) for folder in (paths.modeling, paths.tables, paths.figures, paths.gis)
+    return {str(p.resolve()): sha256(p) for folder in (paths.modeling, paths.tables, paths.figures, paths.gis, paths.tables.parent / "paper")
             if folder.exists() for p in sorted(folder.rglob("*"))
             if p.is_file() and p.name not in ("run_manifest.json", "output_sha256_manifest.csv")}
 

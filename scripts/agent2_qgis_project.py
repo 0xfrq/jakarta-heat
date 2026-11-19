@@ -42,7 +42,7 @@ for layer,title in [('grid_area','Clipped analysis areas'),('unreachable','226 r
                     ('explicit_restricted_osm_nodes','Explicit node restrictions (unverified OSM tags)')]:
     add(OUT/'geographic_qa.gpkg',title,qa,layer)
 for slug in ['barat','pusat','selatan','timur','utara']:
-    add(ROOT.parent/f'jakarta-heat/data/processed/roads_walk_jakarta_{slug}.gpkg',f'Walk road geometry Jakarta {slug}',roads_group)
+    add(ROOT/f'data/processed/roads_walk_jakarta_{slug}.gpkg',f'Walk road geometry Jakarta {slug}',roads_group)
 add(OUT/'final_model_features.gpkg','Full source features (2765 rows)',models,'source_features')
 add(OUT/'baseline/agent3/outputs/gis/priority_models.gpkg','Frozen provisional M1-M4 (baseline)',models)
 for name in ['jakarta_2024_lst_ndvi_qa','jakarta_2024_trees_built_probability']:

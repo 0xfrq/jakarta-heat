@@ -14,7 +14,7 @@ import requests
 from shapely.geometry import box
 from agent2_gis import ROOT, OUT, DATA, BASE, sha, table, write_json, check
 
-SOURCE=ROOT.parent/'jakarta-heat'
+SOURCE=ROOT
 
 
 class Text(HTMLParser):

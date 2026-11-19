@@ -1,5 +1,16 @@
 # Scientific decisions proposed after independent audit (20 November 2026)
 
+RC1 engineering update: the authorized integration rebuilds standard and expanded
+outputs from canonical A1/A2 inputs. Historical audited features/priorities remain
+under `data/processed/remediation_inputs/audited_*` and Agent 2's baseline evidence.
+The paragraphs describing the original candidate's 19-cell auditor support and
+missing route versions are historical: RC1 uses buffered source support (six
+unsupported age cells, 13 recovered) and executes all five Agent 2 route versions.
+Fractional scenarios use Agent 2's corrected buffered surfaces. The 16-scenario
+factorial covers construct/cap/normalization/aggregation; route policies are a
+separate family, so this is not an all-family joint robustness claim. Every
+scientific approval below remains pending; integration does not supply sign-off.
+
 **All choices below are UNSIGNED proposals or exploratory scenarios.** This file records the exact decisions for coordinator review; it is not retrospective preregistration. Original audited M1–M4 outputs remain in `data/processed/modeling` and `outputs/tables`. Candidate results are in `data/processed/modeling_remediation` and `outputs/remediation`. No official model is silently replaced.
 
 ## temporal_scope — TM-01 (coordinator approval pending)

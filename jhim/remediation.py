@@ -60,6 +60,28 @@ def prepare_inputs(root, audit):
     return dest
 
 
+def prepare_integrated_inputs(root, audit):
+    """Versioned comparisons only; measured inputs come from canonical worktree paths."""
+    root, audit = Path(root), Path(audit)
+    dest = root / "data/processed/integrated_comparisons"
+    old = root / "data/processed/remediation_inputs"
+    sources = [(old / n, n) for n in ("audited_merged_grid.csv", "audited_priority_models.csv")]
+    sources += [(audit / "evidence/gis/independent_raster_support.csv", "auditor_raster_support.csv"),
+                (audit / "evidence/gis/independent_full_network.csv", "auditor_network.csv")]
+    entries = [freeze(src, dest / name) for src, name in sources]
+    paths = C.Paths(root=root)
+    for p in (paths.rs, paths.demographic_support, paths.demographic_corrected,
+              root / "data/processed/agent2_route_scenarios.csv"):
+        if not p.is_file():
+            raise DataError(f"Required canonical input unavailable: {p}")
+    write_json(dest / "input_lineage.json", {"source_files": entries, "mode": "integrated",
+        "canonical": {str(p.relative_to(root)): sha256(p) for p in
+            (paths.rs, paths.demographic_support, paths.demographic_corrected,
+             root / "data/processed/agent2_route_scenarios.csv")},
+        "restriction": "Auditor tables are comparisons only; canonical Agent1/Agent2 inputs drive analysis."})
+    return dest
+
+
 def rank(comp, raw_comp, weights, ids):
     s = M.weighted_score(comp, weights)
     return s, M.rank_desc(s, ids, M.weighted_score(raw_comp, weights))
@@ -403,18 +425,37 @@ def scenario_families(feat, inputs, paths):
             f["assumed_park_distance_m"] = f.park_distance_used_m
         add(scenario.name, scenario.group, f, scenario.weights, scenario.kw,
             stress=bool(scenario.policy), assumption=scenario.note)
-    audit_support = pd.read_csv(inputs / "auditor_raster_support.csv").set_index(C.KEY)
     fractional = feat.copy()
-    for col in ("population", "pop_child", "pop_elderly"):
-        fractional[col] = fractional[C.KEY].map(audit_support[f"{col}_exact_sum"])
+    integrated = inputs.name == "integrated_comparisons"
+    if integrated:
+        source = pd.read_csv(paths.root / "outputs/qa/remediation_agent2/partial_grid_scenarios.csv").set_index(C.KEY)
+        for col in ("population", "pop_child", "pop_elderly"):
+            fractional[col] = fractional[C.KEY].map(source[f"{col}_fractional"])
+    else:
+        source = pd.read_csv(inputs / "auditor_raster_support.csv").set_index(C.KEY)
+        for col in ("population", "pop_child", "pop_elderly"):
+            fractional[col] = fractional[C.KEY].map(source[f"{col}_exact_sum"])
     fractional = D.clean_values(fractional)
-    add("uniform_fractional_auditor_values", "aggregation", fractional,
-        assumption="Uniform pixel-area allocation sensitivity, support nulls retained; DM-01/BG-01 canonical pending")
+    add("uniform_fractional_agent2_values" if integrated else "uniform_fractional_auditor_values", "aggregation", fractional,
+        assumption="Uniform pixel-area allocation sensitivity; versioned source support nulls retained")
     for threshold in (.25, .5):
         f = feat.copy()
         f["valid"] = f.valid_p2 & f.lst_c.notna() & f.ndvi.notna() & (f.lst_valid_frac >= threshold)
         add(f"thermal_support_{threshold}", "thermal_support", f)
-    add("corrected_support", "missing_support", feat, assumption="Auditor mask overlay; source repair pending DM-01")
+    add("corrected_support", "missing_support", feat, assumption="Versioned demographic support consumed by loader")
+    routes_path = paths.processed / "agent2_route_scenarios.csv"
+    if routes_path.exists():
+        routes = pd.read_csv(routes_path)
+        for scenario, table in routes.groupby("scenario_id"):
+            f = feat.copy()
+            table = table.set_index(C.KEY)
+            if set(table.index) != set(f[C.KEY]) or not table.index.is_unique:
+                raise DataError(f"Route scenario {scenario}: exact unique master IDs required")
+            f["park_distance_m"] = f[C.KEY].map(table["park_distance_m"])
+            f = D.clean_values(f)
+            add(f"agent2_{scenario}", "route_policy", f,
+                stress="positive" in scenario,
+                assumption="Agent2 per-grid route version; unknown routes remain null; candidate proxy")
     # 2 x 2 x 2 x 2 joint envelope; bounded, prespecified alternatives, never optimized for results.
     for demography, cap, norm, aggregation in itertools.product(("vuln", "pop"), (750., 1500.), ("clipped", "rank"), ("legacy", "fractional")):
         w = {"lst": .3, "ndvi_low": .2, demography: .25, "park_deficit": .25}
@@ -422,9 +463,7 @@ def scenario_families(feat, inputs, paths):
         add(name, "joint_factorial", feat if aggregation == "legacy" else fractional, w,
             {"park_cap": cap, "method": "rank" if norm == "rank" else "minmax"},
             assumption="2 constructs x 2 caps x 2 normalizations x 2 aggregation rules; shared support policy")
-    for name, family, dependency in (("candidate_destinations", "destination", "AC-01 per-grid revised routes unavailable"),
-                                      ("positive_only_coverage_stress", "destination", "AC-01 per-grid positive-only routes unavailable"),
-                                      ("legal_entrances_barriers", "entrance_barrier", "AC-02 per-grid route versions unavailable"),
+    for name, family, dependency in (("verified_physical_entrances", "entrance_barrier", "AC-01/02 physical entrance evidence unavailable"),
                                       ("historical_2024", "temporal", "TM-01 mixed-period framing proposed; optional if approved"),
                                       ("seasonal_composite", "thermal_sampling", "RS-01 alternative composite unavailable")):
         registry.append({"scenario": name, "family": family, "status": "BLOCKED" if family != "temporal" else "CONDITIONAL",
@@ -648,14 +687,19 @@ def figures(feat, paths):
     write_csv(pd.DataFrame(manifest), paper / "figure_manifest.csv")
 
 
-def run(root, audit, high_perms=9999, skip_spatial=False):
+def run(root, audit, high_perms=9999, skip_spatial=False, integrated=False):
     from . import pipeline as P
     root = Path(root)
-    inputs = prepare_inputs(root, audit)
-    os.environ["JHIM_INPUT_DIR"] = str(inputs)
-    os.environ.pop("JHIM_RS_PATH", None)
-    os.environ["JHIM_DEMOGRAPHIC_SUPPORT"] = str(inputs / "demographic_support.csv")
-    os.environ.pop("JHIM_DEMOGRAPHIC_CORRECTED", None)
+    if integrated:
+        for name in ("JHIM_INPUT_DIR", "JHIM_RS_PATH", "JHIM_DEMOGRAPHIC_SUPPORT", "JHIM_DEMOGRAPHIC_CORRECTED"):
+            os.environ.pop(name, None)
+        inputs = prepare_integrated_inputs(root, audit)
+    else:
+        inputs = prepare_inputs(root, audit)
+        os.environ["JHIM_INPUT_DIR"] = str(inputs)
+        os.environ.pop("JHIM_RS_PATH", None)
+        os.environ["JHIM_DEMOGRAPHIC_SUPPORT"] = str(inputs / "demographic_support.csv")
+        os.environ.pop("JHIM_DEMOGRAPHIC_CORRECTED", None)
     paths = C.RemediationPaths(root=root)
     baseline = pd.read_csv(inputs / "audited_merged_grid.csv")
     feat, meta, status = D.load_features(paths)
@@ -688,10 +732,10 @@ def run(root, audit, high_perms=9999, skip_spatial=False):
     steps = ["remediation", "merge", "priority", "compare", "ablations", "selection", "scenario_families", "figures"]
     if not skip_spatial:
         steps += ["spatial", "lisa_sensitivity"]
-    manifest = P.write_manifest(paths, steps, {"source": "real-audited-derived-candidate", "n_valid": int(feat.valid.sum()),
+    manifest = P.write_manifest(paths, steps, {"source": "real-integrated-candidate" if integrated else "real-audited-derived-candidate", "n_valid": int(feat.valid.sum()),
                     "runtime": {"permutations": 999, "high_permutations": high_perms, "seed": C.SEED,
                                 "skip_spatial": skip_spatial, "local_alternative": "directed", "top_frac": C.TOP_FRAC},
-                    "limitations": ["DM-01 canonical source repair pending", "AC-01/02 per-grid revised routes pending",
+                    "limitations": ["Acquisition lineage and physical entrance verification remain incomplete",
                                     "All scientific policy alternatives unsigned; audited official baseline retained"],
                     "frozen_lineage": json.loads((inputs / "input_lineage.json").read_text(encoding="utf-8"))})
     return manifest

@@ -148,15 +148,24 @@ def test_real_independent_contributions_and_attribution():
 @pytest.mark.skipif(not HAVE_CANDIDATE, reason="real remediation candidate not yet generated")
 def test_real_support_selection_and_bounds_reconcile():
     f = pd.read_csv(REPO / "data/processed/modeling_remediation/merged_grid.csv")
-    assert len(f) == 2765 and f.grid_id.is_unique and f.valid.sum() == 2526
-    assert f.qa_age_source_no_support.sum() == 19 and f.qa_population_source_no_support.sum() == 6
+    assert len(f) == 2765 and f.grid_id.is_unique
+    integrated = f.support_version.eq("agent2-DM-01-v1-buffered-age").all()
+    support = pd.read_csv(REPO / ("data/processed/demographic_support.csv" if integrated else "data/processed/remediation_inputs/demographic_support.csv"))
+    assert f.qa_age_source_no_support.sum() == support.qa_age_source_no_support.sum() == (6 if integrated else 19)
+    assert f.qa_population_source_no_support.sum() == 6
+    independent_valid = (~f.qa_population_source_no_support & ~f.qa_age_source_no_support
+                         & f.park_distance_m.notna() & f.lst_valid_frac.ge(.5)
+                         & f.lst_c.notna() & f.ndvi.notna()
+                         & ((f.pop_child + f.pop_elderly) <= f.population * 1.05 + 1))
+    assert f.valid.equals(independent_valid)
     assert f.loc[f.qa_age_source_no_support, ["pop_child", "pop_elderly", "vuln_share"]].isna().all().all()
     assert f.loc[f.qa_population_source_no_support, "population"].isna().all()
     assert f.loc[f.grid_id == "JKT_R050_C061", "pop_child"].iloc[0] == 0
     assert f.f_park_route_missing.sum() == 226 and f.f_lst_low_valid.sum() == 1
     s = pd.read_csv(TABLES / "selection_membership.csv")
     assert len(s) == len(f) and (s.selection_group == "route_missing").sum() == 226
-    assert len(pd.read_csv(TABLES / "full_thermal_top_lost.csv")) == 18
+    lost = pd.read_csv(TABLES / "full_thermal_top_lost.csv")
+    assert lost.grid_id.is_unique and set(lost.grid_id) <= set(f.loc[~f.valid, "grid_id"])
     b = pd.read_csv(TABLES / "missing_access_bounds.csv")
     assert b.park_distance_m.isna().any()
     np.testing.assert_allclose((b.m4_upper_fixed_anchors - b.m4_lower_fixed_anchors)[b.park_distance_m.isna()], .25)
@@ -168,7 +177,8 @@ def test_real_scenario_membership_recomputes_reported_overlaps():
     table = pd.read_csv(TABLES / "robustness_by_family.csv")
     members = pd.read_csv(TABLES / "joint_scenario_priority_sets.csv")
     f = pd.read_csv(REPO / "data/processed/modeling_remediation/merged_grid.csv")
-    for scenario in ("uniform_fractional_auditor_values", "thermal_support_0.25"):
+    fractional_name = "uniform_fractional_agent2_values" if f.support_version.eq("agent2-DM-01-v1-buffered-age").all() else "uniform_fractional_auditor_values"
+    for scenario in (fractional_name, "thermal_support_0.25"):
         for mode in table.comparison.unique():
             mem = members.loc[(members.scenario == scenario) & (members.comparison == mode)]
             base = f.loc[f.valid & (f.grid_id.isin(mem.grid_id) if mode.startswith("fixed") else True)]
