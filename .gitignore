@@ -5,6 +5,7 @@ env/
 
 # Downloaded raw datasets
 /data/raw/
+data/processed/remote_sensing
 
 # Python cache and build artifacts
 __pycache__/
