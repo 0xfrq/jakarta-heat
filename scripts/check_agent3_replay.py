@@ -154,8 +154,10 @@ def compare():
         "gpkg_byte_identical": {rel(p): sha256(SNAPSHOT / rel(p)) == sha256(p) for p in gis},
         "figures_byte_identical": sorted(k for k, v in fig_now.items() if first["figure_sha256"].get(k) == v),
         "figures_byte_changed": sorted(k for k, v in fig_now.items() if first["figure_sha256"].get(k) != v),
-        "boundary": ("Same frozen local candidate inputs only; not raw-to-result, not the consolidated integrated "
-                     "candidate, not a fresh environment. Container/figure bytes are informational, not scientific equivalence."),
+        "boundary": (("Consolidated canonical A1/A2 inputs and live A3 implementation; upstream frozen-input rebuild and fresh environment are verified separately in outputs/qa/rc1. Acquisition-origin lineage remains outside this replay. "
+                      if man.get("source") == "real-integrated-candidate" else
+                      "Historical local workstream candidate only; no consolidated or acquisition-origin claim. ")
+                     + "Container/figure byte identity is reported separately from scientific equivalence."),
     }
     write_json(REPORT, report)
     print(json.dumps({k: v for k, v in report.items() if k != "compared_files"}, indent=2))
