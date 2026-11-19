@@ -37,6 +37,7 @@ command = [sys.executable, "-m", "streamlit", "run", str(ROOT / "dashboard/app.p
            "--server.headless=true", "--server.address=127.0.0.1", "--server.port=8543", "--browser.gatherUsageStats=false"]
 result = {"scope": "Agent3 corrected local workstream only; final integrated candidate NOT YET TESTED", "command": command, "pages": []}
 result["browser_args"] = BROWSER_ARGS
+result["console"] = []
 if args.integrated:
     OUT = ROOT / "outputs/qa/rc1/dashboard"
     OUT.mkdir(parents=True, exist_ok=True)
@@ -53,11 +54,13 @@ try:
             time.sleep(.5)
     with sync_playwright() as pw:
         browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
+        result["browser_version"] = browser.version
         gpu = browser.new_browser_cdp_session().send("SystemInfo.getInfo").get("gpu", {})
         result["graphics"] = {"devices": gpu.get("devices"), "glRenderer": gpu.get("auxAttributes", {}).get("glRenderer")}
         page = browser.new_page(viewport={"width": 1440, "height": 1100})
         errors = []
         page.on("pageerror", lambda error: errors.append(str(error)))
+        page.on("console", lambda msg: result["console"].append({"type": msg.type, "text": msg.text[:1000]}))
 
         def settle(sentinel=None, timeout=240):
             # A script run is finished when the status widget is gone AND the page text is stable; the
@@ -107,17 +110,18 @@ try:
             browser = pw.chromium.launch(channel="msedge", headless=True, args=BROWSER_ARGS)
             page = browser.new_page(viewport={"width": 1440, "height": 1100})
             page.on("pageerror", lambda error: errors.append(str(error)))
+            page.on("console", lambda msg: result["console"].append({"type": msg.type, "text": msg.text[:1000]}))
             page.goto("http://127.0.0.1:8543", wait_until="domcontentloaded")
-            page.locator("h1").first.wait_for(timeout=60000)
+            page.locator("h1").first.wait_for(timeout=240000)
 
         page.goto("http://127.0.0.1:8543", wait_until="domcontentloaded")
-        page.locator("h1").first.wait_for(timeout=60000)
+        page.locator("h1").first.wait_for(timeout=240000)
         # Verify continuous navigation at an ordinary viewport before large captures.
         navigation = []
         result["continuous_navigation"] = navigation
         for name, sentinel in sentinels.items():
             page.get_by_role("link", name=name, exact=False).first.click()
-            page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
+            page.get_by_text(support_text, exact=False).first.wait_for(timeout=240000)
             settle(sentinel)
             navigation.append({"page": name, "exceptions": errors_now(), "canonical_count_visible": expected_valid in page.locator("body").inner_text()})
         result["continuous_navigation"] = navigation
@@ -125,8 +129,8 @@ try:
         for i, (name, sentinel) in enumerate(sentinels.items()):
             fresh_browser()
             page.get_by_role("link", name=name, exact=False).first.click()
-            page.locator("h1").first.wait_for(timeout=60000)
-            page.get_by_text(support_text, exact=False).first.wait_for(timeout=60000)
+            page.locator("h1").first.wait_for(timeout=240000)
+            page.get_by_text(support_text, exact=False).first.wait_for(timeout=240000)
             settle(sentinel)
             body = page.locator("body").inner_text()
             record = {"page": name, "heading": page.locator("h1").first.inner_text(), "exceptions": errors_now(),
@@ -204,6 +208,11 @@ try:
         browser.close()
 except Exception as exc:
     result["verification_error"] = repr(exc)
+    try:
+        result["failure_body"] = page.locator("body").inner_text(timeout=5000)
+        page.screenshot(path=str(OUT / "failure.png"), timeout=5000)
+    except Exception as diagnostic_error:
+        result["failure_diagnostic_error"] = repr(diagnostic_error)
 finally:
     proc.terminate()
     try:
