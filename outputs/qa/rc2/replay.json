@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python.exe",
+    "scripts/check_agent3_replay.py",
+    "--snapshot",
+    "outputs/qa/rc2/replay_snapshot",
+    "--report",
+    "outputs/qa/rc2/replay_verification.json"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-20T10:09:36.035366+00:00",
+  "log": "outputs/qa/rc2/replay.log"
+}

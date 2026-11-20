@@ -41,3 +41,6 @@ Desktop.ini
 
 # Original independent audit is supplied separately and preserved read-only.
 /audit/
+
+# RC2 temporary replay snapshot (regenerable; report kept in replay_verification.json)
+/outputs/qa/rc2/replay_snapshot/

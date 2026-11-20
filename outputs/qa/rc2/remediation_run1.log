@@ -1,0 +1,4 @@
+[model] M1-M4 pada 2,536 grid valid bersama; top 10% = 254 grid
+[compare] Spearman/Kendall/Jaccard/overlap/transisi/kota ditulis ke D:\jakarta-heat-rc2\outputs\remediation\tables
+[spatial] Moran global 18 baris; LISA M1, M2, M3, M4 (Queen, 999 permutasi)
+Candidate valid grids: 2536; baseline preserved

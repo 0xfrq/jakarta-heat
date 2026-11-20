@@ -1,8 +1,8 @@
 {
   "schema_version": "rc2-1",
   "branch": "integration/rc2",
-  "candidate_source_commit": "see docs/RC2_BUILD_RECORD.json",
-  "build_git_state": "see docs/RC2_BUILD_RECORD.json",
+  "candidate_source_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "build_git_state": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
   "source_refs": {
     "main": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
     "agent/person1": "4f6c6797bfdd5148d7a91ef0f002bf6467edb04e",
@@ -68,7 +68,7 @@
     "integrated_integrated_comparisons/input_lineage.json": {
       "path": "data/processed/integrated_comparisons/input_lineage.json",
       "exists": true,
-      "sha256": "a3819d0039672e56ad7183c7f9894faa7069861586f03980a0c160b43c618481"
+      "sha256": "40a4c8f405093a93b2986a0af808e94357d5f7110a741546fcfa6591ecf7ac50"
     },
     "integrated_integrated_comparisons/auditor_raster_support.csv": {
       "path": "data/processed/integrated_comparisons/auditor_raster_support.csv",
@@ -118,8 +118,26 @@
     "dashboard": "dashboard/app.py"
   },
   "verification": "outputs/qa/rc2/engineering_verification.json",
-  "replay": "outputs/remediation/qa/replay_verification.json",
-  "source_of_truth": "RC2 portable paths and Git-blob hash policy supersede RC1 machine-specific manifest paths; RC1 evidence remains immutable.",
+  "replay": "outputs/qa/rc2/replay_verification.json",
+  "source_of_truth": "RC2 portable paths and Git-blob hash policy; RC1 evidence remains immutable.",
   "scientific_status": "Provisional mixed-period candidate-park proxy; independent scientific sign-off pending",
-  "portability": "outputs/qa/rc2/portability_verification.json"
+  "portability": "outputs/qa/rc2/portability_verification.json",
+  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "source_state": "clean",
+  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+  "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
+  "build_record": "docs/RC2_BUILD_RECORD.json",
+  "hash_policy": {
+    "name": "git-blob-sha256",
+    "definition": "Receipt and documentation hashes are SHA-256 over git cat-file blob <rev>:<path> bytes; checkout line endings are irrelevant.",
+    "output_manifest_policy": "SHA-256 over exact file bytes; outputs/** and data/** are stored with -text so checkout bytes are stable."
+  },
+  "rc1_baseline": {
+    "commit": "3b8ed05be92c35bbb2b3a617688540ee856b11c8",
+    "tree": "2b312d673faac64d51559cf9612caf61847ad226",
+    "receipt": "handoff/RC1_CANDIDATE_RECEIPT.json"
+  },
+  "clean_checkout": "outputs/qa/rc2/clean_checkout_report.json",
+  "browser": "outputs/qa/rc2/dashboard/browser_check.json",
+  "browser_summary": "outputs/qa/rc2/browser_summary.json"
 }

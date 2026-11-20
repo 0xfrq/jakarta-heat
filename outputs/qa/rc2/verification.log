@@ -1,0 +1,41 @@
+2026-11-20 17:53:40.232 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:40.242 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:40.244 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:40.244 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:40.244 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:40.248 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:41.002 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:41.006 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-20 17:53:47.181 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 17:53:47.184 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+{
+  "result": "PASS",
+  "checks": {
+    "counts_master_2765": true,
+    "counts_common_2536": true,
+    "models_standard": true,
+    "models_remediation": true,
+    "eligibility": true,
+    "spatial": true,
+    "output_manifests": true,
+    "source_manifests": true,
+    "dashboard": true,
+    "documentation_and_paths": true,
+    "model_definitions_unchanged": true,
+    "build_identity_clean": true
+  },
+  "counts": {
+    "master": 2765,
+    "common": 2536,
+    "spatial_tested": 2535,
+    "eligibility": {
+      "M1": 2764,
+      "M2": 2764,
+      "M3": 2758,
+      "M4": 2536
+    }
+  },
+  "moran_m4": 0.5930249538166806,
+  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a"
+}

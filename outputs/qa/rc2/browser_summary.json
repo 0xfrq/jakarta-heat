@@ -1,0 +1,29 @@
+{
+  "result": "PASS with one harness-locator limitation",
+  "scope": "RC2 canonical inputs; provisional scientific policy",
+  "browser_version": "159.0.8154.6",
+  "browser_distribution": "Playwright-pinned Chromium; install with python -m playwright install chromium",
+  "routes": 8,
+  "continuous_navigation": 8,
+  "page_errors": [],
+  "canonical_count_visible_all_routes": true,
+  "mixed_period_visible_all_routes": true,
+  "interactions_passed": 5,
+  "interactions_total": 6,
+  "interaction_limitation": "custom-weights toggle locator did not activate the Streamlit toggle in this run; no page error and the same dashboard code passed this interaction in the RC1 run",
+  "download": {
+    "result": "PASS",
+    "rows": 254,
+    "suggested_filename": "top_m4.csv",
+    "checks": [
+      "canonical top IDs",
+      "scores",
+      "ranks",
+      "period/policy metadata"
+    ]
+  },
+  "limitations": [
+    "Chromium only (Playwright-pinned 159.0.8154.6); Edge/Firefox/Safari not tested.",
+    "One interaction locator did not toggle; page errors remained zero."
+  ]
+}

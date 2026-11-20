@@ -1,0 +1,20 @@
+Status masukan: COMPLETE - Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan.
+  [ADA] master_grid: D:\jakarta-heat-rc2\data\processed\grid_500m_jakarta.gpkg
+  [ADA] grid_master_csv: D:\jakarta-heat-rc2\data\processed\grid_master.csv
+  [ADA] person2_spatial_features: D:\jakarta-heat-rc2\data\processed\spatial_features.csv
+  [ADA] remote_sensing: D:\jakarta-heat-rc2\data\processed\remote_sensing_remediated\remote_sensing_grid.csv
+  catatan: Person 2: spatial_features.csv (2,765 baris)
+  catatan: Demographic evidence: demographic_support.csv; versions ['agent2-DM-01-v1-buffered-age']
+  catatan: Demographic evidence: demographic_features_corrected.csv; versions ['agent2-DM-01-v1-buffered-age']
+  catatan: Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])
+  catatan: Remote sensing: 1 grid punya nilai tetapi DIKELUARKAN aturan QA (LST/NDVI di luar rentang atau piksel LST valid < 50%): JKT_R037_C062
+[merge] sumber REAL  status COMPLETE  grid 2,765  valid 2,536 (91.7%)  kebijakan jarak kosong: exclude
+[model] M1-M4 pada 2,536 grid valid bersama; top 10% = 254 grid
+[compare] Spearman/Kendall/Jaccard/overlap/transisi/kota ditulis ke D:\jakarta-heat-rc2\outputs\tables
+[spatial] Moran global 18 baris; LISA M1, M2, M3, M4 (Queen, 999 permutasi)
+[sensitivity] M2: 12 skenario, Jaccard median 0.93, min 0.60; 91% grid top stabil
+[sensitivity] M3: 15 skenario, Jaccard median 0.93, min 0.66; 92% grid top stabil
+[sensitivity] M4: 24 skenario, Jaccard median 0.90, min 0.35; 80% grid top stabil
+[export] 27 berkas figur/GIS di D:\jakarta-heat-rc2\outputs\figures dan D:\jakarta-heat-rc2\outputs\gis
+{"input_status": "COMPLETE", "steps": ["merge", "priority", "compare", "spatial", "sensitivity", "export"], "source": "real", "n_valid": 2536}
+Manifest: D:\jakarta-heat-rc2\data\processed\modeling\run_manifest.json

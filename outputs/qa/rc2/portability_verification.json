@@ -1,0 +1,257 @@
+{
+  "policy": {
+    "name": "git-blob-sha256",
+    "definition": "SHA-256 over git cat-file blob <rev>:<path> bytes; checkout line endings are irrelevant",
+    "output_manifest": "exact-file SHA-256 with repository-relative POSIX paths; data/** and outputs/** are -text",
+    "rationale": "The RC1 receipt expected hashes are canonical LF blobs; three Windows disk checks failed only because core.autocrlf=true."
+  },
+  "core_autocrlf": "true",
+  "rc1_receipt": {
+    "receipt": "handoff/RC1_CANDIDATE_RECEIPT.json",
+    "revision": "3b8ed05be92c35bbb2b3a617688540ee856b11c8",
+    "policy": "git-blob-sha256",
+    "entries": [
+      {
+        "name": "tests",
+        "path": "outputs/qa/rc1/pytest.xml",
+        "sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+        "actual_sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+        "match": true
+      },
+      {
+        "name": "replay",
+        "path": "outputs/remediation/qa/replay_verification.json",
+        "sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+        "actual_sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+        "match": true
+      },
+      {
+        "name": "browser",
+        "path": "outputs/qa/rc1/browser_summary.json",
+        "sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+        "actual_sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+        "match": true
+      },
+      {
+        "name": "postbuild",
+        "path": "outputs/qa/rc1/dashboard/postbuild_verification.json",
+        "sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+        "actual_sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+        "match": true
+      },
+      {
+        "name": "verification",
+        "path": "outputs/qa/rc1/verification.json",
+        "sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+        "actual_sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+        "match": true
+      },
+      {
+        "name": "release_gate",
+        "path": "outputs/qa/rc1/release_evidence_verification.json",
+        "sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+        "actual_sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+        "match": true
+      },
+      {
+        "name": "handoff",
+        "path": "handoff/RC1_HANDOFF.md",
+        "sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83",
+        "actual_sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83",
+        "match": true
+      },
+      {
+        "name": "verification_record",
+        "path": "handoff/RC1_VERIFICATION.md",
+        "sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718",
+        "actual_sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718",
+        "match": true
+      },
+      {
+        "name": "integration_manifest",
+        "path": "docs/integration_manifest.json",
+        "sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
+        "actual_sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
+        "match": true
+      }
+    ],
+    "matched": 9,
+    "total": 9,
+    "ok": true
+  },
+  "rc2_receipt": {
+    "receipt": "handoff/RC2_CANDIDATE_RECEIPT.json",
+    "revision": "HEAD",
+    "policy": "git-blob-sha256",
+    "status": "verified_separately",
+    "report": "outputs/qa/rc2/rc2_receipt_hash_check.json"
+  },
+  "rc1_disk_byte_check": {
+    "receipt": "handoff/RC1_CANDIDATE_RECEIPT.json",
+    "entries": [
+      {
+        "name": "tests",
+        "path": "outputs/qa/rc1/pytest.xml",
+        "expected_blob_sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+        "disk_sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+        "disk_match": true,
+        "crlf_pairs": 0,
+        "lf": 0
+      },
+      {
+        "name": "replay",
+        "path": "outputs/remediation/qa/replay_verification.json",
+        "expected_blob_sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+        "disk_sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+        "disk_match": true,
+        "crlf_pairs": 112,
+        "lf": 112
+      },
+      {
+        "name": "browser",
+        "path": "outputs/qa/rc1/browser_summary.json",
+        "expected_blob_sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+        "disk_sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+        "disk_match": true,
+        "crlf_pairs": 22,
+        "lf": 22
+      },
+      {
+        "name": "postbuild",
+        "path": "outputs/qa/rc1/dashboard/postbuild_verification.json",
+        "expected_blob_sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+        "disk_sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+        "disk_match": true,
+        "crlf_pairs": 17,
+        "lf": 17
+      },
+      {
+        "name": "verification",
+        "path": "outputs/qa/rc1/verification.json",
+        "expected_blob_sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+        "disk_sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+        "disk_match": true,
+        "crlf_pairs": 123,
+        "lf": 123
+      },
+      {
+        "name": "release_gate",
+        "path": "outputs/qa/rc1/release_evidence_verification.json",
+        "expected_blob_sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+        "disk_sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+        "disk_match": true,
+        "crlf_pairs": 26,
+        "lf": 26
+      },
+      {
+        "name": "handoff",
+        "path": "handoff/RC1_HANDOFF.md",
+        "expected_blob_sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83",
+        "disk_sha256": "1ecc600688a113c56e5bfe6bd56ef67a5ebaa2fd0fe19dac999e735d99530ee6",
+        "disk_match": false,
+        "crlf_pairs": 109,
+        "lf": 109
+      },
+      {
+        "name": "verification_record",
+        "path": "handoff/RC1_VERIFICATION.md",
+        "expected_blob_sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718",
+        "disk_sha256": "c1cb9859661f06b329a03b1ddb55ad3b12157cbab2691fb79e620620e66d1033",
+        "disk_match": false,
+        "crlf_pairs": 149,
+        "lf": 149
+      },
+      {
+        "name": "integration_manifest",
+        "path": "docs/integration_manifest.json",
+        "expected_blob_sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
+        "disk_sha256": "89a820d3fe1f9bf20bd349b9ad07c250682540e7e551806bed2745bfb7da900d",
+        "disk_match": false,
+        "crlf_pairs": 143,
+        "lf": 143
+      }
+    ],
+    "disk_matches": 6,
+    "total": 9,
+    "note": "Disk-byte mismatches on Windows are line-ending conversion, not changed Git blobs."
+  },
+  "output_manifests": {
+    "data/processed/modeling/output_sha256_manifest.csv": {
+      "manifest": "data/processed/modeling/output_sha256_manifest.csv",
+      "entries": 69,
+      "absolute_paths": [],
+      "missing": [],
+      "hash_mismatches": [],
+      "ok": true
+    },
+    "data/processed/modeling_remediation/output_sha256_manifest.csv": {
+      "manifest": "data/processed/modeling_remediation/output_sha256_manifest.csv",
+      "entries": 80,
+      "absolute_paths": [],
+      "missing": [],
+      "hash_mismatches": [],
+      "ok": true
+    }
+  },
+  "source_manifests": {
+    "manifests": {
+      "outputs/qa/remediation_agent2/demographic_source_manifest.json": {
+        "root": "D:/jakarta-heat-rc2",
+        "source_root": "D:/jakarta-heat-integration",
+        "checked": 3,
+        "existing": 3,
+        "matched": 3,
+        "missing": [],
+        "mismatches": [],
+        "require_all": true,
+        "ok": true
+      },
+      "outputs/qa/remediation_agent2/original_masks/demographic_source_manifest.json": {
+        "root": "D:/jakarta-heat-rc2",
+        "source_root": "D:/jakarta-heat-integration",
+        "checked": 3,
+        "existing": 3,
+        "matched": 3,
+        "missing": [],
+        "mismatches": [],
+        "require_all": true,
+        "ok": true
+      }
+    },
+    "source_root": "D:\\jakarta-heat-integration",
+    "ok": true
+  },
+  "path_scan": {
+    "files": {
+      "docs/integration_manifest.json": {
+        "exists": true,
+        "absolute_path_markers": [],
+        "ok": true
+      },
+      "docs/RC2_BUILD_RECORD.json": {
+        "exists": true,
+        "absolute_path_markers": [],
+        "ok": true
+      },
+      "data/processed/modeling/run_manifest.json": {
+        "exists": true,
+        "absolute_path_markers": [],
+        "ok": true
+      },
+      "data/processed/modeling_remediation/run_manifest.json": {
+        "exists": true,
+        "absolute_path_markers": [],
+        "ok": true
+      }
+    },
+    "ok": true
+  },
+  "checks": {
+    "rc1_receipt_9_of_9_git_blobs": true,
+    "standard_output_manifest_69": true,
+    "remediation_output_manifest_80": true,
+    "source_manifests_portable": true,
+    "current_manifests_no_absolute_paths": true
+  },
+  "result": "PASS"
+}

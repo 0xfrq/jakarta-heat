@@ -1,0 +1,399 @@
+{
+  "result": "PASS",
+  "schema_version": "rc2-engineering-verification-1",
+  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+  "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
+  "rc1_baseline": {
+    "commit": "3b8ed05be92c35bbb2b3a617688540ee856b11c8",
+    "tree": "2b312d673faac64d51559cf9612caf61847ad226"
+  },
+  "counts": {
+    "master": 2765,
+    "common": 2536,
+    "spatial_tested": 2535,
+    "eligibility": {
+      "M1": 2764,
+      "M2": 2764,
+      "M3": 2758,
+      "M4": 2536
+    }
+  },
+  "score_verification": {
+    "standard": {
+      "dataset": "standard",
+      "n_rows": 2765,
+      "n_valid": 2536,
+      "models": {
+        "M1": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M2": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M3": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M4": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        }
+      },
+      "checks": {
+        "all_models": true
+      }
+    },
+    "remediation": {
+      "dataset": "remediation",
+      "n_rows": 2765,
+      "n_valid": 2536,
+      "models": {
+        "M1": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M2": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M3": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        },
+        "M4": {
+          "score_max_abs_diff": 0.0,
+          "rank_mismatches": 0,
+          "top_budget": 254,
+          "top_set_exact": true,
+          "ok": true
+        }
+      },
+      "checks": {
+        "all_models": true
+      }
+    }
+  },
+  "spatial": {
+    "joined_common": 2536,
+    "queen_islands": [
+      "JKT_R013_C019"
+    ],
+    "tested_observations": 2535,
+    "directed_edges": 18368,
+    "mean_neighbors": 7.245759368836292,
+    "manual_moran_m4": 0.5930249538166806,
+    "saved_moran_m4": 0.593024953816681,
+    "moran_abs_diff": 3.3306690738754696e-16,
+    "lisa_rows": 2535,
+    "lisa_I_max_abs_diff": 0.0,
+    "lisa_p_max_abs_diff": 0.0,
+    "lisa_sensitivity_counts": {
+      "directed/999/klaster_p05": 1042,
+      "directed/999/klaster_fdr": 663,
+      "directed/999/klaster_by": 0,
+      "two-sided/999/klaster_p05": 810,
+      "two-sided/999/klaster_fdr": 496,
+      "two-sided/999/klaster_by": 0,
+      "directed/9999/klaster_p05": 1081,
+      "directed/9999/klaster_fdr": 687,
+      "directed/9999/klaster_by": 284,
+      "two-sided/9999/klaster_p05": 859,
+      "two-sided/9999/klaster_fdr": 493,
+      "two-sided/9999/klaster_by": 234
+    },
+    "lisa_sensitivity_expected": {
+      "directed/999/klaster_fdr": 663,
+      "two-sided/999/klaster_fdr": 496,
+      "directed/9999/klaster_fdr": 687,
+      "two-sided/9999/klaster_fdr": 493,
+      "directed/999/klaster_by": 0,
+      "directed/9999/klaster_by": 284,
+      "two-sided/9999/klaster_by": 234
+    },
+    "checks": {
+      "one_island": true,
+      "tested_2535": true,
+      "edges_18368": true,
+      "moran_exact": true,
+      "lisa_exact": true,
+      "sensitivity_counts": true
+    },
+    "ok": true
+  },
+  "output_manifests": {
+    "standard": {
+      "manifest": "data/processed/modeling/output_sha256_manifest.csv",
+      "entries": 69,
+      "absolute_paths": [],
+      "missing": [],
+      "hash_mismatches": [],
+      "baseline_entries": 69,
+      "baseline_changed": [
+        "data/processed/modeling/merged_meta.json",
+        "data/processed/modeling/priority_meta.json",
+        "outputs/figures/fig_coverage_top10.svg",
+        "outputs/figures/fig_jaccard.svg",
+        "outputs/figures/fig_kota_top10.svg",
+        "outputs/figures/fig_map_lisa_m4.svg",
+        "outputs/figures/fig_map_rank_shift_m1_m4.svg",
+        "outputs/figures/fig_map_scores_m1_m4.svg",
+        "outputs/figures/fig_map_stability_m4.svg",
+        "outputs/figures/fig_map_top10_m1_m4.svg",
+        "outputs/figures/fig_rank_m1_vs_m4.svg",
+        "outputs/figures/fig_score_distribution.svg",
+        "outputs/figures/fig_sensitivity_m4.svg",
+        "outputs/figures/fig_spearman.svg",
+        "outputs/figures/fig_transition_m1_m4.svg",
+        "outputs/gis/priority_models.gpkg"
+      ],
+      "baseline_missing": [],
+      "ok": true
+    },
+    "remediation": {
+      "manifest": "data/processed/modeling_remediation/output_sha256_manifest.csv",
+      "entries": 80,
+      "absolute_paths": [],
+      "missing": [],
+      "hash_mismatches": [],
+      "baseline_entries": 80,
+      "baseline_changed": [
+        "data/processed/modeling_remediation/merged_meta.json",
+        "data/processed/modeling_remediation/priority_meta.json",
+        "outputs/remediation/gis/priority_models.gpkg"
+      ],
+      "baseline_missing": [],
+      "ok": true
+    }
+  },
+  "source_manifests": {
+    "manifests": {
+      "outputs/qa/remediation_agent2/demographic_source_manifest.json": {
+        "root": "D:/jakarta-heat-rc2",
+        "source_root": "D:/jakarta-heat-integration",
+        "checked": 3,
+        "existing": 3,
+        "matched": 3,
+        "missing": [],
+        "mismatches": [],
+        "require_all": true,
+        "ok": true
+      },
+      "outputs/qa/remediation_agent2/original_masks/demographic_source_manifest.json": {
+        "root": "D:/jakarta-heat-rc2",
+        "source_root": "D:/jakarta-heat-integration",
+        "checked": 3,
+        "existing": 3,
+        "matched": 3,
+        "missing": [],
+        "mismatches": [],
+        "require_all": true,
+        "ok": true
+      }
+    },
+    "source_root": "D:\\jakarta-heat-integration",
+    "ok": true
+  },
+  "dashboard": {
+    "feature_rows": 2765,
+    "status_can_model": true,
+    "score_checks": {
+      "m1": {
+        "score_max_abs_diff": 0.0,
+        "rank_mismatches": 0
+      },
+      "m2": {
+        "score_max_abs_diff": 0.0,
+        "rank_mismatches": 0
+      },
+      "m3": {
+        "score_max_abs_diff": 0.0,
+        "rank_mismatches": 0
+      },
+      "m4": {
+        "score_max_abs_diff": 0.0,
+        "rank_mismatches": 0
+      }
+    },
+    "official_outputs_current": true,
+    "official_outputs_stale": [],
+    "ok": true
+  },
+  "documentation_and_paths": {
+    "integration_absolute_paths": [],
+    "run_manifests": {
+      "data/processed/modeling/run_manifest.json": {
+        "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "source_state": "clean",
+        "source_dirty_paths": [],
+        "bad_input_paths": [],
+        "bad_output_paths": [],
+        "build_command": [
+          "python.exe",
+          "scripts/run_agent3_pipeline.py"
+        ]
+      },
+      "data/processed/modeling_remediation/run_manifest.json": {
+        "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "source_state": "clean",
+        "source_dirty_paths": [],
+        "bad_input_paths": [],
+        "bad_output_paths": [],
+        "build_command": [
+          "python.exe",
+          "scripts/run_agent3_remediation.py",
+          "--integrated",
+          "--audit",
+          "<external>/audit"
+        ]
+      }
+    },
+    "spatial_spec_2536": true,
+    "spatial_spec_2535": true,
+    "spatial_spec_stale_2526": false,
+    "external_scope_2536": true,
+    "external_scope_stale_2526": false,
+    "remote_sensing_historical_label": true,
+    "remote_sensing_current_binding": "docs/RC2_BUILD_RECORD.json",
+    "ok": true
+  },
+  "model_definitions": {
+    "files": {
+      "jhim/models.py": {
+        "rc1_sha256": "f9ef8bfae499ec6c9525eab17d41f20c8e43cfd2a2f4cf4ccd8761fd4a250672",
+        "head_sha256": "f9ef8bfae499ec6c9525eab17d41f20c8e43cfd2a2f4cf4ccd8761fd4a250672",
+        "unchanged": true
+      },
+      "jhim/config.py": {
+        "rc1_sha256": "69e9ed1c8476cd901b6e1a907fbd100bbfd8fcae04620dc5178d893581e042a1",
+        "head_sha256": "69e9ed1c8476cd901b6e1a907fbd100bbfd8fcae04620dc5178d893581e042a1",
+        "unchanged": true
+      },
+      "docs/model_specification.json": {
+        "rc1_sha256": "113b43e2709a370b3e561d2fc9f1e08755b9836a42001b4e2626e3545638e90f",
+        "head_sha256": "113b43e2709a370b3e561d2fc9f1e08755b9836a42001b4e2626e3545638e90f",
+        "unchanged": true
+      }
+    },
+    "status": "PROVISIONAL_UNSIGNED",
+    "approved_by": null,
+    "ok": true
+  },
+  "build_identity": {
+    "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+    "source_state": "clean",
+    "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+    "source_dirty_paths": [],
+    "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+    "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
+    "source_is_ancestor": true,
+    "implementation_sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
+    "current_implementation_sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
+    "build_command": [
+      "python.exe",
+      "scripts/run_agent3_pipeline.py"
+    ],
+    "ok": true
+  },
+  "checks": {
+    "counts_master_2765": true,
+    "counts_common_2536": true,
+    "models_standard": true,
+    "models_remediation": true,
+    "eligibility": true,
+    "spatial": true,
+    "output_manifests": true,
+    "source_manifests": true,
+    "dashboard": true,
+    "documentation_and_paths": true,
+    "model_definitions_unchanged": true,
+    "build_identity_clean": true,
+    "clean_checkout_suite": true
+  },
+  "limitations": [
+    "Engineering verification only; scientific construct, access, novelty and policy decisions remain unsigned.",
+    "Raw WorldPop/OSM acquisition lineage requires the separate frozen-input bundle and external audit evidence.",
+    "The output manifests bind exact-file bytes; GPKG container bytes may differ across serializers even when tables and geometry are equal."
+  ],
+  "clean_checkout": {
+    "result": "PASS",
+    "clone": "C:\\Users\\VICTUS\\AppData\\Local\\Temp\\opencode\\rc2-clean-final",
+    "revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+    "data_raw_present": false,
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q",
+      "-ra",
+      "-p",
+      "no:cacheprovider",
+      "tests",
+      "--junitxml=outputs/qa/rc2/pytest_clean_checkout.xml"
+    ],
+    "tests": 236,
+    "subtests": 7,
+    "outcomes": 243,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 659.523,
+    "timestamp": "2026-11-20T17:16:03.272852+07:00",
+    "warning": "deliberate CRS-free fixture in tests/agent3/test_data_contract.py::test_grid_without_crs_rejected",
+    "note": "Genuine clone of integration/rc2 at the artifact commit; data/raw and dist are absent."
+  },
+  "browser": {
+    "result": "PASS with one harness-locator limitation",
+    "scope": "RC2 canonical inputs; provisional scientific policy",
+    "browser_version": "159.0.8154.6",
+    "browser_distribution": "Playwright-pinned Chromium; install with python -m playwright install chromium",
+    "routes": 8,
+    "continuous_navigation": 8,
+    "page_errors": [],
+    "canonical_count_visible_all_routes": true,
+    "mixed_period_visible_all_routes": true,
+    "interactions_passed": 5,
+    "interactions_total": 6,
+    "interaction_limitation": "custom-weights toggle locator did not activate the Streamlit toggle in this run; no page error and the same dashboard code passed this interaction in the RC1 run",
+    "download": {
+      "result": "PASS",
+      "rows": 254,
+      "suggested_filename": "top_m4.csv",
+      "checks": [
+        "canonical top IDs",
+        "scores",
+        "ranks",
+        "period/policy metadata"
+      ]
+    },
+    "limitations": [
+      "Chromium only (Playwright-pinned 159.0.8154.6); Edge/Firefox/Safari not tested.",
+      "One interaction locator did not toggle; page errors remained zero."
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python.exe",
+    "scripts/run_agent3_remediation.py",
+    "--integrated",
+    "--audit",
+    "D:\\jakarta-heat-integration\\audit"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-20T10:05:44.396221+00:00",
+  "log": "outputs/qa/rc2/remediation_run1.log"
+}

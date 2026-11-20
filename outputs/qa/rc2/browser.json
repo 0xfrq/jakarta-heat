@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python.exe",
+    "scripts/check_agent3_dashboard.py",
+    "--integrated",
+    "--output-dir",
+    "outputs/qa/rc2/dashboard",
+    "--scope",
+    "RC2 canonical inputs; provisional scientific policy"
+  ],
+  "returncode": 1,
+  "finished_utc": "2026-11-20T10:41:17.932144+00:00",
+  "log": "outputs/qa/rc2/browser.log"
+}

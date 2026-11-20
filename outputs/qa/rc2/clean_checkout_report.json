@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "clone": "C:\\Users\\VICTUS\\AppData\\Local\\Temp\\opencode\\rc2-clean-final",
+  "revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+  "data_raw_present": false,
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "-q",
+    "-ra",
+    "-p",
+    "no:cacheprovider",
+    "tests",
+    "--junitxml=outputs/qa/rc2/pytest_clean_checkout.xml"
+  ],
+  "tests": 236,
+  "subtests": 7,
+  "outcomes": 243,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 659.523,
+  "timestamp": "2026-11-20T17:16:03.272852+07:00",
+  "warning": "deliberate CRS-free fixture in tests/agent3/test_data_contract.py::test_grid_without_crs_rejected",
+  "note": "Genuine clone of integration/rc2 at the artifact commit; data/raw and dist are absent."
+}
