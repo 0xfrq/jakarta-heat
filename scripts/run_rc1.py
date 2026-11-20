@@ -20,14 +20,15 @@ def main():
     for k in list(env):
         if k.startswith("JHIM_"):
             del env[k]
-    def run(name, *cmd):
+    def run(name, *cmd, receipt=None):
         print(f"RC1 {name}", flush=True)
         log = OUT / f"{name}.log"
         with log.open("w", encoding="utf-8") as f:
             result = subprocess.run([sys.executable, *cmd], cwd=ROOT, env=env, stdout=f, stderr=subprocess.STDOUT)
-        receipt = {"command": [sys.executable, *cmd], "returncode": result.returncode,
-                   "finished_utc": datetime.now(timezone.utc).isoformat(), "log": str(log.relative_to(ROOT))}
-        (OUT / f"{name}.json").write_text(json.dumps(receipt, indent=2), encoding="utf-8")
+        record = {"command": [sys.executable, *cmd], "returncode": result.returncode,
+                  "finished_utc": datetime.now(timezone.utc).isoformat(), "log": str(log.relative_to(ROOT))}
+        receipt_path = OUT / (receipt or f"{name}.json")
+        receipt_path.write_text(json.dumps(record, indent=2), encoding="utf-8")
         if result.returncode:
             print(log.read_text(encoding="utf-8")[-10000:], flush=True)
             raise SystemExit(result.returncode)
@@ -64,7 +65,8 @@ def main():
     if args.stage in ("browser", "all"):
         run("browser", "scripts/check_agent3_dashboard.py", "--integrated")
     if args.stage in ("verify", "all"):
-        run("verification", "scripts/verify_rc1.py")
+        # The verifier owns verification.json (its PASS report); keep the runner receipt separate.
+        run("verification", "scripts/verify_rc1.py", receipt="verification_command.json")
 
 if __name__ == "__main__":
     main()
