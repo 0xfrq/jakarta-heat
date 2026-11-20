@@ -1,11 +1,11 @@
 {
   "project": "Jakarta Heat RC2 engineering",
   "branch": "integration/rc2",
-  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
-  "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
-  "evidence_revision": "c3dfead2220c8c163c7863ea6c0b6a9ebebe709a",
-  "created_utc": "2026-11-20T10:59:13Z",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+  "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
+  "evidence_revision": "a817e129f457fc40d8dbca014ea5d42f11c18842",
+  "created_utc": "2026-11-20T11:48:32Z",
   "engineering_status": "PASS for engineering portability and numerical reproduction; scientific HOLD",
   "hash_policy": {
     "name": "git-blob-sha256",
@@ -20,7 +20,7 @@
     "report": {
       "name": "tests",
       "path": "outputs/qa/rc2/pytest_clean_checkout.xml",
-      "sha256": "403fe3ae7dd0971cf7a19993d3cf5bbf6df93e52272f15f1354af22394bff3dc"
+      "sha256": "600bc19b791914ed35e867f12836e4a6dc4ed6b6d3412eeb5bf4f7baefac0560"
     }
   },
   "replay": {
@@ -30,7 +30,7 @@
     "report": {
       "name": "replay",
       "path": "outputs/qa/rc2/replay_verification.json",
-      "sha256": "ea737e652143d78349745a096052560af6f853a9e1783d84340b96369a3f5d26"
+      "sha256": "8ec894828c3565ef8dcddf900f10a982414f8d137cde60a2112211b059d28de7"
     }
   },
   "independent_verification": {
@@ -42,7 +42,7 @@
     "report": {
       "name": "independent_verification",
       "path": "outputs/qa/rc2/engineering_verification.json",
-      "sha256": "b255b8dd061382ee9007e2b6ff43ab05b15ce3e40677a54f53c34ba6f92ad269"
+      "sha256": "a75f6a1f4170b4414a1186a014a43d0ee7155ec7aa216bcef4469079d89e6ef2"
     }
   },
   "release_gate": {
@@ -50,79 +50,79 @@
     "report": {
       "name": "release_gate",
       "path": "outputs/qa/rc2/portability_verification.json",
-      "sha256": "9eb4a8a8e391f7048a4d6f3ed2a7df9002e94d5cac15a26718d6eb32a6dd485a"
+      "sha256": "cd18aa850b73252f5fb3c40818dec755737fcac6fbf1b45940708a1bdf6461bb"
     }
   },
   "handoff": {
     "name": "handoff",
     "path": "handoff/RC2_ENGINEERING_HANDOFF.md",
-    "sha256": "d0d36d581644a20fb717ecd4f328a6b09f1c4dbe619822e8617f7fbc9b0fdbe8"
+    "sha256": "0bea1e437e1aab693974aaa1a252e51439dcb9cf69488072474f58c507a526f5"
   },
   "reproduce": {
     "name": "reproduce",
     "path": "docs/RC2_REPRODUCE.md",
-    "sha256": "56ad215c5c013358378e40f6169a1788313e2c64cf1ae43490ade9c88cbf14fd"
+    "sha256": "e6b70e5860e0731f5aa6d9e6e49380adc8b231e4e4d6f2502fb3e44fea5e76f7"
   },
   "open_issues": {
     "name": "open_issues",
     "path": "handoff/RC2_ENGINEERING_OPEN_ISSUES.md",
-    "sha256": "d3a39a23f9ef41c14148190b9425fe003ec0f89df5672b5171c7b79b87f520c4"
+    "sha256": "b25368682659b67914559bc053a4df55189a7b2b91a6cfc207942c2815bed36e"
   },
   "integration_manifest": {
     "name": "integration_manifest",
     "path": "docs/integration_manifest.json",
-    "sha256": "0f211824d8e41a0700b81c0fd045a028af7f27ad8381e6701f3469ba84fa8837"
+    "sha256": "75a0326631958e01055cc71972767c10bb2e2f4a205c7ed69ebdfc758c32fc31"
   },
   "build_record": {
     "name": "build_record",
     "path": "docs/RC2_BUILD_RECORD.json",
-    "sha256": "8f15d9d83b3df5d431a8088268b2326e7a259782eb6502bf76939f4f088e352b"
+    "sha256": "ccbb1a62e08c7045b11641db31d2b99d88a82b3fb051f7c513bd187b27eaa642"
   },
   "entries": [
     {
       "name": "tests",
       "path": "outputs/qa/rc2/pytest_clean_checkout.xml",
-      "sha256": "403fe3ae7dd0971cf7a19993d3cf5bbf6df93e52272f15f1354af22394bff3dc"
+      "sha256": "600bc19b791914ed35e867f12836e4a6dc4ed6b6d3412eeb5bf4f7baefac0560"
     },
     {
       "name": "replay",
       "path": "outputs/qa/rc2/replay_verification.json",
-      "sha256": "ea737e652143d78349745a096052560af6f853a9e1783d84340b96369a3f5d26"
+      "sha256": "8ec894828c3565ef8dcddf900f10a982414f8d137cde60a2112211b059d28de7"
     },
     {
       "name": "independent_verification",
       "path": "outputs/qa/rc2/engineering_verification.json",
-      "sha256": "b255b8dd061382ee9007e2b6ff43ab05b15ce3e40677a54f53c34ba6f92ad269"
+      "sha256": "a75f6a1f4170b4414a1186a014a43d0ee7155ec7aa216bcef4469079d89e6ef2"
     },
     {
       "name": "release_gate",
       "path": "outputs/qa/rc2/portability_verification.json",
-      "sha256": "9eb4a8a8e391f7048a4d6f3ed2a7df9002e94d5cac15a26718d6eb32a6dd485a"
+      "sha256": "cd18aa850b73252f5fb3c40818dec755737fcac6fbf1b45940708a1bdf6461bb"
     },
     {
       "name": "handoff",
       "path": "handoff/RC2_ENGINEERING_HANDOFF.md",
-      "sha256": "d0d36d581644a20fb717ecd4f328a6b09f1c4dbe619822e8617f7fbc9b0fdbe8"
+      "sha256": "0bea1e437e1aab693974aaa1a252e51439dcb9cf69488072474f58c507a526f5"
     },
     {
       "name": "reproduce",
       "path": "docs/RC2_REPRODUCE.md",
-      "sha256": "56ad215c5c013358378e40f6169a1788313e2c64cf1ae43490ade9c88cbf14fd"
+      "sha256": "e6b70e5860e0731f5aa6d9e6e49380adc8b231e4e4d6f2502fb3e44fea5e76f7"
     },
     {
       "name": "open_issues",
       "path": "handoff/RC2_ENGINEERING_OPEN_ISSUES.md",
-      "sha256": "d3a39a23f9ef41c14148190b9425fe003ec0f89df5672b5171c7b79b87f520c4"
+      "sha256": "b25368682659b67914559bc053a4df55189a7b2b91a6cfc207942c2815bed36e"
     },
     {
       "name": "integration_manifest",
       "path": "docs/integration_manifest.json",
-      "sha256": "0f211824d8e41a0700b81c0fd045a028af7f27ad8381e6701f3469ba84fa8837"
+      "sha256": "75a0326631958e01055cc71972767c10bb2e2f4a205c7ed69ebdfc758c32fc31"
     },
     {
       "name": "build_record",
       "path": "docs/RC2_BUILD_RECORD.json",
-      "sha256": "8f15d9d83b3df5d431a8088268b2326e7a259782eb6502bf76939f4f088e352b"
+      "sha256": "ccbb1a62e08c7045b11641db31d2b99d88a82b3fb051f7c513bd187b27eaa642"
     }
   ],
   "notes": [
