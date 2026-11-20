@@ -75,7 +75,7 @@
   "global_alternative": "greater",
   "multiple_testing_family": "each preselected map separately; non-island eligible grids",
   "source": "real",
-  "built_at": "2026-11-20T00:21:13Z",
+  "built_at": "2026-11-20T10:06:18Z",
   "n_grid": 2765,
   "n_valid": 2536,
   "n_top": 254,
