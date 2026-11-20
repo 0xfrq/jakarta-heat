@@ -96,7 +96,8 @@
         "disk_sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
         "disk_match": true,
         "crlf_pairs": 0,
-        "lf": 0
+        "lf": 0,
+        "superseded_in_rc2": false
       },
       {
         "name": "replay",
@@ -105,7 +106,8 @@
         "disk_sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
         "disk_match": true,
         "crlf_pairs": 112,
-        "lf": 112
+        "lf": 112,
+        "superseded_in_rc2": false
       },
       {
         "name": "browser",
@@ -114,7 +116,8 @@
         "disk_sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
         "disk_match": true,
         "crlf_pairs": 22,
-        "lf": 22
+        "lf": 22,
+        "superseded_in_rc2": false
       },
       {
         "name": "postbuild",
@@ -123,7 +126,8 @@
         "disk_sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
         "disk_match": true,
         "crlf_pairs": 17,
-        "lf": 17
+        "lf": 17,
+        "superseded_in_rc2": false
       },
       {
         "name": "verification",
@@ -132,7 +136,8 @@
         "disk_sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
         "disk_match": true,
         "crlf_pairs": 123,
-        "lf": 123
+        "lf": 123,
+        "superseded_in_rc2": false
       },
       {
         "name": "release_gate",
@@ -141,7 +146,8 @@
         "disk_sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
         "disk_match": true,
         "crlf_pairs": 26,
-        "lf": 26
+        "lf": 26,
+        "superseded_in_rc2": false
       },
       {
         "name": "handoff",
@@ -150,7 +156,8 @@
         "disk_sha256": "1ecc600688a113c56e5bfe6bd56ef67a5ebaa2fd0fe19dac999e735d99530ee6",
         "disk_match": false,
         "crlf_pairs": 109,
-        "lf": 109
+        "lf": 109,
+        "superseded_in_rc2": false
       },
       {
         "name": "verification_record",
@@ -159,7 +166,8 @@
         "disk_sha256": "c1cb9859661f06b329a03b1ddb55ad3b12157cbab2691fb79e620620e66d1033",
         "disk_match": false,
         "crlf_pairs": 149,
-        "lf": 149
+        "lf": 149,
+        "superseded_in_rc2": false
       },
       {
         "name": "integration_manifest",
@@ -168,12 +176,13 @@
         "disk_sha256": "166f10548f94e788c0b38e5110713c1092d09eacba555dbfcaa31045b63fa858",
         "disk_match": false,
         "crlf_pairs": 143,
-        "lf": 143
+        "lf": 143,
+        "superseded_in_rc2": true
       }
     ],
     "disk_matches": 6,
     "total": 9,
-    "note": "Disk-byte mismatches on Windows are line-ending conversion, not changed Git blobs."
+    "note": "handoff/RC1_HANDOFF.md and handoff/RC1_VERIFICATION.md are unchanged RC1 evidence; their disk mismatch is CRLF conversion of the same LF blob. docs/integration_manifest.json is intentionally superseded by the RC2 live manifest; its RC1 blob remains bound by the archival receipt at 3b8ed05."
   },
   "output_manifests": {
     "data/processed/modeling/output_sha256_manifest.csv": {
