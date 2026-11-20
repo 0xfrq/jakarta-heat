@@ -1,6 +1,6 @@
 {
   "source": "real",
-  "built_at": "2026-11-20T10:09:46Z",
+  "built_at": "2026-11-20T11:12:52Z",
   "n_grid": 2765,
   "n_valid": 2536,
   "valid_share": 0.9171790235081374,
@@ -27,19 +27,19 @@
     "demo": false,
     "files": {
       "master_grid": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\grid_500m_jakarta.gpkg",
+        "path": "data/processed/grid_500m_jakarta.gpkg",
         "exists": true
       },
       "grid_master_csv": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\grid_master.csv",
+        "path": "data/processed/grid_master.csv",
         "exists": true
       },
       "person2_spatial_features": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\spatial_features.csv",
+        "path": "data/processed/spatial_features.csv",
         "exists": true
       },
       "remote_sensing": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+        "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.csv",
         "exists": true
       }
     },

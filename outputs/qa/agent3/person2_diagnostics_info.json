@@ -4,19 +4,19 @@
     "demo": false,
     "files": {
       "master_grid": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\grid_500m_jakarta.gpkg",
+        "path": "data/processed/grid_500m_jakarta.gpkg",
         "exists": true
       },
       "grid_master_csv": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\grid_master.csv",
+        "path": "data/processed/grid_master.csv",
         "exists": true
       },
       "person2_spatial_features": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\spatial_features.csv",
+        "path": "data/processed/spatial_features.csv",
         "exists": true
       },
       "remote_sensing": {
-        "path": "D:\\jakarta-heat-rc2\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+        "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.csv",
         "exists": true
       }
     },
@@ -123,7 +123,7 @@
   "lisa_park_distance_islands": [
     "JKT_R013_C019"
   ],
-  "built_at": "2026-11-20T10:12:51Z",
+  "built_at": "2026-11-20T11:16:08Z",
   "source": "real",
   "catatan": "Deskriptif data Person 2 (WorldPop, OSM, jarak jaringan model). Bukan skor prioritas. park_distance_m kosong = rute tidak dihitung; dikeluarkan dari statistik jarak."
 }

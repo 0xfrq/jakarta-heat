@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-20T10:09:12Z",
+  "built_at": "2026-11-20T11:12:14Z",
   "demo": false,
   "input_status": "COMPLETE",
   "input_status_text": "Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan.",
@@ -196,7 +196,7 @@
     "multiple_testing_family": "each preselected map separately; non-island eligible grids"
   },
   "implementation": {
-    "sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
+    "sha256": "1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a",
     "files": {
       "dashboard/app.py": "d1ed1c0422e6720f808cdb7f3cc49ea26c9a480dee90feba7b13c0ede9378cca",
       "dashboard/app_4b_prototype.py": "35b51b3fa8a0d333161cb3b4b471e1e0411354c328eadc0baae37d337223e705",
@@ -218,7 +218,7 @@
       "jhim/__init__.py": "17f0d4b00ca40651742aa6043be779aa1f1ddd27fd013d794b5ab79680a49bae",
       "jhim/compare.py": "4c570284b3d9f645d4f9aff6935f06b70f5d1ccc603f115287ff75417a43fdfc",
       "jhim/config.py": "69e9ed1c8476cd901b6e1a907fbd100bbfd8fcae04620dc5178d893581e042a1",
-      "jhim/data.py": "2dc0d6ae03cef624f57610028a3d733fd6dbee24e943e56a42681c79f5f91a2a",
+      "jhim/data.py": "a586928fa6851173a926174e6afd82d99aef9ce370d3778c0d80480b6762e229",
       "jhim/dummy.py": "a9b27ae1a9c7bb289a499d8754216aa38c71a3a332f615bb3468ad53ccaacf97",
       "jhim/figures.py": "29a0dfc9f03b445f2f54f858c97b931cf70f77382bbf56e71cdcb0467751074c",
       "jhim/io.py": "a17dd6ecb07e0da51b38d7a8e75ad3d85710367f6015fc678c7e212f93610d0b",
@@ -292,8 +292,8 @@
     "data/processed/modeling_remediation/lisa_m3.csv": "487216d5551882ac95393df18b77b8e6aa72f4545a7a0132a96d330033451796",
     "data/processed/modeling_remediation/lisa_m4.csv": "2141687383611f34010771caae1506aea518b39a246330213ec92176c46cfc83",
     "data/processed/modeling_remediation/merged_grid.csv": "82372cb34465372f6f15674573cc456b7ffb92052de5fd93ab672039c207caf5",
-    "data/processed/modeling_remediation/merged_meta.json": "6d49d0606844eb305de0de7ffe45eef6945a245223d504cbab401aa76785cd04",
-    "data/processed/modeling_remediation/priority_meta.json": "887999bc665ae64084dfd4524beb5ed95af31a50c8c17a21fea18442f0e55487",
+    "data/processed/modeling_remediation/merged_meta.json": "d4e0acb7ba57423957e81b550c3bb55d2a18ef48d3b7812f52a8b2a61cf0be24",
+    "data/processed/modeling_remediation/priority_meta.json": "98d941e80ecf2cddfb1d398e0ead425e9aeac56d44a3dd3caf2af377e10cdb75",
     "data/processed/modeling_remediation/priority_models.csv": "67826aac102ae09e1ca03e1c77ed23458050cc1617498b6a1c0bb170e28e04db",
     "data/processed/modeling_remediation/rank_shift_m1_m4.csv": "fc377502bc8c7bdc7ce07f89329ba784a895e397f88516c89f8a172f6cc79a3b",
     "outputs/remediation/tables/ablation_comparison.csv": "cd93054fbb1c4f57e182ae757426b9c9f2bea190f8a0ce717a5f7af8527f15c8",
@@ -364,7 +364,7 @@
     "outputs/remediation/figures/model_specific_vs_common.svg": "1a1097f4b9a19d2bd95078258b2fa72ef80589097fa624cc5990e337d66c2315",
     "outputs/remediation/figures/scenario_family_stability.png": "5c00786174032ea375aa120c207cc62879160af736a41573d03fee9f672369e7",
     "outputs/remediation/figures/scenario_family_stability.svg": "10c75979cee50e9330357cacac2e656d23d71fd5130fdb3d6be5bd8d2ff88e9c",
-    "outputs/remediation/gis/priority_models.gpkg": "5478f9d2a168130570d3188bf4fefadbfd615d76820799475a8042437e6463ca",
+    "outputs/remediation/gis/priority_models.gpkg": "8f423e09d4cc5c98bfeb8b2c2171faf189075e90020ebf570de8afc4e869631d",
     "outputs/remediation/paper/figure_manifest.csv": "7a028318cfc00a8ed553fa00d22b0f61f1df962865ccfbedb1804a134e4aec01"
   },
   "build_command": [
@@ -374,8 +374,8 @@
     "--audit",
     "<external>/audit"
   ],
-  "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "git_commit": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
   "source_state": "clean",
   "source_dirty_paths": [],
   "python": "3.12.10",
