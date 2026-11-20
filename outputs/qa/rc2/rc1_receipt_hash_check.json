@@ -1,0 +1,84 @@
+{
+  "policy": "git-blob-sha256",
+  "policy_definition": "SHA-256 over git cat-file blob <rev>:<path> bytes; checkout line endings are irrelevant",
+  "receipt": "handoff\\RC1_CANDIDATE_RECEIPT.json",
+  "revision": "3b8ed05",
+  "core_autocrlf": "true",
+  "entries": [
+    {
+      "name": "tests",
+      "path": "outputs/qa/rc1/pytest.xml",
+      "sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+      "actual_sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "replay",
+      "path": "outputs/remediation/qa/replay_verification.json",
+      "sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+      "actual_sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "browser",
+      "path": "outputs/qa/rc1/browser_summary.json",
+      "sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+      "actual_sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "postbuild",
+      "path": "outputs/qa/rc1/dashboard/postbuild_verification.json",
+      "sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+      "actual_sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "verification",
+      "path": "outputs/qa/rc1/verification.json",
+      "sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+      "actual_sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "release_gate",
+      "path": "outputs/qa/rc1/release_evidence_verification.json",
+      "sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+      "actual_sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "handoff",
+      "path": "handoff/RC1_HANDOFF.md",
+      "sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83",
+      "actual_sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "verification_record",
+      "path": "handoff/RC1_VERIFICATION.md",
+      "sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718",
+      "actual_sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718",
+      "match": true,
+      "error": null
+    },
+    {
+      "name": "integration_manifest",
+      "path": "docs/integration_manifest.json",
+      "sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
+      "actual_sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
+      "match": true,
+      "error": null
+    }
+  ],
+  "matched": 9,
+  "mismatched": 0,
+  "ok": true
+}

@@ -31,6 +31,53 @@ def digest(path):
     return h.hexdigest()
 
 
+def verify_manifest(items, root, source_root=None, require_all=False):
+    """Verify a source manifest without assuming the raw data is in the checkout.
+
+    Paths in the committed manifests are repository-relative POSIX paths.  A
+    clean source checkout therefore contains the manifest but not the ignored
+    raw raster.  ``root`` is the checkout root; ``source_root`` is an optional
+    read-only restored-frozen-input root used only for hash verification.  The
+    result distinguishes a missing external input from a hash mismatch instead
+    of silently treating either as a pass.
+    """
+    root = Path(root).resolve()
+    source_root = Path(source_root).resolve() if source_root else root
+    rows = []
+    for item in items:
+        rel = str(item['path'])
+        target = root / Path(rel)
+        resolution = 'repository'
+        if not target.is_file() and source_root != root:
+            target = source_root / Path(rel)
+            resolution = 'external_source_root'
+        exists = target.is_file()
+        actual = digest(target) if exists else None
+        rows.append({
+            'feature': item.get('feature'),
+            'path': rel,
+            'expected_sha256': item['sha256'],
+            'actual_sha256': actual,
+            'exists': exists,
+            'resolution': resolution,
+            'match': bool(exists and actual == item['sha256']),
+        })
+    missing = [row['path'] for row in rows if not row['exists']]
+    mismatches = [row for row in rows if row['exists'] and not row['match']]
+    ok = not mismatches and (not require_all or not missing)
+    return {
+        'root': root.as_posix(),
+        'source_root': source_root.as_posix(),
+        'checked': len(rows),
+        'existing': sum(row['exists'] for row in rows),
+        'matched': sum(row['match'] for row in rows),
+        'missing': missing,
+        'mismatches': mismatches,
+        'require_all': bool(require_all),
+        'ok': ok,
+    }
+
+
 def polygon_stats(src, geom, area_transform, analysis_geom=None):
     """Intersect actual native raster pixels; count valid pixels and UTM area.
 

@@ -1,0 +1,113 @@
+{
+  "project": "Jakarta Heat RC1",
+  "branch": "integration/rc1",
+  "final_artifact_commit": "3b8ed05be92c35bbb2b3a617688540ee856b11c8",
+  "artifact_tree": "2b312d673faac64d51559cf9612caf61847ad226",
+  "source_build_commit": "f1e69a370f743985977e3d90c59179c76eea35d9",
+  "implementation_sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
+  "created_utc": "2026-11-20T00:56:16Z",
+  "engineering_status": "READY FOR INDEPENDENT RE-AUDIT",
+  "scientific_release": "HOLD: coordinator and independent scientific approval pending",
+  "tests": {
+    "executed": 236,
+    "subtests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "canonical_a1": "EXECUTED_PASS",
+    "report": {
+      "path": "outputs/qa/rc1/pytest.xml",
+      "sha256": "f03656f626aaccc75498607f44513cc2e77b7b755a563c5469e17fc92e70e33c"
+    }
+  },
+  "replay": {
+    "tables_and_metadata": 63,
+    "max_abs_numeric_difference": 0.0,
+    "result": "PASS semantic replay",
+    "report": {
+      "path": "outputs/remediation/qa/replay_verification.json",
+      "sha256": "f36eacc5b80e0ee058e7cf6fa4e35590c0362363bb31c658abb6417ff4a83687"
+    }
+  },
+  "browser": {
+    "version": "159.0.8154.6",
+    "pages": 8,
+    "continuous_navigation": 8,
+    "interactions": 6,
+    "download_rows": 254,
+    "result": "PASS",
+    "report": {
+      "path": "outputs/qa/rc1/browser_summary.json",
+      "sha256": "3af4b37445f794f077a26a67bf36feaf7eeed10310ff61be1ec74e911f7f3e5d"
+    }
+  },
+  "postbuild": {
+    "result": "PASS",
+    "report": {
+      "path": "outputs/qa/rc1/dashboard/postbuild_verification.json",
+      "sha256": "42d4e20772954643d3acba539a79dcf91156539b8931107435ed11cf5257547b"
+    }
+  },
+  "independent_verification": {
+    "result": "PASS",
+    "n_master": 2765,
+    "n_common": 2536,
+    "manual_moran_m4": 0.593024953816681,
+    "report": {
+      "path": "outputs/qa/rc1/verification.json",
+      "sha256": "db21e3e0d82bc27160bec0f90d56064ead1374613629aa910d430e6dd31019b5"
+    }
+  },
+  "release_gate": {
+    "result": "PASS",
+    "report": {
+      "path": "outputs/qa/rc1/release_evidence_verification.json",
+      "sha256": "748e1325de9e473a47d05a39db11d3814b1afab4e560668bb9024cf3bb88c7b2"
+    }
+  },
+  "handoff": {
+    "path": "handoff/RC1_HANDOFF.md",
+    "sha256": "00d951b805a3434aaaeb46b651cd96557e645c1607c25177a4a50097e943dc83"
+  },
+  "verification_record": {
+    "path": "handoff/RC1_VERIFICATION.md",
+    "sha256": "5c8ec4ca06b7be01032987ab1cb419ce312969eb1e6bf9c277e7698619a04718"
+  },
+  "integration_manifest": {
+    "path": "docs/integration_manifest.json",
+    "sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae"
+  },
+  "frozen_bundle": {
+    "path": "dist/agent2_frozen_inputs_v2.zip",
+    "sha256": "3fc027ed47b8fb122f8d5ed3fdc3bec7f306d6a358e99ee0c2e42bb00c011f3a",
+    "checksum_verified_against": "dist/agent2_frozen_inputs_v2.sha256"
+  },
+  "notes": [
+    "Source build commit and final artifact commit are intentionally distinct.",
+    "The final artifact commit stores exact bytes for all hash-bearing files; post-commit blob checks passed.",
+    "Native Edge compatibility is not claimed; browser evidence is Playwright-pinned Chromium 159.0.8154.6.",
+    "Scientific decisions, QA-01 and final-paper release remain with independent review; release is HOLD.",
+    "This receipt is outside Git under ignored dist/ and accompanies the separately delivered input bundle."
+  ],
+  "independent_audit": {
+    "session": "ses_e08c6940affeLzeh5BqDS3wpNK",
+    "workspace": "D:\\jakarta-heat-auditor-rc1",
+    "agent": "GLM-5.3-flash",
+    "verdict": "independent hash and docs binding verified - no integrity discrepancies",
+    "tasks": {
+      "T1_candidate_binding": "PASS",
+      "T2_committed_blob_hashes": "PASS",
+      "T3_evidence_docs_and_gate_logic": "PASS",
+      "T4_immutable_audit_and_refs": "PASS",
+      "T5_disposable_gate_rerun": "SKIPPED_NOT_NEEDED"
+    },
+    "reported_utc": "2026-11-20T04:58:34Z",
+    "observations": [
+      "canonical_inputs declares 20 entries: 14 present and hash-verified, 6 explicitly absent legacy/frozen audit-copy paths.",
+      "docs/remote_sensing_export_manifest.json files[] is a historical workstream snapshot (51 entries); the current A1 binding is original_exports[] (2/2 verified).",
+      "The release checker verifies the frozen bundle via its delivered .sha256 sidecar; the auditor independently confirmed 3fc027ed47b8fb122f8d5ed3fdc3bec7f306d6a358e99ee0c2e42bb00c011f3a."
+    ],
+    "candidate_unchanged_by_audit": true,
+    "candidate_head": "3b8ed05be92c35bbb2b3a617688540ee856b11c8"
+  }
+}

@@ -25,6 +25,15 @@ def implementation_identity(root=None):
     return {"sha256": digest(files), "files": files}
 
 
+def _portable(path, root):
+    """Repository-relative POSIX path when possible; identity is the SHA-256."""
+    p = Path(path).resolve()
+    try:
+        return p.relative_to(Path(root).resolve()).as_posix()
+    except ValueError:
+        return p.as_posix()
+
+
 def inputs_identity(paths):
     pairs = [("master_grid", paths.grid), ("grid_master_csv", paths.grid_master),
              ("spatial_features", paths.spatial_features), ("population_accessibility_legacy", paths.pop),
@@ -37,12 +46,13 @@ def inputs_identity(paths):
     pairs += [("aggregation_scenarios", paths.root / "outputs/qa/remediation_agent2/partial_grid_scenarios.csv")]
     pairs += [(f"frozen_{name}", paths.inputs_dir / name) for name in (
         "audited_merged_grid.csv", "audited_priority_models.csv", "auditor_raster_support.csv", "auditor_network.csv", "input_lineage.json")]
-    return {k: {"path": str(p.resolve()), "exists": p.exists(), "sha256": sha256(p)} for k, p in pairs}
+    return {k: {"path": _portable(p, paths.root), "exists": p.exists(), "sha256": sha256(p)} for k, p in pairs}
 
 
 def output_identity(paths):
     # Includes numerical/geometry exports. GPKG byte identity is conservative: a byte change is stale.
-    return {str(p.resolve()): sha256(p) for folder in (paths.modeling, paths.tables, paths.figures, paths.gis, paths.tables.parent / "paper")
+    # Keys are checkout-portable repository-relative paths; values remain exact-file SHA-256.
+    return {_portable(p, paths.root): sha256(p) for folder in (paths.modeling, paths.tables, paths.figures, paths.gis, paths.tables.parent / "paper")
             if folder.exists() for p in sorted(folder.rglob("*"))
             if p.is_file() and p.name not in ("run_manifest.json", "output_sha256_manifest.csv")}
 

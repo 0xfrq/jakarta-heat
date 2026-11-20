@@ -76,8 +76,11 @@
     "gcloud_adc_file_present": false,
     "scope": "presence only; no credential contents read; initialization probe recorded in handoff"
   },
-  "git_head": "cdda42484c6bfc5bceb49093cb4a28be6c59d659",
-  "source_state": "uncommitted remediation identified by per-file hashes; not an integrated release",
+  "historical_source_git_head": "cdda42484c6bfc5bceb49093cb4a28be6c59d659",
+  "historical_source_state": "uncommitted remediation snapshot identified by per-file hashes; not an integrated release",
+  "source_state_note": "The cdda424 identity is archival Agent 1 provenance, not the current RC1/RC2 release identity. It is retained so the pre-integration snapshot remains auditable.",
+  "current_release_binding": "docs/RC2_BUILD_RECORD.json",
+  "files_scope": "files[] is a historical Agent 1 export/remediation snapshot (hashes as captured before integration). Current RC2 canonical inputs/outputs are bound by docs/integration_manifest.json and outputs/qa/rc2/.",
   "environment": {
     "python": "3.12.10",
     "platform": "Windows-11-10.0.26300-SP0",

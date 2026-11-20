@@ -166,7 +166,13 @@ def compare():
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--capture", action="store_true")
+    ap.add_argument("--snapshot", type=Path, default=SNAPSHOT,
+                    help="Replay snapshot directory (default: historical workstream path)")
+    ap.add_argument("--report", type=Path, default=REPORT,
+                    help="Replay report path (default: historical workstream path)")
     args = ap.parse_args()
+    SNAPSHOT = args.snapshot if args.snapshot.is_absolute() else ROOT / args.snapshot
+    REPORT = args.report if args.report.is_absolute() else ROOT / args.report
     try:
         capture() if args.capture else compare()
     except AssertionError as exc:

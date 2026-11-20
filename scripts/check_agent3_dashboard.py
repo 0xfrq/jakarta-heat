@@ -17,11 +17,16 @@ BROWSER_ARGS = []
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs/remediation/qa/dashboard"
-OUT.mkdir(parents=True, exist_ok=True)
 INPUTS = ROOT / "data/processed/remediation_inputs"
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--integrated", action="store_true")
+parser.add_argument("--output-dir", type=Path, default=None,
+                    help="Evidence directory (default: the historical workstream paths)")
+parser.add_argument("--scope", default=None, help="Scope label written to the evidence JSON")
 args = parser.parse_args()
+if args.output_dir is not None:
+    OUT = args.output_dir if args.output_dir.is_absolute() else ROOT / args.output_dir
+OUT.mkdir(parents=True, exist_ok=True)
 env = {**os.environ, "JHIM_INPUT_DIR": str(INPUTS), "JHIM_RS_PATH": str(INPUTS / "remote_sensing_grid.csv"),
        "JHIM_DEMOGRAPHIC_SUPPORT": str(INPUTS / "demographic_support.csv"), "PYTHONIOENCODING": "utf-8"}
 if args.integrated:
@@ -39,9 +44,12 @@ result = {"scope": "Agent3 corrected local workstream only; final integrated can
 result["browser_args"] = BROWSER_ARGS
 result["console"] = []
 if args.integrated:
-    OUT = ROOT / "outputs/qa/rc1/dashboard"
-    OUT.mkdir(parents=True, exist_ok=True)
-    result["scope"] = "RC1 consolidated canonical inputs; provisional scientific policy"
+    if args.output_dir is None:
+        OUT = ROOT / "outputs/qa/rc1/dashboard"
+        OUT.mkdir(parents=True, exist_ok=True)
+    result["scope"] = args.scope or "RC1 consolidated canonical inputs; provisional scientific policy"
+elif args.scope:
+    result["scope"] = args.scope
 log = (OUT / "server.log").open("w", encoding="utf-8")
 proc = subprocess.Popen(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT,
                         creationflags=getattr(subprocess, "CREATE_NO_WINDOW", 0))

@@ -31,15 +31,69 @@ def sha256(path, chunk: int = 1 << 20) -> str | None:
     return h.hexdigest()
 
 
-def git_commit(root) -> str | None:
+# Generated analytical artefacts are expected to differ during and after a build.
+# They do not make the *source* revision dirty; uncommitted source, config, input
+# or documentation changes do.  Keep this list explicit and review it when a new
+# generated output family is added.
+GENERATED_PREFIXES = (
+    "data/processed/modeling/",
+    "data/processed/modeling_demo/",
+    "data/processed/modeling_remediation/",
+    "data/processed/integrated_comparisons/",
+    "outputs/tables/",
+    "outputs/figures/",
+    "outputs/gis/",
+    "outputs/remediation/",
+    "outputs/qa/agent3/",
+    "outputs/qa/rc1/",
+    "outputs/qa/rc2/",
+    "dist/",
+    "cache/",
+    ".venv/",
+    ".pytest_cache/",
+)
+
+
+def _is_generated(path: str) -> bool:
+    p = path.replace("\\", "/").lstrip("./")
+    return any(p.startswith(prefix) for prefix in GENERATED_PREFIXES)
+
+
+def git_source_state(root) -> dict:
+    """Return HEAD and whether source (not generated artefacts) is uncommitted."""
     import subprocess
 
+    result = {"commit": None, "revision": None, "state": "unknown", "dirty_paths": [], "generated_dirty_paths": []}
     try:
-        r = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"], capture_output=True, text=True, timeout=10)
-        dirty = subprocess.run(["git", "-C", str(root), "status", "--porcelain"], capture_output=True, text=True, timeout=10)
-        return r.stdout.strip() + ("-dirty" if dirty.stdout.strip() else "") if r.returncode == 0 else None
+        head = subprocess.run(["git", "-C", str(root), "rev-parse", "HEAD"], capture_output=True, text=True, timeout=10)
+        if head.returncode != 0:
+            return result
+        commit = head.stdout.strip()
+        status = subprocess.run(["git", "-C", str(root), "status", "--porcelain", "--untracked-files=no"],
+                                capture_output=True, text=True, timeout=10)
+        dirty, generated = [], []
+        for line in status.stdout.splitlines():
+            if not line.strip():
+                continue
+            path = line[3:].strip()
+            if " -> " in path:
+                path = path.split(" -> ", 1)[1]
+            path = path.strip('"')
+            (generated if _is_generated(path) else dirty).append(path)
+        result.update({
+            "commit": commit,
+            "revision": commit + ("-dirty" if dirty else ""),
+            "state": "dirty" if dirty else "clean",
+            "dirty_paths": sorted(dirty),
+            "generated_dirty_paths": sorted(generated),
+        })
+        return result
     except Exception:
-        return None
+        return result
+
+
+def git_commit(root) -> str | None:
+    return git_source_state(root)["revision"]
 
 
 def utf8_stdout() -> None:

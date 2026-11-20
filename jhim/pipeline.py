@@ -9,6 +9,8 @@ Aturan keluaran:
 """
 from __future__ import annotations
 
+from pathlib import Path
+
 import numpy as np
 import pandas as pd
 
@@ -16,7 +18,7 @@ from . import compare as K
 from . import config as C
 from . import data as D
 from . import models as M
-from .util import DataError, PendingInputs, git_commit, read_json, sha256, utc_stamp, versions, write_csv, write_json
+from .util import DataError, PendingInputs, git_source_state, read_json, sha256, utc_stamp, versions, write_csv, write_json
 
 
 def log(msg: str) -> None:
@@ -301,17 +303,36 @@ def step_p2_diagnostics(paths: C.Paths, perms: int = C.PERMUTATIONS, spatial: bo
 
 
 # ---------------------------------------------------------------- manifest
+def _portable_command(argv, root) -> list[str]:
+    """Keep the recorded command readable without embedding machine-specific paths."""
+    root = Path(root).resolve()
+    out = []
+    for arg in argv:
+        p = Path(arg)
+        if p.is_absolute():
+            try:
+                out.append(p.resolve().relative_to(root).as_posix())
+            except ValueError:
+                out.append(f"<external>/{p.name}")
+        else:
+            out.append(arg)
+    return out
+
+
 def write_manifest(paths: C.Paths, steps: list[str], extra: dict | None = None, target=None) -> dict:
     import sys
     from . import provenance as PV
 
     status = D.assess_inputs(paths)
     inputs = PV.inputs_identity(paths)
+    source = git_source_state(paths.root)
     man = {
         "built_at": utc_stamp(), "demo": paths.demo, "input_status": status.state, "input_status_text": status.text,
         "schema_version": 2, "steps": steps, "inputs": inputs, "config": PV.scientific_config(),
         "implementation": PV.implementation_identity(), "outputs": PV.output_identity(paths),
-        "build_command": [sys.executable, *sys.argv], "git_commit": git_commit(paths.root),
+        "build_command": [Path(sys.executable).name, *_portable_command(sys.argv, paths.root)],
+        "git_commit": source["revision"], "source_revision": source["commit"], "source_state": source["state"],
+        "source_dirty_paths": source["dirty_paths"],
         **versions(), **(extra or {}),
     }
     write_csv(pd.DataFrame([{"path": p, "sha256": h} for p, h in man["outputs"].items()]),

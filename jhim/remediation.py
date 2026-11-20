@@ -19,16 +19,54 @@ from . import config as C, data as D, models as M
 from .util import DataError, sha256, write_csv, write_json
 
 
-def freeze(source, target):
+def _provenance_path(path, root, audit_root=None):
+    """Repository-relative path; audit evidence is labelled relative to its read-only root."""
+    p = Path(path).resolve()
+    try:
+        return p.relative_to(Path(root).resolve()).as_posix()
+    except ValueError:
+        pass
+    if audit_root is not None:
+        try:
+            return "audit/" + p.relative_to(Path(audit_root).resolve()).as_posix()
+        except ValueError:
+            pass
+    return p.name
+
+
+def _newline_equivalent(source: Path, target: Path) -> bool:
+    """True only for text artefacts whose sole byte difference is CRLF vs LF."""
+    if source.suffix.lower() not in {".csv", ".json", ".txt", ".md", ".tsv"}:
+        return False
+    a = source.read_bytes().replace(b"\r\n", b"\n")
+    b = target.read_bytes().replace(b"\r\n", b"\n")
+    return a == b
+
+
+def freeze(source, target, root=None, audit_root=None):
     source, target = Path(source), Path(target)
     if not source.exists():
         raise DataError(f"Required frozen input unavailable: {source}")
     target.parent.mkdir(parents=True, exist_ok=True)
-    if target.exists() and sha256(source) != sha256(target):
-        raise DataError(f"Frozen input differs; choose a new versioned path: {target}")
+    source_hash, target_hash = sha256(source), sha256(target)
+    newline_only = False
+    if target.exists() and source_hash != target_hash:
+        if not _newline_equivalent(source, target):
+            raise DataError(f"Frozen input differs; choose a new versioned path: {target}")
+        # Keep the already-frozen bytes and record the reconciliation explicitly.
+        # The analytical CSV/JSON content is identical; only CRLF/LF differs.
+        newline_only = True
     if not target.exists():
         shutil.copyfile(source, target)
-    return {"source": str(source), "copy": str(target), "sha256": sha256(target)}
+    record = {
+        "source": _provenance_path(source, root, audit_root) if root else source.as_posix(),
+        "copy": _provenance_path(target, root, audit_root) if root else target.as_posix(),
+        "sha256": sha256(target),
+    }
+    if newline_only:
+        record.update({"source_sha256": source_hash, "copy_sha256": target_hash,
+                       "reconciliation": "newline_only_crlf_lf; analytical content byte-identical after newline normalisation"})
+    return record
 
 
 def prepare_inputs(root, audit):
@@ -42,7 +80,7 @@ def prepare_inputs(root, audit):
         (audit / "evidence/gis/independent_raster_support.csv", "auditor_raster_support.csv"),
         (audit / "evidence/gis/independent_full_network.csv", "auditor_network.csv"),
     ]
-    provenance = [freeze(src, dest / name) for src, name in sources]
+    provenance = [freeze(src, dest / name, root=root, audit_root=audit) for src, name in sources]
     baseline = pd.read_csv(dest / "audited_merged_grid.csv")
     rs = baseline[[C.KEY, *[c for c in (*C.RS_COLS, *C.RS_OPTIONAL, *C.RS_TEXT) if c in baseline]]]
     write_csv(rs, dest / "remote_sensing_grid.csv")
@@ -68,14 +106,14 @@ def prepare_integrated_inputs(root, audit):
     sources = [(old / n, n) for n in ("audited_merged_grid.csv", "audited_priority_models.csv")]
     sources += [(audit / "evidence/gis/independent_raster_support.csv", "auditor_raster_support.csv"),
                 (audit / "evidence/gis/independent_full_network.csv", "auditor_network.csv")]
-    entries = [freeze(src, dest / name) for src, name in sources]
+    entries = [freeze(src, dest / name, root=root, audit_root=audit) for src, name in sources]
     paths = C.Paths(root=root)
     for p in (paths.rs, paths.demographic_support, paths.demographic_corrected,
               root / "data/processed/agent2_route_scenarios.csv"):
         if not p.is_file():
             raise DataError(f"Required canonical input unavailable: {p}")
     write_json(dest / "input_lineage.json", {"source_files": entries, "mode": "integrated",
-        "canonical": {str(p.relative_to(root)): sha256(p) for p in
+        "canonical": {p.relative_to(root).as_posix(): sha256(p) for p in
             (paths.rs, paths.demographic_support, paths.demographic_corrected,
              root / "data/processed/agent2_route_scenarios.csv")},
         "restriction": "Auditor tables are comparisons only; canonical Agent1/Agent2 inputs drive analysis."})

@@ -1,8 +1,8 @@
 {
-  "schema_version": "rc1-1",
-  "branch": "integration/rc1",
-  "candidate_source_commit": "f1e69a370f743985977e3d90c59179c76eea35d9",
-  "build_git_state": "f1e69a370f743985977e3d90c59179c76eea35d9-dirty",
+  "schema_version": "rc2-1",
+  "branch": "integration/rc2",
+  "candidate_source_commit": "see docs/RC2_BUILD_RECORD.json",
+  "build_git_state": "see docs/RC2_BUILD_RECORD.json",
   "source_refs": {
     "main": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
     "agent/person1": "4f6c6797bfdd5148d7a91ef0f002bf6467edb04e",
@@ -11,114 +11,115 @@
   },
   "canonical_inputs": {
     "master_grid": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_500m_jakarta.gpkg",
+      "path": "data/processed/grid_500m_jakarta.gpkg",
       "exists": true,
       "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7"
     },
     "grid_master_csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_master.csv",
+      "path": "data/processed/grid_master.csv",
       "exists": true,
       "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
     },
     "spatial_features": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\spatial_features.csv",
+      "path": "data/processed/spatial_features.csv",
       "exists": true,
       "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
     },
     "population_accessibility_legacy": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_accessibility_grid.csv",
+      "path": "data/processed/population_accessibility_grid.csv",
       "exists": false,
       "sha256": null
     },
     "remote_sensing": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+      "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.csv",
       "exists": true,
       "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
     },
     "demographic_support": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_support.csv",
+      "path": "data/processed/demographic_support.csv",
       "exists": true,
       "sha256": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621"
     },
     "demographic_corrected": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_features_corrected.csv",
+      "path": "data/processed/demographic_features_corrected.csv",
       "exists": true,
       "sha256": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2"
     },
     "part_population_grid": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_grid.csv",
+      "path": "data/processed/population_grid.csv",
       "exists": true,
       "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
     },
     "part_vulnerability_grid": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\vulnerability_grid.csv",
+      "path": "data/processed/vulnerability_grid.csv",
       "exists": true,
       "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
     },
     "part_accessibility_grid": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\accessibility_grid.csv",
+      "path": "data/processed/accessibility_grid.csv",
       "exists": true,
       "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
     },
     "integrated_agent2_route_scenarios.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\agent2_route_scenarios.csv",
+      "path": "data/processed/agent2_route_scenarios.csv",
       "exists": true,
       "sha256": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d"
     },
     "integrated_integrated_comparisons/input_lineage.json": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\input_lineage.json",
+      "path": "data/processed/integrated_comparisons/input_lineage.json",
       "exists": true,
       "sha256": "a3819d0039672e56ad7183c7f9894faa7069861586f03980a0c160b43c618481"
     },
     "integrated_integrated_comparisons/auditor_raster_support.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_raster_support.csv",
+      "path": "data/processed/integrated_comparisons/auditor_raster_support.csv",
       "exists": true,
       "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
     },
     "integrated_integrated_comparisons/auditor_network.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_network.csv",
+      "path": "data/processed/integrated_comparisons/auditor_network.csv",
       "exists": true,
       "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
     },
     "aggregation_scenarios": {
-      "path": "D:\\jakarta-heat-integration\\outputs\\qa\\remediation_agent2\\partial_grid_scenarios.csv",
+      "path": "outputs/qa/remediation_agent2/partial_grid_scenarios.csv",
       "exists": true,
       "sha256": "38e9df862745ed6024ddab60b5f0103ac2b7d5555f9422d3be352dee5a7ea611"
     },
     "frozen_audited_merged_grid.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_merged_grid.csv",
+      "path": "data/processed/audited_merged_grid.csv",
       "exists": false,
       "sha256": null
     },
     "frozen_audited_priority_models.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_priority_models.csv",
+      "path": "data/processed/audited_priority_models.csv",
       "exists": false,
       "sha256": null
     },
     "frozen_auditor_raster_support.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_raster_support.csv",
+      "path": "data/processed/auditor_raster_support.csv",
       "exists": false,
       "sha256": null
     },
     "frozen_auditor_network.csv": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_network.csv",
+      "path": "data/processed/auditor_network.csv",
       "exists": false,
       "sha256": null
     },
     "frozen_input_lineage.json": {
-      "path": "D:\\jakarta-heat-integration\\data\\processed\\input_lineage.json",
+      "path": "data/processed/input_lineage.json",
       "exists": false,
       "sha256": null
     }
   },
   "canonical_outputs": {
-    "features": "data\\processed\\modeling\\merged_grid.csv",
-    "priority": "data\\processed\\modeling\\priority_models.csv",
-    "remediation": "data\\processed\\modeling_remediation",
+    "features": "data/processed/modeling/merged_grid.csv",
+    "priority": "data/processed/modeling/priority_models.csv",
+    "remediation": "data/processed/modeling_remediation",
     "dashboard": "dashboard/app.py"
   },
-  "verification": "outputs/qa/rc1/verification.json",
+  "verification": "outputs/qa/rc2/engineering_verification.json",
   "replay": "outputs/remediation/qa/replay_verification.json",
-  "source_of_truth": "Current RC1 inputs supersede historical preintegration statements in agent ledgers.",
-  "scientific_status": "Provisional mixed-period candidate-park proxy; independent scientific sign-off pending"
+  "source_of_truth": "RC2 portable paths and Git-blob hash policy supersede RC1 machine-specific manifest paths; RC1 evidence remains immutable.",
+  "scientific_status": "Provisional mixed-period candidate-park proxy; independent scientific sign-off pending",
+  "portability": "outputs/qa/rc2/portability_verification.json"
 }

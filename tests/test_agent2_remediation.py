@@ -2,6 +2,7 @@
 from pathlib import Path
 import sys
 import json
+import hashlib
 import math
 import networkx as nx
 import geopandas as gpd
@@ -13,7 +14,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from agent2_park_evidence import two_destinations
 from agent2_connector_remediation import permission_state
-from aggregate_demographics import digest
+from aggregate_demographics import digest, verify_manifest
 OUT=ROOT/'outputs/qa/remediation_agent2'
 DATA=ROOT/'data/processed'
 
@@ -197,8 +198,36 @@ def test_per_grid_route_scenarios_replayable_and_unknown_not_zero():
     assert (conservative[both]>=full[both]-1e-6).all()
 
 
-def test_source_manifests_are_portable_relative_paths():
+def test_source_manifests_are_portable_relative_paths(tmp_path):
+    """The manifest path contract is checkout-portable; hash checks need restored inputs.
+
+    The WorldPop rasters are intentionally Git-ignored and are supplied as a
+    separate frozen bundle.  A clean source checkout can therefore prove the
+    path contract and must not fail merely because data/raw is absent.  Hash
+    verification is exercised below on a synthetic fixture with the same
+    verifier, and is run against the real frozen inputs by
+    scripts/verify_source_manifests.py (documented in docs/RC2_REPRODUCE.md).
+    """
     for path in [OUT/'demographic_source_manifest.json',OUT/'original_masks/demographic_source_manifest.json']:
-        for item in json.loads(path.read_text(encoding='utf-8')):
-            assert not Path(item['path']).is_absolute() and ':' not in item['path'], item['path']
-            assert digest(ROOT/item['path'])==item['sha256']
+        items = json.loads(path.read_text(encoding='utf-8'))
+        assert len(items) == 3 and {item['feature'] for item in items} == {'population','pop_child','pop_elderly'}
+        for item in items:
+            rel = Path(item['path'])
+            assert not rel.is_absolute() and ':' not in item['path'], item['path']
+            assert '\\' not in item['path'] and not item['path'].startswith('../'), item['path']
+            assert len(item['sha256']) == 64 and set(item['sha256']) <= set('0123456789abcdef'), item['path']
+        report = verify_manifest(items, ROOT)
+        assert report['checked'] == 3
+        assert report['mismatches'] == [], report
+    # Exercise the same resolver on a self-contained fixture, including mutation detection.
+    fixture_root = tmp_path/'source-fixture'
+    payload = b'worldpop synthetic fixture; not a substitute for the frozen raster\n'
+    (fixture_root/'data/raw/worldpop').mkdir(parents=True)
+    (fixture_root/'data/raw/worldpop/idn_pop_2024.tif').write_bytes(payload)
+    fixture = [{'feature':'population','path':'data/raw/worldpop/idn_pop_2024.tif',
+                'sha256':hashlib.sha256(payload).hexdigest()}]
+    clean = verify_manifest(fixture, fixture_root, require_all=True)
+    assert clean['ok'] and clean['matched'] == 1 and not clean['missing']
+    (fixture_root/'data/raw/worldpop/idn_pop_2024.tif').write_bytes(payload+b'mutated')
+    mutated = verify_manifest(fixture, fixture_root, require_all=True)
+    assert not mutated['ok'] and len(mutated['mismatches']) == 1

@@ -1,5 +1,9 @@
 # Reproducing the Agent 2 remediation outputs (IN-02, Agent 2 scope)
 
+> **Historical Agent 2 lane document.** The consolidated source candidate is now
+> tested; use [`RC2_REPRODUCE.md`](RC2_REPRODUCE.md) for the current RC2 commands.
+> This file is retained unchanged for Agent 2 technical provenance.
+
 Scope: Agent 2 GIS/demographic/park/walking remediation outputs, rebuilt **offline
 from declared frozen inputs**. This is *not* a consolidated raw-to-paper pass:
 Agent 1 remote-sensing export and Agent 3 model/dashboard stages are outside this

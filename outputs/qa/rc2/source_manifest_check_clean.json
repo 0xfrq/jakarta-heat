@@ -1,0 +1,38 @@
+{
+  "policy": "repository-relative POSIX paths; SHA-256 over exact source bytes",
+  "root": "D:\\jakarta-heat-rc2",
+  "source_root": null,
+  "manifests": {
+    "outputs/qa/remediation_agent2/demographic_source_manifest.json": {
+      "root": "D:/jakarta-heat-rc2",
+      "source_root": "D:/jakarta-heat-rc2",
+      "checked": 3,
+      "existing": 0,
+      "matched": 0,
+      "missing": [
+        "data/raw/worldpop/idn_pop_2024.tif",
+        "data/raw/worldpop/age_buffered/jakarta_child_2024_buffered.tif",
+        "data/raw/worldpop/age_buffered/jakarta_elderly_2024_buffered.tif"
+      ],
+      "mismatches": [],
+      "require_all": false,
+      "ok": true
+    },
+    "outputs/qa/remediation_agent2/original_masks/demographic_source_manifest.json": {
+      "root": "D:/jakarta-heat-rc2",
+      "source_root": "D:/jakarta-heat-rc2",
+      "checked": 3,
+      "existing": 0,
+      "matched": 0,
+      "missing": [
+        "data/raw/worldpop/idn_pop_2024.tif",
+        "data/raw/worldpop/age/jakarta_child_2024.tif",
+        "data/raw/worldpop/age/jakarta_elderly_2024.tif"
+      ],
+      "mismatches": [],
+      "require_all": false,
+      "ok": true
+    }
+  },
+  "ok": true
+}
