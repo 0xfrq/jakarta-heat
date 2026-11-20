@@ -4,8 +4,8 @@
   "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
   "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
   "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
-  "evidence_revision": "a817e129f457fc40d8dbca014ea5d42f11c18842",
-  "created_utc": "2026-11-20T11:48:32Z",
+  "evidence_revision": "8fe8b2dcf7f983ed77f0484c5e2ee5b19ab3b464",
+  "created_utc": "2026-11-20T11:51:44Z",
   "engineering_status": "PASS for engineering portability and numerical reproduction; scientific HOLD",
   "hash_policy": {
     "name": "git-blob-sha256",
@@ -50,7 +50,7 @@
     "report": {
       "name": "release_gate",
       "path": "outputs/qa/rc2/portability_verification.json",
-      "sha256": "cd18aa850b73252f5fb3c40818dec755737fcac6fbf1b45940708a1bdf6461bb"
+      "sha256": "5d9b5b719e75f39aa24323c5439e9879daa1fc9e116afa15af727f86c364448c"
     }
   },
   "handoff": {
@@ -97,7 +97,7 @@
     {
       "name": "release_gate",
       "path": "outputs/qa/rc2/portability_verification.json",
-      "sha256": "cd18aa850b73252f5fb3c40818dec755737fcac6fbf1b45940708a1bdf6461bb"
+      "sha256": "5d9b5b719e75f39aa24323c5439e9879daa1fc9e116afa15af727f86c364448c"
     },
     {
       "name": "handoff",
