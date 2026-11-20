@@ -112,6 +112,19 @@ overwrites it.
    `postbuild_canvas_dom_assertion.*`; the passing result is in
    `dashboard/postbuild_verification.json`.
 
+## Artifact byte storage and post-commit binding
+
+The final candidate is checked against the Git tree, not only the working
+directory. All hash-bearing implementation, input, output, frozen-input and A1
+export files are stored with their exact bytes (`-text` attributes), so a fresh
+checkout reproduces the manifest SHA256 values. An intermediate artifact commit
+retained legacy LF blobs for some unchanged CRLF source/input files; the final
+commit re-stored those exact bytes without changing file content, manifests or
+analytical results. Post-commit checks compare every manifest hash with
+`git cat-file blob HEAD:<path>` and the committed tree is required to be clean.
+The source build commit remains `f1e69a3`; the final artifact commit is the later
+commit reported in the delivery message and `dist/rc1_candidate_receipt.json`.
+
 ## Limits retained for independent review
 
 The offline lane reproduces local frozen exports, source masks, graph and
