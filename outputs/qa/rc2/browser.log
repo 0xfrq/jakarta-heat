@@ -1,0 +1,426 @@
+{
+  "scope": "RC2 canonical inputs; provisional scientific policy",
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "-m",
+    "streamlit",
+    "run",
+    "D:\\jakarta-heat-rc2\\dashboard\\app.py",
+    "--server.headless=true",
+    "--server.address=127.0.0.1",
+    "--server.port=8543",
+    "--browser.gatherUsageStats=false"
+  ],
+  "pages": [
+    {
+      "page": "Ikhtisar",
+      "heading": "Jakarta Heat Inequality Mapper",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 10,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Penjelajah data",
+      "heading": "Penjelajah data",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 24,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Panas dan vegetasi",
+      "heading": "Panas dan vegetasi",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 17,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Model prioritas",
+      "heading": "Model prioritas M1\u2013M4",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 17,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Perbandingan model",
+      "heading": "Perbandingan model",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 44,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Statistik spasial",
+      "heading": "Statistik spasial",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 12,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Robustness / sensitivitas",
+      "heading": "Robustness / sensitivitas",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 7,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Metode dan keterbatasan",
+      "heading": "Metode dan keterbatasan",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 0,
+      "narrow_sidebar_collapsed": true
+    }
+  ],
+  "browser_args": [],
+  "console": [
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x454401565e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x454400624800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x454401565200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x454400626600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xa3c02f94200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xa3c02f91200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xa3c02f94200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0xa3c02f96600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x63ac0134f800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x63ac0060ee00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x63ac0134f800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x63ac0060ee00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x5c1c03238000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x5c1c00626000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x5c1c03238000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x5c1c00626000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x356400608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x356402df0000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x356400608800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x356402df0000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x256c02e0dc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x256c02e0d000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x256c02e0dc00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x256c02e0d000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x381c02e30000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x381c02e3ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x381c02e30000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x381c02e3ba00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x151402c12a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x151402c17800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x151402c12a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x151402c17800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x225c010df000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x225c010dc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x225c010df000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x225c010dc000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"gouraudMaterialUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"gouraudMaterialUniforms\": reflected layout for \"gouraudMaterialUniforms.unlit\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "debug",
+      "text": "luma.gl: WebGL uniform block reflection failed for \"lightingUniforms\"; using supplied std140 metadata. Failed to validate WebGL uniform block \"lightingUniforms\": reflected layout for \"lightingUniforms.lights[0].color\" does not match supplied std140 metadata"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x56d403212a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x56d40060f400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x56d403212a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x56d40060f400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "browser_version": "159.0.8154.6",
+  "browser_distribution": "Playwright-pinned Chromium; install with python -m playwright install chromium",
+  "continuous_navigation": [
+    {
+      "page": "Ikhtisar",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Penjelajah data",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Panas dan vegetasi",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Model prioritas",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Perbandingan model",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Statistik spasial",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Robustness / sensitivitas",
+      "exceptions": [],
+      "canonical_count_visible": true
+    },
+    {
+      "page": "Metode dan keterbatasan",
+      "exceptions": [],
+      "canonical_count_visible": true
+    }
+  ],
+  "capture_policy": "Fresh browser per route for large desktop/narrow screenshots; ordinary continuous navigation tested separately",
+  "baseline_download": {
+    "result": "PASS",
+    "rows": 254,
+    "suggested_filename": "top_m4.csv",
+    "checks": [
+      "canonical top IDs",
+      "scores",
+      "ranks",
+      "period/policy metadata"
+    ]
+  },
+  "interactions": [
+    {
+      "interaction": "spatial: LISA alternative two-sided",
+      "exceptions": [],
+      "expected_text": "Interpretasi.",
+      "expected_visible": true
+    },
+    {
+      "interaction": "spatial: BY correction",
+      "exceptions": [],
+      "expected_text": "Interpretasi.",
+      "expected_visible": true
+    },
+    {
+      "interaction": "spatial: uncorrected p<0.05",
+      "exceptions": [],
+      "expected_text": "Interpretasi.",
+      "expected_visible": true
+    },
+    {
+      "interaction": "priority: exploratory custom weights",
+      "exceptions": [],
+      "expected_text": "EKSPLORATIF",
+      "expected_visible": true
+    },
+    {
+      "interaction": "sidebar: DEMO mode labelled",
+      "exceptions": [],
+      "expected_text": "MODE DEMO",
+      "expected_visible": true
+    },
+    {
+      "interaction": "sidebar: back to real data",
+      "exceptions": [],
+      "expected_text": "Dukungan sumber usia tidak tersedia pada 6 grid",
+      "expected_visible": true
+    }
+  ],
+  "page_errors": []
+}

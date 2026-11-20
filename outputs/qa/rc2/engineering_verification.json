@@ -1,9 +1,9 @@
 {
   "result": "PASS",
   "schema_version": "rc2-engineering-verification-1",
-  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
-  "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+  "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
   "rc1_baseline": {
     "commit": "3b8ed05be92c35bbb2b3a617688540ee856b11c8",
     "tree": "2b312d673faac64d51559cf9612caf61847ad226"
@@ -246,8 +246,8 @@
     "integration_absolute_paths": [],
     "run_manifests": {
       "data/processed/modeling/run_manifest.json": {
-        "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-        "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+        "git_commit": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
         "source_state": "clean",
         "source_dirty_paths": [],
         "bad_input_paths": [],
@@ -258,8 +258,8 @@
         ]
       },
       "data/processed/modeling_remediation/run_manifest.json": {
-        "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-        "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+        "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+        "git_commit": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
         "source_state": "clean",
         "source_dirty_paths": [],
         "bad_input_paths": [],
@@ -305,15 +305,15 @@
     "ok": true
   },
   "build_identity": {
-    "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+    "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
     "source_state": "clean",
-    "git_commit": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+    "git_commit": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
     "source_dirty_paths": [],
-    "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
-    "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
+    "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+    "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
     "source_is_ancestor": true,
-    "implementation_sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
-    "current_implementation_sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
+    "implementation_sha256": "1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a",
+    "current_implementation_sha256": "1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a",
     "build_command": [
       "python.exe",
       "scripts/run_agent3_pipeline.py"
@@ -333,7 +333,9 @@
     "documentation_and_paths": true,
     "model_definitions_unchanged": true,
     "build_identity_clean": true,
-    "clean_checkout_suite": true
+    "clean_checkout_suite": true,
+    "browser_routes": true,
+    "browser_interactions": true
   },
   "limitations": [
     "Engineering verification only; scientific construct, access, novelty and policy decisions remain unsigned.",
@@ -342,8 +344,8 @@
   ],
   "clean_checkout": {
     "result": "PASS",
-    "clone": "C:\\Users\\VICTUS\\AppData\\Local\\Temp\\opencode\\rc2-clean-final",
-    "revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
+    "clone": "C:\\Users\\VICTUS\\AppData\\Local\\Temp\\opencode\\rc2-clean-final2",
+    "revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
     "data_raw_present": false,
     "command": [
       "python",
@@ -362,13 +364,13 @@
     "failures": 0,
     "errors": 0,
     "skipped": 0,
-    "duration_seconds": 659.523,
-    "timestamp": "2026-11-20T17:16:03.272852+07:00",
+    "duration_seconds": 638.688,
+    "timestamp": "2026-11-20T18:20:16.078581+07:00",
     "warning": "deliberate CRS-free fixture in tests/agent3/test_data_contract.py::test_grid_without_crs_rejected",
     "note": "Genuine clone of integration/rc2 at the artifact commit; data/raw and dist are absent."
   },
   "browser": {
-    "result": "PASS with one harness-locator limitation",
+    "result": "PASS",
     "scope": "RC2 canonical inputs; provisional scientific policy",
     "browser_version": "159.0.8154.6",
     "browser_distribution": "Playwright-pinned Chromium; install with python -m playwright install chromium",
@@ -377,9 +379,8 @@
     "page_errors": [],
     "canonical_count_visible_all_routes": true,
     "mixed_period_visible_all_routes": true,
-    "interactions_passed": 5,
+    "interactions_passed": 6,
     "interactions_total": 6,
-    "interaction_limitation": "custom-weights toggle locator did not activate the Streamlit toggle in this run; no page error and the same dashboard code passed this interaction in the RC1 run",
     "download": {
       "result": "PASS",
       "rows": 254,
@@ -391,9 +392,9 @@
         "period/policy metadata"
       ]
     },
+    "ui_path_check": "Status masukan shows repository-relative data/processed/... paths; no host path in the overview table.",
     "limitations": [
-      "Chromium only (Playwright-pinned 159.0.8154.6); Edge/Firefox/Safari not tested.",
-      "One interaction locator did not toggle; page errors remained zero."
+      "Chromium only (Playwright-pinned 159.0.8154.6); Edge/Firefox/Safari not tested."
     ]
   }
 }

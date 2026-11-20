@@ -1,8 +1,8 @@
 Status masukan: COMPLETE - Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan.
-  [ADA] master_grid: D:\jakarta-heat-rc2\data\processed\grid_500m_jakarta.gpkg
-  [ADA] grid_master_csv: D:\jakarta-heat-rc2\data\processed\grid_master.csv
-  [ADA] person2_spatial_features: D:\jakarta-heat-rc2\data\processed\spatial_features.csv
-  [ADA] remote_sensing: D:\jakarta-heat-rc2\data\processed\remote_sensing_remediated\remote_sensing_grid.csv
+  [ADA] master_grid: data/processed/grid_500m_jakarta.gpkg
+  [ADA] grid_master_csv: data/processed/grid_master.csv
+  [ADA] person2_spatial_features: data/processed/spatial_features.csv
+  [ADA] remote_sensing: data/processed/remote_sensing_remediated/remote_sensing_grid.csv
   catatan: Person 2: spatial_features.csv (2,765 baris)
   catatan: Demographic evidence: demographic_support.csv; versions ['agent2-DM-01-v1-buffered-age']
   catatan: Demographic evidence: demographic_features_corrected.csv; versions ['agent2-DM-01-v1-buffered-age']

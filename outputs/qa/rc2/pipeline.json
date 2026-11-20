@@ -4,6 +4,6 @@
     "scripts/run_agent3_pipeline.py"
   ],
   "returncode": 0,
-  "finished_utc": "2026-11-20T10:12:15.726372+00:00",
+  "finished_utc": "2026-11-20T11:15:27.635289+00:00",
   "log": "outputs/qa/rc2/pipeline.log"
 }

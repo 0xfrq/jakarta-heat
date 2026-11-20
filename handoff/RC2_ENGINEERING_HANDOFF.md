@@ -11,11 +11,11 @@ constructs, access claims, novelty or policy conclusions.
 | Item | Value |
 |---|---|
 | Branch | `integration/rc2` |
-| RC2 source build commit | `ba033d98a04e1d76d964bea6b8ee1b154ab02e03` |
+| RC2 source build commit | `ac656e5b1b123d3bb5c5f618489682109bba2de9` |
 | Source state at build | `clean`; dirty source paths: none |
-| RC2 artifact commit | `8f740675e25b3372ad8d2aba7ad2ece6bb45852a` |
+| RC2 artifact commit | `267ebf78efc985926abd2ad64ec4d669138e1a6e` |
 | RC1 frozen baseline | `3b8ed05be92c35bbb2b3a617688540ee856b11c8` (tree `2b312d673faac64d51559cf9612caf61847ad226`) |
-| Implementation SHA-256 | `59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49` |
+| Implementation SHA-256 | `1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a` |
 | Build commands | `python.exe scripts/run_agent3_remediation.py --integrated --audit <external>/audit`, then `python.exe scripts/run_agent3_pipeline.py` |
 | Replay | PASS: 63 tables/metadata compared; maximum absolute numeric difference `0.0`; both runs have the same implementation SHA |
 
@@ -108,7 +108,7 @@ regenerated.
 | Remediation output manifest | 80/80 relative; 0 absolute, 0 missing, 0 mismatched |
 | RC1 receipt (canonical blobs) | 9/9 (archival receipt verified at `3b8ed05`) |
 | RC2 receipt (canonical blobs) | 9/9 expected under the same policy; separate check `outputs/qa/rc2/rc2_receipt_hash_check.json` |
-| Dashboard freshness | PASS: 2,765 feature rows; scores/ranks match; official outputs current. Browser: 8/8 routes, 0 page errors, 254-row M4 download exact, 5/6 interactions visible |
+| Dashboard freshness | PASS: 2,765 feature rows; scores/ranks match; official outputs current. Browser: 8/8 routes, 0 page errors, 254-row M4 download exact, 6/6 interactions visible; status table shows repository-relative paths |
 | Baseline model definitions | Byte-identical to RC1; `PROVISIONAL_UNSIGNED`; no weights/threshold/construct change |
 
 Detailed machine-readable evidence:
@@ -130,7 +130,7 @@ Detailed machine-readable evidence:
 | Output manifest paths | 69/69 absolute `D:\jakarta-heat-integration` | 69/69 relative; remediation 80/80 relative |
 | Spatial denominator docs | 2,526 / 2,526; island statement wrong | 2,536 common / 2,535 tested after island |
 | Remote-sensing provenance | `git_head cdda424...`, “uncommitted ... not an integrated release” | Historical labels plus current RC2 binding |
-| Build identity | `f1e69a3-dirty`; three commits conflated | Clean source commit `ba033d9`, artifact commit `8f74067` |
+| Build identity | `f1e69a3-dirty`; three commits conflated | Clean source commit `ac656e5`, artifact commit `267ebf7` |
 | Scientific model | M1–M4 provisional | Unchanged; byte-identical definitions, still `PROVISIONAL_UNSIGNED` |
 
 The standard manifest has 16 RC1-baseline hash changes, all in

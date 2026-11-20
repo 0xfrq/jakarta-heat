@@ -165,7 +165,7 @@
         "name": "integration_manifest",
         "path": "docs/integration_manifest.json",
         "expected_blob_sha256": "6670212f85d3e2e1ac724238130d678b0fb72b8c1eff4404117f11d4c5299fae",
-        "disk_sha256": "89a820d3fe1f9bf20bd349b9ad07c250682540e7e551806bed2745bfb7da900d",
+        "disk_sha256": "166f10548f94e788c0b38e5110713c1092d09eacba555dbfcaa31045b63fa858",
         "disk_match": false,
         "crlf_pairs": 143,
         "lf": 143

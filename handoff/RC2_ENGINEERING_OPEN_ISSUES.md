@@ -40,10 +40,9 @@ pass. They belong to the research-methodology workstream.
    source-raster hashes require the separate frozen bundle or a read-only
    restored root. RC2 does not claim raw-data reproducibility without it.
 2. **Browser scope is Chromium only.** The RC2 rerun passed 8/8 routes, 0 page
-   errors and the 254-row M4 download, but one harness locator (custom-weights
-   toggle) did not activate in the last run; 5/6 interactions were visible.
-   Dashboard freshness is independently verified by `scripts/verify_rc2.py`.
-   Edge/Firefox/Safari are not claimed.
+   errors, the 254-row M4 download and 6/6 interactions; the status table shows
+   repository-relative paths. Dashboard freshness is independently verified by
+   `scripts/verify_rc2.py`. Edge/Firefox/Safari are not claimed.
 3. **GPKG container bytes are serializer-dependent.** RC2 compares tables,
    IDs, scores, ranks and geometry; a GPKG byte difference is reported as a
    container difference, not silently treated as numerical equality.

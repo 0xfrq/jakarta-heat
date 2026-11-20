@@ -1,17 +1,17 @@
 {
   "schema_version": "rc2-build-record-1",
-  "source_revision": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
   "source_state": "clean",
   "source_dirty_paths": [],
-  "artifact_revision": "8f740675e25b3372ad8d2aba7ad2ece6bb45852a",
-  "artifact_tree": "4176b4cc4376cad21b1bf77df9a3e06c2888e0f9",
-  "build_git_state": "ba033d98a04e1d76d964bea6b8ee1b154ab02e03",
-  "built_at": "2026-11-20T10:12:08Z",
+  "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+  "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
+  "build_git_state": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "built_at": "2026-11-20T11:15:19Z",
   "build_command": [
     "python.exe",
     "scripts/run_agent3_pipeline.py"
   ],
-  "implementation_sha256": "59ff6061fd1aca3649c0eb331dcda8c7b0d17a39c54c222624b0789d2e19ba49",
+  "implementation_sha256": "1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a",
   "environment": {
     "python": "3.12.10",
     "pandas": "3.1.1",

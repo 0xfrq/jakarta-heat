@@ -10,8 +10,8 @@ claim raw-data reproducibility without the separate frozen bundle.
 
 | Item | Value |
 |---|---|
-| RC2 source build commit | `ba033d98a04e1d76d964bea6b8ee1b154ab02e03` |
-| RC2 artifact commit | `8f740675e25b3372ad8d2aba7ad2ece6bb45852a` |
+| RC2 source build commit | `ac656e5b1b123d3bb5c5f618489682109bba2de9` |
+| RC2 artifact commit | `267ebf78efc985926abd2ad64ec4d669138e1a6e` |
 | RC1 frozen baseline | `3b8ed05be92c35bbb2b3a617688540ee856b11c8` |
 | RC1 tree | `2b312d673faac64d51559cf9612caf61847ad226` |
 | Source state at build | clean; no uncommitted source modifications |

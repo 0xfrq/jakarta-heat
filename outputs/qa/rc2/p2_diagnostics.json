@@ -5,6 +5,6 @@
     "--p2-only"
   ],
   "returncode": 0,
-  "finished_utc": "2026-11-20T10:12:56.579566+00:00",
+  "finished_utc": "2026-11-20T11:16:14.336954+00:00",
   "log": "outputs/qa/rc2/p2_diagnostics.log"
 }
