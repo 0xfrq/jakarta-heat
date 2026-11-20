@@ -294,12 +294,21 @@ class InputStatus:
         return d
 
 
+def _display_path(path, root) -> str:
+    """Repository-relative POSIX path for UI/log display; never expose a host path."""
+    p = Path(path).resolve()
+    try:
+        return p.relative_to(Path(root).resolve()).as_posix()
+    except ValueError:
+        return p.name
+
+
 def assess_inputs(paths: C.Paths) -> InputStatus:
     """Periksa keberadaan dan validitas struktur semua masukan tanpa memodelkan."""
     st = InputStatus(state=INVALID, demo=paths.demo)
     for label, p in (("master_grid", paths.grid), ("grid_master_csv", paths.grid_master),
                      ("person2_spatial_features", paths.spatial_features), ("remote_sensing", paths.rs)):
-        st.files[label] = {"path": str(p), "exists": p.exists()}
+        st.files[label] = {"path": _display_path(p, paths.root), "exists": p.exists()}
     try:
         grid = read_grid_table(paths.grid)
         st.n_grid = len(grid)
