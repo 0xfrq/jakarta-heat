@@ -1,0 +1,32 @@
+2026-11-20 07:49:12.883 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:12.887 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:12.889 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:12.889 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:12.889 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:12.890 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:13.039 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:13.039 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-20 07:49:19.084 WARNING streamlit.runtime.caching.cache_data_api: No runtime found, using MemoryCacheStorageManager
+2026-11-20 07:49:19.086 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+{
+  "result": "PASS",
+  "n_master": 2765,
+  "n_common": 2536,
+  "no_age_support": 6,
+  "no_population_support": 6,
+  "manual_moran_m4": 0.593024953816681,
+  "checks": [
+    "A1 canonical RS adoption",
+    "A2 corrected counts/support adoption",
+    "independent scores/ranks/top sets",
+    "GIS geometry/table identity",
+    "contributions/Shapley",
+    "BH/BY",
+    "manual Moran",
+    "five A2 route scenarios consumed",
+    "dashboard/model equality",
+    "fresh manifests",
+    "immutable original audits and source refs"
+  ],
+  "boundary": "Engineering verification; scientific closure remains with independent reviewer/coordinator."
+}

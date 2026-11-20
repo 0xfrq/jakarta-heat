@@ -1,0 +1,22 @@
+﻿{
+    "browser_version":  "159.0.8154.6",
+    "pages":  8,
+    "continuous_navigation":  8,
+    "interactions":  6,
+    "download":  {
+                     "result":  "PASS",
+                     "rows":  254,
+                     "suggested_filename":  "top_m4.csv",
+                     "checks":  [
+                                    "canonical top IDs",
+                                    "scores",
+                                    "ranks",
+                                    "period/policy metadata"
+                                ]
+                 },
+    "page_errors":  [
+
+                    ],
+    "screenshot_count":  18,
+    "result":  "PASS"
+}

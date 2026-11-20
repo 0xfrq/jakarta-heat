@@ -1,0 +1,10 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/check_agent3_dashboard.py",
+    "--integrated"
+  ],
+  "returncode": 1,
+  "finished_utc": "2026-11-19T23:27:42.685769+00:00",
+  "log": "outputs\\qa\\rc1\\browser.log"
+}

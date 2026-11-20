@@ -1,0 +1,9 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/verify_rc1.py"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-20T00:49:31.877973+00:00",
+  "log": "outputs\\qa\\rc1\\verification.log"
+}

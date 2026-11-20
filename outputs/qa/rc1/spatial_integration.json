@@ -1,0 +1,13 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/07_integrate_spatial.py",
+    "--demographics",
+    "data/processed/demographic_features_corrected.csv",
+    "--support",
+    "data/processed/demographic_support.csv"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:44:15.501648+00:00",
+  "log": "outputs\\qa\\rc1\\spatial_integration.log"
+}

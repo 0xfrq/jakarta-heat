@@ -1,0 +1,9 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/check_agent3_replay.py"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-20T00:25:32.924771+00:00",
+  "log": "outputs\\qa\\rc1\\replay.log"
+}

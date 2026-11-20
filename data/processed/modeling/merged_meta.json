@@ -1,16 +1,18 @@
 {
   "source": "real",
-  "built_at": "2026-11-19T15:57:26Z",
+  "built_at": "2026-11-20T00:25:47Z",
   "n_grid": 2765,
-  "n_valid": 2538,
-  "valid_share": 0.9179023508137433,
+  "n_valid": 2536,
+  "valid_share": 0.9171790235081374,
   "n_valid_rs": 2764,
-  "n_valid_p2": 2539,
+  "n_valid_p2": 2537,
   "unreachable_policy": "exclude",
   "notes": [
     "Person 2: spatial_features.csv (2,765 baris)",
+    "Demographic evidence: demographic_support.csv; versions ['agent2-DM-01-v1-buffered-age']",
+    "Demographic evidence: demographic_features_corrected.csv; versions ['agent2-DM-01-v1-buffered-age']",
     "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])",
-    "remote_sensing: kolom tidak dipakai diabaikan: ['lst_mean_c', 'ndvi_mean', 'tree_fraction', 'grass_fraction', 'built_fraction', 'lst_std_c', 'lst_min_c', 'lst_max_c', 'lst_observation_min', 'ndvi_std', 'ndvi_valid_fraction', 'landsat_footprint_fraction', 'dw_valid_fraction', 'water_fraction', 'flooded_vegetation_fraction', 'crops_fraction', 'shrub_fraction', 'bare_fraction', 'dw_label_valid_fraction', 'qa_area_km2']"
+    "remote_sensing: kolom tidak dipakai diabaikan: ['lst_mean_c', 'ndvi_mean', 'tree_fraction', 'grass_fraction', 'built_fraction', 'lst_std_c', 'lst_min_c', 'lst_max_c', 'lst_observation_min', 'ndvi_std', 'ndvi_valid_fraction', 'landsat_footprint_fraction', 'dw_valid_fraction', 'water_fraction', 'flooded_vegetation_fraction', 'crops_fraction', 'shrub_fraction', 'bare_fraction', 'dw_label_valid_fraction', 'qa_area_km2', 'qa_area_m2', 'snow_ice_fraction', 'dw_label_missing_fraction', 'tree_fraction_valid', 'grass_fraction_valid', 'built_fraction_valid', 'water_fraction_valid', 'flooded_vegetation_fraction_valid', 'crops_fraction_valid', 'shrub_fraction_valid', 'bare_fraction_valid', 'snow_ice_fraction_valid']"
   ],
   "python": "3.12.10",
   "pandas": "3.1.1",
@@ -25,19 +27,19 @@
     "demo": false,
     "files": {
       "master_grid": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_500m_jakarta.gpkg",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_500m_jakarta.gpkg",
         "exists": true
       },
       "grid_master_csv": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_master.csv",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_master.csv",
         "exists": true
       },
       "person2_spatial_features": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\spatial_features.csv",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\spatial_features.csv",
         "exists": true
       },
       "remote_sensing": {
-        "path": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.csv",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
         "exists": true
       }
     },
@@ -47,6 +49,8 @@
     "errors": [],
     "notes": [
       "Person 2: spatial_features.csv (2,765 baris)",
+      "Demographic evidence: demographic_support.csv; versions ['agent2-DM-01-v1-buffered-age']",
+      "Demographic evidence: demographic_features_corrected.csv; versions ['agent2-DM-01-v1-buffered-age']",
       "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])",
       "Remote sensing: 1 grid punya nilai tetapi DIKELUARKAN aturan QA (LST/NDVI di luar rentang atau piksel LST valid < 50%): JKT_R037_C062"
     ],

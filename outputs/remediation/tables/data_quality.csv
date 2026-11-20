@@ -2,8 +2,8 @@ item,jumlah,persen
 lst_c kosong,0,0.0
 ndvi kosong,0,0.0
 population kosong,6,0.2
-pop_child kosong,19,0.7
-pop_elderly kosong,19,0.7
+pop_child kosong,6,0.2
+pop_elderly kosong,6,0.2
 park_distance_m kosong,226,8.2
 rute taman tidak dihitung (park_distance_m kosong),226,8.2
 jarak taman diimputasi (skenario worst/median),0,0.0
@@ -16,7 +16,7 @@ park_access_500m tidak konsisten dengan jarak,0,0.0
 park_access_1000m tidak konsisten dengan jarak,0,0.0
 LST porsi piksel valid < 50%,1,0.0
 QA remote sensing Agent 1: rs_qa_ok = False (ditandai),13,0.5
-grid valid data Person 2,2527,91.4
+grid valid data Person 2,2537,91.8
 grid valid remote sensing,2764,100.0
-GRID DIKELUARKAN dari perbandingan,239,8.6
-GRID VALID (himpunan pembanding bersama),2526,91.4
+GRID DIKELUARKAN dari perbandingan,229,8.3
+GRID VALID (himpunan pembanding bersama),2536,91.7

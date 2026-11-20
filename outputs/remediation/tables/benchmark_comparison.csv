@@ -1,7 +1,7 @@
 scenario,family,comparison,top_fraction,baseline_n,scenario_n,intersection_n,baseline_budget,scenario_budget,rank_spearman,retained,entered,left,jaccard
-heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.05,2526,2526,2526,127,127,0.8467760148720294,60,67,67,0.30927835051546393
-heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.1,2526,2526,2526,253,253,0.8467760148720294,141,112,112,0.3863013698630137
-heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.2,2526,2526,2526,506,506,0.8467760148720294,330,176,176,0.4838709677419355
-equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.05,2526,2526,2526,127,127,0.99746654924585,119,8,8,0.8814814814814815
-equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.1,2526,2526,2526,253,253,0.99746654924585,235,18,18,0.8671586715867159
-equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.2,2526,2526,2526,506,506,0.99746654924585,486,20,20,0.9239543726235742
+heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.05,2536,2536,2536,127,127,0.8468883399154887,61,66,66,0.3160621761658031
+heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.1,2536,2536,2536,254,254,0.8468883399154887,141,113,113,0.38419618528610355
+heat_only,construct_or_ablation,fixed_IDs_fixed_anchors,0.2,2536,2536,2536,508,508,0.8468883399154887,333,175,175,0.48755490483162517
+equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.05,2536,2536,2536,127,127,0.9974620052322375,119,8,8,0.8814814814814815
+equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.1,2536,2536,2536,254,254,0.9974620052322375,236,18,18,0.8676470588235294
+equal_weight,construct_or_ablation,fixed_IDs_fixed_anchors,0.2,2536,2536,2536,508,508,0.9974620052322375,489,19,19,0.9278937381404174

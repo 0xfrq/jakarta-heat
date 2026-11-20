@@ -1,0 +1,5 @@
+{
+    "status":  "ABORTED_RESOURCE_PRESSURE",
+    "reason":  "Preliminary fixture tests ran alongside graph screening on an 8 GB host; stopped to serialize work. Full tests will run after rebuild.",
+    "not_a_pass":  true
+}

@@ -1,0 +1,8 @@
+{
+  "source": "canonical RC1; fresh outputs checked after final pipeline",
+  "checks": {},
+  "screenshots": [],
+  "browser_version": "159.0.8154.6",
+  "result": "FAIL",
+  "error": "AssertionError()"
+}

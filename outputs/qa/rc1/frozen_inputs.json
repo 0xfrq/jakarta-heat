@@ -1,0 +1,9 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/agent2_freeze_inputs.py"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:39:02.964787+00:00",
+  "log": "outputs\\qa\\rc1\\frozen_inputs.log"
+}

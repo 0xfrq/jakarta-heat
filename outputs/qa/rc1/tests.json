@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "-ra",
+    "-p",
+    "no:cacheprovider",
+    "tests",
+    "--junitxml=outputs/qa/rc1/pytest.xml"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-20T00:38:10.653634+00:00",
+  "log": "outputs\\qa\\rc1\\tests.log"
+}

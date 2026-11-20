@@ -1,0 +1,97 @@
+"""Post-build freshness and missing-RS/demo visual evidence. QA utility, not a runtime import."""
+import json
+import os
+import subprocess
+import sys
+import time
+from pathlib import Path
+from urllib.request import urlopen
+from playwright.sync_api import sync_playwright
+
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "outputs/qa/rc1/dashboard"
+ENV = {k:v for k,v in os.environ.items() if not k.startswith("JHIM_")}
+ENV.update(PYTHONDONTWRITEBYTECODE="1", PYTHONIOENCODING="utf-8")
+REPORT = {"source": "canonical RC1; fresh outputs checked after final pipeline", "checks": {}, "screenshots": []}
+
+def capture(page, name):
+    viewport = page.viewport_size
+    height = page.evaluate("() => document.querySelector('[data-testid=stMain]').scrollHeight")
+    page.set_viewport_size({"width":viewport["width"], "height":int(min(max(height+80, viewport["height"]), 9000))})
+    page.wait_for_timeout(900)
+    page.screenshot(path=str(OUT/name), full_page=True)
+    REPORT["screenshots"].append(name)
+    page.set_viewport_size(viewport)
+
+def run_mode(mode):
+    port = 8551 if mode == "fresh" else 8552
+    env = dict(ENV)
+    if mode == "missing_rs":
+        env["JHIM_RS_PATH"] = str(ROOT / "dist/INTENTIONALLY_UNAVAILABLE_RS.csv")
+        assert not Path(env["JHIM_RS_PATH"]).exists()
+    command = [sys.executable, "-m", "streamlit", "run", str(ROOT/"dashboard/app.py"),
+               "--server.address=127.0.0.1", f"--server.port={port}", "--server.headless=true", "--browser.gatherUsageStats=false"]
+    with (OUT/f"postbuild_{mode}_server.log").open("w", encoding="utf-8") as log:
+        proc = subprocess.Popen(command, cwd=ROOT, env=env, stdout=log, stderr=subprocess.STDOUT,
+                                creationflags=getattr(subprocess,"CREATE_NO_WINDOW",0))
+        try:
+            for _ in range(60):
+                try:
+                    if urlopen(f"http://127.0.0.1:{port}/_stcore/health", timeout=1).status == 200: break
+                except Exception: time.sleep(.5)
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(headless=True)
+                REPORT["browser_version"] = browser.version
+                page = browser.new_page(viewport={"width":1440,"height":1100})
+                errors=[]
+                page.on("pageerror", lambda err: errors.append(str(err)))
+                page.goto(f"http://127.0.0.1:{port}", wait_until="domcontentloaded")
+                if mode == "fresh":
+                    page.get_by_text("kode, konfigurasi, masukan, dan isi keluaran cocok", exact=False).first.wait_for(timeout=240000)
+                    body=page.locator("body").inner_text()
+                    # Streamlit paints table cells onto canvas; their path text is not DOM text.
+                    assert "2,536" in body, "canonical cohort caption missing"
+                    assert "agent2-DM-01-v1-buffered-age" in body, "buffered source caption missing"
+                    manifest=json.loads((ROOT/"data/processed/modeling/run_manifest.json").read_text(encoding="utf-8"))
+                    REPORT["manifest_rs_path"]=manifest["inputs"]["remote_sensing"]["path"]
+                    assert REPORT["manifest_rs_path"].endswith("remote_sensing_remediated/remote_sensing_grid.csv") or REPORT["manifest_rs_path"].endswith("remote_sensing_remediated\\remote_sensing_grid.csv"), "canonical RS manifest path missing"
+                    REPORT["checks"]["fresh_outputs_visible"] = True
+                    capture(page,"page_0_desktop.png")
+                else:
+                    page.get_by_role("link", name="Model prioritas", exact=False).first.click()
+                    page.get_by_text("belum tersedia untuk data asli", exact=False).first.wait_for(timeout=240000)
+                    body=page.locator("body").inner_text()
+                    assert "P2_ONLY" in body and "MODE DEMO" not in body
+                    REPORT["checks"]["missing_rs_explicit_pending"] = True
+                    capture(page,"missing_rs_desktop.png")
+                page.set_viewport_size({"width":390,"height":844})
+                if page.locator('[data-testid="stSidebar"][aria-expanded="true"]').count():
+                    page.locator('[data-testid="stSidebarCollapseButton"] button, [data-testid="stSidebarCollapseButton"]').first.click(force=True)
+                capture(page,"page_0_narrow.png" if mode=="fresh" else "missing_rs_narrow.png")
+                if mode == "missing_rs":
+                    page.set_viewport_size({"width":1440,"height":1100})
+                    if page.locator('[data-testid="stSidebar"][aria-expanded="false"]').count():
+                        page.locator('[data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"] button').first.click(force=True)
+                    page.get_by_text("DEMO (data sintetis)",exact=False).first.click()
+                    page.get_by_text("MODE DEMO",exact=False).first.wait_for(timeout=240000)
+                    # Wait for the model view as well as its early banner.
+                    page.get_by_role("button", name="Unduh CSV",exact=True).first.wait_for(timeout=240000)
+                    REPORT["checks"]["demo_explicit_synthetic"] = True
+                    capture(page,"demo_label_desktop.png")
+                assert not errors and not page.locator('[data-testid="stException"]').count(), errors
+                browser.close()
+        finally:
+            proc.terminate()
+            try: proc.wait(timeout=10)
+            except subprocess.TimeoutExpired: proc.kill()
+
+try:
+    run_mode("fresh")
+    run_mode("missing_rs")
+    REPORT["result"]="PASS"
+except Exception as error:
+    REPORT.update(result="FAIL", error=repr(error))
+finally:
+    (OUT/"postbuild_verification.json").write_text(json.dumps(REPORT,indent=2),encoding="utf-8")
+print(json.dumps(REPORT,indent=2))
+if REPORT.get("result")!="PASS": sys.exit(1)

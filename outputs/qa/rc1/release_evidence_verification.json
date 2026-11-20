@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "engineering_readiness": "READY FOR INDEPENDENT RE-AUDIT",
+  "scientific_release": "HOLD: coordinator and independent scientific approval pending",
+  "tests": 236,
+  "subtests": 7,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "canonical_agent1_skip_revisited": "EXECUTED_PASS",
+  "browser_routes": 8,
+  "browser_interactions": 6,
+  "browser_version": "159.0.8154.6",
+  "replay_tables": 63,
+  "max_numeric_replay_difference": 0.0,
+  "implementation_sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
+  "changed_since_full_suite": [],
+  "changed_helper_validation": "none: full suite executed on the final implementation",
+  "frozen_inputs_verified": 55,
+  "bundle_sha256": "3fc027ed47b8fb122f8d5ed3fdc3bec7f306d6a358e99ee0c2e42bb00c011f3a",
+  "a1_export_hashes": {
+    "data/processed/remote_sensing/jakarta_2024_lst_ndvi_qa.tif": "f46d0db14f2f667a533eff7960bb870b4b2676709af43e70d08e670a075958dd",
+    "data/processed/remote_sensing/jakarta_2024_trees_built_probability.tif": "c36b618e81c61568cc037c171f2bba44f542420a3ee46e446d38ff2af7de7037"
+  },
+  "build_source_commit": "f1e69a370f743985977e3d90c59179c76eea35d9",
+  "checker_sha256": "f0d277b47f30681aff312cd05cd6bed83064ad9abfddd7ed62b979295db5bae3"
+}

@@ -1,0 +1,16 @@
+{
+  "scope": "RC1 consolidated canonical inputs; provisional scientific policy",
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "-m",
+    "streamlit",
+    "run",
+    "D:\\jakarta-heat-integration\\dashboard\\app.py",
+    "--server.headless=true",
+    "--server.address=127.0.0.1",
+    "--server.port=8543",
+    "--browser.gatherUsageStats=false"
+  ],
+  "pages": [],
+  "verification_error": "Error('Locator.wait_for: Target crashed \\nCall log:\\n  - waiting for get_by_text(\"Interpretasi.\").first to be visible\\n')"
+}

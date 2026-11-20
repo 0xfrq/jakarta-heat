@@ -1,99 +1,102 @@
 {
   "status": {
-    "state": "P2_ONLY",
+    "state": "COMPLETE",
     "demo": false,
     "files": {
       "master_grid": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_500m_jakarta.gpkg",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_500m_jakarta.gpkg",
         "exists": true
       },
       "grid_master_csv": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\grid_master.csv",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_master.csv",
         "exists": true
       },
       "person2_spatial_features": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\spatial_features.csv",
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\spatial_features.csv",
         "exists": true
       },
       "remote_sensing": {
-        "path": "D:\\jakarta-heat-agent3\\data\\processed\\remote_sensing_grid.csv",
-        "exists": false
+        "path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+        "exists": true
       }
     },
     "n_grid": 2765,
-    "n_rs_rows": 0,
-    "n_rs_usable": 0,
+    "n_rs_rows": 2765,
+    "n_rs_usable": 2764,
     "errors": [],
     "notes": [
       "Person 2: spatial_features.csv (2,765 baris)",
-      "Remote sensing: remote_sensing_grid.csv belum ada di D:\\jakarta-heat-agent3\\data\\processed."
+      "Demographic evidence: demographic_support.csv; versions ['agent2-DM-01-v1-buffered-age']",
+      "Demographic evidence: demographic_features_corrected.csv; versions ['agent2-DM-01-v1-buffered-age']",
+      "Remote sensing: remote_sensing_grid.csv (2,765 baris; kolom opsional: ['lst_unc_k', 'lst_obs', 'lst_valid_frac', 'trees_prob', 'built_prob', 'rs_qa_ok'])",
+      "Remote sensing: 1 grid punya nilai tetapi DIKELUARKAN aturan QA (LST/NDVI di luar rentang atau piksel LST valid < 50%): JKT_R037_C062"
     ],
-    "text": "Data Person 2 tersedia dan valid; data remote sensing Agent 1 BELUM ada. Skor M1-M4 belum dapat dihitung."
+    "text": "Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan."
   },
   "n_flagged": 315,
   "moran": [
     {
       "variabel": "log1p_population",
       "bobot": "queen",
-      "I": 0.49926516899546036,
+      "I": 0.48339431511341013,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "log1p_population",
       "bobot": "rook",
-      "I": 0.5729535921473009,
+      "I": 0.5614126430812931,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "log1p_population",
       "bobot": "knn8",
-      "I": 0.4900408134974255,
+      "I": 0.47850957270675964,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "log1p_pop_vulnerable",
       "bobot": "queen",
-      "I": 0.4973228510739086,
+      "I": 0.4968327076823483,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "log1p_pop_vulnerable",
       "bobot": "rook",
-      "I": 0.5731770659569145,
+      "I": 0.5761055025845156,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "log1p_pop_vulnerable",
       "bobot": "knn8",
-      "I": 0.4897361301047163,
+      "I": 0.49099673742622396,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "vuln_share",
       "bobot": "queen",
-      "I": 0.07428079113298876,
+      "I": 0.31183248371989636,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "vuln_share",
       "bobot": "rook",
-      "I": 0.11210888480177321,
+      "I": 0.31616466529389936,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "vuln_share",
       "bobot": "knn8",
-      "I": 0.083315715840005,
+      "I": 0.3084597695074557,
       "p_sim": 0.001,
-      "n": 2765
+      "n": 2759
     },
     {
       "variabel": "park_distance_m",
@@ -120,7 +123,7 @@
   "lisa_park_distance_islands": [
     "JKT_R013_C019"
   ],
-  "built_at": "2026-11-19T15:22:33Z",
+  "built_at": "2026-11-20T00:29:28Z",
   "source": "real",
   "catatan": "Deskriptif data Person 2 (WorldPop, OSM, jarak jaringan model). Bukan skor prioritas. park_distance_m kosong = rute tidak dihitung; dikeluarkan dari statistik jarak."
 }

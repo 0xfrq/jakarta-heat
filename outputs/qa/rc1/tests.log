@@ -1,0 +1,11 @@
+........................................................................ [ 30%]
+........................................................................ [ 61%]
+........................................................................ [ 91%]
+....................                                              [100%]
+============================== warnings summary ===============================
+tests/agent3/test_data_contract.py::test_grid_without_crs_rejected
+  D:\jakarta-heat-integration\.venv\rc1\Lib\site-packages\pyogrio\geopandas.py:948: UserWarning: 'crs' was not provided.  The output dataset will not have projection information defined and may not be usable in other systems.
+    write(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+236 passed, 1 warning, 7 subtests passed in 404.74s (0:06:44)

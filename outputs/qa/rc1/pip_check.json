@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:38:52.635467+00:00",
+  "log": "outputs\\qa\\rc1\\pip_check.log"
+}

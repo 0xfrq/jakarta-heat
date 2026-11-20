@@ -1,0 +1,11 @@
+{
+    "tests": 243,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "canonical_agent1_cases": 1,
+    "canonical_agent1_passed": true,
+    "source_commit": "f1e69a370f743985977e3d90c59179c76eea35d9",
+    "implementation_sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
+    "pytest_summary": "236 passed; 7 subtests passed; no failures or skips; one expected missing-CRS warning"
+}

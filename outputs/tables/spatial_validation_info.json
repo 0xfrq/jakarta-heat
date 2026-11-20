@@ -21,5 +21,8 @@
       "JKT_R013_C019"
     ]
   },
+  "local_alternative": "directed",
+  "global_alternative": "greater",
+  "testing_family": "each preselected map separately; all non-island eligible grids",
   "catatan": "LISA diuji per grid (uji berganda); klaim memakai kolom klaster_fdr (Benjamini-Hochberg). Klaster adalah deskriptif, bukan penjelasan kausal."
 }

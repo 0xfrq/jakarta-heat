@@ -1,0 +1,32 @@
+{
+  "source_files": [
+    {
+      "source": "D:\\jakarta-heat-integration\\data\\processed\\remediation_inputs\\audited_merged_grid.csv",
+      "copy": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\audited_merged_grid.csv",
+      "sha256": "1f334d0ac52d716809d1d1d27d906f7f9138d0f2da8584d7740dff3131d1b30e"
+    },
+    {
+      "source": "D:\\jakarta-heat-integration\\data\\processed\\remediation_inputs\\audited_priority_models.csv",
+      "copy": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\audited_priority_models.csv",
+      "sha256": "60174555b499e08fe6ac41fc977f6f228c661bf86f9f833b36bd52942f4fa83f"
+    },
+    {
+      "source": "audit\\evidence\\gis\\independent_raster_support.csv",
+      "copy": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_raster_support.csv",
+      "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
+    },
+    {
+      "source": "audit\\evidence\\gis\\independent_full_network.csv",
+      "copy": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_network.csv",
+      "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
+    }
+  ],
+  "mode": "integrated",
+  "canonical": {
+    "data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0",
+    "data\\processed\\demographic_support.csv": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621",
+    "data\\processed\\demographic_features_corrected.csv": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2",
+    "data\\processed\\agent2_route_scenarios.csv": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d"
+  },
+  "restriction": "Auditor tables are comparisons only; canonical Agent1/Agent2 inputs drive analysis."
+}

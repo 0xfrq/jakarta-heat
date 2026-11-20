@@ -1,0 +1,31 @@
+Screen original simplified edges without changing snap nodes
+{
+  "policy_version": "AC-02-v1-conservative-exploratory",
+  "source_graph_sha256": "40a1eb84e287a01a4af83c2091261b4f21e9acf571e227d8593654bed87671a6",
+  "source_walk_xml_sha256": "66a6fe69132739a93ef8d09522eea3b05cd6845c1c96e41297ed862191861ee9",
+  "precedence": [
+    "foot=no/private forbids",
+    "access=no/private forbids unless foot=yes/designated/permissive",
+    "conditional tags remain unresolved",
+    "barrier alone is not confirmed closure"
+  ],
+  "edge_policy": "remove edges with explicit forbidden endpoints or 0.05m-matched geometry vertices",
+  "connector_policy": "exclude direct origin/park connector within 0.05m of explicitly forbidden source node; do not resnap",
+  "unknown_physical_crossings": "unresolved; no water/fence legality or opening-hours validation",
+  "node_counts": {
+    "barrier_permission_unknown": 25882,
+    "explicitly_forbidden": 12413,
+    "explicit_foot_permission_unverified": 588,
+    "conditional_unknown": 530,
+    "unknown": 173
+  },
+  "removed_directed_edges": 24370,
+  "origin_connector_forbidden": 167,
+  "park_connector_forbidden": 78,
+  "baseline_missing": 226,
+  "node_scenario_missing": 407,
+  "connector_scenario_missing": 407,
+  "same_original_snap_nodes": true,
+  "coordinator_policy_approval": "pending",
+  "physical_connector_validation": "unresolved"
+}

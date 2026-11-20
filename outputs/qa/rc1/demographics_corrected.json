@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/aggregate_demographics.py",
+    "--population",
+    "data/raw/worldpop/idn_pop_2024.tif",
+    "--pop-child",
+    "data/raw/worldpop/age_buffered/jakarta_child_2024_buffered.tif",
+    "--pop-elderly",
+    "data/raw/worldpop/age_buffered/jakarta_elderly_2024_buffered.tif",
+    "--support-version",
+    "agent2-DM-01-v1-buffered-age"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:44:08.272081+00:00",
+  "log": "outputs\\qa\\rc1\\demographics_corrected.log"
+}

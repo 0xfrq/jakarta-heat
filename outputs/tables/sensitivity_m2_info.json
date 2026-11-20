@@ -4,7 +4,7 @@
     "lst": 0.6,
     "ndvi_low": 0.4
   },
-  "n_valid": 2538,
+  "n_valid": 2536,
   "n_top": 254,
   "top_frac": 0.1,
   "n_scenarios": 12,
@@ -14,5 +14,5 @@
   "min_jaccard": 0.6025236593059937,
   "median_jaccard": 0.9279006798018204,
   "stable_threshold": 0.8,
-  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak."
+  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak. Frekuensi bukan probabilitas atau interval kepercayaan; tidak mencakup semua keluarga GIS."
 }

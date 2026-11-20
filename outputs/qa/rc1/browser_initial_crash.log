@@ -1,0 +1,53 @@
+{
+  "scope": "RC1 consolidated canonical inputs; provisional scientific policy",
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "-m",
+    "streamlit",
+    "run",
+    "D:\\jakarta-heat-integration\\dashboard\\app.py",
+    "--server.headless=true",
+    "--server.address=127.0.0.1",
+    "--server.port=8543",
+    "--browser.gatherUsageStats=false"
+  ],
+  "pages": [
+    {
+      "page": "Ikhtisar",
+      "heading": "Jakarta Heat Inequality Mapper",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 10,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Penjelajah data",
+      "heading": "Penjelajah data",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 24,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Panas dan vegetasi",
+      "heading": "Panas dan vegetasi",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 17,
+      "narrow_sidebar_collapsed": true
+    },
+    {
+      "page": "Model prioritas",
+      "heading": "Model prioritas M1\u2013M4",
+      "exceptions": [],
+      "mixed_period_visible": true,
+      "corrected_n_visible": true,
+      "canvas_count": 17,
+      "narrow_sidebar_collapsed": true
+    }
+  ],
+  "verification_error": "Error('Locator.count: Target crashed ')"
+}

@@ -5,15 +5,15 @@
     "ndvi_low": 0.3,
     "pop": 0.3
   },
-  "n_valid": 2538,
+  "n_valid": 2536,
   "n_top": 254,
   "top_frac": 0.1,
   "n_scenarios": 15,
-  "n_baseline_top_stable": 235,
-  "share_baseline_top_stable": 0.9251968503937008,
+  "n_baseline_top_stable": 234,
+  "share_baseline_top_stable": 0.9212598425196851,
   "n_baseline_top_in_all": 172,
   "min_jaccard": 0.6601307189542484,
   "median_jaccard": 0.9315589353612167,
   "stable_threshold": 0.8,
-  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak."
+  "catatan": "Analisis eksploratif one-at-a-time; stable_share dihitung atas skenario tempat grid layak. Frekuensi bukan probabilitas atau interval kepercayaan; tidak mencakup semua keluarga GIS."
 }

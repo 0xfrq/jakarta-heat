@@ -1,0 +1,48 @@
+{
+  "result": "PASS semantic replay",
+  "first_run_built_at": "2026-11-20T00:20:28Z",
+  "second_run_built_at": "2026-11-20T00:25:11Z",
+  "same_implementation_sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
+  "same_config_inputs_actual_runtime": true,
+  "runtime": {
+    "permutations": 999,
+    "high_permutations": 9999,
+    "seed": 42,
+    "skip_spatial": false,
+    "local_alternative": "directed",
+    "top_frac": 0.1
+  },
+  "both_runs_fresh_by_manifest_status": true,
+  "tables_and_metadata_compared": 63,
+  "max_abs_numeric_difference": 0.0,
+  "tolerance": {
+    "atol": 1e-12,
+    "rtol": 1e-12
+  },
+  "gpkg_geometry_rows": {
+    "outputs/remediation/gis/priority_models.gpkg": 2765
+  },
+  "gpkg_byte_identical": {
+    "outputs/remediation/gis/priority_models.gpkg": false
+  },
+  "figures_byte_identical": [
+    "outputs/remediation/figures/annotated_geographic_cases.png",
+    "outputs/remediation/figures/annotated_geographic_cases.svg",
+    "outputs/remediation/figures/component_contributions.png",
+    "outputs/remediation/figures/component_contributions.svg",
+    "outputs/remediation/figures/count_versus_composition.png",
+    "outputs/remediation/figures/count_versus_composition.svg",
+    "outputs/remediation/figures/eligibility_and_excluded_priority_map.png",
+    "outputs/remediation/figures/eligibility_and_excluded_priority_map.svg",
+    "outputs/remediation/figures/matched_park_increment.png",
+    "outputs/remediation/figures/matched_park_increment.svg",
+    "outputs/remediation/figures/matched_weight_priority_shifts.png",
+    "outputs/remediation/figures/matched_weight_priority_shifts.svg",
+    "outputs/remediation/figures/model_specific_vs_common.png",
+    "outputs/remediation/figures/model_specific_vs_common.svg",
+    "outputs/remediation/figures/scenario_family_stability.png",
+    "outputs/remediation/figures/scenario_family_stability.svg"
+  ],
+  "figures_byte_changed": [],
+  "boundary": "Consolidated canonical A1/A2 inputs and live A3 implementation; upstream frozen-input rebuild and fresh environment are verified separately in outputs/qa/rc1. Acquisition-origin lineage remains outside this replay. Container/figure byte identity is reported separately from scientific equivalence."
+}

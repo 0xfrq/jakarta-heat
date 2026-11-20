@@ -1,483 +1,124 @@
 {
-  "manifest_version": "agent2-IN-01-prep-v1",
-  "generated_utc": "2026-11-19T22:15:31.653762+00:00",
-  "status": "IN-01 BLOCKED: no committed consolidated candidate; this manifest is preparation evidence only",
-  "consolidated_tests": "NOT YET TESTED",
-  "agreed_base": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
-  "worktrees": [
-    {
-      "path": "D:/jakarta-heat",
-      "branch": "refs/heads/main",
-      "head": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
-      "dirty_entries": 1,
-      "status_porcelain": [
-        "?? audit/"
-      ]
-    },
-    {
-      "path": "D:/jakarta-heat-agent1",
-      "branch": "refs/heads/agent/person1",
-      "head": "4f6c6797bfdd5148d7a91ef0f002bf6467edb04e",
-      "dirty_entries": 0,
-      "status_porcelain": []
-    },
-    {
-      "path": "D:/jakarta-heat-agent2",
-      "branch": "refs/heads/agent/person2",
-      "head": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
-      "dirty_entries": 48,
-      "status_porcelain": [
-        " M README.md",
-        " M scripts/04_extract_parks.py",
-        " M scripts/07_integrate_spatial.py",
-        "?? data/processed/agent2_route_scenarios.csv",
-        "?? data/processed/demographic_features_corrected.csv",
-        "?? data/processed/demographic_support.csv",
-        "?? data/processed/final_model_features.csv",
-        "?? data/processed/final_model_features_corrected.csv",
-        "?? data/processed/final_model_features_corrected.gpkg",
-        "?? data/processed/park_access_evidence.csv",
-        "?? data/processed/spatial_features_corrected.csv",
-        "?? data/processed/validated_park_entrances.gpkg",
-        "?? data/processed/walking_permission_manifest.json",
-        "?? docs/REPRODUCE.md",
-        "?? docs/agent2_frozen_inputs.json",
-        "?? docs/agent2_scenario_registry.csv",
-        "?? docs/agent2_variable_reference_periods.csv",
-        "?? docs/demographic_mask_semantics.md",
-        "?? docs/historical_osm_feasibility.md",
-        "?? docs/integration_manifest.json",
-        "?? docs/park_destination_policy.md",
-        "?? docs/population_aggregation_method.md",
-        "?? handoff/",
-        "?? outputs/qa/",
-        "?? qgis/agent2_gis_qa.qgz",
-        "?? requirements-agent2.txt",
-        "?? requirements.lock",
-        "?? scripts/agent2_buffered_age.py",
-        "?? scripts/agent2_capture_baseline.py",
-        "?? scripts/agent2_compare_runs.py",
-        "?? scripts/agent2_connector_remediation.py",
-        "?? scripts/agent2_enrich_evidence.py",
-        "?? scripts/agent2_finalize.py",
-        "?? scripts/agent2_freeze_inputs.py",
-        "?? scripts/agent2_gis.py",
-        "?? scripts/agent2_historical_pilot.py",
-        "?? scripts/agent2_integration_manifest.py",
-        "?? scripts/agent2_node_restrictions.py",
-        "?? scripts/agent2_park_evidence.py",
-        "?? scripts/agent2_qgis_project.py",
-        "?? scripts/agent2_remediation_effects.py",
-        "?? scripts/agent2_write_handoff.py",
-        "?? scripts/aggregate_demographics.py",
-        "?? scripts/person2_contracts.py",
-        "?? scripts/run_reproduction.ps1",
-        "?? tests/test_agent2_gis.py",
-        "?? tests/test_agent2_remediation.py",
-        "?? tests/test_demographic_support.py"
-      ]
-    },
-    {
-      "path": "D:/jakarta-heat-agent3",
-      "branch": "refs/heads/agent/person3",
-      "head": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
-      "dirty_entries": 51,
-      "status_porcelain": [
-        " M README.md",
-        "R  dashboard/app.py -> dashboard/app_4b_prototype.py",
-        " M jhim/compare.py",
-        " M jhim/config.py",
-        " M jhim/data.py",
-        " M jhim/figures.py",
-        " M jhim/io.py",
-        " M jhim/models.py",
-        " M jhim/sensitivity.py",
-        " M jhim/spatial.py",
-        " M jhim/util.py",
-        " M scripts/03_prepare_model.py",
-        " M scripts/04_priority_model.py",
-        " M scripts/05_spatial_validation.py",
-        " M scripts/06_sensitivity.py",
-        " M scripts/07_export_paper.py",
-        "?? .streamlit/",
-        "?? dashboard/README.md",
-        "?? dashboard/app.py",
-        "?? dashboard/lib/",
-        "?? dashboard/requirements.txt",
-        "?? dashboard/views/",
-        "?? data/processed/modeling/",
-        "?? data/processed/modeling_remediation/",
-        "?? data/processed/remediation_inputs/",
-        "?? docs/AGENT3_REMEDIATION_REPRODUCE.md",
-        "?? docs/agent3_methods.md",
-        "?? docs/claim_to_period_matrix.csv",
-        "?? docs/demographic_model_interface.md",
-        "?? docs/external_validation_scope.md",
-        "?? docs/model_specification.json",
-        "?? docs/research_decisions.md",
-        "?? docs/scenario_registry.csv",
-        "?? docs/spatial_inference_spec.md",
-        "?? docs/variable_reference_periods.csv",
-        "?? handoff/",
-        "?? jhim/pipeline.py",
-        "?? jhim/provenance.py",
-        "?? jhim/remediation.py",
-        "?? outputs/figures/",
-        "?? outputs/gis/",
-        "?? outputs/qa/",
-        "?? outputs/remediation/",
-        "?? outputs/tables/",
-        "?? requirements-agent3.lock",
-        "?? scripts/check_agent3_dashboard.py",
-        "?? scripts/check_agent3_replay.py",
-        "?? scripts/run_agent3_pipeline.py",
-        "?? scripts/run_agent3_remediation.py",
-        "?? scripts/verify_agent3_remediation.py",
-        "?? tests/agent3/"
-      ]
-    }
-  ],
-  "agent2_dirty_source_hashes": {
-    "README.md": {
-      "sha256": "022f23924914aa0b8032d6293f5169883bc523e62709bae6fcc7541b89a507ad",
-      "bytes": 5164
-    },
-    "docs/REPRODUCE.md": {
-      "sha256": "41df8d423a7956fbffc93032ec3c4b318d0ea86f5e2ce5086bc8656a9682747e",
-      "bytes": 7985
-    },
-    "docs/agent2_frozen_inputs.json": {
-      "sha256": "7419f2ecf16b1753cba5a3107c62ce2822f68439e3e491adc76292baf6573c5f",
-      "bytes": 11377
-    },
-    "docs/agent2_scenario_registry.csv": {
-      "sha256": "722bc47414c5c0a284978cad274f514646d270766d52883d0aabc4b99b04e476",
-      "bytes": 5502
-    },
-    "docs/agent2_variable_reference_periods.csv": {
-      "sha256": "07740549c279c4043a644906181bda085b31c0e2e9e11950341dbf002a7c34a8",
-      "bytes": 2028
-    },
-    "docs/demographic_mask_semantics.md": {
-      "sha256": "b731492ad5fac6ebba402ca78622eaaec9fab865b68366a25691d3ef302e8a99",
-      "bytes": 4993
-    },
-    "docs/historical_osm_feasibility.md": {
-      "sha256": "f6f1c475e5c3e7f0325324850246ef39931fcfb423d2b4e8ba06b9b9ed5e6934",
-      "bytes": 2431
-    },
-    "docs/integration_manifest.json": {
-      "sha256": "1a040f39b2bf00dc08c36e1dfa18e8c1e794a5aafcb5b2964a04823ec5ed7aae",
-      "bytes": 20777
-    },
-    "docs/park_destination_policy.md": {
-      "sha256": "3d1a49f3f07984769348ce16afbb47164df8d1baa631c9882844441bcd70879d",
-      "bytes": 5064
-    },
-    "docs/population_aggregation_method.md": {
-      "sha256": "2e377e486e1b4112cd0dc423b55828bc2db68446dc19818fb95128c51d74b075",
-      "bytes": 3920
-    },
-    "handoff/AGENT2_DATA_DICTIONARY.md": {
-      "sha256": "efd60ac556210427b65e92ac3fed46be036225c80cb52debfa15b0e25cf56ebe",
-      "bytes": 20891
-    },
-    "handoff/AGENT2_DECISION_REGISTER.md": {
-      "sha256": "223a6bdcc2f3e6d178f3d5ddc765fa5075ce401bc6b82f7f11008a1c9d4126f3",
-      "bytes": 4377
-    },
-    "handoff/AGENT2_HANDOFF.md": {
-      "sha256": "8a3de2b37488b0457d3bc782f42ef4a4b7537799897f2d747b2f9e2eb9b99298",
-      "bytes": 31219
-    },
-    "handoff/AGENT2_ISSUES.md": {
-      "sha256": "895cabb8a3bbb5d4df28066fcdaff4bceb41f1770c7df9767003b769abf0edd1",
-      "bytes": 7432
-    },
-    "handoff/AGENT2_README_ID.md": {
-      "sha256": "371269c45bdb8fff50bd99d7e89d4b91667b33224b0a00acd3c5bbdfd8d07d1a",
-      "bytes": 2961
-    },
-    "handoff/AGENT2_VISUAL_QA.md": {
-      "sha256": "e258c9af48db7c13e6e9926ed495fcfa3dc80273fac8419d3b8bd3951365d92a",
-      "bytes": 3796
-    },
-    "handoff/CONTINUE_AGENT2_REMEDIATION_PROMPT.md": {
-      "sha256": "6a51b7fd6c59acf9e57ba3e5f51fa3fe0a380d6976b6c70e8aa4df58c259743e",
-      "bytes": 8743
-    },
-    "handoff/REMEDIATION_AGENT2.md": {
-      "sha256": "71fc9bd15a90efec6f57d79e2ff6ab24103384ceeada479d78e0d8510a47da1e",
-      "bytes": 12439
-    },
-    "requirements-agent2.txt": {
-      "sha256": "e53456bcd1fcba224026aef82e066bc02d4deddd9d04c3ecef464f5fcc274a87",
-      "bytes": 581
-    },
-    "requirements.lock": {
-      "sha256": "fab561925d2449e7d89877ae64be7c1f93a1af24e3aa22f26191b27ab946c950",
-      "bytes": 1198
-    },
-    "scripts/04_extract_parks.py": {
-      "sha256": "36dabaef22bb0a7076a6ccbf03e7e0d3f1f07463d7d3d6e6f3c5e27d8ce7d5fc",
-      "bytes": 2785
-    },
-    "scripts/07_integrate_spatial.py": {
-      "sha256": "f37ebce6904c1afb6c139ef22ba2175a9f144866b9c07e30d36c159ea538a3f4",
-      "bytes": 1884
-    },
-    "scripts/agent2_buffered_age.py": {
-      "sha256": "9182366a4c16698e2082503c4ddbb615a9db21a218bef59eb75de71ac63f6828",
-      "bytes": 2544
-    },
-    "scripts/agent2_capture_baseline.py": {
-      "sha256": "8e3dca1c90b455eb0b5d79be7f83792680f84eda377f7a44f7debd6e4f98fc2e",
-      "bytes": 2820
-    },
-    "scripts/agent2_compare_runs.py": {
-      "sha256": "1a6a02febc5c7370bbe4532340976e87a46a729c00099a6d2f646ce325de48b1",
-      "bytes": 6261
-    },
-    "scripts/agent2_connector_remediation.py": {
-      "sha256": "fd3f8f7fe3dc0c8b99dae69d31316d6de2bde5d41fffe394cdba80b577e9d96e",
-      "bytes": 9678
-    },
-    "scripts/agent2_enrich_evidence.py": {
-      "sha256": "909df20c003e02fc68d8540d0e6dec4fd22916e01acac4b4ca4f962fa339ca55",
-      "bytes": 10448
-    },
-    "scripts/agent2_finalize.py": {
-      "sha256": "4f1f76ed7427b4ea90f05598e21ca3da70ff393c11a5d82531ff11dfe4fd9786",
-      "bytes": 4613
-    },
-    "scripts/agent2_freeze_inputs.py": {
-      "sha256": "0d83d7569aa1b431a8a90de1fe2d8b5608ffbb6131f2e50b62f98fb5592fa4de",
-      "bytes": 6147
-    },
-    "scripts/agent2_gis.py": {
-      "sha256": "029550c579068f2864ed299e551a162045c760ccbafa08ffe87b5e20904707d4",
-      "bytes": 50649
-    },
-    "scripts/agent2_historical_pilot.py": {
-      "sha256": "c19a339aaadacc50beeb4ad7bd5a376fd860be5a4c16734bfaba7817adc3e613",
-      "bytes": 4933
-    },
-    "scripts/agent2_integration_manifest.py": {
-      "sha256": "4322357ed524b84974dc9ee7314ba88f820d23467032ce91ff1481d5077b35f5",
-      "bytes": 8431
-    },
-    "scripts/agent2_node_restrictions.py": {
-      "sha256": "7b4f26bf9079c5e50533830c8edef6f0be816ee9d3a25b24a55f622ba7e9ec52",
-      "bytes": 5164
-    },
-    "scripts/agent2_park_evidence.py": {
-      "sha256": "8f797595cc1ec3e5982a54a9876add4988720a6767f21b5174d173086a505d6b",
-      "bytes": 9329
-    },
-    "scripts/agent2_qgis_project.py": {
-      "sha256": "c77ad9b513c62f45f72647ed49c55a7c6291fe5bbdf65a70846fe5cf6f779009",
-      "bytes": 3708
-    },
-    "scripts/agent2_remediation_effects.py": {
-      "sha256": "c721ab65ff2e653ebba5859bc92a1e97acc1ea6b1585fbdff71fce71b1b46b62",
-      "bytes": 17913
-    },
-    "scripts/agent2_write_handoff.py": {
-      "sha256": "bdeeda9ff307e5bc3fb6a8f1c512b406653f6a1344544beb9d6746fb76327044",
-      "bytes": 57620
-    },
-    "scripts/aggregate_demographics.py": {
-      "sha256": "543c5eef4ae187cafaa5c1b3747ee4a866dd87ba846b10e0971c429b870b9bd8",
-      "bytes": 9737
-    },
-    "scripts/person2_contracts.py": {
-      "sha256": "26a5ae4c9cc0adc734a6a8b65563147ed30e8638ca6f6c185f86305602f99622",
-      "bytes": 4618
-    },
-    "scripts/run_reproduction.ps1": {
-      "sha256": "434cd6018ea911ba28429e394886d533e0ec775705fbfd43e94c00f5a45b81d9",
-      "bytes": 3394
-    },
-    "tests/test_agent2_gis.py": {
-      "sha256": "42eea394edcc4dd615246a87063e218c8073e99abcfdf5c3f951b3173edc9c96",
-      "bytes": 7471
-    },
-    "tests/test_agent2_remediation.py": {
-      "sha256": "f8fafcdeb948b1d75ac53cf4d013d81e4556607c8e93d366a8c4c29b6121b96d",
-      "bytes": 11304
-    },
-    "tests/test_demographic_support.py": {
-      "sha256": "8de82684444c2cfe6da830aa5d11a1bc4f4574d98d0562556f49681110417c9c",
-      "bytes": 4103
-    }
+  "schema_version": "rc1-1",
+  "branch": "integration/rc1",
+  "candidate_source_commit": "f1e69a370f743985977e3d90c59179c76eea35d9",
+  "build_git_state": "f1e69a370f743985977e3d90c59179c76eea35d9-dirty",
+  "source_refs": {
+    "main": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b",
+    "agent/person1": "4f6c6797bfdd5148d7a91ef0f002bf6467edb04e",
+    "agent/person2": "e713342bf7c078d44c60e41da859d22a0fbc6218",
+    "agent/person3": "7ec9b2eaf42726991d8dbaad2c1db37bc7530151"
   },
-  "canonical_corrected_paths": {
+  "canonical_inputs": {
+    "master_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_500m_jakarta.gpkg",
+      "exists": true,
+      "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7"
+    },
+    "grid_master_csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_master.csv",
+      "exists": true,
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
+    },
+    "spatial_features": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\spatial_features.csv",
+      "exists": true,
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    "population_accessibility_legacy": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_accessibility_grid.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "remote_sensing": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+      "exists": true,
+      "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
+    },
     "demographic_support": {
-      "path": "data/processed/demographic_support.csv",
-      "sha256": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621",
-      "bytes": 1719953
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_support.csv",
+      "exists": true,
+      "sha256": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621"
     },
-    "demographic_features_corrected": {
-      "path": "data/processed/demographic_features_corrected.csv",
-      "sha256": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2",
-      "bytes": 537211
+    "demographic_corrected": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_features_corrected.csv",
+      "exists": true,
+      "sha256": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2"
     },
-    "spatial_features_corrected": {
-      "path": "data/processed/spatial_features_corrected.csv",
-      "sha256": "e861cd41a82ddd232e7d7465c4ec609a98d79f3aee309cdbd4f9c99bbba0c0e8",
-      "bytes": 1986293
+    "part_population_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_grid.csv",
+      "exists": true,
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
     },
-    "final_model_features_corrected": {
-      "path": "data/processed/final_model_features_corrected.csv",
-      "sha256": "25fc89ff7b4dc6911ee2b216fe1298a1605155a58efd24760d5f9e9c047f3cf8",
-      "bytes": 2991233
+    "part_vulnerability_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\vulnerability_grid.csv",
+      "exists": true,
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
     },
-    "final_model_features_corrected_gpkg": {
-      "path": "data/processed/final_model_features_corrected.gpkg",
-      "sha256": "21a7e585d436d6aebf1ad3bbc5da9b5141002dd237d531030abbac9ec4d526ea",
-      "bytes": 3301376
+    "part_accessibility_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\accessibility_grid.csv",
+      "exists": true,
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
     },
-    "route_scenarios_per_grid": {
-      "path": "data/processed/agent2_route_scenarios.csv",
-      "sha256": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d",
-      "bytes": 4747180
+    "integrated_agent2_route_scenarios.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\agent2_route_scenarios.csv",
+      "exists": true,
+      "sha256": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d"
     },
-    "park_access_evidence": {
-      "path": "data/processed/park_access_evidence.csv",
-      "sha256": "61aa7777d0f92298cb7e2708fb065556f679fd881cb2f3909e4e20d893f3a9b5",
-      "bytes": 293510
+    "integrated_integrated_comparisons/input_lineage.json": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\input_lineage.json",
+      "exists": true,
+      "sha256": "a3819d0039672e56ad7183c7f9894faa7069861586f03980a0c160b43c618481"
     },
-    "validated_park_entrances": {
-      "path": "data/processed/validated_park_entrances.gpkg",
-      "sha256": "3005f11df890cbee690bf76d4831f61e9c355b8ef2eece8a9d90124e38f786a3",
-      "bytes": 98304
+    "integrated_integrated_comparisons/auditor_raster_support.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_raster_support.csv",
+      "exists": true,
+      "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
     },
-    "walking_permission_manifest": {
-      "path": "data/processed/walking_permission_manifest.json",
-      "sha256": "fa2860cbe7562a59283c68a73aa57d88372090abc60735bc0ee780d0f7a08804",
-      "bytes": 1346
+    "integrated_integrated_comparisons/auditor_network.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_network.csv",
+      "exists": true,
+      "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
     },
-    "scenario_registry": {
-      "path": "docs/agent2_scenario_registry.csv",
-      "sha256": "722bc47414c5c0a284978cad274f514646d270766d52883d0aabc4b99b04e476",
-      "bytes": 5502
+    "aggregation_scenarios": {
+      "path": "D:\\jakarta-heat-integration\\outputs\\qa\\remediation_agent2\\partial_grid_scenarios.csv",
+      "exists": true,
+      "sha256": "38e9df862745ed6024ddab60b5f0103ac2b7d5555f9422d3be352dee5a7ea611"
     },
-    "variable_reference_periods": {
-      "path": "docs/agent2_variable_reference_periods.csv",
-      "sha256": "07740549c279c4043a644906181bda085b31c0e2e9e11950341dbf002a7c34a8",
-      "bytes": 2028
+    "frozen_audited_merged_grid.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_merged_grid.csv",
+      "exists": false,
+      "sha256": null
     },
-    "frozen_input_manifest": {
-      "path": "docs/agent2_frozen_inputs.json",
-      "sha256": "7419f2ecf16b1753cba5a3107c62ce2822f68439e3e491adc76292baf6573c5f",
-      "bytes": 11377
+    "frozen_audited_priority_models.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_priority_models.csv",
+      "exists": false,
+      "sha256": null
     },
-    "requirements_lock": {
-      "path": "requirements.lock",
-      "sha256": "fab561925d2449e7d89877ae64be7c1f93a1af24e3aa22f26191b27ab946c950",
-      "bytes": 1198
+    "frozen_auditor_raster_support.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_raster_support.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_auditor_network.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_network.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_input_lineage.json": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\input_lineage.json",
+      "exists": false,
+      "sha256": null
     }
   },
-  "legacy_outputs_preserved_unchanged": {
-    "data/processed/spatial_features.csv": {
-      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724",
-      "bytes": 295418
-    },
-    "data/processed/final_model_features.csv": {
-      "sha256": "fa6a258f8f848c0afc3a44ad51c49a4df9390b2b131dd900b37a6b4f72a2e376",
-      "bytes": 1109792
-    },
-    "data/processed/population_grid.csv": {
-      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589",
-      "bytes": 88110
-    },
-    "data/processed/vulnerability_grid.csv": {
-      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937",
-      "bytes": 134439
-    },
-    "data/processed/accessibility_grid.csv": {
-      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e",
-      "bytes": 155822
-    },
-    "data/processed/parks_jakarta.gpkg": {
-      "sha256": "208e66d541f9f13a8b355aa726259bb155b4a68643e300a36cfc1675e1ab2777",
-      "bytes": 487424
-    }
+  "canonical_outputs": {
+    "features": "data\\processed\\modeling\\merged_grid.csv",
+    "priority": "data\\processed\\modeling\\priority_models.csv",
+    "remediation": "data\\processed\\modeling_remediation",
+    "dashboard": "dashboard/app.py"
   },
-  "frozen_inputs": {
-    "manifest": "docs/agent2_frozen_inputs.json",
-    "bundle": "dist/agent2_frozen_inputs_v1.zip (gitignored; transfer out-of-band, verify .sha256)",
-    "git_tracked": false,
-    "note": "raw rasters, OSM XML, GraphML and Overpass cache are gitignored; candidate must ship the bundle or retrievable hash-verified artifacts"
-  },
-  "interface_checklist": [
-    {
-      "item": "nullable demographic support",
-      "state": "READY_AGENT2",
-      "detail": "demographic_support.csv carries support_version, qa_population_source_no_support, qa_age_source_no_support (Agent3 DM-02 contract in agent3 docs/demographic_model_interface.md); 6 no-support cells are null, valid zeros stay 0"
-    },
-    {
-      "item": "raw value columns",
-      "state": "NOTE",
-      "detail": "Agent2 keeps *_raw columns; Agent3 creates raw_* from its own base table. Both may coexist; integrator must not drop either silently"
-    },
-    {
-      "item": "support_version consistency",
-      "state": "READY_AGENT2",
-      "detail": "identical support_version in demographic_support.csv and demographic_features_corrected.csv (Agent3 rejects conflicting versions)"
-    },
-    {
-      "item": "per-grid route scenario versions",
-      "state": "READY_AGENT2",
-      "detail": "data/processed/agent2_route_scenarios.csv long format (grid_id, scenario_id, policies, metric label, provenance hash); unknown access never promoted"
-    },
-    {
-      "item": "person2_contracts integration",
-      "state": "PENDING_INTEGRATOR",
-      "detail": "scripts/person2_contracts.py accepts documented nulls; legacy path unchanged"
-    },
-    {
-      "item": "README conflict",
-      "state": "PENDING_INTEGRATOR",
-      "detail": "Agent2 and Agent3 both modify README.md; resolve by hand, keep both sections"
-    },
-    {
-      "item": "dashboard rename",
-      "state": "PENDING_INTEGRATOR",
-      "detail": "Agent3 renames dashboard/app.py -> dashboard/app_4b_prototype.py and adds new dashboard/app.py; Agent2 does not touch dashboard"
-    },
-    {
-      "item": "RS aliases / optional fractions",
-      "state": "PENDING_A1_A3",
-      "detail": "Agent1 remediated RS outputs are uncommitted; aliases (lst_mean_c/lst_c, ndvi_mean/ndvi) must be reconciled by integrator; Agent2 does not rename RS fields"
-    },
-    {
-      "item": "no sibling or frozen-package imports",
-      "state": "READY_AGENT2_REMEDIATION_LANE",
-      "detail": "Agent2 remediation scripts (run_reproduction.ps1 stages) read local frozen inputs only and import no jhim"
-    },
-    {
-      "item": "frozen Agent3 jhim snapshot in Agent2 branch",
-      "state": "PENDING_INTEGRATOR",
-      "detail": "outputs/qa/agent2/baseline/agent3/jhim/ is an audited-evidence copy. Legacy pre-audit stage scripts/agent2_gis.py integration() (line ~555) inserts it on sys.path; not used by tests or the reproduction lane. Release candidate must not run that stage against the real jhim or ship the copy as importable code (archive it or drop the stage)"
-    },
-    {
-      "item": "JKT_R037_C062",
-      "state": "NOTE",
-      "detail": "delivered LST/NDVI exist; 50% thermal-coverage exclusion is a modeling QA decision, not RS delivery failure"
-    },
-    {
-      "item": "Scope Consolidated",
-      "state": "BLOCKED",
-      "detail": "run_reproduction.ps1 -Scope Consolidated fails explicitly while tests/test_remote_sensing_grid.py, tests/agent3 or scripts/run_agent3_pipeline.py are absent"
-    }
-  ],
-  "human_decisions_required": [
-    "commit/integration authorization and integrator designation (IN-01)",
-    "TM-01 temporal scope (mixed 2024 raster / 2026 OSM proxy vs historical claims)",
-    "AC-01 primary destination construct (broad candidate proxy vs validated public parks)",
-    "AC-02 permission hierarchy, conditional-access treatment, connector evidence standard",
-    "BG-01 primary allocation (hybrid vs fractional), coverage threshold, count vs density objective",
-    "DM-01/DM-02 shared vs model-specific eligibility; adoption of corrected demographics by Agent3"
-  ]
+  "verification": "outputs/qa/rc1/verification.json",
+  "replay": "outputs/remediation/qa/replay_verification.json",
+  "source_of_truth": "Current RC1 inputs supersede historical preintegration statements in agent ledgers.",
+  "scientific_status": "Provisional mixed-period candidate-park proxy; independent scientific sign-off pending"
 }

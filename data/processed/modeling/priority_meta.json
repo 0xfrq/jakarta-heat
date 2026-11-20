@@ -1,10 +1,4 @@
 {
-  "source": "real",
-  "built_at": "2026-11-19T15:57:35Z",
-  "n_grid": 2765,
-  "n_valid": 2538,
-  "top_frac": 0.1,
-  "n_top": 254,
   "models": {
     "M1": {
       "lst": 1.0
@@ -45,6 +39,7 @@
     750.0,
     1500.0
   ],
+  "top_frac": 0.1,
   "top_fracs": [
     0.05,
     0.1,
@@ -76,6 +71,14 @@
   "permutations": 999,
   "seed": 42,
   "spatial_weights_baseline": "queen",
+  "local_alternative": "directed",
+  "global_alternative": "greater",
+  "multiple_testing_family": "each preselected map separately; non-island eligible grids",
+  "source": "real",
+  "built_at": "2026-11-20T00:26:04Z",
+  "n_grid": 2765,
+  "n_valid": 2536,
+  "n_top": 254,
   "unreachable_policy": "exclude",
   "rank_rule": "rank 1 = prioritas tertinggi; seri dipecah oleh skor tanpa pemotongan lalu grid_id"
 }

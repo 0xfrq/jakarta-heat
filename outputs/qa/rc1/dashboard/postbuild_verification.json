@@ -1,0 +1,18 @@
+{
+  "source": "canonical RC1; fresh outputs checked after final pipeline",
+  "checks": {
+    "fresh_outputs_visible": true,
+    "missing_rs_explicit_pending": true,
+    "demo_explicit_synthetic": true
+  },
+  "screenshots": [
+    "page_0_desktop.png",
+    "page_0_narrow.png",
+    "missing_rs_desktop.png",
+    "missing_rs_narrow.png",
+    "demo_label_desktop.png"
+  ],
+  "browser_version": "159.0.8154.6",
+  "manifest_rs_path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
+  "result": "PASS"
+}

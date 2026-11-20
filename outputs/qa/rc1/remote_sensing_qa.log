@@ -1,0 +1,53 @@
+[PASS] row count equals master grid: 2765 vs 2765
+[PASS] no duplicated grid_id: 0
+[PASS] no missing grid_id: 
+[PASS] grid_id set equals master: missing=0, extra=0
+[PASS] column present: lst_mean_c: 
+[PASS] column present: ndvi_mean: 
+[PASS] column present: tree_fraction: 
+[PASS] column present: grass_fraction: 
+[PASS] column present: built_fraction: 
+[PASS] column present: lst_valid_fraction: 
+[PASS] column present: lst_observation_count: 
+[PASS] column present: lst_c: 
+[PASS] column present: ndvi: 
+[PASS] one-to-one join with spatial_features.csv: 2765 rows, unmatched=0
+[PASS] LST in plausible Celsius range [15, 60] (not Kelvin, not DN): min=31.12, max=47.92
+[PASS] LST not double-scaled (median between 25 and 50 C): median=41.72
+[PASS] NDVI within [-1, 1]: min=-0.056, max=0.795
+[PASS] alias lst_c == lst_mean_c: 
+[PASS] alias ndvi == ndvi_mean: 
+[PASS] tree_fraction within [0, 1]: n=0
+[PASS] grass_fraction within [0, 1]: n=0
+[PASS] built_fraction within [0, 1]: n=0
+[PASS] lst_valid_fraction within [0, 1]: n=2765
+[PASS] ndvi_valid_fraction within [0, 1]: n=2765
+[PASS] landsat_footprint_fraction within [0, 1]: n=2765
+[PASS] dw_valid_fraction within [0, 1]: n=2765
+[PASS] water_fraction within [0, 1]: n=0
+[PASS] flooded_vegetation_fraction within [0, 1]: n=0
+[PASS] crops_fraction within [0, 1]: n=0
+[PASS] shrub_fraction within [0, 1]: n=0
+[PASS] bare_fraction within [0, 1]: n=0
+[PASS] dw_label_valid_fraction within [0, 1]: n=0
+[PASS] tree_prob_mean within [0, 1]: n=2764
+[PASS] built_prob_mean within [0, 1]: n=2764
+[PASS] snow_ice_fraction within [0, 1]: n=0
+[PASS] dw_label_missing_fraction within [0, 1]: n=0
+[PASS] lst_observation_count >= 1 where defined: min=5.96
+[PASS] min LST <= mean <= max LST per grid: 
+[PASS] LST missing documented: 0 missing
+[PASS] no zero-filled LST: 0
+[PASS] DW class fractions match measured label support (never 0-filled placeholders): BLOCKED (all empty)
+[PASS] Landsat raster: NaN = outside AOI, consistent across bands: 384002 NaN px
+[PASS] Landsat raster: -9999 LST pixels are exactly lst_valid == 0: 78 px without any clear LST observation inside AOI
+[PASS] Landsat raster: pixel NDVI within [-1, 1]: min=-0.330, max=0.865
+[PASS] Landsat raster: no ST fill (-124 C = 0 DN scaled) leaked: min=29.36
+[PASS] all reported positive geometry areas retain precision: 
+[PASS] independent recomputation of LST mean (25 cells): n=25, max |diff|=0.00046 C
+[PASS] independent recomputation of NDVI mean (25 cells): max |diff|=0.000049
+[PASS] independent recomputation of DW tree_prob_mean (25 cells): max |diff|=0.000000
+wrote outputs\qa\rc1\remote_sensing\remote_sensing_qa_problem_grids.csv (110 flagged grids)
+wrote outputs\qa\rc1\remote_sensing\remote_sensing_grid_preview.png
+
+49 checks, 0 critical failures

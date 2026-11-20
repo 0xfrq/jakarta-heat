@@ -75,10 +75,10 @@
   "global_alternative": "greater",
   "multiple_testing_family": "each preselected map separately; non-island eligible grids",
   "source": "real",
-  "built_at": "2026-11-19T19:28:40Z",
+  "built_at": "2026-11-20T00:21:13Z",
   "n_grid": 2765,
-  "n_valid": 2526,
-  "n_top": 253,
+  "n_valid": 2536,
+  "n_top": 254,
   "unreachable_policy": "exclude",
   "rank_rule": "rank 1 = prioritas tertinggi; seri dipecah oleh skor tanpa pemotongan lalu grid_id"
 }

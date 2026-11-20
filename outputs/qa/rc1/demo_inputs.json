@@ -1,0 +1,9 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/00_make_dummy_inputs.py"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:55:39.620297+00:00",
+  "log": "outputs\\qa\\rc1\\demo_inputs.log"
+}

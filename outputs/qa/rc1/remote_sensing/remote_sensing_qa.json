@@ -1,0 +1,300 @@
+{
+  "n_checks": 49,
+  "n_critical_failed": 0,
+  "checks": [
+    {
+      "check": "row count equals master grid",
+      "ok": true,
+      "critical": true,
+      "detail": "2765 vs 2765"
+    },
+    {
+      "check": "no duplicated grid_id",
+      "ok": true,
+      "critical": true,
+      "detail": "0"
+    },
+    {
+      "check": "no missing grid_id",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "grid_id set equals master",
+      "ok": true,
+      "critical": true,
+      "detail": "missing=0, extra=0"
+    },
+    {
+      "check": "column present: lst_mean_c",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: ndvi_mean",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: tree_fraction",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: grass_fraction",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: built_fraction",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: lst_valid_fraction",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: lst_observation_count",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: lst_c",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "column present: ndvi",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "one-to-one join with spatial_features.csv",
+      "ok": true,
+      "critical": true,
+      "detail": "2765 rows, unmatched=0"
+    },
+    {
+      "check": "LST in plausible Celsius range [15, 60] (not Kelvin, not DN)",
+      "ok": true,
+      "critical": true,
+      "detail": "min=31.12, max=47.92"
+    },
+    {
+      "check": "LST not double-scaled (median between 25 and 50 C)",
+      "ok": true,
+      "critical": true,
+      "detail": "median=41.72"
+    },
+    {
+      "check": "NDVI within [-1, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "min=-0.056, max=0.795"
+    },
+    {
+      "check": "alias lst_c == lst_mean_c",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "alias ndvi == ndvi_mean",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "tree_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "grass_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "built_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "lst_valid_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2765"
+    },
+    {
+      "check": "ndvi_valid_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2765"
+    },
+    {
+      "check": "landsat_footprint_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2765"
+    },
+    {
+      "check": "dw_valid_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2765"
+    },
+    {
+      "check": "water_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "flooded_vegetation_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "crops_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "shrub_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "bare_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "dw_label_valid_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "tree_prob_mean within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2764"
+    },
+    {
+      "check": "built_prob_mean within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=2764"
+    },
+    {
+      "check": "snow_ice_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "dw_label_missing_fraction within [0, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "n=0"
+    },
+    {
+      "check": "lst_observation_count >= 1 where defined",
+      "ok": true,
+      "critical": true,
+      "detail": "min=5.96"
+    },
+    {
+      "check": "min LST <= mean <= max LST per grid",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "LST missing documented",
+      "ok": true,
+      "critical": false,
+      "detail": "0 missing"
+    },
+    {
+      "check": "no zero-filled LST",
+      "ok": true,
+      "critical": true,
+      "detail": "0"
+    },
+    {
+      "check": "DW class fractions match measured label support (never 0-filled placeholders)",
+      "ok": true,
+      "critical": true,
+      "detail": "BLOCKED (all empty)"
+    },
+    {
+      "check": "Landsat raster: NaN = outside AOI, consistent across bands",
+      "ok": true,
+      "critical": true,
+      "detail": "384002 NaN px"
+    },
+    {
+      "check": "Landsat raster: -9999 LST pixels are exactly lst_valid == 0",
+      "ok": true,
+      "critical": true,
+      "detail": "78 px without any clear LST observation inside AOI"
+    },
+    {
+      "check": "Landsat raster: pixel NDVI within [-1, 1]",
+      "ok": true,
+      "critical": true,
+      "detail": "min=-0.330, max=0.865"
+    },
+    {
+      "check": "Landsat raster: no ST fill (-124 C = 0 DN scaled) leaked",
+      "ok": true,
+      "critical": true,
+      "detail": "min=29.36"
+    },
+    {
+      "check": "all reported positive geometry areas retain precision",
+      "ok": true,
+      "critical": true,
+      "detail": ""
+    },
+    {
+      "check": "independent recomputation of LST mean (25 cells)",
+      "ok": true,
+      "critical": true,
+      "detail": "n=25, max |diff|=0.00046 C"
+    },
+    {
+      "check": "independent recomputation of NDVI mean (25 cells)",
+      "ok": true,
+      "critical": true,
+      "detail": "max |diff|=0.000049"
+    },
+    {
+      "check": "independent recomputation of DW tree_prob_mean (25 cells)",
+      "ok": true,
+      "critical": true,
+      "detail": "max |diff|=0.000000"
+    }
+  ]
+}

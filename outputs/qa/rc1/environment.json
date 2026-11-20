@@ -1,0 +1,277 @@
+{
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "prefix": "D:\\jakarta-heat-integration\\.venv\\rc1",
+  "base_prefix": "C:\\Users\\VICTUS\\AppData\\Local\\Python\\pythoncore-3.12-64",
+  "fresh_venv": true,
+  "all_pins_match": true,
+  "packages": {
+    "affine": {
+      "expected": "3.0.1",
+      "installed": "3.0.1"
+    },
+    "altair": {
+      "expected": "6.3.0",
+      "installed": "6.3.0"
+    },
+    "anyio": {
+      "expected": "4.16.0",
+      "installed": "4.16.0"
+    },
+    "attrs": {
+      "expected": "26.1.0",
+      "installed": "26.1.0"
+    },
+    "beautifulsoup4": {
+      "expected": "4.15.0",
+      "installed": "4.15.0"
+    },
+    "certifi": {
+      "expected": "2026.10.23",
+      "installed": "2026.10.23"
+    },
+    "charset-normalizer": {
+      "expected": "3.5.2",
+      "installed": "3.5.2"
+    },
+    "click": {
+      "expected": "8.5.1",
+      "installed": "8.5.1"
+    },
+    "cloudpickle": {
+      "expected": "3.1.3",
+      "installed": "3.1.3"
+    },
+    "colorama": {
+      "expected": "0.4.6",
+      "installed": "0.4.6"
+    },
+    "contourpy": {
+      "expected": "1.4.0",
+      "installed": "1.4.0"
+    },
+    "cycler": {
+      "expected": "0.12.1",
+      "installed": "0.12.1"
+    },
+    "esda": {
+      "expected": "2.10.0",
+      "installed": "2.10.0"
+    },
+    "exactextract": {
+      "expected": "0.3.0",
+      "installed": "0.3.0"
+    },
+    "fonttools": {
+      "expected": "4.68.0",
+      "installed": "4.68.0"
+    },
+    "geopandas": {
+      "expected": "1.2.0",
+      "installed": "1.2.0"
+    },
+    "greenlet": {
+      "expected": "3.5.6",
+      "installed": "3.5.6"
+    },
+    "h11": {
+      "expected": "0.16.0",
+      "installed": "0.16.0"
+    },
+    "idna": {
+      "expected": "3.20",
+      "installed": "3.20"
+    },
+    "iniconfig": {
+      "expected": "2.3.1",
+      "installed": "2.3.1"
+    },
+    "itsdangerous": {
+      "expected": "2.2.0",
+      "installed": "2.2.0"
+    },
+    "Jinja2": {
+      "expected": "3.1.6",
+      "installed": "3.1.6"
+    },
+    "joblib": {
+      "expected": "1.6.0",
+      "installed": "1.6.0"
+    },
+    "jsonschema": {
+      "expected": "4.26.0",
+      "installed": "4.26.0"
+    },
+    "jsonschema-specifications": {
+      "expected": "2025.9.1",
+      "installed": "2025.9.1"
+    },
+    "kiwisolver": {
+      "expected": "1.5.1",
+      "installed": "1.5.1"
+    },
+    "libpysal": {
+      "expected": "4.15.1",
+      "installed": "4.15.1"
+    },
+    "MarkupSafe": {
+      "expected": "3.0.4",
+      "installed": "3.0.4"
+    },
+    "matplotlib": {
+      "expected": "3.11.2",
+      "installed": "3.11.2"
+    },
+    "narwhals": {
+      "expected": "2.29.0",
+      "installed": "2.29.0"
+    },
+    "networkx": {
+      "expected": "3.7",
+      "installed": "3.7"
+    },
+    "numpy": {
+      "expected": "2.5.5",
+      "installed": "2.5.5"
+    },
+    "osmnx": {
+      "expected": "2.2.0",
+      "installed": "2.2.0"
+    },
+    "packaging": {
+      "expected": "26.3",
+      "installed": "26.3"
+    },
+    "pandas": {
+      "expected": "3.1.1",
+      "installed": "3.1.1"
+    },
+    "pillow": {
+      "expected": "13.0.0",
+      "installed": "13.0.0"
+    },
+    "platformdirs": {
+      "expected": "4.14.7",
+      "installed": "4.14.7"
+    },
+    "playwright": {
+      "expected": "1.65.2",
+      "installed": "1.65.2"
+    },
+    "pluggy": {
+      "expected": "1.7.0",
+      "installed": "1.7.0"
+    },
+    "protobuf": {
+      "expected": "7.36.2",
+      "installed": "7.36.2"
+    },
+    "pyarrow": {
+      "expected": "26.0.1",
+      "installed": "26.0.1"
+    },
+    "pydeck": {
+      "expected": "0.9.3",
+      "installed": "0.9.3"
+    },
+    "Pygments": {
+      "expected": "2.21.0",
+      "installed": "2.21.0"
+    },
+    "pyogrio": {
+      "expected": "0.13.0",
+      "installed": "0.13.0"
+    },
+    "pyparsing": {
+      "expected": "3.3.3",
+      "installed": "3.3.3"
+    },
+    "pyproj": {
+      "expected": "3.8.0",
+      "installed": "3.8.0"
+    },
+    "pytest": {
+      "expected": "9.2.0",
+      "installed": "9.2.0"
+    },
+    "python-dateutil": {
+      "expected": "4.0.0",
+      "installed": "4.0.0"
+    },
+    "python-multipart": {
+      "expected": "0.0.34",
+      "installed": "0.0.34"
+    },
+    "rasterio": {
+      "expected": "1.5.2",
+      "installed": "1.5.2"
+    },
+    "referencing": {
+      "expected": "0.37.0",
+      "installed": "0.37.0"
+    },
+    "requests": {
+      "expected": "2.34.2",
+      "installed": "2.34.2"
+    },
+    "rpds-py": {
+      "expected": "2026.9.1",
+      "installed": "2026.9.1"
+    },
+    "scikit-learn": {
+      "expected": "1.9.1",
+      "installed": "1.9.1"
+    },
+    "scipy": {
+      "expected": "1.18.1",
+      "installed": "1.18.1"
+    },
+    "shapely": {
+      "expected": "2.2.0",
+      "installed": "2.2.0"
+    },
+    "soupsieve": {
+      "expected": "4.1.2",
+      "installed": "4.1.2"
+    },
+    "starlette": {
+      "expected": "1.10.0",
+      "installed": "1.10.0"
+    },
+    "streamlit": {
+      "expected": "1.67.0",
+      "installed": "1.67.0"
+    },
+    "threadpoolctl": {
+      "expected": "3.8.0",
+      "installed": "3.8.0"
+    },
+    "typing_extensions": {
+      "expected": "4.16.0",
+      "installed": "4.16.0"
+    },
+    "tzdata": {
+      "expected": "2026.6",
+      "installed": "2026.6"
+    },
+    "urllib3": {
+      "expected": "2.8.0",
+      "installed": "2.8.0"
+    },
+    "uvicorn": {
+      "expected": "0.54.0",
+      "installed": "0.54.0"
+    },
+    "watchdog": {
+      "expected": "7.1.0",
+      "installed": "7.1.0"
+    },
+    "websockets": {
+      "expected": "17.4",
+      "installed": "17.4"
+    }
+  },
+  "gdal": "3.12.2",
+  "proj": "9.8.1",
+  "geos": "3.14.1"
+}

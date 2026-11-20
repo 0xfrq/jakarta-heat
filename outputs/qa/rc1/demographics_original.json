@@ -1,0 +1,21 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/aggregate_demographics.py",
+    "--population",
+    "data/raw/worldpop/idn_pop_2024.tif",
+    "--pop-child",
+    "data/raw/worldpop/age/jakarta_child_2024.tif",
+    "--pop-elderly",
+    "data/raw/worldpop/age/jakarta_elderly_2024.tif",
+    "--support-version",
+    "agent2-DM-01-v1-original-masks",
+    "--output-dir",
+    "outputs/qa/remediation_agent2/original_masks",
+    "--qa-dir",
+    "outputs/qa/remediation_agent2/original_masks"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:42:00.589868+00:00",
+  "log": "outputs\\qa\\rc1\\demographics_original.log"
+}

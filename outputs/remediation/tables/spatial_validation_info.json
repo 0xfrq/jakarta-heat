@@ -8,10 +8,18 @@
   "seed": 42,
   "alpha": 0.05,
   "islands_dropped": {
-    "M1": [],
-    "M2": [],
-    "M3": [],
-    "M4": []
+    "M1": [
+      "JKT_R013_C019"
+    ],
+    "M2": [
+      "JKT_R013_C019"
+    ],
+    "M3": [
+      "JKT_R013_C019"
+    ],
+    "M4": [
+      "JKT_R013_C019"
+    ]
   },
   "local_alternative": "directed",
   "global_alternative": "greater",

@@ -1,0 +1,4 @@
+Aggregate population: data\raw\worldpop\idn_pop_2024.tif
+Aggregate pop_child: data\raw\worldpop\age_buffered\jakarta_child_2024_buffered.tif
+Aggregate pop_elderly: data\raw\worldpop\age_buffered\jakarta_elderly_2024_buffered.tif
+{'population': 6, 'pop_child': 6, 'pop_elderly': 6}

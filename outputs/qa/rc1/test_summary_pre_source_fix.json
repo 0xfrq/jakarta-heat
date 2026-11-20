@@ -1,0 +1,10 @@
+﻿{
+    "tests":  243,
+    "failures":  0,
+    "errors":  0,
+    "skipped":  0,
+    "canonical_agent1_cases":  1,
+    "canonical_agent1_passed":  true,
+    "source_commit":  "6759fe9599c28e29e4adfb101af355788853ac5f",
+    "pytest_summary":  "236 passed; 7 subtests passed; no failures or skips; one expected missing-CRS warning"
+}

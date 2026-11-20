@@ -1,13 +1,13 @@
 grid_id,kota,selection_group,valid,eligibility_reasons
-JKT_R000_C043,Kota Jakarta Timur,audited_included,False,missing_age_support_or_value
-JKT_R000_C045,Kota Jakarta Timur,route_missing,False,missing_age_support_or_value;missing_walking_route
+JKT_R000_C043,Kota Jakarta Timur,audited_included,True,
+JKT_R000_C045,Kota Jakarta Timur,route_missing,False,missing_walking_route
 JKT_R000_C046,Kota Jakarta Timur,route_missing,False,missing_walking_route
 JKT_R001_C043,Kota Jakarta Timur,audited_included,True,
 JKT_R001_C044,Kota Jakarta Timur,audited_included,True,
 JKT_R001_C045,Kota Jakarta Timur,audited_included,True,
 JKT_R001_C046,Kota Jakarta Timur,route_missing,False,missing_walking_route
 JKT_R001_C047,Kota Jakarta Timur,route_missing,False,missing_walking_route
-JKT_R001_C050,Kota Jakarta Timur,audited_included,False,missing_age_support_or_value
+JKT_R001_C050,Kota Jakarta Timur,audited_included,True,
 JKT_R002_C023,Kota Jakarta Selatan,audited_included,True,
 JKT_R002_C024,Kota Jakarta Selatan,audited_included,True,
 JKT_R002_C025,Kota Jakarta Selatan,audited_included,True,
@@ -288,7 +288,7 @@ JKT_R012_C049,Kota Jakarta Timur,audited_included,True,
 JKT_R012_C050,Kota Jakarta Timur,audited_included,True,
 JKT_R012_C051,Kota Jakarta Timur,audited_included,True,
 JKT_R012_C052,Kota Jakarta Timur,audited_included,True,
-JKT_R013_C019,Kota Jakarta Selatan,audited_included,False,missing_age_support_or_value
+JKT_R013_C019,Kota Jakarta Selatan,audited_included,True,
 JKT_R013_C020,Kota Jakarta Selatan,audited_included,True,
 JKT_R013_C021,Kota Jakarta Selatan,audited_included,True,
 JKT_R013_C022,Kota Jakarta Selatan,audited_included,True,
@@ -425,8 +425,8 @@ JKT_R016_C048,Kota Jakarta Timur,audited_included,True,
 JKT_R016_C049,Kota Jakarta Timur,audited_included,True,
 JKT_R016_C050,Kota Jakarta Timur,audited_included,True,
 JKT_R016_C051,Kota Jakarta Timur,audited_included,True,
-JKT_R016_C052,Kota Jakarta Timur,audited_included,False,missing_age_support_or_value
-JKT_R017_C017,Kota Jakarta Selatan,route_missing,False,missing_age_support_or_value;missing_walking_route
+JKT_R016_C052,Kota Jakarta Timur,audited_included,True,
+JKT_R017_C017,Kota Jakarta Selatan,route_missing,False,missing_walking_route
 JKT_R017_C018,Kota Jakarta Selatan,audited_included,True,
 JKT_R017_C019,Kota Jakarta Selatan,audited_included,True,
 JKT_R017_C020,Kota Jakarta Selatan,audited_included,True,
@@ -493,7 +493,7 @@ JKT_R018_C046,Kota Jakarta Timur,audited_included,True,
 JKT_R018_C047,Kota Jakarta Timur,audited_included,True,
 JKT_R018_C048,Kota Jakarta Timur,audited_included,True,
 JKT_R018_C049,Kota Jakarta Timur,audited_included,True,
-JKT_R018_C050,Kota Jakarta Timur,audited_included,False,missing_age_support_or_value
+JKT_R018_C050,Kota Jakarta Timur,audited_included,True,
 JKT_R019_C016,Kota Jakarta Selatan,audited_included,True,
 JKT_R019_C017,Kota Jakarta Selatan,audited_included,True,
 JKT_R019_C018,Kota Jakarta Selatan,audited_included,True,
@@ -1011,7 +1011,7 @@ JKT_R031_C054,Kota Jakarta Timur,audited_included,True,
 JKT_R031_C055,Kota Jakarta Timur,audited_included,True,
 JKT_R031_C056,Kota Jakarta Timur,audited_included,True,
 JKT_R031_C057,Kota Jakarta Timur,audited_included,True,
-JKT_R032_C011,Kota Jakarta Selatan,audited_included,False,missing_age_support_or_value
+JKT_R032_C011,Kota Jakarta Selatan,audited_included,True,
 JKT_R032_C012,Kota Jakarta Selatan,audited_included,True,
 JKT_R032_C013,Kota Jakarta Selatan,audited_included,True,
 JKT_R032_C014,Kota Jakarta Selatan,audited_included,True,
@@ -1556,7 +1556,7 @@ JKT_R041_C060,Kota Jakarta Timur,route_missing,False,missing_walking_route
 JKT_R041_C061,Kota Jakarta Timur,audited_included,True,
 JKT_R041_C062,Kota Jakarta Timur,audited_included,True,
 JKT_R041_C063,Kota Jakarta Timur,audited_included,True,
-JKT_R042_C004,Kota Jakarta Barat,audited_included,False,missing_age_support_or_value
+JKT_R042_C004,Kota Jakarta Barat,audited_included,True,
 JKT_R042_C005,Kota Jakarta Barat,audited_included,True,
 JKT_R042_C006,Kota Jakarta Barat,audited_included,True,
 JKT_R042_C007,Kota Jakarta Barat,audited_included,True,
@@ -2641,7 +2641,7 @@ JKT_R059_C018,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C019,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C020,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C021,Kota Jakarta Utara,audited_included,True,
-JKT_R059_C022,Kota Jakarta Utara,audited_included,False,missing_age_support_or_value
+JKT_R059_C022,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C023,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C024,Kota Jakarta Utara,audited_included,True,
 JKT_R059_C025,Kota Jakarta Utara,audited_included,True,
@@ -2690,12 +2690,12 @@ JKT_R060_C016,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C017,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C018,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C019,Kota Jakarta Utara,audited_included,True,
-JKT_R060_C020,Kota Jakarta Utara,audited_included,False,missing_age_support_or_value
+JKT_R060_C020,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C023,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C024,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C025,Kota Jakarta Utara,audited_included,True,
 JKT_R060_C026,Kota Jakarta Utara,audited_included,True,
-JKT_R060_C041,Kota Jakarta Utara,route_missing,False,missing_age_support_or_value;missing_walking_route
+JKT_R060_C041,Kota Jakarta Utara,route_missing,False,missing_walking_route
 JKT_R060_C042,Kota Jakarta Utara,route_missing,False,missing_walking_route
 JKT_R060_C043,Kota Jakarta Utara,route_missing,False,missing_walking_route
 JKT_R060_C044,Kota Jakarta Utara,route_missing,False,missing_walking_route
@@ -2757,7 +2757,7 @@ JKT_R062_C008,Kota Jakarta Utara,audited_included,True,
 JKT_R062_C009,Kota Jakarta Utara,audited_included,True,
 JKT_R062_C023,Kota Jakarta Utara,route_missing,False,missing_walking_route
 JKT_R062_C024,Kota Jakarta Utara,route_missing,False,missing_walking_route
-JKT_R062_C026,Kota Jakarta Utara,audited_included,False,missing_age_support_or_value
+JKT_R062_C026,Kota Jakarta Utara,audited_included,True,
 JKT_R062_C043,Kota Jakarta Utara,route_missing,False,missing_total_population;missing_age_support_or_value;missing_walking_route
 JKT_R062_C060,Kota Jakarta Utara,audited_included,True,
 JKT_R062_C061,Kota Jakarta Utara,audited_included,True,

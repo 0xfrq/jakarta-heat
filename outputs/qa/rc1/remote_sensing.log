@@ -1,0 +1,221 @@
+{
+ "n_rows": 2765,
+ "n_unique_grid_id": 2765,
+ "lst_mean_c": {
+  "n_missing": 0,
+  "min": 31.124,
+  "p5": 36.8292,
+  "median": 41.724,
+  "mean": 41.386455696202525,
+  "p95": 44.5316,
+  "max": 47.922
+ },
+ "ndvi_mean": {
+  "n_missing": 0,
+  "min": -0.0555,
+  "p5": 0.16274,
+  "median": 0.3043,
+  "mean": 0.31911399638336346,
+  "p95": 0.52598,
+  "max": 0.7951
+ },
+ "tree_fraction": {
+  "n_missing": 2765
+ },
+ "grass_fraction": {
+  "n_missing": 2765
+ },
+ "built_fraction": {
+  "n_missing": 2765
+ },
+ "lst_valid_fraction": {
+  "n_missing": 0,
+  "min": 0.2775915583823224,
+  "p5": 0.9999904363225789,
+  "median": 1.0,
+  "mean": 0.9996317494483726,
+  "p95": 1.0,
+  "max": 1.0
+ },
+ "lst_observation_count": {
+  "n_missing": 0,
+  "min": 5.96,
+  "p5": 7.88,
+  "median": 10.0,
+  "mean": 10.919508137432189,
+  "p95": 20.017999999999997,
+  "max": 27.4
+ },
+ "lst_std_c": {
+  "n_missing": 0,
+  "min": 0.0,
+  "p5": 0.679,
+  "median": 1.378,
+  "mean": 1.4959193490054252,
+  "p95": 2.7278,
+  "max": 4.843
+ },
+ "lst_min_c": {
+  "n_missing": 0,
+  "min": 29.357,
+  "p5": 32.6128,
+  "median": 37.939,
+  "mean": 37.655152260397834,
+  "p95": 41.9536,
+  "max": 44.372
+ },
+ "lst_max_c": {
+  "n_missing": 0,
+  "min": 31.595,
+  "p5": 40.4264,
+  "median": 44.856,
+  "mean": 44.61709294755877,
+  "p95": 47.79559999999999,
+  "max": 57.08
+ },
+ "lst_unc_mean_k": {
+  "n_missing": 0,
+  "min": 2.871,
+  "p5": 3.091,
+  "median": 3.611,
+  "mean": 3.6376962025316453,
+  "p95": 4.277,
+  "max": 5.752
+ },
+ "lst_observation_min": {
+  "n_missing": 0,
+  "min": 3.0,
+  "p5": 6.0,
+  "median": 9.0,
+  "mean": 9.502712477396022,
+  "p95": 18.0,
+  "max": 24.0
+ },
+ "ndvi_std": {
+  "n_missing": 0,
+  "min": 0.0,
+  "p5": 0.0526,
+  "median": 0.1175,
+  "mean": 0.11710169981916818,
+  "p95": 0.18258,
+  "max": 0.2882
+ },
+ "ndvi_valid_fraction": {
+  "n_missing": 0,
+  "min": 0.989473646091763,
+  "p5": 0.999991498294187,
+  "median": 1.0,
+  "mean": 0.9999853153957196,
+  "p95": 1.0,
+  "max": 1.0
+ },
+ "landsat_footprint_fraction": {
+  "n_missing": 0,
+  "min": 0.989473646091763,
+  "p5": 0.999991498294187,
+  "median": 1.0,
+  "mean": 0.9999853153957196,
+  "p95": 1.0,
+  "max": 1.0
+ },
+ "tree_prob_mean": {
+  "n_missing": 1,
+  "min": 0.02554975433796644,
+  "p5": 0.02878575135204941,
+  "median": 0.042409716284275055,
+  "mean": 0.06428174095308178,
+  "p95": 0.17419567494902757,
+  "max": 0.6464666753359138
+ },
+ "built_prob_mean": {
+  "n_missing": 1,
+  "min": 0.02957803521242207,
+  "p5": 0.25292887114333396,
+  "median": 0.6729560809254647,
+  "mean": 0.6120310780726768,
+  "p95": 0.7285577513587475,
+  "max": 0.7380269996166229
+ },
+ "dw_valid_fraction": {
+  "n_missing": 0,
+  "min": 0.0,
+  "p5": 0.9999916195174748,
+  "median": 1.0,
+  "mean": 0.9996306537279708,
+  "p95": 1.0,
+  "max": 1.0
+ },
+ "water_fraction": {
+  "n_missing": 2765
+ },
+ "flooded_vegetation_fraction": {
+  "n_missing": 2765
+ },
+ "crops_fraction": {
+  "n_missing": 2765
+ },
+ "shrub_fraction": {
+  "n_missing": 2765
+ },
+ "bare_fraction": {
+  "n_missing": 2765
+ },
+ "dw_label_valid_fraction": {
+  "n_missing": 2765
+ },
+ "qa_area_km2": {
+  "n_missing": 0,
+  "min": 4.2288453666019514e-07,
+  "p5": 0.07804671853707694,
+  "median": 0.25,
+  "mean": 0.23263546279606417,
+  "p95": 0.25,
+  "max": 0.25
+ },
+ "rs_qa_ok": {
+  "n_missing": 0,
+  "min": 0.0,
+  "p5": 1.0,
+  "median": 1.0,
+  "mean": 0.9952983725135623,
+  "p95": 1.0,
+  "max": 1.0
+ },
+ "lst_c": {
+  "n_missing": 0,
+  "min": 31.124,
+  "p5": 36.8292,
+  "median": 41.724,
+  "mean": 41.386455696202525,
+  "p95": 44.5316,
+  "max": 47.922
+ },
+ "ndvi": {
+  "n_missing": 0,
+  "min": -0.0555,
+  "p5": 0.16274,
+  "median": 0.3043,
+  "mean": 0.31911399638336346,
+  "p95": 0.52598,
+  "max": 0.7951
+ },
+ "qa_area_m2": {
+  "n_missing": 0,
+  "min": 0.42288453666019515,
+  "p5": 78046.71853707694,
+  "median": 250000.0,
+  "mean": 232635.46279606415,
+  "p95": 250000.0,
+  "max": 250000.0
+ },
+ "snow_ice_fraction": {
+  "n_missing": 2765
+ },
+ "dw_label_missing_fraction": {
+  "n_missing": 2765
+ },
+ "tree_fraction_valid": {
+  "n_missing": 2765
+ },
+ "grass_fr
+wrote data\processed\remote_sensing_remediated\remote_sensing_grid.csv (2765 rows)

@@ -1,0 +1,94 @@
+"""Release evidence gate (stdlib only). Kept as reviewable QA code, not an importable package."""
+import hashlib
+import json
+import subprocess
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+OUT = ROOT / "outputs/qa/rc1"
+
+def read(path):
+    return json.loads((ROOT / path).read_text(encoding="utf-8-sig"))
+
+def sha(path):
+    h = hashlib.sha256()
+    with Path(path).open("rb") as stream:
+        for block in iter(lambda: stream.read(1024*1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+def main():
+    xml = ET.parse(OUT / "pytest.xml")
+    suites = list(xml.getroot().iter("testsuite"))
+    assert len(suites) == 1
+    suite = suites[0]
+    assert all(int(suite.get(k, "0")) == 0 for k in ("errors", "failures", "skipped"))
+    cases = list(xml.getroot().iter("testcase"))
+    assert len(cases) == 236
+    rs = [c for c in cases if c.get("name") == "test_real_agent1_remote_sensing_contract"]
+    assert len(rs) == 1 and not any(c.tag in ("failure", "error", "skipped") for c in rs[0])
+    browser = read("outputs/qa/rc1/dashboard/browser_check.json")
+    assert "verification_error" not in browser and not browser.get("page_errors")
+    assert len(browser["pages"]) == len(browser["continuous_navigation"]) == 8
+    assert all(not p["exceptions"] and p["mixed_period_visible"] and p["corrected_n_visible"] for p in browser["pages"])
+    assert all(not p["exceptions"] and p["canonical_count_visible"] for p in browser["continuous_navigation"])
+    assert len(browser["interactions"]) == 6
+    assert all(not r.get("error") and not r.get("exceptions") and r.get("expected_visible") is not False for r in browser["interactions"])
+    assert browser["baseline_download"]["result"] == "PASS" and browser["baseline_download"]["rows"] == 254
+    assert len(list((OUT / "dashboard").glob("page_*_desktop.png"))) == 8
+    assert len(list((OUT / "dashboard").glob("page_*_narrow.png"))) == 8
+    postbuild = read("outputs/qa/rc1/dashboard/postbuild_verification.json")
+    assert postbuild["result"] == "PASS" and all(postbuild["checks"].get(k) for k in (
+        "fresh_outputs_visible", "missing_rs_explicit_pending", "demo_explicit_synthetic"))
+    env = read("outputs/qa/rc1/environment.json")
+    assert env["fresh_venv"] and env["all_pins_match"] and len(env["packages"]) == 66
+    verification = read("outputs/qa/rc1/verification.json")
+    assert verification["result"] == "PASS" and verification["n_common"] == 2536
+    replay = read("outputs/remediation/qa/replay_verification.json")
+    assert replay["result"] == "PASS semantic replay" and replay["max_abs_numeric_difference"] == 0
+    assert replay["same_config_inputs_actual_runtime"] and replay["both_runs_fresh_by_manifest_status"]
+    assert "Consolidated canonical" in replay["boundary"]
+    normal = read("data/processed/modeling/run_manifest.json")
+    expanded = read("data/processed/modeling_remediation/run_manifest.json")
+    assert expanded["source"] == "real-integrated-candidate"
+    assert normal["implementation"] == expanded["implementation"]
+    assert replay["same_implementation_sha256"] == expanded["implementation"]["sha256"]
+    for manifest in (normal, expanded):
+        for name, expected in manifest["implementation"]["files"].items():
+            assert sha(ROOT / name) == expected, name
+        for name, expected in manifest["outputs"].items():
+            assert Path(name).resolve().is_relative_to(ROOT) and sha(name) == expected, name
+        for item in manifest["inputs"].values():
+            assert Path(item["path"]).is_relative_to(ROOT), item["path"]
+    suite_identity = read("outputs/qa/rc1/full_suite_source_identity.json")
+    tested = suite_identity["implementation"]["files"]
+    current = normal["implementation"]["files"]
+    changed = sorted(k for k in set(tested) | set(current) if tested.get(k) != current.get(k))
+    assert changed == [], changed
+    assert suite_identity["implementation"]["sha256"] == normal["implementation"]["sha256"]
+    assert suite_identity["tested_commit"] == normal["git_commit"].removesuffix("-dirty")
+    frozen = read("docs/agent2_frozen_inputs.json")
+    for item in frozen["inputs"]:
+        assert sha(ROOT / item["path"]) == item["sha256"], item["path"]
+    bundle = ROOT / "dist/agent2_frozen_inputs_v2.zip"
+    bundle_hash = sha(bundle)
+    assert bundle_hash == bundle.with_suffix(".sha256").read_text().split()[0]
+    exports = read("docs/remote_sensing_export_manifest.json")["original_exports"]
+    for item in exports:
+        assert sha(ROOT / item["path"]) == item["sha256"]
+    report = {"result": "PASS", "engineering_readiness": "READY FOR INDEPENDENT RE-AUDIT",
+              "scientific_release": "HOLD: coordinator and independent scientific approval pending",
+              "tests": len(cases), "subtests": int(suite.get("tests"))-len(cases), "failures": 0, "errors": 0, "skipped": 0,
+              "canonical_agent1_skip_revisited": "EXECUTED_PASS", "browser_routes": 8, "browser_interactions": 6,
+              "browser_version": browser["browser_version"], "replay_tables": replay["tables_and_metadata_compared"],
+              "max_numeric_replay_difference": 0.0, "implementation_sha256": current and normal["implementation"]["sha256"],
+              "changed_since_full_suite": changed, "changed_helper_validation": "none: full suite executed on the final implementation",
+              "frozen_inputs_verified": len(frozen["inputs"]), "bundle_sha256": bundle_hash,
+              "a1_export_hashes": {r["path"]: r["sha256"] for r in exports},
+              "build_source_commit": normal["git_commit"].removesuffix("-dirty"), "checker_sha256": sha(__file__)}
+    (OUT / "release_evidence_verification.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    print(json.dumps(report, indent=2))
+
+if __name__ == "__main__":
+    main()

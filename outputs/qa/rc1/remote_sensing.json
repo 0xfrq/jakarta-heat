@@ -1,0 +1,11 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/02b_aggregate_remote_sensing.py",
+    "--output-dir",
+    "data/processed/remote_sensing_remediated"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:39:29.045560+00:00",
+  "log": "outputs\\qa\\rc1\\remote_sensing.log"
+}

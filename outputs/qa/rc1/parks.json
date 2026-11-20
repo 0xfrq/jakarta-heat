@@ -1,0 +1,9 @@
+{
+  "command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/agent2_park_evidence.py"
+  ],
+  "returncode": 0,
+  "finished_utc": "2026-11-19T22:46:46.950730+00:00",
+  "log": "outputs\\qa\\rc1\\parks.log"
+}

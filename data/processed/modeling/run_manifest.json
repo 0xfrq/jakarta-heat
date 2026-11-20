@@ -1,8 +1,9 @@
 {
-  "built_at": "2026-11-19T16:00:06Z",
+  "built_at": "2026-11-20T00:28:32Z",
   "demo": false,
   "input_status": "COMPLETE",
   "input_status_text": "Semua masukan tersedia untuk seluruh grid dan lolos validasi struktur. Grid yang gagal aturan QA (bila ada) dikeluarkan dan dilaporkan di catatan.",
+  "schema_version": 2,
   "steps": [
     "merge",
     "priority",
@@ -13,29 +14,104 @@
   ],
   "inputs": {
     "master_grid": {
-      "path": "data\\processed\\grid_500m_jakarta.gpkg",
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_500m_jakarta.gpkg",
       "exists": true,
       "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7"
     },
     "grid_master_csv": {
-      "path": "data\\processed\\grid_master.csv",
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\grid_master.csv",
       "exists": true,
       "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
     },
     "spatial_features": {
-      "path": "data\\processed\\spatial_features.csv",
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\spatial_features.csv",
       "exists": true,
       "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
     },
     "population_accessibility_legacy": {
-      "path": "data\\processed\\population_accessibility_grid.csv",
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_accessibility_grid.csv",
       "exists": false,
       "sha256": null
     },
     "remote_sensing": {
-      "path": "D:\\jakarta-heat-agent1\\data\\processed\\remote_sensing_grid.csv",
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\remote_sensing_remediated\\remote_sensing_grid.csv",
       "exists": true,
-      "sha256": "49297937f9510c13beceee986b2067dba05df7939800d9b7307852db9bec135a"
+      "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
+    },
+    "demographic_support": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_support.csv",
+      "exists": true,
+      "sha256": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621"
+    },
+    "demographic_corrected": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\demographic_features_corrected.csv",
+      "exists": true,
+      "sha256": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2"
+    },
+    "part_population_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\population_grid.csv",
+      "exists": true,
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
+    },
+    "part_vulnerability_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\vulnerability_grid.csv",
+      "exists": true,
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
+    },
+    "part_accessibility_grid": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\accessibility_grid.csv",
+      "exists": true,
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
+    },
+    "integrated_agent2_route_scenarios.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\agent2_route_scenarios.csv",
+      "exists": true,
+      "sha256": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d"
+    },
+    "integrated_integrated_comparisons/input_lineage.json": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\input_lineage.json",
+      "exists": true,
+      "sha256": "a3819d0039672e56ad7183c7f9894faa7069861586f03980a0c160b43c618481"
+    },
+    "integrated_integrated_comparisons/auditor_raster_support.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_raster_support.csv",
+      "exists": true,
+      "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
+    },
+    "integrated_integrated_comparisons/auditor_network.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\integrated_comparisons\\auditor_network.csv",
+      "exists": true,
+      "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
+    },
+    "aggregation_scenarios": {
+      "path": "D:\\jakarta-heat-integration\\outputs\\qa\\remediation_agent2\\partial_grid_scenarios.csv",
+      "exists": true,
+      "sha256": "38e9df862745ed6024ddab60b5f0103ac2b7d5555f9422d3be352dee5a7ea611"
+    },
+    "frozen_audited_merged_grid.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_merged_grid.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_audited_priority_models.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\audited_priority_models.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_auditor_raster_support.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_raster_support.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_auditor_network.csv": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\auditor_network.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_input_lineage.json": {
+      "path": "D:\\jakarta-heat-integration\\data\\processed\\input_lineage.json",
+      "exists": false,
+      "sha256": null
     }
   },
   "config": {
@@ -110,9 +186,172 @@
     "lisa_alpha": 0.05,
     "permutations": 999,
     "seed": 42,
-    "spatial_weights_baseline": "queen"
+    "spatial_weights_baseline": "queen",
+    "local_alternative": "directed",
+    "global_alternative": "greater",
+    "multiple_testing_family": "each preselected map separately; non-island eligible grids"
   },
-  "git_commit": "f9b5c02ae2782ca00edcc077a29999b7ada3b91b-dirty",
+  "implementation": {
+    "sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
+    "files": {
+      "dashboard/app.py": "d1ed1c0422e6720f808cdb7f3cc49ea26c9a480dee90feba7b13c0ede9378cca",
+      "dashboard/app_4b_prototype.py": "35b51b3fa8a0d333161cb3b4b471e1e0411354c328eadc0baae37d337223e705",
+      "dashboard/lib/__init__.py": "8d2ad7b330bb5bbc1eab3fcd30b6c15fafa0768461acefc4c8c1d89190ce353b",
+      "dashboard/lib/context.py": "48cbd86507e3d8a28a01cc9bc77021d5a497293544a27621bd3771cd12a2dd90",
+      "dashboard/lib/maps.py": "f650e5f2544318913229abe92a2f21dd7ec8252634d746e4f7012ef1352dd939",
+      "dashboard/lib/ui.py": "5371c50e937273c1c190960a14cd1c9380ce2093e57e5682ae02fc764c12b283",
+      "dashboard/views/data_explorer.py": "547aa7e7c8ce6effc2d1df6d4ca669e601b66c13e18664f2a64de9f3c46b9a97",
+      "dashboard/views/heat_vegetation.py": "7ba1a9e230fec9efa1477b763dc220a727ac8601aa5f34474dc6e5f17ccba8cf",
+      "dashboard/views/methods.py": "0896e382aba708eb57c74de5601a93da4fad805f109d354501ba69e9b4f24618",
+      "dashboard/views/model_comparison.py": "a16e7b1bf8d006a2831c2aed31260dd0b25ed387cbc315ae320e809806914201",
+      "dashboard/views/overview.py": "77b21e6fe64c3dcb13e19fe80a686a95e8e2b094397bf48e46d45d7e053e69be",
+      "dashboard/views/priority_models.py": "51afadb0519cab2aed0718fe301e431c8a993b7d4b4b2c14df7441d77b371098",
+      "dashboard/views/sensitivity.py": "8929a35bf45e8e1553fe399108296aeb074e0bc23efff9569bc829ba1ba02de8",
+      "dashboard/views/spatial_stats.py": "833b3b86264557bc88b02791af3c0cb39d194cd4428a973dff82ab5a86b61949",
+      "docs/model_specification.json": "113b43e2709a370b3e561d2fc9f1e08755b9836a42001b4e2626e3545638e90f",
+      "docs/scenario_registry.csv": "1aba3a94c2ff48fad0d36ac93d0397bed6c5d06ff7fd5000f214b625b24e01ff",
+      "docs/spatial_inference_spec.md": "e00f61d526f8254cc536f70f7bd599f8de6cca2b01e1c0d02e2bc2f0556e71bc",
+      "jhim/__init__.py": "17f0d4b00ca40651742aa6043be779aa1f1ddd27fd013d794b5ab79680a49bae",
+      "jhim/compare.py": "4c570284b3d9f645d4f9aff6935f06b70f5d1ccc603f115287ff75417a43fdfc",
+      "jhim/config.py": "69e9ed1c8476cd901b6e1a907fbd100bbfd8fcae04620dc5178d893581e042a1",
+      "jhim/data.py": "2dc0d6ae03cef624f57610028a3d733fd6dbee24e943e56a42681c79f5f91a2a",
+      "jhim/dummy.py": "a9b27ae1a9c7bb289a499d8754216aa38c71a3a332f615bb3468ad53ccaacf97",
+      "jhim/figures.py": "29a0dfc9f03b445f2f54f858c97b931cf70f77382bbf56e71cdcb0467751074c",
+      "jhim/io.py": "a17dd6ecb07e0da51b38d7a8e75ad3d85710367f6015fc678c7e212f93610d0b",
+      "jhim/models.py": "f9ef8bfae499ec6c9525eab17d41f20c8e43cfd2a2f4cf4ccd8761fd4a250672",
+      "jhim/pipeline.py": "b6c9e6a3ba7c46f59e92e133e5af7e66068833c59d6d3ab250b45f2b90a47eaf",
+      "jhim/provenance.py": "ab97a43d09ac6f41421b14008c58c7295c6b8b051690b5bf6b6be377b28c7fac",
+      "jhim/remediation.py": "f67aa83895f0325bae8bfa149c1289ac978c2db633a3dec6295ad58401530103",
+      "jhim/sensitivity.py": "59ba1db5525aff8a1b2109c2ff2d2bbe96e99dfbb8a2fdd41a48d0688288a87b",
+      "jhim/spatial.py": "050540589ae16b9c39f2aa995f0b9e6a6857772133786d6020d09234b2b090e9",
+      "jhim/util.py": "6e85f260e10e8c6a42c1e71bb7353928e888993a373cb979eeaef19d6ce2754f",
+      "requirements-agent3.lock": "88b68c4c6dbbeaabcc3e2dc9f10a4dae44d8a5074355cf7b309834e5893d786e",
+      "requirements.lock": "fab561925d2449e7d89877ae64be7c1f93a1af24e3aa22f26191b27ab946c950",
+      "scripts/00_make_dummy_inputs.py": "a563a360f7238c9498ed217b7dbb9446d2bdc54b18876765b1cb8649182af95a",
+      "scripts/01_master_grid.py": "e0f1f0037a9de18c6d206f0ac63085127dc0a36faa4b13e2922d0cefe52f5fe8",
+      "scripts/02_download_age_jakarta.py": "4ae963c2bf7ad7aad32e62a814435500641fb67068f964db6f557d5fa8e57233",
+      "scripts/02b_aggregate_remote_sensing.py": "8bacb8e54683b7319657a34212580fe0c3bb13f5fa84eb04a4dd12ea52981d20",
+      "scripts/02d_validate_remote_sensing.py": "f0a8a9d2c602e31529e85c7d3d81b716ee42d749d46f46c40a1dd11bf2435b77",
+      "scripts/02e_remote_sensing_remediation.py": "19061dde0ae2cd02184f842a77c8c256c9db1bab81a45cd65bf708def94992cb",
+      "scripts/03_format_vulnerability.py": "f8588ac17631ad7f01f740403821c40273e875c9bf5c4068a281dd23e9a0b778",
+      "scripts/03_prepare_model.py": "35a73d265315aa8032602a22e13affe093632d320ec0a567a56fb663a8970d64",
+      "scripts/04_extract_parks.py": "36dabaef22bb0a7076a6ccbf03e7e0d3f1f07463d7d3d6e6f3c5e27d8ce7d5fc",
+      "scripts/04_priority_model.py": "538851b1827f9e87bac4ddd955f447ba831d6b67c170b03a2f1ca706d9a70f48",
+      "scripts/05_spatial_validation.py": "9418438a4e9bccfdedc8f6878ee48fd09e3133c0a3b22bb862c7bfe1c5d566c0",
+      "scripts/05_walking_accessibility.py": "4b00afdcd9624b40c6cbf8c3375b82f97ebb1a88ee0d7a0c8f871112b49c35a3",
+      "scripts/05a_build_offline_network.py": "d8ecbec4b4b9a55e402ef4c6864ba99abdee6e34d94d11f1f8e309a9efbb76cd",
+      "scripts/06_merge_accessibility.py": "c516eae66637c6a391a1f9cbbfbb4bca033213f23d439ba0a6495a0e956e7a5f",
+      "scripts/06_sensitivity.py": "e9b13b16a1e483d67ce98846c9ecb730fcd021f849e494a8de01d9e651c9cae3",
+      "scripts/07_export_paper.py": "acb4abbf6986b72c746ab13f91973de71b39d82c5e7f4c53bcbe29c8a41c5089",
+      "scripts/07_integrate_spatial.py": "f37ebce6904c1afb6c139ef22ba2175a9f144866b9c07e30d36c159ea538a3f4",
+      "scripts/08_validate_features.py": "d914ad658719d346a18624d879066e59e80b0aded686d47b662d41398efbc52b",
+      "scripts/09_spatial_qa.py": "f835d7356bac227b472b91f39e7715245ace704c502db908e1799bdc25ca4372",
+      "scripts/agent2_buffered_age.py": "3479e66295c8b9515a1886609b36ef8b51ca3da6eabdaddba317860c9651bb10",
+      "scripts/agent2_capture_baseline.py": "167943562829630396821e614c9b524f2de1bcbe4545818e8036836dc531c5c3",
+      "scripts/agent2_compare_runs.py": "1a6a02febc5c7370bbe4532340976e87a46a729c00099a6d2f646ce325de48b1",
+      "scripts/agent2_connector_remediation.py": "6c64702661408a8891b0cf41812007e512889657b880235457b08abbe2dea158",
+      "scripts/agent2_enrich_evidence.py": "3c9df832ba9beefc94b2a46a4aae309e4d6120d573bf194930cdf78a16a43ae1",
+      "scripts/agent2_finalize.py": "8786f58af6f9cc6116bd46b5de5522491cf795d2b3b3cba9c35fcc58da8ef220",
+      "scripts/agent2_freeze_inputs.py": "0d83d7569aa1b431a8a90de1fe2d8b5608ffbb6131f2e50b62f98fb5592fa4de",
+      "scripts/agent2_gis.py": "a3009acf4400d225ff2cf95edce9029368b98550557d1294ac3ca00373b2fa6f",
+      "scripts/agent2_historical_pilot.py": "ba98ef70096bb754d0a92b4ee4365ff4c5bb46222dd1773473ec22bf8d6dd2e5",
+      "scripts/agent2_integration_manifest.py": "f2e9a397d22382d8695aa0283611b108de5039e884c5f33e69f4afa25888fa11",
+      "scripts/agent2_node_restrictions.py": "11795428fe539ab71dc20f520836664ef00d129f9197a0ebeae06b54babb497a",
+      "scripts/agent2_park_evidence.py": "f83a5db4e0eb80c2f0347dce347ca4a2f89df376ce16c7120586d3b9713cde3e",
+      "scripts/agent2_qgis_project.py": "50fbedd103afc763300b73df091e2a5859e350ef989fef8f39967fdad604667f",
+      "scripts/agent2_remediation_effects.py": "517388ba55b92b59be439e0aa875578d358286df923e14bc8e06fa0e076ce739",
+      "scripts/agent2_write_handoff.py": "47b8b31fe644516237c54fe3d4a26e00da9dbc3a6f335d781d1e3992a0ad3e2e",
+      "scripts/aggregate_demographics.py": "543c5eef4ae187cafaa5c1b3747ee4a866dd87ba846b10e0971c429b870b9bd8",
+      "scripts/check_agent3_dashboard.py": "3d8b2cfb1d21d72be3c5027341e248ce5c820c1b50a7e625b809dbfa6a954b4a",
+      "scripts/check_agent3_replay.py": "c153e057244d978cd139b2465f65d3da9a998af1a41d28b51b545122b6862777",
+      "scripts/person2_contracts.py": "a09c77194d17256a83405e7d6185b7b1392f7b2562122d7d3bad591d21d27d7c",
+      "scripts/rc1_bootstrap.py": "27750bda74974fcc89a594adfdaa26061e243e3d5c33062d272701ee86be5779",
+      "scripts/rc1_restore_inputs.py": "5640536d42e57e297801fa2985a6e3064b463962171a933ca8828bc72d758a45",
+      "scripts/run_agent3_pipeline.py": "4be5f5f6dde867ba74822b060b31b5710fdace808ef27522ef0058777f4e25c6",
+      "scripts/run_agent3_remediation.py": "c2aa805d67a07f61939cded875264dccbd99a621d97ebbeec4f93d1dd7b05ae5",
+      "scripts/run_rc1.py": "013f61c0661a6aadac2f3fe8ac038f6ce65c1ea526d7becd0106c20f6e631acc",
+      "scripts/verify_agent3_remediation.py": "89d4d2a36f0af602a3dc671143e616be9a2db6c5c47b274d244c866888d63df3",
+      "scripts/verify_rc1.py": "0e24612eb64dcb5edaa1bec5d7b54e4c4a73a74f5fe333b5b8a38b7b2bc8c91a",
+      "scripts/walking_network.py": "c96fbacc5c723ecbccca5961a68e7231bc2a62b8b0b3d3c704abe67e53c85c27",
+      "scripts/walking_online.py": "55e3c8545166086eb5159c1ce2e82176ed69d893efd8ae928691c446d5465e37"
+    }
+  },
+  "outputs": {
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\eligibility_by_model.csv": "90474de8ee204c179df21f313c9631727ed3d8dd61a5ec5bb2f7b60b14e93490",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\lisa_m1.csv": "155acf25c1e4251b660b66982e8f0d150142f0023e626c702085a6d9ce13046c",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\lisa_m2.csv": "8ade78697717d545631cdecfbbf4e80d2d39677b0dfe5d16d32c204a98d9ce48",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\lisa_m3.csv": "487216d5551882ac95393df18b77b8e6aa72f4545a7a0132a96d330033451796",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\lisa_m4.csv": "2141687383611f34010771caae1506aea518b39a246330213ec92176c46cfc83",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\merged_grid.csv": "1afd6b3fc5b7e233c2fb2948a578f4957abbb80d361f1b2e25b56b5e8f28865d",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\merged_meta.json": "8ea39f64eb038d76ab1ff997e6cae40f869ea1c2580e3c057b62aea0c14e2d2d",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\priority_meta.json": "ef79975116c5bd3f36a448ab6550a3460e199739d6f9fec942ac1517341f1869",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\priority_models.csv": "67826aac102ae09e1ca03e1c77ed23458050cc1617498b6a1c0bb170e28e04db",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\rank_shift_m1_m4.csv": "fc377502bc8c7bdc7ce07f89329ba784a895e397f88516c89f8a172f6cc79a3b",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\sensitivity_m2_stability.csv": "5cb17ef2bb77718bd2e88a1eb25bf62caf13cc482d587cfeb8fe85aadd20f2e3",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\sensitivity_m3_stability.csv": "e527d8906943b483f6029c9935b66de5152ac3e8c5abc7e82d54972dc3cfc02a",
+    "D:\\jakarta-heat-integration\\data\\processed\\modeling\\sensitivity_m4_stability.csv": "5e3d08db239436e55c126d73f93c36f0f5e8d4d32564347f1ab38a94ee2d75ea",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\data_quality.csv": "0e625456add48ec37f0a559499213aaa6dfcab91ceaf20b8e811f665c0bd2741",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\eligibility_effect_m1.csv": "16c54d3dfca7bf76231300f21ddffa7f4c58fdfbcd518a3429a3d3d8411d1ae5",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\heat_vs_aware_m1_m4.csv": "5c5bb3b3413b8b00b53dcccdb219c28563523e5784c2c16d8c89d1d172e686fb",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\jaccard_matrix.csv": "aa5f9d322066578e118516cf7c01b3730ad1b00c8747d978e2a07a5f56a1d439",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\kendall_matrix.csv": "cc32b38cc3fb40843b6706c59d598bfbb705d264a9d58326c6c2345a69a16e6d",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\kota_summary.csv": "54bc0e30dd942af0bb9397e3bd8237d703bbe7672afacb3dfb97888f7564a3b3",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\lisa_cluster_counts.csv": "7b454c90023781e46e7a29442a3e4a693d3707e999f2388209f91b6b3d9f3933",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\model_comparison.csv": "b543889555ca0583e14a50e26ceaf9f81c182a08731ddd036b5062eb4dd22810",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\model_top10_coverage.csv": "22e5634c895d1c3f066d464ea69493de1edb7eea4866e17700963f642b00adbc",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\moran_global.csv": "2382a8f54f08b8508742118ddf8bbbb4e1f487165707d4ea30a9fc787e2389e8",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\rank_movement.csv": "719c6a2fea4fea9bc35735ddfdb65a9b8f9517ab9a59e99f24a8bfd55db939ab",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\score_summary.csv": "7e08deff430db97136960f4753fcf13475dd6165744d5aecb14a639be27a4c03",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m2_info.json": "e64a7010b305e7a8c00acad3d90fd0a35af5b9f90a67a69af98f7db4b08d6a94",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m2_summary.csv": "6052cbc4f1c1f09939bc98275dfdec8ce7f5589b8a2549b9b4b346aac30eb576",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m3_info.json": "a8a1e9cd6219f8a51966b3ebd27c4d145596ff7bfc90f38a598b246093d46da8",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m3_summary.csv": "6d4e411e06cbe16e180571b7b3596e5fd54fdf9b201034aec3dff70ff921a7f9",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m4_info.json": "f688a10df24138f1767cf5853fc69381a157ed2293d8f80921d4224a82efe7f2",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\sensitivity_m4_summary.csv": "7dd8a8eda60cc7b3a899294789d5f0e6fce30bb1dcf5fcbc386dea81201d9fcd",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\spatial_validation_info.json": "74384e508ec9d039532363f320bcf8f07d24c7a801310bed6fa3a6d12f085b46",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\spearman_matrix.csv": "0a3dd3a5de52110f93e898f9c8e13c5c34c36950e727da10d2041a35a8be97d1",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\top10_priority_m1.csv": "d138eb983c6197bc87419461564ce2d953c994516a127e0092a465a5afcf4d9e",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\top10_priority_m2.csv": "ee9c12366d2ce85a5140a39a9d1d6710c8a41bab86130da815dd07194cab964c",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\top10_priority_m3.csv": "f27120a8830085109dbc81a0244a58145f16fd895829455e80a0495409fa0722",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\top10_priority_m4.csv": "ad3fe262cda9b49d0190fc5730acee0ee8dee86d13142af4ad99f8077d245337",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\top_overlap.csv": "2b34a3fd31bb5fefdbd1a325d4eddebfe3aab0c322c89e68022517a1a370d7a2",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\transition_m1_m2.csv": "8b182779f3441de9525c183438a766a784e2e3153106430b4c0d5066f0d429b8",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\transition_m1_m4.csv": "57d925513dc76688510bfebf00319492d1e4bd7f2a1de94ca9ddb082b839fe80",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\transition_m2_m3.csv": "5e96f049dd96136b0c8d4c074eae9e3ac913083d2326e0925270557abe1ffd6d",
+    "D:\\jakarta-heat-integration\\outputs\\tables\\transition_m3_m4.csv": "d2f30582321a1d498de2071fccba887087c98ee81ae7dedb323fb39724f7dd87",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_coverage_top10.png": "269ef756283cf555ae2bd52ce55f403e1657541a60241406c7115972f2810150",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_coverage_top10.svg": "eced233ea9af0f1b96c77611200aacd39398d0cda4d6084996fe19a1720f2884",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_jaccard.png": "d7afeaeab91b129696d4da91688a47e453693f26f0c2e90320c6c22a470e148c",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_jaccard.svg": "79fc0b4e5e11b2b1fb0107147e4cfe0f19a824dd4f34b9c29daf72a2c55cb1b4",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_kota_top10.png": "80abf77beca87a76ecb85e1a338302e6b00cb25b8742349bb8fa8bb64d5c2268",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_kota_top10.svg": "839eff600b20de992c7c5e7e5db29d1ddf233f876687f8637abf92828e8cf557",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_lisa_m4.png": "6e3fb28aa474198c2efaa9f8987613247da5b03fb2edbf515f1f5e3b273dc5a0",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_lisa_m4.svg": "daf20b1484c6312b93c5e76a99838ba14acb5252a29d96218308738f385e4c46",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_rank_shift_m1_m4.png": "b38a8f53374632814f59ee0663a4a42ab6c90c7d1e4584f08cd5b8100384932f",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_rank_shift_m1_m4.svg": "7db482004f3619d90fb525cf97ab9ed4fbcb98bf5aa61ee04122358110e48955",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_scores_m1_m4.png": "46828c15dea7c247e634a91311616aa94461d35388c16c2ab01475ecc8779b1b",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_scores_m1_m4.svg": "70815a0d8fc2e642f647af886e11905057ceb1f435718a93d166814945646840",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_stability_m4.png": "8cedb30b010621d8d9b72586ff7ab0b13511e898e25d558078f4c23ed08c1eeb",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_stability_m4.svg": "8bd1f0cd9d011547f20ac3ef236d8e62c65369cef4a1145b1e5db5e9b3539118",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_top10_m1_m4.png": "0366b63ee5475e71670964a764e052f2a6b0e1d7a39b1f1fb4819364b31e9724",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_map_top10_m1_m4.svg": "53e7f6ced98bdc57f93a87276f536a84d5c0d25634aefe126f9a3ff345823129",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_rank_m1_vs_m4.png": "0f51ed60a5fa42216457bf0b3eeb44bab27d07db552cdb29148da19a6a3f1b18",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_rank_m1_vs_m4.svg": "2d7f3973d3c8a413625d0cade18eba1b35070e19aa27e7585990be94464e5b12",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_score_distribution.png": "e6749649f68c3f1301ca6e5cc5605f6f7aab255e5b0c0a1ed5ad531df2885b3f",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_score_distribution.svg": "4e1c609a12224d9898e14c9fe18373fe22aafaaebe6be8dac9691e892923bc9e",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_sensitivity_m4.png": "04903ba9d87f65f7356146e85342bb48129c44d509728016371a66f8b9c5e5bb",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_sensitivity_m4.svg": "f834916f8e72efd7798cd7949b071193545983d2667942c75132caf5a6dbf7f2",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_spearman.png": "93fec337056b0f433c29094357f46d27b7104094bc6010fc3ed45e63dae90fe3",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_spearman.svg": "22e18be6789c4a6ae203bca3cb021a809334d48ccf8d8e518c592945d3a801a7",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_transition_m1_m4.png": "122edc1ae4abece4a922f846a6e97f6beff63c841c1bb7d7e8667fa5f9363a52",
+    "D:\\jakarta-heat-integration\\outputs\\figures\\fig_transition_m1_m4.svg": "7cc3ff55e3a4b5d9c414ba31ef65fc73de5f34940a0bb3c65927434cc6744f84",
+    "D:\\jakarta-heat-integration\\outputs\\gis\\priority_models.gpkg": "191a85bb06f7664ae0620d0ad372e55938dde34750f58ee8acf8995b9f77e83e"
+  },
+  "build_command": [
+    "D:\\jakarta-heat-integration\\.venv\\rc1\\Scripts\\python.exe",
+    "scripts/run_agent3_pipeline.py"
+  ],
+  "git_commit": "f1e69a370f743985977e3d90c59179c76eea35d9-dirty",
   "python": "3.12.10",
   "pandas": "3.1.1",
   "numpy": "2.5.5",
@@ -122,5 +361,26 @@
   "scipy": "1.18.1",
   "source": "real",
   "unreachable_policy": "exclude",
-  "n_valid": 2538
+  "n_valid": 2536,
+  "runtime": {
+    "permutations": 999,
+    "seed": 42,
+    "unreachable": "exclude",
+    "top_frac": 0.1,
+    "spatial_weights": [
+      "queen",
+      "rook",
+      "knn8"
+    ],
+    "skip_spatial": false,
+    "skip_figures": false,
+    "force": false,
+    "dpi": 300,
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "local_alternative": "directed",
+    "testing_family": "per map"
+  }
 }

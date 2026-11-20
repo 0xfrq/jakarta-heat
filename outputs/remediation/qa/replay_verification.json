@@ -1,8 +1,8 @@
 {
   "result": "PASS semantic replay",
-  "first_run_built_at": "2026-11-19T19:26:57Z",
-  "second_run_built_at": "2026-11-19T19:30:18Z",
-  "same_implementation_sha256": "2f122bd92076bcd9b9132f40aa00b0e1bde7203f8013c2c1bb814e0af395b163",
+  "first_run_built_at": "2026-11-20T00:20:28Z",
+  "second_run_built_at": "2026-11-20T00:25:11Z",
+  "same_implementation_sha256": "6b2eae9dc37b14d92bd6accafda602da1e42af643ba8a72b6431d60e985b233e",
   "same_config_inputs_actual_runtime": true,
   "runtime": {
     "permutations": 999,
@@ -109,5 +109,5 @@
     "outputs/remediation/figures/scenario_family_stability.svg"
   ],
   "figures_byte_changed": [],
-  "boundary": "Same frozen local candidate inputs only; not raw-to-result, not the consolidated integrated candidate, not a fresh environment. Container/figure bytes are informational, not scientific equivalence."
+  "boundary": "Consolidated canonical A1/A2 inputs and live A3 implementation; upstream frozen-input rebuild and fresh environment are verified separately in outputs/qa/rc1. Acquisition-origin lineage remains outside this replay. Container/figure byte identity is reported separately from scientific equivalence."
 }

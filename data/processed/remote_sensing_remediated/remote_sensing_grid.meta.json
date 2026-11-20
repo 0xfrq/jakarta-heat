@@ -1,7 +1,7 @@
 {
   "dataset": "remote_sensing_grid",
   "owner": "Person 1 / Agent 1 (remote sensing workstream)",
-  "built_at_utc": "2026-11-19T18:50:31Z",
+  "built_at_utc": "2026-11-19T22:39:28Z",
   "script": "scripts/02b_aggregate_remote_sensing.py",
   "period": {
     "start": "2024-01-01",
@@ -72,7 +72,7 @@
     },
     "dynamic_world_label": null
   },
-  "implementation_sha256": "a004263e2f89c19b5b89771541c80c79622ecf9917083bb5bfe359b1137d0044",
+  "implementation_sha256": "8bacb8e54683b7319657a34212580fe0c3bb13f5fa84eb04a4dd12ea52981d20",
   "dw_fraction_denominators": {
     "*_fraction": "class-labelled area / whole clipped polygon area; NaN with no valid label",
     "*_fraction_valid": "class-labelled area / valid-labelled area; NaN with no valid label",

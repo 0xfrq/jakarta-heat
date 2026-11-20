@@ -1,9 +1,11 @@
 {
   "kind": "queen",
   "row_standardized": true,
-  "n": 2526,
-  "directed_pairs": 18336,
-  "islands": [],
+  "n": 2535,
+  "directed_pairs": 18368,
+  "islands": [
+    "JKT_R013_C019"
+  ],
   "esda": "2.10.0",
   "seed": 42
 }
