@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Pairwise comparison of the four models on the common 2,536-cell sample.
+Jaccard is reported at the 5\%, 10\% and 20\% top budgets (127, 254 and 508
+cells). Mean absolute rank shift is in rank positions on the 2,536-cell
+ranking.}
+\label{tab:comparison}
+\begin{threeparttable}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Pair & Spearman $\rho$ & Kendall $\tau_b$ & $J_{5\%}$ & $J_{10\%}$ & $J_{20\%}$ & Mean $|\Delta$rank$|$ \\
+\midrule
+M1--M2 & 0.936 & 0.782 & 0.477 & 0.568 & 0.693 & 199.6 \\
+M1--M3 & 0.905 & 0.736 & 0.330 & 0.481 & 0.590 & 235.5 \\
+M1--M4 & 0.847 & 0.658 & 0.316 & 0.384 & 0.488 & 307.4 \\
+M2--M3 & 0.964 & 0.856 & 0.649 & 0.688 & 0.758 & 129.0 \\
+M2--M4 & 0.882 & 0.701 & 0.403 & 0.392 & 0.523 & 283.5 \\
+M3--M4 & 0.898 & 0.736 & 0.419 & 0.411 & 0.532 & 266.7 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item All correlations are computed on the same 2,536 cells. At the 10\% budget, the shared-cell counts and retention relative to either 254-cell set are: M1--M2 184 (72.4\%), M1--M3 165 (65.0\%), M1--M4 141 (55.5\%), M2--M3 207 (81.5\%), M2--M4 143 (56.3\%), M3--M4 148 (58.3\%). Jaccard divides the shared cells by the union, so it is lower than retention; for M1--M4, $141/(254+254-141)=0.384$. High rank correlation can coexist with low Jaccard because the top decile is a boundary-sensitive set. Jaccard values are sensitive to the budget and should not be generalised beyond the stated threshold.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

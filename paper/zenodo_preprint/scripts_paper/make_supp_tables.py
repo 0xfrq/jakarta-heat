@@ -1,0 +1,43 @@
+import pandas as pd, os
+BASE=r"D:\jakarta-heat-paper\paper\zenodo_preprint\input"
+d=pd.read_csv(os.path.join(BASE,"Supplementary_Tables","demographic_no_support.csv"))
+lines=[]
+lines.append(r"\begin{table}[H]")
+lines.append(r"\centering")
+lines.append(r"\footnotesize")
+lines.append(r"\caption{Cells without demographic source support. Analytical values are null; the raw exported zeros are retained but are not treated as estimated population.}\label{tab:s8}")
+lines.append(r"\begin{tabular}{@{}l l r r l@{}}")
+lines.append(r"\toprule")
+lines.append(r"Grid ID & City & Area (km$^2$) & Coverage & Support state \\")
+lines.append(r"\midrule")
+for _,r in d.iterrows():
+    gid=str(r.grid_id).replace("_","\\_")
+    city=str(r.kota).replace("Kota Jakarta ","")
+    lines.append(f"{gid} & {city} & {r.area_km2:.6f} & {r.coverage_ratio:.4f} & no source support \\\\")
+lines.append(r"\bottomrule")
+lines.append(r"\end{tabular}")
+lines.append(r"\begin{tablenotes}[flushleft]\footnotesize")
+lines.append(r"\item All six cells have \texttt{no\_source\_support} for total population and both age groups. Their raw exported zeros are preserved in the \texttt{*\_raw} fields; analytical values are null. The six cells are excluded from the M4 common comparison. \texttt{JKT\_R050\_C061} is a different case: a supported near-zero estimate, not a no-support cell.")
+lines.append(r"\end{tablenotes}")
+lines.append(r"\end{table}")
+open(os.path.join(BASE,"Tables","tableS8_demography.tex"),"w",encoding="utf-8").write("\n".join(lines))
+
+e=pd.read_csv(os.path.join(BASE,"Supplementary_Tables","eligibility_reconciliation.csv"))
+lines=[]
+lines.append(r"\begin{table}[H]")
+lines.append(r"\centering")
+lines.append(r"\small")
+lines.append(r"\caption{Eligibility reconciliation from the 2,765-cell master grid to the 2,536-cell common comparison set.}\label{tab:s9}")
+lines.append(r"\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{7.0cm} r >{\raggedright\arraybackslash}X@{}}")
+lines.append(r"\toprule")
+lines.append(r"Category & Cells & Note \\")
+lines.append(r"\midrule")
+for _,r in e.iterrows():
+    cat=str(r.category).replace("_","\\_")
+    note=str(r.note).replace("_","\\_")
+    lines.append(f"{cat} & {int(r.n)} & {note} \\\\")
+lines.append(r"\bottomrule")
+lines.append(r"\end{tabularx}")
+lines.append(r"\end{table}")
+open(os.path.join(BASE,"Tables","tableS9_eligibility.tex"),"w",encoding="utf-8").write("\n".join(lines))
+print("wrote S8/S9")

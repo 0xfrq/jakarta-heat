@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Scenario-family sensitivity of the M4 top-decile set at the 10\% budget.
+Each family varies one group of assumptions while holding the rest at the baseline
+configuration. The table reports the minimum and maximum Jaccard overlap with the
+baseline top decile across scenarios in the family.}
+\label{tab:sensitivity}
+\begin{threeparttable}
+\begin{tabular}{@{}lcrr@{}}
+\toprule
+Family & Scenarios & Minimum $J$ & Maximum $J$ \\
+\midrule
+Aggregation (hybrid vs fractional) & 1 & 0.881 & 0.881 \\
+Park threshold (500 m, 1,000 m, caps) & 4 & 0.521 & 0.682 \\
+Weights (including equal weight) & 9 & 0.868 & 0.954 \\
+QA exclusions (snap, coverage) & 3 & 0.969 & 0.996 \\
+Missing park distance (median, cap) & 2 & 0.906 & 0.906 \\
+Joint factorial (construct, cap, normalisation, aggregation) & 16 & 0.583 & 0.728 \\
+Missing support & 1 & 1.000 & 1.000 \\
+Normalisation (min--max, rank) & 3 & 0.734 & 0.814 \\
+Population definition (count vs share) & 2 & 0.347 & 0.977 \\
+Route policy (baseline, conservative, positive tags) & 5 & 0.420 & 1.000 \\
+Thermal support (0.50, 0.25, strict) & 2 & 1.000 & 1.000 \\
+Land cover (tree probability) & 1 & 0.782 & 0.782 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item Jaccard values are computed against the baseline M4 top decile with the scenario's eligible set (eligibility-changing comparison). The joint factorial does not include route-policy variants, so the table does not support an all-family robustness claim. Two further families (entrance/barrier and thermal sampling) could not be evaluated because the required evidence was unavailable, and they are not reported as estimates.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

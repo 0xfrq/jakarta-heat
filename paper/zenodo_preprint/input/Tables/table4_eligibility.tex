@@ -1,0 +1,30 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sample eligibility. The common comparison set is defined by M4, the
+most demanding model. Exclusions are not mutually exclusive; the union is 229
+cells. Spatial statistics use 2,535 observations after removing one Queen
+contiguity island.}
+\label{tab:eligibility}
+\begin{threeparttable}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{6.1cm} r >{\raggedright\arraybackslash}X@{}}
+\toprule
+Category & Cells & Note \\
+\midrule
+Master grid & 2,765 & Five mainland cities; 500 m lattice \\
+M1 / M2 eligible & 2,764 & Excludes one low-LST-support cell (\texttt{JKT\_R037\_C062}) \\
+M3 eligible & 2,758 & Also excludes six cells without population support \\
+M4 eligible (common set) & 2,536 & Also excludes age-unsupported and route-missing cells \\
+Excluded from common set & 229 & 8.28\% of master grid \\
+\quad Route missing only & 222 & No path to a candidate park in baseline graph \\
+\quad Route + population + age missing & 4 & Already outside common set because of route \\
+\quad Population/age missing only & 2 & \texttt{JKT\_R003\_C031}, \texttt{JKT\_R057\_C063} \\
+\quad Low LST support & 1 & \texttt{JKT\_R037\_C062}; 27.759\% valid LST area \\
+Spatial observations after island removal & 2,535 & \texttt{JKT\_R013\_C019} is a Queen island \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item The two population-only exclusions explain the difference between the 2,538-cell benchmark and the 2,536-cell common set. They are slivers (0.000266 and 0.002643 km$^2$) with no source support; their original exported zeros are preserved as raw values, not treated as estimated population.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

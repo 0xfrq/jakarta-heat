@@ -1,0 +1,48 @@
+{
+  "n": 2535,
+  "islands_removed": 1,
+  "directed_bh": {
+    "n_significant": 687,
+    "counts": {
+      "HH": 355,
+      "LL": 309,
+      "HL": 10,
+      "LH": 13,
+      "ns": 1848
+    },
+    "min_p": 0.0001
+  },
+  "directed_by": {
+    "n_significant": 284,
+    "counts": {
+      "HH": 122,
+      "LL": 157,
+      "HL": 3,
+      "LH": 2,
+      "ns": 2251
+    },
+    "min_p": 0.0001
+  },
+  "two-sided_bh": {
+    "n_significant": 493,
+    "counts": {
+      "HH": 252,
+      "LL": 227,
+      "HL": 7,
+      "LH": 7,
+      "ns": 2042
+    },
+    "min_p": 0.0003
+  },
+  "two-sided_by": {
+    "n_significant": 234,
+    "counts": {
+      "HH": 109,
+      "LL": 124,
+      "HL": 1,
+      "LH": 0,
+      "ns": 2301
+    },
+    "min_p": 0.0003
+  }
+}

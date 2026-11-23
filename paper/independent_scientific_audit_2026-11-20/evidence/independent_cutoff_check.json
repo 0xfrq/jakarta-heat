@@ -1,0 +1,21 @@
+{
+  "top_budget": 254,
+  "m4_top_cutoff": 0.8737398492744993,
+  "near500_n": 537,
+  "near500_in_top4": 0,
+  "near500_max_score": 0.8696487759284656,
+  "top_min_park_distance": 638.2027978112676,
+  "top_at_cap": 174,
+  "top_population": 1539790.6764879227,
+  "total_population": 10519840.5187721,
+  "top_area_km2": 63.41237847970278,
+  "example": {
+    "grid_id": "JKT_R056_C048",
+    "lst_c": 45.58,
+    "population": 6971.490234375,
+    "park_distance_m": 487.96005341824673,
+    "m4_score": 0.8696487759284656,
+    "m4_rank": 274,
+    "top_cooler": 236
+  }
+}

@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Data sources, reference periods and main limitations. The thermal and
+demographic layers refer to a declared 2024 period; the park and pedestrian
+network is a 19 November 2026 snapshot. The resulting analysis is a mixed-period
+candidate proxy.}
+\label{tab:sources}
+\begin{threeparttable}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.6cm}
+>{\raggedright\arraybackslash}p{3.1cm}
+>{\raggedright\arraybackslash}p{1.5cm}
+>{\raggedright\arraybackslash}p{1.4cm}
+>{\raggedright\arraybackslash}X
+>{\raggedright\arraybackslash}p{3.4cm}@{}}
+\toprule
+Dataset & Variable & Reference period & Native resolution & Processing & Main limitation \\
+\midrule
+Landsat 9 Collection 2 Level-2 (USGS) & LST, NDVI, thermal QA & 2024 (declared) & 30 m & Clear-sky per-pixel median composite; QA\_PIXEL bits 0--5 and QA\_RADSAT; area-weighted zonal mean & Scene/task/AOI lineage unavailable (RS-01); surface not air temperature; seasonal representativeness unverified \\
+WorldPop Global2 R2025A & Total population; ages 0--14 and 65+ & 2024 reference year & $\approx$100 m (3 arc-second) & Modelled people per cell; hybrid or fractional zonal allocation & Model estimates, not census; 6 cells without age support; 383 partial cells \\
+OpenStreetMap (OSM) & Candidate park polygons & 2026-11-19 snapshot & Vector & 1,015 candidates; representative point; nearest graph node & 0 verified public access or entrances; 980 unknown; 1,015 unresolved \\
+OSM pedestrian network & Walking graph & 2026-11-19 snapshot & Vector & Shortest path; 1,000 m cap; baseline 226 missing routes & Modelled, unvalidated routes; 167 origin and 78 park connector conflicts; 407 missing under conservative policy \\
+Administrative boundaries & Five mainland city polygons & Study definition & Vector & 500 m UTM lattice clipped to land & Kepulauan Seribu excluded; boundary vintage not independently audited \\
+Analysis grid & 500 m cells & Study definition & 500 m & 2,765 cells in EPSG:32748 & 383 partial cells; 65 cells below 10\% nominal area \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item LST: land surface temperature; NDVI: Normalized Difference Vegetation Index; QA: quality assurance; AOI: area of interest. The 2024 label is a declared recipe period, not an independently verified acquisition history. Park distance is a modelled network proxy, not measured public access.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

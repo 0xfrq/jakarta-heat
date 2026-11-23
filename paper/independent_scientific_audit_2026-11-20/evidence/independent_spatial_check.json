@@ -1,0 +1,106 @@
+{
+  "joined": 2536,
+  "island_ids": [
+    "JKT_R013_C019"
+  ],
+  "n_after": 2535,
+  "directed_edges": 18368,
+  "mean_neighbors": 7.245759368836292,
+  "m1": {
+    "moran_I": 0.6711062789799701,
+    "moran_p_sim": 0.001,
+    "moran_EI": -0.0003946329913180742,
+    "lisa_n": 2535,
+    "bh_significant": 818,
+    "bh_counts": {
+      "HH": 433,
+      "LL": 360,
+      "HL": 12,
+      "LH": 13,
+      "ns": 1717
+    },
+    "by_significant": 0,
+    "by_counts": {
+      "HH": 0,
+      "LL": 0,
+      "HL": 0,
+      "LH": 0,
+      "ns": 2535
+    },
+    "min_p": 0.001
+  },
+  "m2": {
+    "moran_I": 0.6540148235154407,
+    "moran_p_sim": 0.001,
+    "moran_EI": -0.0003946329913180742,
+    "lisa_n": 2535,
+    "bh_significant": 837,
+    "bh_counts": {
+      "HH": 437,
+      "LL": 375,
+      "HL": 16,
+      "LH": 9,
+      "ns": 1698
+    },
+    "by_significant": 0,
+    "by_counts": {
+      "HH": 0,
+      "LL": 0,
+      "HL": 0,
+      "LH": 0,
+      "ns": 2535
+    },
+    "min_p": 0.001
+  },
+  "m3": {
+    "moran_I": 0.6644207021769422,
+    "moran_p_sim": 0.001,
+    "moran_EI": -0.0003946329913180742,
+    "lisa_n": 2535,
+    "bh_significant": 782,
+    "bh_counts": {
+      "HH": 442,
+      "LL": 324,
+      "HL": 11,
+      "LH": 5,
+      "ns": 1753
+    },
+    "by_significant": 0,
+    "by_counts": {
+      "HH": 0,
+      "LL": 0,
+      "HL": 0,
+      "LH": 0,
+      "ns": 2535
+    },
+    "min_p": 0.001
+  },
+  "m4": {
+    "moran_I": 0.593024953816681,
+    "moran_p_sim": 0.001,
+    "moran_EI": -0.0003946329913180742,
+    "lisa_n": 2535,
+    "bh_significant": 663,
+    "bh_counts": {
+      "HH": 319,
+      "LL": 323,
+      "HL": 11,
+      "LH": 10,
+      "ns": 1872
+    },
+    "by_significant": 0,
+    "by_counts": {
+      "HH": 0,
+      "LL": 0,
+      "HL": 0,
+      "LH": 0,
+      "ns": 2535
+    },
+    "min_p": 0.001
+  },
+  "saved_m4_compare": {
+    "n": 2535,
+    "p_max_abs_diff": 0.0,
+    "label_fdr_mismatch": 0
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "project": "Jakarta Heat RC2 engineering",
+  "branch": "integration/rc2",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+  "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
+  "evidence_revision": "8fe8b2dcf7f983ed77f0484c5e2ee5b19ab3b464",
+  "created_utc": "2026-11-20T11:51:44Z",
+  "engineering_status": "PASS for engineering portability and numerical reproduction; scientific HOLD",
+  "hash_policy": {
+    "name": "git-blob-sha256",
+    "definition": "SHA-256 over git cat-file blob <rev>:<path> bytes; checkout line endings are irrelevant"
+  },
+  "tests": {
+    "executed": 236,
+    "subtests": 7,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "report": {
+      "name": "tests",
+      "path": "outputs/qa/rc2/pytest_clean_checkout.xml",
+      "sha256": "600bc19b791914ed35e867f12836e4a6dc4ed6b6d3412eeb5bf4f7baefac0560"
+    }
+  },
+  "replay": {
+    "result": "PASS",
+    "tables_and_metadata": 63,
+    "max_abs_numeric_difference": 0.0,
+    "report": {
+      "name": "replay",
+      "path": "outputs/qa/rc2/replay_verification.json",
+      "sha256": "8ec894828c3565ef8dcddf900f10a982414f8d137cde60a2112211b059d28de7"
+    }
+  },
+  "independent_verification": {
+    "result": "PASS",
+    "n_master": 2765,
+    "n_common": 2536,
+    "n_spatial": 2535,
+    "manual_moran_m4": 0.5930249538166806,
+    "report": {
+      "name": "independent_verification",
+      "path": "outputs/qa/rc2/engineering_verification.json",
+      "sha256": "a75f6a1f4170b4414a1186a014a43d0ee7155ec7aa216bcef4469079d89e6ef2"
+    }
+  },
+  "release_gate": {
+    "result": "PASS",
+    "report": {
+      "name": "release_gate",
+      "path": "outputs/qa/rc2/portability_verification.json",
+      "sha256": "5d9b5b719e75f39aa24323c5439e9879daa1fc9e116afa15af727f86c364448c"
+    }
+  },
+  "handoff": {
+    "name": "handoff",
+    "path": "handoff/RC2_ENGINEERING_HANDOFF.md",
+    "sha256": "0bea1e437e1aab693974aaa1a252e51439dcb9cf69488072474f58c507a526f5"
+  },
+  "reproduce": {
+    "name": "reproduce",
+    "path": "docs/RC2_REPRODUCE.md",
+    "sha256": "e6b70e5860e0731f5aa6d9e6e49380adc8b231e4e4d6f2502fb3e44fea5e76f7"
+  },
+  "open_issues": {
+    "name": "open_issues",
+    "path": "handoff/RC2_ENGINEERING_OPEN_ISSUES.md",
+    "sha256": "b25368682659b67914559bc053a4df55189a7b2b91a6cfc207942c2815bed36e"
+  },
+  "integration_manifest": {
+    "name": "integration_manifest",
+    "path": "docs/integration_manifest.json",
+    "sha256": "75a0326631958e01055cc71972767c10bb2e2f4a205c7ed69ebdfc758c32fc31"
+  },
+  "build_record": {
+    "name": "build_record",
+    "path": "docs/RC2_BUILD_RECORD.json",
+    "sha256": "ccbb1a62e08c7045b11641db31d2b99d88a82b3fb051f7c513bd187b27eaa642"
+  },
+  "entries": [
+    {
+      "name": "tests",
+      "path": "outputs/qa/rc2/pytest_clean_checkout.xml",
+      "sha256": "600bc19b791914ed35e867f12836e4a6dc4ed6b6d3412eeb5bf4f7baefac0560"
+    },
+    {
+      "name": "replay",
+      "path": "outputs/qa/rc2/replay_verification.json",
+      "sha256": "8ec894828c3565ef8dcddf900f10a982414f8d137cde60a2112211b059d28de7"
+    },
+    {
+      "name": "independent_verification",
+      "path": "outputs/qa/rc2/engineering_verification.json",
+      "sha256": "a75f6a1f4170b4414a1186a014a43d0ee7155ec7aa216bcef4469079d89e6ef2"
+    },
+    {
+      "name": "release_gate",
+      "path": "outputs/qa/rc2/portability_verification.json",
+      "sha256": "5d9b5b719e75f39aa24323c5439e9879daa1fc9e116afa15af727f86c364448c"
+    },
+    {
+      "name": "handoff",
+      "path": "handoff/RC2_ENGINEERING_HANDOFF.md",
+      "sha256": "0bea1e437e1aab693974aaa1a252e51439dcb9cf69488072474f58c507a526f5"
+    },
+    {
+      "name": "reproduce",
+      "path": "docs/RC2_REPRODUCE.md",
+      "sha256": "e6b70e5860e0731f5aa6d9e6e49380adc8b231e4e4d6f2502fb3e44fea5e76f7"
+    },
+    {
+      "name": "open_issues",
+      "path": "handoff/RC2_ENGINEERING_OPEN_ISSUES.md",
+      "sha256": "b25368682659b67914559bc053a4df55189a7b2b91a6cfc207942c2815bed36e"
+    },
+    {
+      "name": "integration_manifest",
+      "path": "docs/integration_manifest.json",
+      "sha256": "75a0326631958e01055cc71972767c10bb2e2f4a205c7ed69ebdfc758c32fc31"
+    },
+    {
+      "name": "build_record",
+      "path": "docs/RC2_BUILD_RECORD.json",
+      "sha256": "ccbb1a62e08c7045b11641db31d2b99d88a82b3fb051f7c513bd187b27eaa642"
+    }
+  ],
+  "notes": [
+    "The RC2 receipt binds the final engineering evidence under one explicit hash policy.",
+    "RC1 evidence remains immutable; the archival RC1 receipt is verified separately at 3b8ed05.",
+    "Scientific decisions and QA-01 remain HOLD."
+  ]
+}

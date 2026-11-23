@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Local Moran sensitivity for the M4 map. The adopted reporting convention
+is two-sided testing with 9,999 permutations and Benjamini--Hochberg (BH)
+correction. ``Changed'' counts cells whose significance label differs from that
+primary convention. The testing family is the 2,535 non-island cells in the M4
+map.}
+\label{tab:lisa}
+\begin{threeparttable}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Tail & Permutations & Correction & Significant cells & Changed vs primary \\
+\midrule
+Two-sided & 9,999 & BH & 493 & 0 \\
+Two-sided & 999 & BH & 496 & 65 \\
+Directed & 999 & BH & 663 & 170 \\
+Directed & 9,999 & BH & 687 & 194 \\
+Two-sided & 9,999 & BY & 234 & 259 \\
+Directed & 9,999 & BY & 284 & 209 \\
+Directed & 999 & BY & 0 & 493 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}[flushleft]\footnotesize
+\item BH: Benjamini--Hochberg at $q=0.05$; BY: Benjamini--Yekutieli at $q=0.05$. At 999 permutations the minimum attainable $p$-value is 0.001. The BY threshold at 999 permutations is approximately $1.97\times10^{-5}$, so the zero count is a resolution artifact, not evidence of no clustering. No $p=0$ claim is made; normal-theory $p$-value underflow is not used as evidence. The directed/999/BH column is retained as the historical analytical configuration.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

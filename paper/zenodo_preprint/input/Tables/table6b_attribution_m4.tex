@@ -1,0 +1,36 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Construct and specification ablations relative to M4 at the 10\%
+budget (254 cells). Every Jaccard value and every ``shared'' count in this table
+uses the M4 top decile as the reference.}
+\label{tab:attribution_m4}
+\begin{threeparttable}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{6.0cm} c c >{\raggedright\arraybackslash}X@{}}
+\toprule
+Scenario & Jaccard vs M4 & Shared / 254 & Interpretation \\
+\midrule
+M4 (reference) & 1.000 & 254 & Full screening index \\
+M3 & 0.411 & 148 & Removes age count and park term; reweights \\
+Reweighting only & 0.423 & 151 & Changes weights but keeps M3 components \\
+Age swap only & 0.419 & 150 & Replaces total population with age count \\
+Park addition only & 0.861 & 235 & Adds park term at matched weights \\
+Age + reweighting & 0.423 & 151 & Joint change without park \\
+Park + reweighting & 0.977 & 251 & Park dominates the joint change \\
+Age + park & 0.847 & 233 & Park plus age substitution \\
+No park & 0.423 & 151 & Removes park term from M4 \\
+Park only & 0.028 & 14 & Index based only on park deficit \\
+Heat only & 0.384 & 141 & M1 benchmark \\
+Equal weight & 0.868 & 236 & Equal weights on four components \\
+Total-count swap & 0.977 & 251 & Replaces age count with total population \\
+Vulnerable share & 0.347 & 131 & Replaces count with age share \\
+Child share & 0.451 & 158 & Child share instead of count \\
+Elderly share & 0.392 & 143 & Elderly share instead of count \\
+Proportional M3 + park & 0.924 & 244 & Reweights M3 components, adds park \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item These are similarity comparisons against the M4 top decile. They answer: how close is each alternative specification to M4? They are not incremental changes from M3. The exact Shapley shares are in Table~\ref{tab:attribution_m3}. ``Shared'' counts cells in both the scenario and M4 top sets.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

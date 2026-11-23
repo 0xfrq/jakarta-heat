@@ -1,0 +1,339 @@
+﻿%% Supplementary Material -- standalone supplement for the Jakarta heat paper.
+%% Build with:
+%%   ./build.sh --target zenodo --input-dir input --main Supplementary.tex
+\providecommand{\ManuscriptTarget}{neutral}
+\documentclass[times,twoside]{_Templates/MultiTargetManuscript}
+
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+
+\makeatletter
+\@tmptwocolumnfalse
+\makeatother
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0.25em}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+\leadauthor{Faqih}
+
+\begin{document}
+\onecolumn
+\raggedbottom
+
+\title{Supplementary Material for ``From Thermal Hotspots to Spatial Priorities: Attribution and Sensitivity of Urban Heat Screening in Jakarta''}
+\shorttitle{Supplementary Material}
+\author[1]{Muhammad Fariq Faqih}
+\author[1]{Muhammad Alim Mustofa}
+\author[1]{Mu'adz Abdulloh}
+\affil[1]{Renaro Lab, Indonesia, \url{https://renaro.my.id}}
+
+\hypersetup{
+  pdftitle={Supplementary Material for From Thermal Hotspots to Spatial Priorities: Attribution and Sensitivity of Urban Heat Screening in Jakarta},
+  pdfauthor={Muhammad Fariq Faqih; Muhammad Alim Mustofa; Mu'adz Abdulloh},
+  pdfsubject={Supplementary material: sensitivity analyses and data provenance},
+  pdfkeywords={urban heat; land surface temperature; spatial prioritization; park accessibility; composite indicators; sensitivity analysis; spatial inequality; Jakarta}
+}
+
+\maketitle
+
+\begin{corrauthor}
+Muhammad Fariq Faqih,\ fariq\at renaro.my.id
+\end{corrauthor}
+
+\section*{S1. Data quality and missingness}
+
+Table~\ref{tab:s1} reports the quality flags and missingness counts used to
+define the common comparison sample. The counts are cell counts unless stated
+otherwise. A missing value is not a zero: route-missing cells are excluded from
+the common set, and cells without demographic source support retain analytical
+nulls while their original exported zeros remain in the raw columns.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Data-quality and missingness register for the 2,765-cell master grid.}
+\label{tab:s1}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{8.0cm} r >{\raggedright\arraybackslash}X@{}}
+\toprule
+Item & Count & Meaning \\
+\midrule
+LST / NDVI missing & 0 & All master cells have delivered thermal and vegetation values \\
+Population missing & 6 & No valid WorldPop support; analytical null, raw zero preserved \\
+Child / elderly missing & 6 & Same six cells; no age support \\
+Park distance missing (baseline) & 226 & No route to a candidate park; excluded, not zero \\
+Park distance missing (conservative) & 407 & Explicit node/connector restrictions applied \\
+Grid snap to network $>250$~m & 66 & QA flag; retained in baseline, removed in one sensitivity \\
+Coverage $<10\%$ of nominal cell & 65 & Partial coastal/boundary cells; retained and flagged \\
+Population exactly zero & 0 & No supported zero-population cell in the common sample \\
+Children + elderly $>105\%$ of population & 0 & No age-population inconsistency flagged \\
+LST valid area $<50\%$ & 1 & \texttt{JKT\_R037\_C062}; excluded from all models \\
+Grids excluded from common comparison & 229 & 8.28\% of master grid \\
+Common comparison sample & 2,536 & 91.72\% of master grid \\
+Spatial observations after island removal & 2,535 & \texttt{JKT\_R013\_C019} is a Queen island \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{S2. Scenario-family sensitivity at three budgets}
+
+Table~\ref{tab:s2} reports the minimum and maximum Jaccard overlap of the M4
+top-priority set with the baseline at the 5\%, 10\% and 20\% budgets. Values are
+from the eligibility-changing comparison; the fixed-anchor comparison is
+reported in the main text and in the artifact tables. A family with a single
+scenario has identical minimum and maximum.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Scenario-family sensitivity at three top-priority budgets. Each cell is
+the minimum--maximum Jaccard overlap with the baseline M4 set across scenarios in
+that family.}
+\label{tab:s2}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\multirow{2}{*}{Family} & \multicolumn{2}{c}{5\% (127)} & \multicolumn{2}{c}{10\% (254)} & \multicolumn{2}{c}{20\% (508)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & Min & Max & Min & Max & Min & Max \\
+\midrule
+Aggregation & 0.896 & 0.896 & 0.881 & 0.881 & 0.913 & 0.913 \\
+Park threshold & 0.494 & 0.649 & 0.521 & 0.682 & 0.447 & 0.782 \\
+Weights & 0.881 & 0.954 & 0.868 & 0.954 & 0.917 & 0.961 \\
+QA exclusions & 0.969 & 0.984 & 0.969 & 0.996 & 0.975 & 0.994 \\
+Missing park distance & 0.906 & 0.920 & 0.906 & 0.906 & 0.903 & 0.913 \\
+Joint factorial (16) & 0.530 & 0.682 & 0.583 & 0.728 & 0.668 & 0.789 \\
+Missing support & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 \\
+Normalisation & 0.728 & 0.841 & 0.734 & 0.814 & 0.725 & 0.814 \\
+Population definition & 0.270 & 0.954 & 0.347 & 0.977 & 0.481 & 0.996 \\
+Route policy & 0.419 & 1.000 & 0.420 & 1.000 & 0.528 & 1.000 \\
+Thermal support & 1.000 & 1.000 & 1.000 & 1.000 & 0.992 & 1.000 \\
+Land cover & 0.682 & 0.682 & 0.782 & 0.782 & 0.774 & 0.774 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{S3. City composition of the top deciles}
+
+Table~\ref{tab:s3} reports the number and share of top-decile cells by city for
+M1--M4, together with the modelled population in the M4 top decile. City
+assignment follows the majority-area city of each clipped grid cell; it is not a
+separate raster zonal total within administrative boundaries.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Top-decile composition by city. Shares are percentages of each model's
+254-cell top set. Population is the modelled 2024 population in the M4 top
+decile.}
+\label{tab:s3}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+City & M1 $n$ & M1 \% & M2 $n$ & M3 $n$ & M4 $n$ & M4 \% & M4 population \\
+\midrule
+West Jakarta & 39 & 15.4 & 60 & 62 & 63 & 24.8 & 389,483 \\
+Central Jakarta & 2 & 0.8 & 14 & 25 & 17 & 6.7 & 124,689 \\
+South Jakarta & 48 & 18.9 & 31 & 27 & 32 & 12.6 & 172,959 \\
+East Jakarta & 88 & 34.6 & 62 & 73 & 87 & 34.3 & 526,819 \\
+North Jakarta & 77 & 30.3 & 87 & 67 & 55 & 21.7 & 325,841 \\
+\midrule
+Total & 254 & 100.0 & 254 & 254 & 254 & 100.0 & 1,539,791 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{S4. Alternative LISA summaries}
+
+Table~\ref{tab:s4} reports cluster counts for each model under the historical
+directed/999/BH configuration, retained for comparison. Table~\ref{tab:s5}
+repeats the M4 convention sensitivity from the main text; the adopted
+two-sided/9,999/BH specification is the first row. The counts are labels, not
+causal findings; the same map can yield different counts under a different
+tail, permutation count or correction. The per-cell primary labels are in
+\texttt{Supplementary\_Tables/lisa\_m4\_primary.csv}.
+
+\begin{table}[H]
+\centering
+\small
+\caption{LISA cluster counts for M1--M4 under the historical directed/999/BH
+configuration, retained for comparison. ``ns'' means not significant at that
+convention.}
+\label{tab:s4}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Model & HH & LL & HL & LH & ns \\
+\midrule
+M1 & 433 & 360 & 12 & 13 & 1,717 \\
+M2 & 437 & 375 & 16 & 9 & 1,698 \\
+M3 & 442 & 324 & 11 & 5 & 1,753 \\
+M4 & 319 & 323 & 11 & 10 & 1,872 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{M4 LISA convention sensitivity. ``Changed'' counts cells whose
+significance label differs from the adopted two-sided/9,999/BH convention.}
+\label{tab:s5}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Tail & Permutations & Correction & Significant & Changed \\
+\midrule
+Two-sided & 9,999 & BH & 493 & 0 \\
+Two-sided & 999 & BH & 496 & 65 \\
+Directed & 999 & BH & 663 & 170 \\
+Directed & 9,999 & BH & 687 & 194 \\
+Two-sided & 9,999 & BY & 234 & 259 \\
+Directed & 9,999 & BY & 284 & 209 \\
+Directed & 999 & BY & 0 & 493 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{S5. Exclusion geography and score distributions}
+
+Figure~\ref{fig:s1} maps the 229 excluded cells by primary exclusion reason.
+Reasons overlap: a cell may be route-missing and also lack demographic support.
+The primary reason is shown in the order low LST, population, age, route. The
+route-missing category therefore contains most of the age-unsupported cells that
+are also unroutable. Figure~\ref{fig:s2} shows the score distributions across
+the common sample. Figure~\ref{fig:s3} shows the candidate-park inventory by
+evidence state and the route-missing grid.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/figS2_exclusions.pdf}
+  \caption{Excluded cells by primary reason. Route-missing cells dominate the
+  exclusion pattern and are concentrated in the north and east. The map is a
+  disclosure of sample selection, not a statement that excluded areas are
+  unimportant. Source: \texttt{eligibility\_by\_model.csv} and the 500~m grid.}
+  \label{fig:s1}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/figS1_score_distributions.pdf}
+  \caption{Score distributions for M1--M4 on the common 2,536-cell sample.
+  Percentile clipping compresses the upper tail and creates ties, especially in
+  M1. The distributions are descriptive; they are not evidence that one model is
+  more accurate than another.}
+  \label{fig:s2}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Figures/figS3_park_inventory.pdf}
+  \caption{Candidate parks by evidence state (representative points) and
+  route-missing grid cells. Grey points are unknown access, orange points are
+  conditional/unverified, and green points carry a positive OSM tag that remains
+  unverified. The map shows why the candidate inventory is a proxy, not a public
+  park census.}
+  \label{fig:s3}
+\end{figure}
+
+\section*{S6. Full scenario results}
+
+Table~\ref{tab:s7} lists all 49 executed scenario top-decile comparisons at the
+10\% budget. Jaccard and shared cells are relative to the M4 top-254 set. The
+machine-readable table is
+\texttt{Supplementary\_Tables/full\_scenario\_results.csv}. The three registry
+entries that are baselines, duplicates or could not be executed are not
+presented as separate scenarios; the family summary is in S2.
+
+\input{Tables/tableS7_scenarios}
+
+\section*{S7. Demographic source support}
+
+Table~\ref{tab:s8} lists the six cells that remain without total-population and
+age-raster support after the buffered-age remediation. The machine-readable
+table is \texttt{Supplementary\_Tables/demographic\_no\_support.csv}. Analytical
+values are null; raw exported zeros are retained in the \texttt{*\_raw} fields
+and are not treated as estimated population.
+
+\input{Tables/tableS8_demography}
+
+\section*{S8. Eligibility reconciliation}
+
+Table~\ref{tab:s9} reconciles the 2,765 master cells with the 2,538-cell
+benchmark and the 2,536-cell common set. The machine-readable table is
+\texttt{Supplementary\_Tables/eligibility\_reconciliation.csv}.
+
+\input{Tables/tableS9_eligibility}
+
+\section*{S9. Figure and table provenance}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Provenance of figures and tables. All source files are in the processed
+analysis dataset; exact commits and hashes are recorded in the reproducibility note.}
+Figures were generated for this manuscript from the tabular and GIS sources; no
+synthetic values were introduced.
+\label{tab:s10}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.3cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{4.0cm}@{}}
+\toprule
+Item & Source & Note \\
+\midrule
+Main Fig.~1 & \texttt{merged\_grid.csv}, \texttt{priority\_models.csv}, \texttt{grid\_500m\_jakarta.gpkg} & Generated from processed analysis tables \\
+Main Fig.~2 & Same as Fig.~1 & Population and park distance \\
+Main Fig.~3 & Same as Fig.~1 & M1/M4 top flags \\
+Main Fig.~4 & Same as Fig.~1 & Rank displacement \\
+Main Fig.~5 & \texttt{rank\_change\_attribution.csv}, \texttt{robustness\_family\_summary.csv} & Attribution and family envelope \\
+Main Fig.~6 & \texttt{lisa\_m4\_primary.csv}, \texttt{lisa\_tail\_permutation\_sensitivity.csv} & LISA map and counts \\
+Tables 1--11 & Processed analysis tables listed in the main text & Values checked against the analysis dataset \\
+S1 & \texttt{data\_quality.csv}, \texttt{demographic\_support.csv} & Quality and missingness \\
+S2 & \texttt{robustness\_family\_summary.csv} & Three budgets \\
+S3 & \texttt{kota\_summary.csv} & City composition \\
+S4--S5 & \texttt{lisa\_cluster\_counts.csv}, \texttt{lisa\_tail\_permutation\_sensitivity.csv}, \texttt{lisa\_m4\_primary.csv} & LISA counts and primary per-cell labels \\
+S6 & \texttt{Supplementary\_Tables/full\_scenario\_results.csv} & 49 executed scenario comparisons \\
+S7 & \texttt{Supplementary\_Tables/demographic\_no\_support.csv} & Six unsupported demographic cells \\
+S8 & \texttt{Supplementary\_Tables/eligibility\_reconciliation.csv} & Master-to-common eligibility \\
+S9 & This file & Provenance register \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{Author Contributions}
+
+All authors contributed to the preparation and critical revision of the
+manuscript. All authors reviewed and approved the final version and accept
+responsibility for its content.
+
+\section*{Funding}
+
+This research received no external funding.
+
+\section*{Conflicts of Interest}
+
+The authors declare no competing interests.
+
+\section*{Use of AI-Assisted Tools}
+
+AI-assisted tools were used for language editing, LaTeX production and
+consistency checking during the preparation of this manuscript. The authors
+reviewed and approved all scientific content and accept responsibility for the
+final article.
+
+\section*{License}
+
+Copyright \textcopyright{} 2026 The Authors. This work is licensed under a
+Creative Commons Attribution 4.0 International License (CC BY 4.0,
+\url{https://creativecommons.org/licenses/by/4.0/}). The licence applies to the
+author-created supplementary narrative, tables and original figures.
+Third-party datasets, software and the LaTeX template remain under their own
+licences and attribution requirements; the template source remains under
+GPL-3.0-or-later.
+
+\end{document}
+
+
+

@@ -9,3 +9,5 @@ docs/model_specification.json -text
 docs/scenario_registry.csv -text
 docs/spatial_inference_spec.md -text
 requirements*.lock -text
+# Preserve exact bytes of the final preprint package and its checksum manifest.
+paper/** -text
