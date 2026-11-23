@@ -1,5 +1,9 @@
 # Jakarta Heat
 
+> **Status rilis:** paper final v1 dan seluruh output riset sudah dikonsolidasikan
+> di branch `main`. Lihat [`FINAL_RELEASE.md`](FINAL_RELEASE.md) untuk peta
+> deliverables, checksum paper, status verifikasi, dan batasan ilmiah.
+
 RC1 integration: see [consolidated reproduction](docs/RC1_REPRODUCE.md),
 [handoff](handoff/RC1_HANDOFF.md), and [verification](handoff/RC1_VERIFICATION.md).
 These describe the consolidated candidate; workstream handoffs below retain

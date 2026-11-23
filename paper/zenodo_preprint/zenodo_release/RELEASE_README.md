@@ -16,7 +16,7 @@ results are unchanged.
 
 | File | Purpose |
 |---|---|
-| `Jakarta_Heat_Priorities_Preprint_v1.pdf` | Main manuscript, 24 pages, neutral scholarly profile |
+| `Jakarta_Heat_Priorities_Preprint_v1.pdf` | Main manuscript, 25 pages, neutral scholarly profile |
 | `Jakarta_Heat_Priorities_Supplementary_v1.pdf` | Supplementary material, 8 pages |
 | `ZENODO_METADATA.md` | Draft title, creators, abstract, keywords, license and notes |
 | `LICENSE_MANUSCRIPT.txt` | CC BY 4.0 notice and full legal code |
