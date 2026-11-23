@@ -116,7 +116,7 @@ D:\jakarta-heat\
 | Paper v1 | Selesai secara teknis; publication candidate |
 | Test suite RC2 | 236 test + 7 subtest, 0 gagal (clean checkout) |
 | Replay RC2 | 63 tabel/metadata, selisih numerik maksimum 0.0 |
-| Push ke origin | Selesai — `main` = `fc2e4d1`, tag `v1.0-preprint` |
+| Push ke origin | Selesai — `main` sudah di-push; tag `v1.0-preprint` di `fc2e4d1` |
 
 RC2 hanya menutup masalah portabilitas dan provenance engineering. RC2 **tidak**
 menandatangani keputusan ilmiah, bobot model, threshold, klaim akses, atau
