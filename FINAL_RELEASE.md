@@ -95,6 +95,7 @@ D:\jakarta-heat\
 ├── docs\                     ← metode, spesifikasi, keputusan, reproduksi
 ├── handoff\                  ← handoff antar-agent dan RC1/RC2
 ├── audit\                    ← audit independen (read-only, ignored)
+├── dist\                     ← frozen inputs & bukti RC1 (ignored)
 ├── dashboard\                ← aplikasi Streamlit
 ├── scripts\, script\, jhim\  ← kode pipeline dan model
 ├── tests\                    ← test suite
@@ -115,7 +116,7 @@ D:\jakarta-heat\
 | Paper v1 | Selesai secara teknis; publication candidate |
 | Test suite RC2 | 236 test + 7 subtest, 0 gagal (clean checkout) |
 | Replay RC2 | 63 tabel/metadata, selisih numerik maksimum 0.0 |
-| Push ke origin | Belum dilakukan |
+| Push ke origin | Selesai — `main` = `fc2e4d1`, tag `v1.0-preprint` |
 
 RC2 hanya menutup masalah portabilitas dan provenance engineering. RC2 **tidak**
 menandatangani keputusan ilmiah, bobot model, threshold, klaim akses, atau
@@ -205,8 +206,10 @@ Commit kunci:
 | `3439f38` | RC2 final, engineering verification |
 | `9e6bc51` | Paket paper v1 dan audit ilmiah |
 | `0ef2da5` | Merge final paper + RC2 ke `main` |
+| `fc2e4d1` | Indeks rilis final, koreksi halaman paper, tag `v1.0-preprint` |
 
-Worktree agent masih ada di `D:\jakarta-heat-agent1`, `-agent2`, `-agent3`, dan
-lain-lain. Semuanya sudah bersih dan isinya sudah masuk `main`, jadi worktree
-tersebut dapat dihapus setelah verifikasi. Repo tunggal yang dipakai adalah
-`D:\jakarta-heat`.
+Delapan worktree lama (`agent1`, `agent2`, `agent3`, `paper`, `research`,
+`integration`, `rc2`, `auditor-rc1`) sudah dihapus. `main` kini satu-satunya
+branch dan `D:\jakarta-heat` satu-satunya folder kerja. Bundle frozen inputs
+(208 MB) dan bukti RC1 disalin ke `dist/` sebelum worktree dihapus; `dist/`
+tetap di-ignore Git.
