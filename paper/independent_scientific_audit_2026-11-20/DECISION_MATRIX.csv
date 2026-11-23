@@ -1,0 +1,14 @@
+decision_id,decision,audit_status,recommendation,human_approval_required,consequence
+D1,Reference periods (2024 thermal/demography + 2026 OSM),CONDITIONAL,Accept as mixed-period candidate proxy; prohibit 2024 access/2026 heat claims,Yes,Defines claim scope
+D2,Historical OSM availability,ACCEPT WITHDRAWAL,Accept claim withdrawal; no temporal stability claim,Yes,No temporal claim
+D3,Null vs zero support semantics,ACCEPT TECHNICAL,Accept null/no-source semantics; do not impute six cells,Yes formal,M4 common set 2536
+D4,M4 construct and weights,HOLD,Option A retain/relabel as provisional screening index; Option B preferred future design,Yes,Core interpretation
+D5,Count vs share,CONDITIONAL,Count-based exposure primary; share separate; no age-vulnerability claim,Yes,Estimand definition
+D6,Hybrid vs fractional aggregation,CONDITIONAL,Report both; fractional preferred for additive counts; state hybrid non-additivity,Yes,Population accounting
+D7,Thermal support threshold 0.50,CONDITIONAL,Retain provisional 0.50 with 0.25/strict sensitivity,Yes,One cell excluded
+D8,Park access and route assumptions,HOLD,Candidate proxy only; no public/legal claim; field verification needed,Yes,Park term interpretation
+D9,Common comparison set 2536,CONDITIONAL,Use for comparison; report full-area/excluded; no Jakarta-wide,Yes,Selection inference
+D10,LISA primary convention,HOLD,Directed/9999/BH primary; 999/BH continuity; full sensitivity range,Yes,Cluster inference
+D11,Dynamic World categorical deferral,ACCEPT DEFERRAL,Sign deferral; no categorical land-cover claim,Yes,No DW categorical claim
+D12,Novelty and claim scope,CONDITIONAL,Attribution/uncertainty audit + negative findings; no first/novel combination,Yes,Positioning
+D13,Final scientific release,HOLD,Do not approve until Table 7 fix; D1-D12; RS-01; final audit,Yes,Release gate

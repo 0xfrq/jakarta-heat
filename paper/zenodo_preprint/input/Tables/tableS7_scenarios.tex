@@ -1,0 +1,62 @@
+\begin{longtable}{@{}p{0.22\textwidth} p{0.52\textwidth} r r@{}}
+\caption{Executed scenario top-decile results at the 10\% budget. Jaccard and shared cells are relative to the M4 top-254 set.}\label{tab:s7}\\
+\toprule
+Family & Scenario & Jaccard & Shared/254 \\
+\midrule
+\endfirsthead
+\toprule
+Family & Scenario & Jaccard & Shared/254 \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+Aggregation & Uniform fractional allocation & 0.881 & 238 \\
+Park threshold & Binary park threshold $>$1,000 m & 0.521 & 174 \\
+Park threshold & Binary park threshold $>$500 m & 0.530 & 176 \\
+Park threshold & Park-deficit cap 1,500 m & 0.655 & 201 \\
+Park threshold & Park-deficit cap 750 m & 0.682 & 206 \\
+Weights & Equal weights & 0.868 & 236 \\
+Weights & LST weight x0.8 & 0.917 & 243 \\
+Weights & LST weight x1.2 & 0.917 & 243 \\
+Weights & NDVI-deficit weight x0.8 & 0.939 & 246 \\
+Weights & NDVI-deficit weight x1.2 & 0.903 & 241 \\
+Weights & Park-deficit weight x0.8 & 0.881 & 238 \\
+Weights & Park-deficit weight x1.2 & 0.924 & 244 \\
+Weights & Vulnerable-count weight x0.8 & 0.946 & 247 \\
+Weights & Vulnerable-count weight x1.2 & 0.954 & 248 \\
+QA exclusion & Exclude coverage $<$10\% & 0.969 & 248 \\
+QA exclusion & Exclude remote-sensing QA failures & 0.996 & 253 \\
+QA exclusion & Exclude snap $>$250 m & 0.973 & 248 \\
+Missing park distance & Missing distance = maximum deficit & 0.906 & 252 \\
+Missing park distance & Missing distance = observed median & 0.906 & 252 \\
+Joint factorial & Total population, cap 1,500 m, clipped, fractional & 0.649 & 200 \\
+Joint factorial & Total population, cap 1,500 m, clipped, hybrid & 0.655 & 201 \\
+Joint factorial & Total population, cap 1,500 m, rank, fractional & 0.710 & 211 \\
+Joint factorial & Total population, cap 1,500 m, rank, hybrid & 0.728 & 214 \\
+Joint factorial & Total population, cap 750 m, clipped, fractional & 0.682 & 206 \\
+Joint factorial & Total population, cap 750 m, clipped, hybrid & 0.677 & 205 \\
+Joint factorial & Total population, cap 750 m, rank, fractional & 0.608 & 192 \\
+Joint factorial & Total population, cap 750 m, rank, hybrid & 0.583 & 187 \\
+Joint factorial & Vulnerable count, cap 1,500 m, clipped, fractional & 0.649 & 200 \\
+Joint factorial & Vulnerable count, cap 1,500 m, clipped, hybrid & 0.655 & 201 \\
+Joint factorial & Vulnerable count, cap 1,500 m, rank, fractional & 0.710 & 211 \\
+Joint factorial & Vulnerable count, cap 1,500 m, rank, hybrid & 0.722 & 213 \\
+Joint factorial & Vulnerable count, cap 750 m, clipped, fractional & 0.677 & 205 \\
+Joint factorial & Vulnerable count, cap 750 m, clipped, hybrid & 0.682 & 206 \\
+Joint factorial & Vulnerable count, cap 750 m, rank, fractional & 0.613 & 193 \\
+Joint factorial & Vulnerable count, cap 750 m, rank, hybrid & 0.592 & 189 \\
+Missing support & Corrected demographic support & 1.000 & 254 \\
+Normalisation & 1st-99th percentile normalisation & 0.814 & 228 \\
+Normalisation & Percentile-rank normalisation & 0.782 & 223 \\
+Normalisation & Pure min-max normalisation & 0.734 & 215 \\
+Population definition & Total population (not vulnerable count) & 0.977 & 251 \\
+Population definition & Vulnerable share (not count) & 0.347 & 131 \\
+Route policy & Route policy: baseline & 1.000 & 254 \\
+Route policy & Route policy: conservative nodes & 0.842 & 224 \\
+Route policy & Route policy: conservative nodes + connectors & 0.842 & 224 \\
+Route policy & Route policy: full extent & 1.000 & 254 \\
+Route policy & Route policy: positive tags & 0.420 & 150 \\
+Thermal support & Thermal support 25\% & 1.000 & 254 \\
+Thermal support & Thermal support 50\% & 1.000 & 254 \\
+Land cover & Tree-probability land cover (NDVI replacement) & 0.782 & 223 \\
+\end{longtable}

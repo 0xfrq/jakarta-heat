@@ -1,0 +1,7 @@
+grid_id,kota,area_km2,coverage_ratio,population_support_state,pop_child_support_state,pop_elderly_support_state,population_analytical,raw_population,raw_pop_child,raw_pop_elderly
+JKT_R003_C031,Kota Jakarta Selatan,0.000266,0.001064,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0
+JKT_R057_C063,Kota Jakarta Utara,0.002643,0.010574,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0
+JKT_R061_C009,Kota Jakarta Utara,0.244458,0.97783,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0
+JKT_R061_C010,Kota Jakarta Utara,0.098687,0.394749,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0
+JKT_R061_C011,Kota Jakarta Utara,0.001981,0.007925,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0
+JKT_R062_C043,Kota Jakarta Utara,0.006736,0.026943,no_source_support,no_source_support,no_source_support,,0.0,0.0,0.0

@@ -1,0 +1,25 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{The four screening models. $n(\cdot)$ is the percentile-clipped
+min--max normalisation in Equation~\ref{eq:norm}; $L$ is LST, $V$ is NDVI,
+$P$ is total population, $C$ and $E$ are the populations aged 0--14 and 65+,
+and $D$ is the modelled candidate-park network distance in metres. Weights are
+specified for this screening exercise; Table 11 reports their sensitivity.}
+\label{tab:models}
+\begin{threeparttable}
+\begin{tabularx}{\textwidth}{@{}l >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3.7cm}@{}}
+\toprule
+Model & Score definition & Question addressed \\
+\midrule
+M1 & $S_1 = n(L)$ & Where is the surface hottest? \\
+M2 & $S_2 = 0.60\,n(L) + 0.40\,[1-n(V)]$ & Where is heat combined with low vegetation? \\
+M3 & $S_3 = 0.40\,n(L) + 0.30\,[1-n(V)] + 0.30\,n(\log(1+P))$ & Where do heat, low vegetation and many residents coincide? \\
+M4 & $S_4 = 0.30\,n(L) + 0.20\,[1-n(V)] + 0.25\,n(\log(1+C+E)) + 0.25\,\min(D,1000)/1000$ & Where does the heat--population--park-deficit screening rule score high? \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item M4 is an exposure-oriented screening index, not an age-composition model, a health-risk model or a causal model. The age term is a count. The park term is a modelled network proxy to candidate destinations with unverified public access and entrances.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

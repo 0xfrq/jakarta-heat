@@ -1,0 +1,20 @@
+﻿\begin{table}[H]
+\centering
+\small
+\caption{Eligibility reconciliation from the 2,765-cell master grid to the 2,536-cell common comparison set.}\label{tab:s9}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{7.0cm} r >{\raggedright\arraybackslash}X@{}}
+\toprule
+Category & Cells & Note \\
+\midrule
+Master grid cells & 2765 & Five mainland cities; 500 m lattice \\
+Route-only missing & 222 & No path to a candidate park in baseline graph \\
+Route + population + age missing & 4 & Already outside common set because of route \\
+Population/age missing only & 2 & JKT\_R003\_C031; JKT\_R057\_C063 \\
+Low LST support & 1 & JKT\_R037\_C062; 27.759\% valid LST area \\
+Excluded union & 229 & 8.28\% of master grid \\
+Benchmark common set & 2538 & 2,765 - 222 - 4 - 1 \\
+Common set (2,536) & 2536 & 2,538 - 2 population-only slivers \\
+Spatial observations after island & 2535 & JKT\_R013\_C019 is a Queen island \\
+\bottomrule
+\end{tabularx}
+\end{table}

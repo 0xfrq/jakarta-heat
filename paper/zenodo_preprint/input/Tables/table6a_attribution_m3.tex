@@ -1,0 +1,27 @@
+\begin{table}[H]
+\centering
+\small
+\caption{Incremental effects relative to M3 at the 10\% budget (254 cells). Every
+Jaccard value and every ``shared'' count in this table uses the M3 top decile as
+the reference. M4 is the full three-factor change, not the reference set.}
+\label{tab:attribution_m3}
+\begin{threeparttable}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{6.0cm} c c >{\raggedright\arraybackslash}X@{}}
+\toprule
+Scenario & Jaccard vs M3 & Shared / 254 & Interpretation \\
+\midrule
+M3 (reference) & 1.000 & 254 & M3 top decile \\
+Reweighting only & 0.961 & 249 & Changes weights but keeps M3 components \\
+Age swap only & 0.984 & 252 & Replaces total population with age count \\
+Park addition only & 0.490 & 167 & Adds park term at matched weights \\
+Age + reweighting & 0.954 & 248 & Joint change without park \\
+Park + reweighting & 0.415 & 149 & Park dominates the joint change \\
+Age + park & 0.499 & 169 & Park plus age substitution \\
+M4 (all three changes) & 0.411 & 148 & Full M3-to-M4 construct change \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}[flushleft]\footnotesize
+\item These are incremental comparisons against M3. They answer: how much does each change move the M3 top set? The corresponding M4-referenced comparisons are in Table~\ref{tab:attribution_m4}; the same numerical Jaccard cannot be interpreted as both an M3 and an M4 overlap. The exact three-factor Shapley shares are 85.46\% park, 13.25\% reweighting and 1.29\% age; these are descriptive shares of absolute rank movement, not causal effects.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

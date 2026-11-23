@@ -1,0 +1,50 @@
+family,scenario,n_eligible,n_top,shared_with_M4,jaccard_with_M4
+aggregation,uniform_fractional_agent2_values,2536,254,238,0.881481
+ambang taman,akses taman biner >1000 m,2536,254,174,0.520958
+ambang taman,akses taman biner >500 m,2536,254,176,0.53012
+ambang taman,defisit taman jenuh 1500 m,2536,254,201,0.654723
+ambang taman,defisit taman jenuh 750 m,2536,254,206,0.682119
+bobot,bobot lst x0.8,2536,254,243,0.916981
+bobot,bobot lst x1.2,2536,254,243,0.916981
+bobot,bobot ndvi_low x0.8,2536,254,246,0.938931
+bobot,bobot ndvi_low x1.2,2536,254,241,0.902622
+bobot,bobot park_deficit x0.8,2536,254,238,0.881481
+bobot,bobot park_deficit x1.2,2536,254,244,0.924242
+bobot,bobot sama rata,2536,254,236,0.867647
+bobot,bobot vuln x0.8,2536,254,247,0.94636
+bobot,bobot vuln x1.2,2536,254,248,0.953846
+eksklusi QA,keluarkan coverage < 10%,2492,250,248,0.96875
+eksklusi QA,keluarkan rs_qa_ok = False (Agent 1),2525,253,253,0.996063
+eksklusi QA,keluarkan snap > 250 m,2488,249,248,0.972549
+jarak taman kosong,jarak kosong = defisit maksimum,2758,276,252,0.906475
+jarak taman kosong,jarak kosong = median teramati,2758,276,252,0.906475
+joint_factorial,joint_pop_cap1500_clipped_fractional,2536,254,200,0.649351
+joint_factorial,joint_pop_cap1500_clipped_legacy,2536,254,201,0.654723
+joint_factorial,joint_pop_cap1500_rank_fractional,2536,254,211,0.710438
+joint_factorial,joint_pop_cap1500_rank_legacy,2536,254,214,0.727891
+joint_factorial,joint_pop_cap750_clipped_fractional,2536,254,206,0.682119
+joint_factorial,joint_pop_cap750_clipped_legacy,2536,254,205,0.676568
+joint_factorial,joint_pop_cap750_rank_fractional,2536,254,192,0.607595
+joint_factorial,joint_pop_cap750_rank_legacy,2536,254,187,0.582555
+joint_factorial,joint_vuln_cap1500_clipped_fractional,2536,254,200,0.649351
+joint_factorial,joint_vuln_cap1500_clipped_legacy,2536,254,201,0.654723
+joint_factorial,joint_vuln_cap1500_rank_fractional,2536,254,211,0.710438
+joint_factorial,joint_vuln_cap1500_rank_legacy,2536,254,213,0.722034
+joint_factorial,joint_vuln_cap750_clipped_fractional,2536,254,205,0.676568
+joint_factorial,joint_vuln_cap750_clipped_legacy,2536,254,206,0.682119
+joint_factorial,joint_vuln_cap750_rank_fractional,2536,254,193,0.612698
+joint_factorial,joint_vuln_cap750_rank_legacy,2536,254,189,0.592476
+missing_support,corrected_support,2536,254,254,1.0
+normalisasi,normalisasi min-max murni,2536,254,215,0.733788
+normalisasi,normalisasi peringkat persentil,2536,254,223,0.782456
+normalisasi,normalisasi persentil 1-99,2536,254,228,0.814286
+penduduk,porsi rentan (bukan jumlah),2536,254,131,0.34748
+penduduk,total populasi (bukan rentan),2536,254,251,0.976654
+route_policy,agent2_audited_baseline,2536,254,254,1.0
+route_policy,agent2_explicit_nodes_and_connectors_conservative,2355,236,224,0.842105
+route_policy,agent2_explicit_nodes_conservative,2355,236,224,0.842105
+route_policy,agent2_full_jakarta_extent,2536,254,254,1.0
+route_policy,agent2_positive_tags_destination_coverage_stress,2521,253,150,0.420168
+thermal_support,thermal_support_0.25,2537,254,254,1.0
+thermal_support,thermal_support_0.5,2536,254,254,1.0
+tutupan lahan,Dynamic World pohon rendah (ganti NDVI),2535,254,223,0.782456

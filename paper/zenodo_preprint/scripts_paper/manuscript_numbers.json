@@ -1,0 +1,656 @@
+{
+  "master_grids": 2765,
+  "common_valid": 2536,
+  "eligible": {
+    "elig_m1": 2764,
+    "elig_m2": 2764,
+    "elig_m3": 2758,
+    "elig_m4": 2536
+  },
+  "top_budget": 254,
+  "m1_top_n": 254,
+  "m2_top_n": 254,
+  "m3_top_n": 254,
+  "m4_top_n": 254,
+  "m4_top_score_min": 0.8737398492744993,
+  "m4_top_score_max": 1.0,
+  "m4_top_rank_max": 254,
+  "m4_top_pop_sum": 254.0,
+  "m4_top_population": 1539790.6764879227,
+  "total_supported_population_common": 10519840.5187721,
+  "m4_top_population_share_common": 0.14637015397146447,
+  "m4_top_area_km2": 63.41237847970278,
+  "m4_top_vuln_share_min": 0.28939366567361763,
+  "m4_top_vuln_share_max": 0.30156312300570287,
+  "near500_n_common": 537,
+  "near500_in_top4": 0,
+  "near500_max_m4_score": 0.8696487759284656,
+  "top4_min_park_distance": 638.2027978112676,
+  "top4_ge1000_n": 174,
+  "top4_route_missing": 0,
+  "all_park_distance_missing": 226,
+  "all_pop_missing": 6,
+  "all_age_missing": 6,
+  "m1_top_by_city": {
+    "Kota Jakarta Timur": 88,
+    "Kota Jakarta Utara": 77,
+    "Kota Jakarta Selatan": 48,
+    "Kota Jakarta Barat": 39,
+    "Kota Jakarta Pusat": 2
+  },
+  "m2_top_by_city": {
+    "Kota Jakarta Utara": 87,
+    "Kota Jakarta Timur": 62,
+    "Kota Jakarta Barat": 60,
+    "Kota Jakarta Selatan": 31,
+    "Kota Jakarta Pusat": 14
+  },
+  "m3_top_by_city": {
+    "Kota Jakarta Timur": 73,
+    "Kota Jakarta Utara": 67,
+    "Kota Jakarta Barat": 62,
+    "Kota Jakarta Selatan": 27,
+    "Kota Jakarta Pusat": 25
+  },
+  "m4_top_by_city": {
+    "Kota Jakarta Timur": 87,
+    "Kota Jakarta Barat": 63,
+    "Kota Jakarta Utara": 55,
+    "Kota Jakarta Selatan": 32,
+    "Kota Jakarta Pusat": 17
+  },
+  "selection_included": {
+    "n": 2536,
+    "population": 10519840.5187721,
+    "lst_mean": 41.486107649842275,
+    "ndvi_mean": 0.31495386435331235,
+    "coverage_mean": 0.9403910313717891,
+    "snap_mean": 49.979554657007974
+  },
+  "selection_excluded": {
+    "n": 229,
+    "population": 463696.60606233083,
+    "lst_mean": 40.28288646288209,
+    "ndvi_mean": 0.36518427947598253,
+    "coverage_mean": 0.8214697072734141,
+    "snap_mean": 98.80832751326041
+  },
+  "selection_excluded_pct_grid": 8.282097649186257,
+  "selection_excluded_pct_pop": 4.2217420562442065,
+  "exclusion_reason_counts": {
+    "missing_walking_route": 226,
+    "missing_total_population": 6,
+    "missing_age_support_or_value": 6,
+    "low_lst_support_QA": 1
+  },
+  "example_near_park": {
+    "lst_c": 45.58,
+    "population": 6971.490234375,
+    "park_distance_m": 487.96005341824673,
+    "vuln_share": 0.30156160483214034,
+    "kota": "Kota Jakarta Utara",
+    "m4_score": 0.8696487759284656,
+    "m4_rank": 274
+  },
+  "top4_cooler_than_example": 236,
+  "model_comparison": [
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M1",
+      "model_b": "M2",
+      "nilai": 0.9361666998970386,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M1",
+      "model_b": "M2",
+      "nilai": 0.7821195919207293,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M1",
+      "model_b": "M2",
+      "nilai": 0.5679012345679012,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M2",
+      "nilai": 199.56703470031545,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M2",
+      "nilai": 156.0,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M1",
+      "model_b": "M3",
+      "nilai": 0.9054424897593528,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M1",
+      "model_b": "M3",
+      "nilai": 0.7363539369460829,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M1",
+      "model_b": "M3",
+      "nilai": 0.48104956268221577,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M3",
+      "nilai": 235.53233438485805,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M3",
+      "nilai": 171.5,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M1",
+      "model_b": "M4",
+      "nilai": 0.846848718128128,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M1",
+      "model_b": "M4",
+      "nilai": 0.6577955451838724,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M1",
+      "model_b": "M4",
+      "nilai": 0.38419618528610355,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M4",
+      "nilai": 307.38801261829656,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M1",
+      "model_b": "M4",
+      "nilai": 239.0,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M2",
+      "model_b": "M3",
+      "nilai": 0.9638138962918188,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M2",
+      "model_b": "M3",
+      "nilai": 0.8558509402892377,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M2",
+      "model_b": "M3",
+      "nilai": 0.6877076411960132,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M2",
+      "model_b": "M3",
+      "nilai": 129.04652996845425,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M2",
+      "model_b": "M3",
+      "nilai": 88.0,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M2",
+      "model_b": "M4",
+      "nilai": 0.881549667515808,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M2",
+      "model_b": "M4",
+      "nilai": 0.700824927725737,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M2",
+      "model_b": "M4",
+      "nilai": 0.3917808219178082,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M2",
+      "model_b": "M4",
+      "nilai": 283.4826498422713,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M2",
+      "model_b": "M4",
+      "nilai": 251.0,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "spearman_skor",
+      "model_a": "M3",
+      "model_b": "M4",
+      "nilai": 0.8977671840219509,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "kendall_tau_b",
+      "model_a": "M3",
+      "model_b": "M4",
+      "nilai": 0.7357446184870648,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "jaccard_top",
+      "model_a": "M3",
+      "model_b": "M4",
+      "nilai": 0.4111111111111111,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "mean_abs_rank_shift",
+      "model_a": "M3",
+      "model_b": "M4",
+      "nilai": 266.6711356466877,
+      "n_valid": 2536
+    },
+    {
+      "metrik": "median_abs_rank_shift",
+      "model_a": "M3",
+      "model_b": "M4",
+      "nilai": 248.0,
+      "n_valid": 2536
+    }
+  ],
+  "lisa_sensitivity": [
+    {
+      "alternative": "directed",
+      "permutations": 999,
+      "correction": "klaster_p05",
+      "n": 2535,
+      "n_significant": 1042,
+      "changed_vs_directed999_BH": 379,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "directed",
+      "permutations": 999,
+      "correction": "klaster_fdr",
+      "n": 2535,
+      "n_significant": 663,
+      "changed_vs_directed999_BH": 0,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "directed",
+      "permutations": 999,
+      "correction": "klaster_by",
+      "n": 2535,
+      "n_significant": 0,
+      "changed_vs_directed999_BH": 663,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 999,
+      "correction": "klaster_p05",
+      "n": 2535,
+      "n_significant": 810,
+      "changed_vs_directed999_BH": 147,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 999,
+      "correction": "klaster_fdr",
+      "n": 2535,
+      "n_significant": 496,
+      "changed_vs_directed999_BH": 167,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 999,
+      "correction": "klaster_by",
+      "n": 2535,
+      "n_significant": 0,
+      "changed_vs_directed999_BH": 663,
+      "minimum_attainable_p": 0.001
+    },
+    {
+      "alternative": "directed",
+      "permutations": 9999,
+      "correction": "klaster_p05",
+      "n": 2535,
+      "n_significant": 1081,
+      "changed_vs_directed999_BH": 418,
+      "minimum_attainable_p": 0.0001
+    },
+    {
+      "alternative": "directed",
+      "permutations": 9999,
+      "correction": "klaster_fdr",
+      "n": 2535,
+      "n_significant": 687,
+      "changed_vs_directed999_BH": 54,
+      "minimum_attainable_p": 0.0001
+    },
+    {
+      "alternative": "directed",
+      "permutations": 9999,
+      "correction": "klaster_by",
+      "n": 2535,
+      "n_significant": 284,
+      "changed_vs_directed999_BH": 379,
+      "minimum_attainable_p": 0.0001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 9999,
+      "correction": "klaster_p05",
+      "n": 2535,
+      "n_significant": 859,
+      "changed_vs_directed999_BH": 196,
+      "minimum_attainable_p": 0.0001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 9999,
+      "correction": "klaster_fdr",
+      "n": 2535,
+      "n_significant": 493,
+      "changed_vs_directed999_BH": 170,
+      "minimum_attainable_p": 0.0001
+    },
+    {
+      "alternative": "two-sided",
+      "permutations": 9999,
+      "correction": "klaster_by",
+      "n": 2535,
+      "n_significant": 234,
+      "changed_vs_directed999_BH": 429,
+      "minimum_attainable_p": 0.0001
+    }
+  ],
+  "lisa_counts": [
+    {
+      "model": "M1",
+      "HH": 433,
+      "HL": 12,
+      "LH": 13,
+      "LL": 360,
+      "ns": 1717
+    },
+    {
+      "model": "M2",
+      "HH": 437,
+      "HL": 16,
+      "LH": 9,
+      "LL": 375,
+      "ns": 1698
+    },
+    {
+      "model": "M3",
+      "HH": 442,
+      "HL": 11,
+      "LH": 5,
+      "LL": 324,
+      "ns": 1753
+    },
+    {
+      "model": "M4",
+      "HH": 319,
+      "HL": 11,
+      "LH": 10,
+      "LL": 323,
+      "ns": 1872
+    }
+  ],
+  "shapley_share_pct": {
+    "shapley_rank_gain_reweighting": 13.249435191807727,
+    "shapley_rank_gain_age_swap": 1.2893142452762356,
+    "shapley_rank_gain_park_addition": 85.46125056291604
+  },
+  "shapley_abs_mean": {
+    "shapley_rank_gain_reweighting": 36.81545741324921,
+    "shapley_rank_gain_age_swap": 3.58254468980021,
+    "shapley_rank_gain_park_addition": 237.4663512092534
+  },
+  "robustness_10pct": [
+    {
+      "family": "aggregation",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 0.8814814814814815,
+      "max_jaccard": 0.8814814814814815
+    },
+    {
+      "family": "aggregation",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 0.8745387453874539,
+      "max_jaccard": 0.8745387453874539
+    },
+    {
+      "family": "ambang taman",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 4,
+      "min_jaccard": 0.5209580838323353,
+      "max_jaccard": 0.6821192052980133
+    },
+    {
+      "family": "ambang taman",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 4,
+      "min_jaccard": 0.5209580838323353,
+      "max_jaccard": 0.6821192052980133
+    },
+    {
+      "family": "bobot",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 9,
+      "min_jaccard": 0.8676470588235294,
+      "max_jaccard": 0.9538461538461539
+    },
+    {
+      "family": "bobot",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 9,
+      "min_jaccard": 0.8676470588235294,
+      "max_jaccard": 0.9538461538461539
+    },
+    {
+      "family": "eksklusi QA",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 3,
+      "min_jaccard": 0.96875,
+      "max_jaccard": 0.9960629921259843
+    },
+    {
+      "family": "eksklusi QA",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 3,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "jarak taman kosong",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 0.9064748201438849,
+      "max_jaccard": 0.9064748201438849
+    },
+    {
+      "family": "jarak taman kosong",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "joint_factorial",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 16,
+      "min_jaccard": 0.5825545171339563,
+      "max_jaccard": 0.7278911564625851
+    },
+    {
+      "family": "joint_factorial",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 16,
+      "min_jaccard": 0.5825545171339563,
+      "max_jaccard": 0.7278911564625851
+    },
+    {
+      "family": "missing_support",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "missing_support",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "normalisasi",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 3,
+      "min_jaccard": 0.7337883959044369,
+      "max_jaccard": 0.8142857142857143
+    },
+    {
+      "family": "normalisasi",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 3,
+      "min_jaccard": 0.7337883959044369,
+      "max_jaccard": 0.8142857142857143
+    },
+    {
+      "family": "penduduk",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 0.34748010610079577,
+      "max_jaccard": 0.9766536964980544
+    },
+    {
+      "family": "penduduk",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 0.34748010610079577,
+      "max_jaccard": 0.9766536964980544
+    },
+    {
+      "family": "route_policy",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 5,
+      "min_jaccard": 0.42016806722689076,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "route_policy",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 5,
+      "min_jaccard": 0.4253521126760563,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "thermal_support",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "thermal_support",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 2,
+      "min_jaccard": 1.0,
+      "max_jaccard": 1.0
+    },
+    {
+      "family": "tutupan lahan",
+      "comparison": "eligibility_changing_refit_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 0.7824561403508772,
+      "max_jaccard": 0.7824561403508772
+    },
+    {
+      "family": "tutupan lahan",
+      "comparison": "fixed_intersection_same_anchors",
+      "top_fraction": 0.1,
+      "n_scenarios": 1,
+      "min_jaccard": 0.7824561403508772,
+      "max_jaccard": 0.7824561403508772
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+category,n,note
+Master grid cells,2765,Five mainland cities; 500 m lattice
+Route-only missing,222,No path to a candidate park in baseline graph
+Route + population + age missing,4,Already outside common set because of route
+Population/age missing only,2,JKT_R003_C031; JKT_R057_C063
+Low LST support,1,JKT_R037_C062; 27.759% valid LST area
+Excluded union,229,8.28% of master grid
+Legacy common set,2538,"2,765 - 222 - 4 - 1"
+RC1 common set,2536,"2,538 - 2 population-only slivers"
+Spatial observations after island,2535,JKT_R013_C019 is a Queen island

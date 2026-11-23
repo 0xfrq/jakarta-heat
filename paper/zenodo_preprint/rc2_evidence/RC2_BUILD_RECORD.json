@@ -1,0 +1,149 @@
+{
+  "schema_version": "rc2-build-record-1",
+  "source_revision": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "source_state": "clean",
+  "source_dirty_paths": [],
+  "artifact_revision": "267ebf78efc985926abd2ad64ec4d669138e1a6e",
+  "artifact_tree": "279b798579e8f72cd38ae62fee81d4030a46aaf1",
+  "build_git_state": "ac656e5b1b123d3bb5c5f618489682109bba2de9",
+  "built_at": "2026-11-20T11:15:19Z",
+  "build_command": [
+    "python.exe",
+    "scripts/run_agent3_pipeline.py"
+  ],
+  "implementation_sha256": "1858264d4710f0209cd8fa03320af541ec99ce10f1bc31635aac5a24f826207a",
+  "environment": {
+    "python": "3.12.10",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5",
+    "geopandas": "1.2.0",
+    "libpysal": "4.15.1",
+    "esda": "2.10.0",
+    "scipy": "1.18.1"
+  },
+  "inputs": {
+    "master_grid": {
+      "path": "data/processed/grid_500m_jakarta.gpkg",
+      "exists": true,
+      "sha256": "1b5da7e444b47dd7fbcf2df7ff4ccc04acf3d0314662a7350e9e565226d93fa7"
+    },
+    "grid_master_csv": {
+      "path": "data/processed/grid_master.csv",
+      "exists": true,
+      "sha256": "d3c360266da9927e0996dd63c2259a54a26d45c662d280c96847d757421bf078"
+    },
+    "spatial_features": {
+      "path": "data/processed/spatial_features.csv",
+      "exists": true,
+      "sha256": "f87a91125587650638a0c0637e1e8ae04f925938082511840cbd47a2e6a8c724"
+    },
+    "population_accessibility_legacy": {
+      "path": "data/processed/population_accessibility_grid.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "remote_sensing": {
+      "path": "data/processed/remote_sensing_remediated/remote_sensing_grid.csv",
+      "exists": true,
+      "sha256": "fb9937c760590931d0126b064437f2ac5b66ae089901b1184d8698cf4849dbf0"
+    },
+    "demographic_support": {
+      "path": "data/processed/demographic_support.csv",
+      "exists": true,
+      "sha256": "7574134d2f8e3abcac67f74ed86f50c0f608c521892dbeee3ba05fca59f93621"
+    },
+    "demographic_corrected": {
+      "path": "data/processed/demographic_features_corrected.csv",
+      "exists": true,
+      "sha256": "5f06132d121fa6e0215b5af975e91ce7a8dc3fd92c1ed103800100a27dbf8aa2"
+    },
+    "part_population_grid": {
+      "path": "data/processed/population_grid.csv",
+      "exists": true,
+      "sha256": "b5c6e3e418ae4bea266556de0073b6e09bbc2d14add72068840606ece2ec2589"
+    },
+    "part_vulnerability_grid": {
+      "path": "data/processed/vulnerability_grid.csv",
+      "exists": true,
+      "sha256": "746705b8f64260525d3c51fcd0de66e22896e65d2387e26d178350d9894e9937"
+    },
+    "part_accessibility_grid": {
+      "path": "data/processed/accessibility_grid.csv",
+      "exists": true,
+      "sha256": "90cc01df5bfe8a31e4ea58997cf85ea585f7f5b7e6d0f62707eee8acf060b58e"
+    },
+    "integrated_agent2_route_scenarios.csv": {
+      "path": "data/processed/agent2_route_scenarios.csv",
+      "exists": true,
+      "sha256": "1289465be179221cf25e7970198e8de5efa12fad5cfde0e72f72053b0f26d05d"
+    },
+    "integrated_integrated_comparisons/input_lineage.json": {
+      "path": "data/processed/integrated_comparisons/input_lineage.json",
+      "exists": true,
+      "sha256": "40a4c8f405093a93b2986a0af808e94357d5f7110a741546fcfa6591ecf7ac50"
+    },
+    "integrated_integrated_comparisons/auditor_raster_support.csv": {
+      "path": "data/processed/integrated_comparisons/auditor_raster_support.csv",
+      "exists": true,
+      "sha256": "e8712b55052d9014aa98ab093f0509461a2e4612ab90ddeb489f4208e432f601"
+    },
+    "integrated_integrated_comparisons/auditor_network.csv": {
+      "path": "data/processed/integrated_comparisons/auditor_network.csv",
+      "exists": true,
+      "sha256": "b5d304eb647edf417022945bd231fea5d80bb24ca6d7fe6c48b43db7ca329c05"
+    },
+    "aggregation_scenarios": {
+      "path": "outputs/qa/remediation_agent2/partial_grid_scenarios.csv",
+      "exists": true,
+      "sha256": "38e9df862745ed6024ddab60b5f0103ac2b7d5555f9422d3be352dee5a7ea611"
+    },
+    "frozen_audited_merged_grid.csv": {
+      "path": "data/processed/audited_merged_grid.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_audited_priority_models.csv": {
+      "path": "data/processed/audited_priority_models.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_auditor_raster_support.csv": {
+      "path": "data/processed/auditor_raster_support.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_auditor_network.csv": {
+      "path": "data/processed/auditor_network.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "frozen_input_lineage.json": {
+      "path": "data/processed/input_lineage.json",
+      "exists": false,
+      "sha256": null
+    }
+  },
+  "replay": "outputs/qa/rc2/replay_verification.json",
+  "engineering_verification": "outputs/qa/rc2/engineering_verification.json",
+  "notes": [
+    "The analysis build ran from a clean committed source snapshot; generated outputs do not make the source dirty.",
+    "source_revision is the actual revision used by the pipeline; artifact_revision is the commit that stores the rebuilt outputs.",
+    "No uncommitted source modification was used for this build."
+  ],
+  "build_commands": [
+    [
+      "python.exe",
+      "scripts/run_agent3_remediation.py",
+      "--integrated",
+      "--audit",
+      "<external>/audit"
+    ],
+    [
+      "python.exe",
+      "scripts/run_agent3_pipeline.py"
+    ]
+  ],
+  "reproduce": "docs/RC2_REPRODUCE.md",
+  "clean_checkout": "outputs/qa/rc2/clean_checkout_report.json",
+  "browser": "outputs/qa/rc2/dashboard/browser_check.json"
+}
